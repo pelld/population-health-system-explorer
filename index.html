@@ -1,116 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore how population need, prevention, treatment, acute care and longer lives interact across the health system.">
-  <title>Population Health — The Whole System</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- ============================================================
-       00. HEADER
-       ============================================================ -->
-  <header class="masthead">
-    <div>
-      <p class="eyebrow">Interactive systems map</p>
-      <h1>Population health: the whole system</h1>
-      <p class="strapline">Explore what shapes health, what treatment changes, and why apparently simple choices have consequences elsewhere.</p>
-    </div>
-    <button id="aboutButton" class="ghost-button">About this map</button>
-  </header>
-
-  <!-- ============================================================
-       01. VIEW SWITCHER
-       ============================================================ -->
-  <nav class="view-tabs" aria-label="Explorer views">
-    <button class="active" data-view="system"><span>1</span><strong>How the system might work</strong><small>Relationships, feedback and uncertainty</small></button>
-    <button data-view="evidence"><span>2</span><strong>What we can measure</strong><small>Observed values, proxies and gaps</small></button>
-  </nav>
-
-  <main>
-    <!-- ============================================================
-         02. CONCEPTUAL SYSTEM MAP
-         ============================================================ -->
-    <section id="systemView" class="view active">
-      <div class="view-intro">
-        <div><p class="eyebrow teal">Conceptual map</p><h2>Health is not a one-way pathway</h2><p>Treatment can prevent harm and extend life. That success can also increase the number of people living longer with conditions and needing future support.</p></div>
-        <div class="legend"><span><i class="core"></i>Health pathway</span><span><i class="context"></i>Wider influence</span><span><i class="feedback"></i>Feedback</span><span><i class="unknown"></i>Important unknown</span></div>
-      </div>
-
-      <div class="system-layout">
-        <section class="map-card">
-          <div class="map-toolbar">
-            <div><button class="layer active" data-layer="all">Show all</button><button class="layer" data-layer="pathway">Core pathway</button><button class="layer" data-layer="feedback">Feedback loops</button></div>
-            <p>Click any part of the system</p>
-          </div>
-          <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
-            <svg id="systemLines" aria-hidden="true"></svg>
-            <button class="system-node context" data-node="determinants" style="--x:5;--y:9"><span>Wider determinants</span><small>Income · housing · education · work · environment</small></button>
-            <button class="system-node core" data-node="risk" style="--x:28;--y:9"><span>Risk and prevention</span><small>Risk accumulates or is reduced</small></button>
-            <button class="system-node core unknown" data-node="undiagnosed" style="--x:51;--y:9"><span>Condition develops</span><small>Often initially undiagnosed</small></button>
-            <button class="system-node core" data-node="diagnosis" style="--x:74;--y:9"><span>Detection and diagnosis</span><small>Disease becomes visible</small></button>
-            <button class="system-node core" data-node="management" style="--x:74;--y:48"><span>Ongoing treatment</span><small>Control · monitoring · self-management</small></button>
-            <button class="system-node core" data-node="crisis" style="--x:51;--y:48"><span>Crisis and acute care</span><small>Attendance · admission · intervention</small></button>
-            <button class="system-node core" data-node="recovery" style="--x:28;--y:48"><span>Recovery and adaptation</span><small>Recovery · disability · dependency</small></button>
-            <button class="system-node feedback" data-node="living" style="--x:5;--y:48"><span>Living longer</span><small>More life, often with ongoing conditions</small></button>
-            <button class="system-node context" data-node="capacity" style="--x:16;--y:80"><span>Service capacity</span><small>Primary · community · acute · social care</small></button>
-            <button class="system-node feedback" data-node="future-demand" style="--x:39;--y:80"><span>Future need and demand</span><small>Success changes tomorrow’s population</small></button>
-            <button class="system-node context unknown" data-node="behaviour" style="--x:62;--y:80"><span>Access and behaviour</span><small>Help-seeking · trust · continuity</small></button>
-            <button class="system-node context" data-node="outcomes" style="--x:85;--y:80"><span>Outcomes that matter</span><small>Life · quality · independence · equity</small></button>
-          </div>
-        </section>
-
-        <aside id="nodePanel" class="detail-panel">
-          <p class="eyebrow teal">Selected part of the system</p>
-          <h2 id="nodeTitle">Start anywhere</h2>
-          <p id="nodeSummary">Select a node to explore what influences it, what it changes, what can be measured and where the important gaps remain.</p>
-          <div id="nodeDetails" class="detail-sections"></div>
-        </aside>
-      </div>
-
-      <section class="choice-explorer">
-        <div><p class="eyebrow teal">Choice explorer</p><h2>What might a decision change?</h2><p>This highlights likely directions and trade-offs. It is not a forecast.</p></div>
-        <label>Choose an intervention<select id="interventionSelect"></select></label>
-        <div id="interventionResult" class="intervention-result"></div>
-      </section>
-    </section>
-
-    <!-- ============================================================
-         03. MEASUREMENT MAP
-         ============================================================ -->
-    <section id="evidenceView" class="view">
-      <div class="view-intro">
-        <div><p class="eyebrow teal">Evidence map</p><h2>What can we actually observe?</h2><p>The same system, stripped back to measurable quantities. Missing information is shown rather than hidden.</p></div>
-        <div class="prototype-warning"><strong>Prototype values</strong><span>Illustrative only — not attributed to a real ICB</span></div>
-      </div>
-
-      <div class="evidence-layout">
-        <section class="evidence-flow">
-          <div class="evidence-heading"><div><p class="eyebrow">Illustrative system</p><h2>From population need to longer-term outcomes</h2></div><label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label></div>
-          <div id="evidenceDiagram" class="evidence-diagram"></div>
-        </section>
-        <aside class="evidence-side">
-          <div class="status-key"><strong>Evidence status</strong><span><i class="measured"></i>Directly measured</span><span><i class="proxy"></i>Proxy or partial measure</span><span><i class="gap"></i>Important gap</span></div>
-          <article id="evidencePanel"><p class="eyebrow teal">Select a measure</p><h2>Why the gaps matter</h2><p>A measured value does not necessarily reveal its cause. Select any measure to see how it should—and should not—be interpreted.</p></article>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================================================
-       04. ABOUT
-       ============================================================ -->
-  <div id="modalBackdrop" class="modal-backdrop" hidden>
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
-      <button id="closeModal" class="close" aria-label="Close">×</button>
-      <p class="eyebrow teal">About</p><h2 id="aboutTitle">A map for thinking, not a causal model</h2>
-      <p>The conceptual map brings together plausible relationships across population health, healthcare and wider determinants. Arrows mean “may influence”, unless a relationship is explicitly described as arithmetic.</p>
-      <p>The evidence view separates what is directly measured, what is represented by a proxy and what remains unknown. Future versions can connect verified public data for selected ICBs.</p>
-    </section>
-  </div>
-
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Explore how population need, prevention, treatment, acute care and longer lives interact across the health system."><title>Population Health — The Whole System</title><link rel="stylesheet" href="style.css">
+</head><body>
+<header class="masthead"><div><p class="eyebrow">Interactive systems map</p><h1>Population health: the whole system</h1><p class="strapline">Explore what shapes health, what treatment changes, and why apparently simple choices have consequences elsewhere.</p></div><div class="header-actions"><button id="sourcesButton" class="ghost-button">Sources &amp; method</button><button id="aboutButton" class="ghost-button">About this map</button></div></header>
+<nav class="view-tabs" aria-label="Explorer views"><button class="active" data-view="system"><span>1</span><strong>How the system might work</strong><small>Relationships, feedback and uncertainty</small></button><button data-view="evidence"><span>2</span><strong>What we can measure</strong><small>Observed values, proxies and gaps</small></button></nav>
+<main><section id="systemView" class="view active"><div class="view-intro"><div><p class="eyebrow teal">Conceptual map</p><h2>Health is not a one-way pathway</h2><p>Treatment can prevent harm and extend life. That success can also increase the number of people living longer with conditions and needing future support.</p></div><div class="legend"><span><i class="core"></i>Health pathway</span><span><i class="context"></i>Wider influence</span><span><i class="feedback"></i>Feedback</span><span><i class="unknown"></i>Important unknown</span></div></div>
+<div class="system-layout"><section class="map-card"><div class="map-toolbar"><div><button class="layer active" data-layer="all">Show all</button><button class="layer" data-layer="pathway">Core pathway</button><button class="layer" data-layer="feedback">Feedback loops</button></div><p>Click any part of the system</p></div><div id="systemMap" class="system-map" aria-label="Interactive population health systems map"><svg id="systemLines" aria-hidden="true"></svg>
+<button class="system-node context" data-node="determinants" style="--x:5;--y:9"><span>Wider determinants</span><small>Income · housing · education · work · environment</small></button><button class="system-node core" data-node="risk" style="--x:28;--y:9"><span>Risk and prevention</span><small>Risk accumulates or is reduced</small></button><button class="system-node core unknown" data-node="undiagnosed" style="--x:51;--y:9"><span>Condition develops</span><small>Often initially undiagnosed</small></button><button class="system-node core" data-node="diagnosis" style="--x:74;--y:9"><span>Detection and diagnosis</span><small>Disease becomes visible</small></button><button class="system-node core" data-node="management" style="--x:74;--y:48"><span>Ongoing treatment</span><small>Control · monitoring · self-management</small></button><button class="system-node core" data-node="crisis" style="--x:51;--y:48"><span>Crisis and acute care</span><small>Attendance · admission · intervention</small></button><button class="system-node core" data-node="recovery" style="--x:28;--y:48"><span>Recovery and adaptation</span><small>Recovery · disability · dependency</small></button><button class="system-node feedback" data-node="living" style="--x:5;--y:48"><span>Living longer</span><small>More life, often with ongoing conditions</small></button><button class="system-node context" data-node="capacity" style="--x:16;--y:80"><span>Service capacity</span><small>Primary · community · acute · social care</small></button><button class="system-node feedback" data-node="future-demand" style="--x:39;--y:80"><span>Future need and demand</span><small>Success changes tomorrow’s population</small></button><button class="system-node context unknown" data-node="behaviour" style="--x:62;--y:80"><span>Access and behaviour</span><small>Help-seeking · trust · continuity</small></button><button class="system-node context" data-node="outcomes" style="--x:81;--y:80"><span>Outcomes that matter</span><small>Life · quality · independence · equity</small></button></div></section>
+<aside id="nodePanel" class="detail-panel"><p class="eyebrow teal">Selected part of the system</p><h2 id="nodeTitle">Start anywhere</h2><p id="nodeSummary">Select a node to explore what influences it, what it changes, what can be measured and where the important gaps remain.</p><div id="nodeDetails" class="detail-sections"></div><div class="tree-heading"><div><p class="eyebrow teal">Keep asking why</p><h3>Drivers and their drivers</h3></div><div><button id="expandTree" class="small-button">Expand all</button><button id="collapseTree" class="small-button">Collapse</button></div></div><p class="tree-help">Open each row to follow the explanation. Badges distinguish evidence from interpretation; source numbers open the catalogue.</p><div id="whyTree" class="why-tree"></div></aside></div>
+<section class="choice-explorer"><div><p class="eyebrow teal">Choice explorer</p><h2>What might a decision change?</h2><p>This highlights likely directions and trade-offs. It is not a forecast.</p></div><label>Choose an intervention<select id="interventionSelect"></select></label><div id="interventionResult" class="intervention-result"></div></section></section>
+<section id="evidenceView" class="view"><div class="view-intro"><div><p class="eyebrow teal">Evidence map</p><h2>What can we actually observe?</h2><p>The same system, stripped back to measurable quantities. Missing information is shown rather than hidden.</p></div><div class="prototype-warning"><strong>Prototype values</strong><span>Illustrative only — not attributed to a real ICB</span></div></div><div class="evidence-layout"><section class="evidence-flow"><div class="evidence-heading"><div><p class="eyebrow">Illustrative system</p><h2>From population need to longer-term outcomes</h2></div><label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label></div><div id="evidenceDiagram" class="evidence-diagram"></div></section><aside class="evidence-side"><div class="status-key"><strong>Evidence status</strong><span><i class="measured"></i>Directly measured</span><span><i class="proxy"></i>Proxy or partial measure</span><span><i class="gap"></i>Important gap</span></div><article id="evidencePanel"><p class="eyebrow teal">Select a measure</p><h2>Why the gaps matter</h2><p>A measured value does not necessarily reveal its cause. Select any measure to see how it should—and should not—be interpreted.</p></article></aside></div></section></main>
+<div id="modalBackdrop" class="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle"><button id="closeModal" class="close" aria-label="Close">×</button><p class="eyebrow teal">About</p><h2 id="aboutTitle">A map for thinking, not a causal model</h2><p>The conceptual map brings together plausible relationships across population health, healthcare and wider determinants. Arrows mean “may influence”, unless a relationship is explicitly described as arithmetic.</p><p>The evidence view separates what is directly measured, what is represented by a proxy and what remains unknown.</p></section></div>
+<div id="sourcesBackdrop" class="modal-backdrop" hidden><section class="modal source-modal" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle"><button id="closeSources" class="close" aria-label="Close">×</button><p class="eyebrow teal">Transparency</p><h2 id="sourcesTitle">Sources, evidence and interpretation</h2><p>No arrow should imply more certainty than the evidence supports. Each driver is labelled as published evidence, an official definition, a plausible mechanism to test, or a known gap.</p><div class="evidence-legend"><span class="claim-badge published">Published evidence</span><span class="claim-badge official">Official definition/data</span><span class="claim-badge hypothesis">Hypothesis to test</span><span class="claim-badge gap">Known gap</span></div><div id="sourceCatalogue" class="source-catalogue"></div></section></div><script src="data.js"></script><script src="app.js"></script></body></html>
