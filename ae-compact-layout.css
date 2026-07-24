@@ -1,0 +1,12 @@
+/* ============================================================
+   00. COMPACT MAP CANVAS
+   ============================================================ */
+.system-map { height:720px; }
+
+/* Keep the legend available without allowing it to cover too much of the
+   denser network. */
+.map-key { width:min(690px,calc(100% - 24px)); }
+
+@media(max-width:720px) {
+  .system-map { height:650px; }
+}
