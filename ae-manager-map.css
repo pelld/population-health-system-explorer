@@ -1,0 +1,87 @@
+/* ============================================================
+   00. A&E MANAGEMENT MAP LAYOUT
+   ============================================================ */
+main { max-width:1900px; padding-right:clamp(10px,1.5vw,28px); padding-left:clamp(10px,1.5vw,28px); }
+.system-layout { display:grid; grid-template-columns:minmax(0,1fr) 390px; gap:14px; align-items:start; }
+.map-card { min-width:0; overflow:hidden; }
+.system-map { position:relative; height:830px; overflow:hidden; background:radial-gradient(circle at 50% 48%,#ffffff 0,#f4f8f6 68%,#edf3f1 100%); }
+.cy-canvas { position:absolute; inset:0; }
+.detail-panel { position:sticky; top:10px; max-height:calc(100vh - 20px); overflow:auto; }
+
+/* ============================================================
+   01. MANAGEMENT TOOLBAR
+   ============================================================ */
+.map-toolbar { align-items:center; gap:12px; padding:10px 12px; }
+.map-toolbar-controls { display:flex !important; align-items:center; flex-wrap:wrap; gap:6px !important; min-width:0; }
+.map-view-controls,.timescale-controls { display:flex; flex-wrap:wrap; gap:5px; }
+.map-toolbar button { min-height:34px; }
+.map-toolbar button:hover { border-color:#9ebeb9; background:#f7fbfa; }
+.map-toolbar .home-action { color:white; border-color:var(--teal); background:var(--teal); }
+.map-toolbar .home-action:hover { background:var(--teal-dark); }
+.map-toolbar>p { flex:0 0 auto; margin-left:auto; white-space:nowrap; }
+.map-search { display:grid; grid-template-columns:auto minmax(150px,230px); align-items:center; gap:6px; color:var(--muted); font-size:10px; font-weight:750; }
+.map-search input { min-height:34px; width:100%; padding:0 9px; color:var(--ink); border:1px solid #b8c7c3; border-radius:6px; background:white; font-size:11px; }
+.map-select { min-height:34px; max-width:235px; }
+.toolbar-divider { width:1px; height:28px; margin:0 2px; background:var(--line); }
+
+/* ============================================================
+   02. LEGEND
+   ============================================================ */
+.map-key { position:absolute; z-index:4; left:12px; bottom:12px; display:grid; gap:8px; width:min(760px,calc(100% - 24px)); padding:9px 11px; color:var(--muted); border:1px solid var(--line); border-radius:9px; background:#ffffffed; box-shadow:0 4px 18px #153c4312; font-size:9px; pointer-events:none; }
+.domain-legend,.relationship-legend,.timescale-legend { display:flex; align-items:center; flex-wrap:wrap; gap:7px 11px; }
+.map-key strong { color:var(--navy); font-size:10px; }
+.map-key span { display:flex; align-items:center; gap:5px; }
+.legend-dot { display:block; width:11px; height:11px; border-radius:50%; background:var(--dot); }
+.relationship-line { display:block; width:22px; height:2px; background:var(--teal); }
+.relationship-line.negative { background:var(--rose); }
+.relationship-line.uncertain { height:0; border-top:2px dotted var(--gold); background:none; }
+.timescale-pill { display:inline-flex; padding:2px 6px; border-radius:99px; color:#31545b; background:#e4f1ef; font-size:8px; font-weight:800; text-transform:uppercase; }
+.timescale-pill.medium { color:#5f4f21; background:#fff0ce; }
+.timescale-pill.long { color:#6d3e4b; background:#f9dfe5; }
+.timescale-pill.diagnostic { color:#40566d; background:#e7f0f7; }
+.timescale-pill.mixed { color:#4e5660; background:#e9ecee; }
+
+/* ============================================================
+   03. MANAGEMENT DETAIL PANEL
+   ============================================================ */
+.management-grid { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-top:14px; }
+.management-card { padding:11px; border:1px solid var(--line); border-radius:9px; background:#fbfcfa; }
+.management-card.action { grid-column:1/-1; border-color:#a9cfca; background:#f1f9f7; }
+.management-card.caution { grid-column:1/-1; border-color:#dfb3bd; background:#fff8f9; }
+.management-card strong { display:block; margin-bottom:5px; color:var(--navy); font-size:10px; letter-spacing:.05em; text-transform:uppercase; }
+.management-card p { margin:0; font-size:11px; line-height:1.48; }
+.meta-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; }
+.meta-badge { display:inline-flex; align-items:center; padding:5px 8px; border-radius:99px; color:#31545b; background:#e4f1ef; font-size:9px; font-weight:800; }
+.meta-badge.owner { color:#40566d; background:#e7f0f7; }
+
+.relationship-panel { margin-top:18px; padding-top:15px; border-top:1px solid var(--line); }
+.relationship-panel-heading { display:flex; justify-content:space-between; align-items:end; gap:12px; margin-bottom:10px; }
+.relationship-panel-heading h3 { margin:3px 0 0; color:var(--navy); font-size:17px; }
+.relationship-panel-heading>span { color:var(--muted); font-size:10px; font-weight:750; }
+.relationship-columns { display:grid; grid-template-columns:1fr; gap:10px; }
+.relationship-columns h4 { margin:0 0 6px; color:var(--navy); font-size:11px; text-transform:uppercase; letter-spacing:.05em; }
+.relationship-row { display:flex; width:100%; justify-content:space-between; align-items:flex-start; gap:8px; margin:0 0 6px; padding:8px 9px; text-align:left; color:var(--ink); border:1px solid var(--line); border-radius:8px; background:white; font-size:10px; line-height:1.4; }
+.relationship-row:hover { border-color:#8bb9b4; background:#f5fbfa; }
+.relationship-row em { color:#466168; font-style:normal; }
+.empty-relationships { margin:0; padding:9px; color:var(--muted); border:1px dashed var(--line); border-radius:8px; font-size:10px; }
+
+/* ============================================================
+   04. RESPONSIVE
+   ============================================================ */
+@media(max-width:1250px) {
+  .system-layout { grid-template-columns:1fr; }
+  .detail-panel { position:static; max-height:none; }
+  .map-toolbar { align-items:flex-start; flex-direction:column; }
+  .map-toolbar>p { margin-left:0; white-space:normal; }
+}
+
+@media(max-width:720px) {
+  .system-map { height:720px; }
+  .map-toolbar-controls,.map-view-controls,.timescale-controls { width:100%; }
+  .map-toolbar button { flex:1 1 auto; }
+  .toolbar-divider { display:none; }
+  .map-search { grid-template-columns:1fr; width:100%; }
+  .map-select { flex:1 1 100%; width:100%; max-width:none; }
+  .management-grid { grid-template-columns:1fr; }
+  .management-card.action,.management-card.caution { grid-column:auto; }
+}
