@@ -7,6 +7,7 @@
   <title>Population Health — The Whole System</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="map-readability.css">
+  <link rel="stylesheet" href="map-causal-view.css">
 </head>
 <body>
   <!-- ============================================================
@@ -53,13 +54,13 @@
                 <button class="layer" data-layer="feedback">Feedback loops</button>
               </div>
 
-              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. workforce"></label>
+              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. multimorbidity"></label>
               <datalist id="factorOptions"></datalist>
 
               <select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select>
               <button id="resetLayout" class="map-action">Reset layout</button>
             </div>
-            <p>Drag to move · scroll to zoom · click a factor or relationship</p>
+            <p>Drag to move · scroll to zoom · hover or click a factor or relationship</p>
           </div>
           <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
             <div id="cy" class="cy-canvas"></div>
@@ -139,6 +140,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
+  <script src="causal-expansion.js"></script>
   <script src="app.js"></script>
+  <script src="map-causal-view.js"></script>
 </body>
 </html>
