@@ -1,79 +1,59 @@
 // ============================================================
-// 00. COMPACT LANDSCAPE A&E MANAGEMENT MAP
+// 00. LANDSCAPE DETERMINANTS MAP
 // ============================================================
-// Keep the existing content and relationships, but use the available canvas
-// efficiently. The network is deliberately wider than it is tall so it fits a
-// desktop screen more naturally, while collision resolution keeps circles apart.
+// The larger direct-determinant ring is spread across a wide ellipse. Detailed
+// upstream determinants remain smaller and collision resolution keeps all circles
+// apart without allowing the layout to change between page loads.
 
 (() => {
-  const RING_SCALE = { 0:1, 1:.82, 2:.72 };
-  const LANDSCAPE_SCALE = { x:1.28, y:.72 };
-  const FIT_PADDING = { home:18, whole:18, branch:28, loop:32, timescale:28 };
-  const COLLISION_GAP = { default:14, major:20 };
-  const COLLISION_ITERATIONS = 160;
+  const RING_SCALE = { 0:1, 1:.96, 2:.80 };
+  const LANDSCAPE_SCALE = { x:1.58, y:.84 };
+  const FIT_PADDING = { home:16, whole:16, branch:26, loop:30, timescale:26 };
+  const COLLISION_GAP = { default:12, major:17 };
+  const COLLISION_ITERATIONS = 190;
 
   // ============================================================
-  // 01. MAKE LABELS FIT THEIR CIRCLES
+  // 01. SIZE THE THREE LEVELS
   // ============================================================
-  // Detailed factors need more internal space than the first prototype gave
-  // them. Their font is reduced slightly so long management statements wrap
-  // inside the circle instead of spilling beyond it.
   cy.batch(() => {
     cy.nodes().forEach(node => {
       const ring = node.data("ring");
 
       if (ring === 0) {
-        node.data("size",174);
+        node.data("size",162);
         node.data("fontSize",17);
       }
 
       if (ring === 1) {
-        node.data("size",128);
-        node.data("fontSize",12.2);
+        node.data("size",114);
+        node.data("fontSize",10.8);
       }
 
       if (ring === 2) {
-        node.data("size",96);
-        node.data("fontSize",9.1);
+        node.data("size",84);
+        node.data("fontSize",8.6);
       }
     });
   });
 
   // ============================================================
-  // 02. IMPROVE NODE AND RELATIONSHIP LABELS
+  // 02. KEEP NODE LABELS READABLE; MOVE EDGE WORDING TO HTML
   // ============================================================
-  // Relationship labels only appear for a hovered, selected or loop edge. A
-  // solid white label card keeps the wording readable over the network lines.
   cy.style()
     .selector("node[ring=0]")
-      .style({ "text-max-width":142 })
+      .style({ "text-max-width":132,"line-height":1.04 })
     .selector("node[ring=1]")
-      .style({ "text-max-width":106,"line-height":1.02 })
+      .style({ "text-max-width":94,"line-height":1.0 })
     .selector("node[ring=2]")
-      .style({ "text-max-width":78,"line-height":1.0,"font-weight":680 })
+      .style({ "text-max-width":68,"line-height":.98,"font-weight":680 })
     .selector("edge")
-      .style({
-        "color":"#294650",
-        "font-size":10.5,
-        "font-weight":750,
-        "text-background-color":"#ffffff",
-        "text-background-opacity":1,
-        "text-background-padding":"6px",
-        "text-background-shape":"round-rectangle",
-        "text-border-color":"#c8d6d4",
-        "text-border-width":1,
-        "text-border-opacity":1,
-        "text-rotation":"none",
-        "text-wrap":"wrap",
-        "text-max-width":180,
-        "text-margin-y":-13
-      })
+      .style({ "label":"" })
     .selector(".related-edge")
-      .style({ "z-index":45 })
+      .style({ "label":"","z-index":45 })
     .selector(".hover-edge")
-      .style({ "z-index":42 })
+      .style({ "label":"","z-index":42 })
     .selector(".loop-edge")
-      .style({ "z-index":48 })
+      .style({ "label":"","z-index":48 })
     .update();
 
   // ============================================================
@@ -94,21 +74,18 @@
   // ============================================================
   // 04. SEPARATE OVERLAPPING CIRCLES
   // ============================================================
-  // Nodes retain a gentle pull towards their intended landscape position,
-  // while overlapping pairs push one another apart. The result is stable and
-  // repeatable rather than changing each time the page opens.
   function resolveCollisions(anchors) {
     const nodes = AE_MAP_NODES.map((item,index) => ({
       id:item.id,
       index,
       ring:item.ring,
-      size:Number(cy.getElementById(item.id).data("size")) || 96,
+      size:Number(cy.getElementById(item.id).data("size")) || 84,
       anchor:{ ...anchors.get(item.id) },
       position:{ ...anchors.get(item.id) }
     }));
 
-    const mobility = ring => ring === 0 ? 0 : ring === 1 ? .58 : 1;
-    const spring = ring => ring === 1 ? .032 : ring === 2 ? .016 : 0;
+    const mobility = ring => ring === 0 ? 0 : ring === 1 ? .62 : 1;
+    const spring = ring => ring === 1 ? .030 : ring === 2 ? .014 : 0;
 
     for (let iteration=0;iteration<COLLISION_ITERATIONS;iteration += 1) {
       for (let firstIndex=0;firstIndex<nodes.length;firstIndex += 1) {
@@ -120,8 +97,6 @@
           let dy = second.position.y - first.position.y;
           let distance = Math.hypot(dx,dy);
 
-          // A deterministic direction avoids random movement when two centres
-          // begin in exactly the same position.
           if (distance < .001) {
             const angle = ((first.index * 37) + (second.index * 53)) * (Math.PI / 180);
             dx = Math.cos(angle);
@@ -143,17 +118,13 @@
 
           if (totalMobility === 0) continue;
 
-          const firstShare = firstMobility / totalMobility;
-          const secondShare = secondMobility / totalMobility;
-
-          first.position.x -= unitX * overlap * firstShare;
-          first.position.y -= unitY * overlap * firstShare;
-          second.position.x += unitX * overlap * secondShare;
-          second.position.y += unitY * overlap * secondShare;
+          first.position.x -= unitX * overlap * (firstMobility / totalMobility);
+          first.position.y -= unitY * overlap * (firstMobility / totalMobility);
+          second.position.x += unitX * overlap * (secondMobility / totalMobility);
+          second.position.y += unitY * overlap * (secondMobility / totalMobility);
         }
       }
 
-      // Pull displaced nodes gently back towards the branch where they belong.
       nodes.forEach(node => {
         const pull = spring(node.ring);
         node.position.x += (node.anchor.x - node.position.x) * pull;
@@ -186,7 +157,7 @@
   }
 
   // ============================================================
-  // 05. USE SMALLER FIT MARGINS
+  // 05. VIEW STATES
   // ============================================================
   showHome = function(duration=450) {
     clearFocus();
@@ -210,8 +181,8 @@
     setActiveButton(".timescale-button",button);
 
     const relevantOuterNodes = cy.nodes().filter(node => node.data("ring") === 2 && node.data("timescale") === timescale);
-    const relevantFirstRing = cy.nodes("[ring = 1]").filter(node => node.incomers("edge").some(edge => relevantOuterNodes.contains(edge.source())));
-    const visible = relevantOuterNodes.union(relevantFirstRing).union(cy.getElementById("ae-attendance"));
+    const relevantDirectNodes = cy.nodes("[ring = 1]").filter(node => node.incomers("edge").some(edge => relevantOuterNodes.contains(edge.source())));
+    const visible = relevantOuterNodes.union(relevantDirectNodes).union(cy.getElementById("ae-attendance"));
     const visibleEdges = cy.edges().filter(edge => visible.contains(edge.source()) && visible.contains(edge.target()));
 
     cy.elements().not(visible.union(visibleEdges)).addClass("timescale-faded");
@@ -252,7 +223,7 @@
   };
 
   // ============================================================
-  // 06. APPLY THE LANDSCAPE STARTING VIEW
+  // 06. APPLY THE REVISED STARTING VIEW
   // ============================================================
   requestAnimationFrame(() => {
     cy.resize();
