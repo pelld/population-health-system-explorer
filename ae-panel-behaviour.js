@@ -7,6 +7,7 @@
 
 (() => {
   const panel = el("nodePanel");
+  const legend = el("mapKey");
   const resetButton = el("resetLayout");
   const toolbarHint = document.querySelector(".map-toolbar > p");
 
@@ -18,16 +19,16 @@
   if (toolbarHint) toolbarHint.textContent = "Drag empty space to move · scroll to zoom · click a circle or relationship";
 
   // ============================================================
-  // 01. CREATE DRAWER CONTROLS
+  // 01. CREATE DETAILS DRAWER CONTROLS
   // ============================================================
-  const toggleButton = document.createElement("button");
-  toggleButton.id = "toggleDetails";
-  toggleButton.className = "map-action details-toggle";
-  toggleButton.type = "button";
-  toggleButton.textContent = "Show details";
-  toggleButton.setAttribute("aria-controls","nodePanel");
-  toggleButton.setAttribute("aria-expanded","false");
-  resetButton.insertAdjacentElement("afterend",toggleButton);
+  const detailsToggle = document.createElement("button");
+  detailsToggle.id = "toggleDetails";
+  detailsToggle.className = "map-action details-toggle";
+  detailsToggle.type = "button";
+  detailsToggle.textContent = "Show details";
+  detailsToggle.setAttribute("aria-controls","nodePanel");
+  detailsToggle.setAttribute("aria-expanded","false");
+  resetButton.insertAdjacentElement("afterend",detailsToggle);
 
   const panelToolbar = document.createElement("div");
   panelToolbar.className = "detail-panel-toolbar";
@@ -40,21 +41,48 @@
   panel.prepend(panelToolbar);
 
   // ============================================================
-  // 02. OPEN AND CLOSE THE DETAILS DRAWER
+  // 02. CREATE LEGEND CONTROL
+  // ============================================================
+  const legendToggle = document.createElement("button");
+  legendToggle.id = "toggleLegend";
+  legendToggle.className = "map-action legend-toggle";
+  legendToggle.type = "button";
+  legendToggle.textContent = "Show legend";
+  legendToggle.setAttribute("aria-controls","mapKey");
+  legendToggle.setAttribute("aria-expanded","false");
+  detailsToggle.insertAdjacentElement("afterend",legendToggle);
+
+  // ============================================================
+  // 03. OPEN AND CLOSE THE DETAILS DRAWER
   // ============================================================
   function setPanelOpen(isOpen) {
     panel.classList.toggle("is-open",isOpen);
     panel.setAttribute("aria-hidden",String(!isOpen));
-    toggleButton.classList.toggle("active",isOpen);
-    toggleButton.textContent = isOpen ? "Hide details" : "Show details";
-    toggleButton.setAttribute("aria-expanded",String(isOpen));
+    detailsToggle.classList.toggle("active",isOpen);
+    detailsToggle.textContent = isOpen ? "Hide details" : "Show details";
+    detailsToggle.setAttribute("aria-expanded",String(isOpen));
   }
 
-  toggleButton.addEventListener("click",() => setPanelOpen(!panel.classList.contains("is-open")));
+  detailsToggle.addEventListener("click",() => setPanelOpen(!panel.classList.contains("is-open")));
   minimiseButton.addEventListener("click",() => setPanelOpen(false));
 
   // ============================================================
-  // 03. OPEN DETAILS ONLY WHEN THEY ARE NEEDED
+  // 04. OPEN AND CLOSE THE LEGEND
+  // ============================================================
+  function setLegendOpen(isOpen) {
+    if (!legend) return;
+
+    legend.classList.toggle("is-collapsed",!isOpen);
+    legend.setAttribute("aria-hidden",String(!isOpen));
+    legendToggle.classList.toggle("active",isOpen);
+    legendToggle.textContent = isOpen ? "Hide legend" : "Show legend";
+    legendToggle.setAttribute("aria-expanded",String(isOpen));
+  }
+
+  legendToggle.addEventListener("click",() => setLegendOpen(legend?.classList.contains("is-collapsed")));
+
+  // ============================================================
+  // 05. OPEN DETAILS ONLY WHEN THEY ARE NEEDED
   // ============================================================
   // Existing event handlers call these global functions at interaction time,
   // so wrapping them here keeps the underlying map code unchanged.
@@ -82,7 +110,8 @@
     setPanelOpen(false);
   };
 
-  // The page should open with the full map visible and the interpretation
-  // available only when requested.
+  // The page should open with the full map visible. Details and the legend are
+  // available on demand rather than permanently covering the network.
   setPanelOpen(false);
+  setLegendOpen(false);
 })();
