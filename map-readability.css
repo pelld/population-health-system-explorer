@@ -1,0 +1,48 @@
+/* ============================================================
+   00. READABLE MAP VIEWPORT
+   This file overrides only the map-specific presentation. The main site
+   styles remain in style.css so the change can be reviewed or removed easily.
+   ============================================================ */
+main { max-width:1900px; padding-right:clamp(10px,1.5vw,28px); padding-left:clamp(10px,1.5vw,28px); }
+
+/* ============================================================
+   01. MAP TOOLBAR
+   ============================================================ */
+.map-toolbar { align-items:center; gap:14px; padding:10px 14px; }
+.map-toolbar-controls { display:flex !important; align-items:center; flex-wrap:wrap; gap:6px !important; min-width:0; }
+.map-view-controls { display:flex; flex-wrap:wrap; gap:5px; }
+.map-toolbar button { min-height:34px; }
+.map-toolbar button:hover { border-color:#9ebeb9; background:#f7fbfa; }
+.map-toolbar .home-action { color:white; border-color:var(--teal); background:var(--teal); }
+.map-toolbar .home-action:hover { background:var(--teal-dark); }
+.map-toolbar>p { flex:0 0 auto; white-space:nowrap; }
+.map-search { display:grid; grid-template-columns:auto minmax(145px,220px); align-items:center; gap:6px; margin-left:5px; color:var(--muted); font-size:10px; font-weight:750; }
+.map-search input { min-height:34px; width:100%; padding:0 9px; color:var(--ink); border:1px solid #b8c7c3; border-radius:6px; background:white; font-size:11px; }
+.map-search input::placeholder { color:#879398; }
+.map-select { min-height:34px; max-width:225px; }
+
+/* ============================================================
+   02. LARGE VIRTUAL CANVAS
+   The graph itself is larger than the visible card and is explored by
+   panning and zooming. The JavaScript controls the initial viewport.
+   ============================================================ */
+.system-map { height:820px; cursor:grab; }
+.system-map:active { cursor:grabbing; }
+.cy-canvas { position:absolute; inset:0; }
+
+/* ============================================================
+   03. RESPONSIVE TOOLBAR
+   ============================================================ */
+@media(max-width:1250px) {
+  .map-toolbar { align-items:flex-start; flex-direction:column; }
+  .map-toolbar>p { white-space:normal; }
+}
+
+@media(max-width:720px) {
+  .map-toolbar { padding:9px; }
+  .map-toolbar-controls,.map-view-controls { width:100%; }
+  .map-toolbar button { flex:1 1 auto; }
+  .map-search { grid-template-columns:1fr; width:100%; margin:2px 0 0; }
+  .map-select { flex:1 1 100%; max-width:none; width:100%; }
+  .system-map { height:700px; }
+}
