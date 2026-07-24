@@ -44,23 +44,12 @@
       <div class="system-layout">
         <section class="map-card">
           <div class="map-toolbar">
-            <div><button class="layer active" data-layer="all">Show all</button><button class="layer" data-layer="pathway">Core pathway</button><button class="layer" data-layer="feedback">Feedback loops</button></div>
-            <p>Click any part of the system</p>
+            <div><button class="layer" data-layer="domains">Domain view</button><button class="layer active" data-layer="all">Show all factors</button><button class="layer" data-layer="feedback">Feedback loops</button></div>
+            <p>Click a factor or domain · scroll horizontally on smaller screens</p>
           </div>
           <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
             <svg id="systemLines" aria-hidden="true"></svg>
-            <button class="system-node context" data-node="determinants" style="--x:5;--y:6"><span>Wider determinants</span><small>Income · housing · education · work · environment</small></button>
-            <button class="system-node core" data-node="risk" style="--x:28;--y:6"><span>Risk and prevention</span><small>Specific exposures and preventable risks</small></button>
-            <button class="system-node core unknown" data-node="undiagnosed" style="--x:51;--y:6"><span>Condition develops</span><small>Often initially undiagnosed</small></button>
-            <button class="system-node core" data-node="diagnosis" style="--x:74;--y:6"><span>Detection and diagnosis</span><small>Disease becomes visible</small></button>
-            <button class="system-node core" data-node="management" style="--x:74;--y:39"><span>Ongoing treatment</span><small>Control · monitoring · self-management</small></button>
-            <button class="system-node core" data-node="crisis" style="--x:51;--y:39"><span>Crisis and acute care</span><small>Attendance · admission · intervention</small></button>
-            <button class="system-node core" data-node="recovery" style="--x:28;--y:39"><span>Recovery and adaptation</span><small>Recovery · disability · dependency</small></button>
-            <button class="system-node feedback" data-node="living" style="--x:5;--y:39"><span>Living longer</span><small>More life, often with ongoing conditions</small></button>
-            <button class="system-node context" data-node="capacity" style="--x:16;--y:72"><span>Service capacity</span><small>Primary · community · acute · social care</small></button>
-            <button class="system-node feedback" data-node="future-demand" style="--x:39;--y:72"><span>Future need and demand</span><small>Success changes tomorrow’s population</small></button>
-            <button class="system-node context unknown" data-node="behaviour" style="--x:62;--y:72"><span>Access and behaviour</span><small>Help-seeking · trust · continuity</small></button>
-            <button class="system-node context" data-node="outcomes" style="--x:81;--y:72"><span>Outcomes that matter</span><small>Life · quality · independence · equity</small></button>
+            <div id="networkCanvas" class="network-canvas"></div>
           </div>
         </section>
 
