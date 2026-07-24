@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore why A&E attendance is high or rising, what managers can influence and how quickly change might appear.">
-  <title>A&E Attendance — Management Systems Map</title>
+  <meta name="description" content="Explore the direct and upstream determinants of A&E attendance, what can be measured locally and what managers may be able to influence.">
+  <title>A&E Attendance — Determinants Map</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="ae-manager-map.css">
   <link rel="stylesheet" href="ae-compact-layout.css">
@@ -18,7 +18,7 @@
     <div>
       <p class="eyebrow">Population health system explorer</p>
       <h1>Why is A&amp;E attendance high?</h1>
-      <p class="strapline">A management map for moving from pressure to possible explanations, local evidence and actions over different timescales.</p>
+      <p class="strapline">A map of the direct determinants of attendance, the upstream factors that shape them and the evidence needed to understand what matters locally.</p>
     </div>
     <div class="header-actions">
       <button id="sourcesButton" class="ghost-button">Sources &amp; method</button>
@@ -30,20 +30,20 @@
        01. VIEW SWITCHER
        ============================================================ -->
   <nav class="view-tabs" aria-label="Explorer views">
-    <button class="active" data-view="system"><span>1</span><strong>What might be driving attendance?</strong><small>Drivers, levers, timescales and ownership</small></button>
-    <button data-view="evidence"><span>2</span><strong>What should we test locally?</strong><small>Measures that distinguish one explanation from another</small></button>
+    <button class="active" data-view="system"><span>1</span><strong>What determines attendance?</strong><small>Direct determinants and upstream causes</small></button>
+    <button data-view="evidence"><span>2</span><strong>What should we test locally?</strong><small>Measures that distinguish one determinant from another</small></button>
   </nav>
 
   <main>
     <!-- ============================================================
-         02. A&E MANAGEMENT SYSTEM MAP
+         02. A&E DETERMINANTS MAP
          ============================================================ -->
     <section id="systemView" class="view active">
       <div class="view-intro">
         <div>
           <p class="eyebrow teal">Management question</p>
           <h2>“There are too many people at A&amp;E. What do we do?”</h2>
-          <p>Start by asking why attendance is high. Some drivers are comparatively quick operational levers; others require service redesign, partnership action or long-term prevention. High attendance is not automatically inappropriate attendance.</p>
+          <p>Start by separating the specific determinants of attendance from the upstream factors that create them. Some determinants may be measurable and influenceable quickly; others reflect longer-term need or circumstances outside direct NHS control.</p>
         </div>
         <div class="prototype-warning"><strong>Decision-support prototype</strong><span>Relationships and actions must be tested against local evidence</span></div>
       </div>
@@ -68,16 +68,16 @@
                 <button class="map-action timescale-button" data-timescale="diagnostic">Understand first</button>
               </div>
 
-              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. same-day primary care"></label>
+              <label class="map-search" for="factorSearch"><span>Find a determinant</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. no same-day appointment"></label>
               <datalist id="factorOptions"></datalist>
 
               <select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select>
               <button id="resetLayout" class="map-action">Reset view</button>
             </div>
-            <p>Drag · scroll to zoom · hover or click a circle or relationship</p>
+            <p>Drag empty space to move · scroll to zoom · click a circle or relationship</p>
           </div>
 
-          <div id="systemMap" class="system-map" aria-label="Interactive map of drivers of A&E attendance">
+          <div id="systemMap" class="system-map" aria-label="Interactive map of determinants of A&E attendance">
             <div id="cy" class="cy-canvas"></div>
             <div id="mapKey" class="map-key"></div>
           </div>
@@ -85,8 +85,8 @@
 
         <aside id="nodePanel" class="detail-panel">
           <p class="eyebrow teal">Management interpretation</p>
-          <h2 id="nodeTitle">High or rising A&amp;E attendance</h2>
-          <p id="nodeSummary">Select a circle to see why it may matter, what managers could do, who holds the lever, the likely timescale and what should be measured locally.</p>
+          <h2 id="nodeTitle">A&amp;E attendance</h2>
+          <p id="nodeSummary">Select a determinant to see why it may matter, what would indicate it locally, what sits upstream and what managers might be able to influence.</p>
           <div id="nodeDetails"></div>
           <div id="whyTree" hidden></div>
         </aside>
@@ -100,8 +100,8 @@
       <div class="view-intro">
         <div>
           <p class="eyebrow teal">Local diagnosis</p>
-          <h2>Which explanation matters here?</h2>
-          <p>The same headline trend can have different causes in different places, cohorts and times of day. These questions help distinguish where action is most plausible.</p>
+          <h2>Which determinants matter here?</h2>
+          <p>The same headline trend can have different causes in different places, cohorts and times of day. Test the determinant before deciding what to change.</p>
         </div>
         <div class="prototype-warning"><strong>Do not jump to intervention</strong><span>Test the causal explanation before claiming an attendance reduction</span></div>
       </div>
@@ -109,7 +109,7 @@
       <div class="evidence-layout">
         <section class="evidence-flow">
           <div class="evidence-heading">
-            <div><p class="eyebrow">Illustrative analytical framework</p><h2>Eight explanations to test</h2></div>
+            <div><p class="eyebrow">Illustrative analytical framework</p><h2>Direct determinants to test</h2></div>
             <label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label>
           </div>
           <div id="evidenceDiagram" class="evidence-diagram"></div>
@@ -117,9 +117,9 @@
         <aside class="evidence-side">
           <div class="status-key"><strong>How to use this view</strong><span><i class="measured"></i>Test with local data</span><span><i class="proxy"></i>Check data and context first</span></div>
           <article id="evidencePanel">
-            <p class="eyebrow teal">Select an explanation</p>
+            <p class="eyebrow teal">Select a determinant</p>
             <h2>Start with segmentation</h2>
-            <p>Break the trend down by population, presentation, arrival route, referral source, time, place, repeat use and outcome before deciding what to change.</p>
+            <p>Break attendance down by population, presentation, time, arrival route, referral source, prior care, repeat use and outcome before deciding what to change.</p>
           </article>
         </aside>
       </div>
@@ -133,9 +133,9 @@
     <section class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
       <button id="closeModal" class="close" aria-label="Close">×</button>
       <p class="eyebrow teal">About</p>
-      <h2 id="aboutTitle">A map for management questions, not a prediction</h2>
-      <p>The map begins with a pressure—high or rising A&amp;E attendance—and separates possible explanations. It is designed to help managers move from a headline measure to locally testable hypotheses and proportionate actions.</p>
-      <p>Timescale describes how quickly a lever might plausibly be influenced, not how large its effect will be. The map does not label attendance as inappropriate and does not prove that any intervention will reduce it.</p>
+      <h2 id="aboutTitle">A determinants map, not a prediction</h2>
+      <p>The central outcome is A&amp;E attendance. The larger circles are direct determinants that may lead to attendance; the smaller circles are upstream factors that help create those determinants.</p>
+      <p>Management responses, timescales and ownership are shown in the details drawer. The map does not label attendance as inappropriate and does not prove that changing a determinant will reduce attendance.</p>
     </section>
   </div>
 
@@ -158,7 +158,6 @@
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
   <script src="ae-manager-data.js"></script>
-  <script src="ae-manager-corrections.js"></script>
   <script src="app.js"></script>
   <script src="ae-compact-layout.js"></script>
   <script src="ae-panel-behaviour.js"></script>
