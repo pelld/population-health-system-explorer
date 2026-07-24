@@ -408,3 +408,111 @@ const MAP_LINKS = [
   ["workforce","general-practice","resource"],["workforce","community-nursing","resource"],["workforce","acute-beds","resource"],["workforce","home-care","resource"],["qualifications","workforce","resource"],["retention","workforce","resource"],["funding","workforce","resource"],["funding","premises","resource"],["premises","acute-beds","resource"],["technology","care-coordination","resource"],["diagnostic-capacity","diagnosis","resource"],["commissioning","eligibility","resource"],["thresholds","waiting","resource"],["productivity","opening","resource"],["flow","discharge","resource"],
   ["control","crisis","core"],["crisis","survival","core"],["crisis","quality-life","core"],["survival","recorded-prevalence","feedback"],["survival","future-demand","feedback"],["independence","future-demand","feedback"],["future-demand","workforce","feedback"],["future-demand","funding","feedback"],["inequality","trust","feedback"],["confidence","help-seeking","feedback"]
 ];
+
+// ============================================================
+// 07. CAUSAL RELATIONSHIPS AND IDENTIFIED FEEDBACK LOOPS
+// Unlisted edges are deliberately labelled "may influence".
+// Specific polarity is used only where the intended relationship
+// has been stated clearly enough to defend.
+// ============================================================
+const RELATIONSHIP_DETAILS = {
+  "income>housing":{ label:"affects affordability and security", polarity:"positive", evidence:"published", sources:["S1","S3"] },
+  "income>food":{ label:"shapes affordable choices", polarity:"positive", evidence:"published", sources:["S1"] },
+  "education>health-literacy":{ label:"can strengthen", polarity:"positive", evidence:"published", sources:["S1"] },
+  "discrimination>trust":{ label:"can reduce", polarity:"negative", evidence:"published", sources:["S2"] },
+  "connection>mental-health":{ label:"can protect", polarity:"negative", evidence:"published", sources:["S1","S2"] },
+  "age>frailty":{ label:"increases likelihood", polarity:"positive", evidence:"published", sources:["S12"] },
+  "age>multimorbidity":{ label:"increases likelihood", polarity:"positive", evidence:"published", sources:["S12"] },
+  "vaccination>incidence":{ label:"reduces", polarity:"negative", evidence:"published", sources:["S16"] },
+  "screening>case-finding":{ label:"increases detection", polarity:"positive", evidence:"official", sources:["S17"] },
+  "early-help>crisis":{ label:"may reduce", polarity:"negative", evidence:"hypothesis", sources:["S2"] },
+  "trust>help-seeking":{ label:"can increase", polarity:"positive", evidence:"published", sources:["S2"] },
+  "waiting>crisis":{ label:"may increase", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "continuity>monitoring":{ label:"supports", polarity:"positive", evidence:"hypothesis", sources:["S4","S5"] },
+  "case-finding>recorded-prevalence":{ label:"increases", polarity:"positive", evidence:"official", sources:["S4","S5"] },
+  "medicines>control":{ label:"can improve", polarity:"positive", evidence:"published", sources:["S4","S5"] },
+  "monitoring>control":{ label:"can improve", polarity:"positive", evidence:"published", sources:["S4","S5"] },
+  "control>crisis":{ label:"reduces risk", polarity:"negative", evidence:"published", sources:["S4","S5"] },
+  "urgent-community>emergency":{ label:"may avoid", polarity:"negative", evidence:"hypothesis", sources:[] },
+  "rehabilitation>independence":{ label:"can improve", polarity:"positive", evidence:"published", sources:["S12"] },
+  "care-coordination>discharge":{ label:"can enable", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "acute-beds>emergency":{ label:"changes admission threshold", polarity:"uncertain", evidence:"hypothesis", sources:["S9","S10"] },
+  "discharge>reablement":{ label:"transfers need to", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "home-care>independence":{ label:"supports", polarity:"positive", evidence:"published", sources:["S7","S8"] },
+  "reablement>independence":{ label:"supports", polarity:"positive", evidence:"published", sources:["S7"] },
+  "workforce>general-practice":{ label:"enables capacity", polarity:"positive", evidence:"official", sources:["S6"] },
+  "workforce>community-nursing":{ label:"enables capacity", polarity:"positive", evidence:"official", sources:["S6"] },
+  "workforce>acute-beds":{ label:"creates staffed beds", polarity:"positive", evidence:"official", sources:["S6"] },
+  "workforce>home-care":{ label:"enables supply", polarity:"positive", evidence:"official", sources:["S8"] },
+  "qualifications>workforce":{ label:"limits suitable supply", polarity:"positive", evidence:"published", sources:["S6","S7","S8"] },
+  "retention>workforce":{ label:"maintains", polarity:"positive", evidence:"published", sources:["S6","S7","S8"] },
+  "funding>workforce":{ label:"funds posts", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "thresholds>waiting":{ label:"changes visible demand", polarity:"uncertain", evidence:"hypothesis", sources:[] },
+  "flow>discharge":{ label:"enables", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "survival>recorded-prevalence":{ label:"increases duration living with disease", polarity:"positive", evidence:"published", sources:["S4","S12","S14"] },
+  "survival>future-demand":{ label:"can increase", polarity:"positive", evidence:"hypothesis", sources:["S12","S14"] },
+  "future-demand>workforce":{ label:"increases requirement", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "future-demand>funding":{ label:"increases pressure", polarity:"positive", evidence:"hypothesis", sources:[] },
+  "inequality>trust":{ label:"may reduce", polarity:"negative", evidence:"hypothesis", sources:["S2"] }
+};
+
+const SYSTEM_LOOPS = [
+  { id:"workforce-pressure", type:"R", title:"Workforce pressure", nodes:["workforce","opening","waiting","crisis","acute-beds","retention"], explanation:"Fewer available staff restrict access and increase waits and pressure. Pressure and workload can then worsen retention, further reducing available workforce." },
+  { id:"successful-treatment", type:"R", title:"Successful treatment and future need", nodes:["medicines","control","crisis","survival","recorded-prevalence","future-demand","workforce"], explanation:"Effective treatment reduces crises and improves survival. More people then live longer with conditions, increasing recorded prevalence and future treatment requirements." },
+  { id:"acute-capacity", type:"R", title:"Acute capacity and visible demand", nodes:["acute-beds","emergency","inpatient-treatment","discharge","flow"], explanation:"Available staffed beds and system flow affect admission and discharge. Activity therefore reflects both underlying need and the capacity available to respond." },
+  { id:"prevention", type:"B", title:"Prevention and crisis", nodes:["screening","case-finding","diagnosis","monitoring","control","crisis"], explanation:"Case-finding and ongoing management can improve control and reduce later crisis, balancing future acute demand." },
+  { id:"inequality-access", type:"R", title:"Inequality and disengagement", nodes:["income","education","digital","trust","help-seeking","waiting","inequality"], explanation:"Disadvantage can constrain access and trust; delayed or absent care can worsen outcomes and reinforce health inequality." }
+];
+
+// ============================================================
+// 08. DENSE CROSS-SYSTEM RELATIONSHIPS
+// These retain the deliberately complex underlying model. Where
+// a relationship has not yet been specifically sourced, the UI
+// identifies it as a hypothesis rather than hiding the link.
+// ============================================================
+MAP_LINKS.push(
+  ["income","education","context"],["income","employment","context"],["income","connection","context"],["income","mental-health","context"],["income","inequality","context"],
+  ["housing","health-protection","context"],["housing","frailty","context"],["housing","mental-health","context"],["housing","discharge","context"],["housing","independence","context"],
+  ["education","employment","context"],["education","behaviour","context"],["education","digital","context"],["education","self-management","context"],["education","inequality","context"],
+  ["employment","income","feedback"],["employment","mental-health","context"],["employment","help-seeking","context"],["employment","quality-life","context"],
+  ["food","behaviour","context"],["food","incidence","context"],["transport","employment","context"],["transport","connection","context"],["transport","general-practice","context"],["transport","community-nursing","context"],
+  ["environment","incidence","context"],["environment","crisis","context"],["crime","mental-health","context"],["crime","connection","context"],["crime","help-seeking","context"],
+  ["discrimination","employment","context"],["discrimination","help-seeking","context"],["discrimination","inequality","context"],["connection","help-seeking","context"],["connection","quality-life","context"],
+  ["age","disability","core"],["age","unpaid-care","core"],["age","future-demand","core"],["genetics","incidence","core"],["ethnicity","risk-finding","context"],
+  ["ethnicity","trust","context"],["migration","language","context"],["migration","screening","context"],["migration","recorded-prevalence","context"],["disability","travel","context"],
+  ["disability","digital","context"],["disability","home-care","core"],["disability","quality-life","core"],["frailty","crisis","core"],["frailty","acute-beds","core"],
+  ["frailty","rehabilitation","core"],["frailty","home-care","core"],["multimorbidity","medicines","core"],["multimorbidity","monitoring","core"],["multimorbidity","crisis","core"],
+  ["multimorbidity","future-demand","core"],["pregnancy","community-nursing","core"],["pregnancy","health-protection","core"],["unpaid-care","employment","feedback"],["unpaid-care","quality-life","core"],
+  ["behaviour","control","core"],["behaviour","quality-life","core"],["commercial","food","context"],["commercial","income","context"],["commercial","incidence","context"],
+  ["occupational","disability","core"],["occupational","crisis","core"],["vaccination","crisis","core"],["vaccination","acute-beds","core"],["screening","diagnosis","core"],
+  ["screening","inequality","context"],["risk-finding","diagnosis","core"],["risk-finding","medicines","core"],["early-help","mental-health","core"],["early-help","inequality","core"],
+  ["health-protection","crisis","core"],["health-protection","confidence","context"],
+  ["health-literacy","screening","context"],["health-literacy","vaccination","context"],["health-literacy","self-management","context"],["trust","screening","context"],["trust","vaccination","context"],
+  ["trust","continuity","context"],["language","diagnosis","context"],["language","self-management","context"],["digital","general-practice","context"],["digital","monitoring","context"],
+  ["travel","emergency","context"],["opening","pharmacy","core"],["opening","help-seeking","core"],["continuity","diagnosis","core"],["continuity","medicines","core"],
+  ["continuity","trust","feedback"],["eligibility","mental-health","context"],["eligibility","home-care","context"],["waiting","trust","feedback"],["waiting","quality-life","core"],
+  ["help-seeking","general-practice","core"],["help-seeking","111","core"],["help-seeking","emergency","core"],
+  ["general-practice","screening","core"],["general-practice","risk-finding","core"],["general-practice","medicines","core"],["general-practice","referral","core"],["general-practice","continuity","feedback"],
+  ["pharmacy","self-management","core"],["pharmacy","vaccination","core"],["dentistry","incidence","core"],["optometry","diagnosis","core"],["case-finding","undiagnosed","core"],
+  ["diagnosis","recorded-prevalence","core"],["diagnosis","quality-life","core"],["medicines","crisis","core"],["medicines","quality-life","core"],["monitoring","referral","core"],
+  ["self-management","medicines","core"],["referral","waiting","core"],
+  ["community-nursing","monitoring","core"],["community-nursing","home-care","core"],["community-nursing","discharge","core"],["mental-health","crisis","core"],["mental-health","employment","feedback"],
+  ["rehabilitation","quality-life","core"],["rehabilitation","future-demand","feedback"],["therapy","independence","core"],["community-diagnostics","diagnosis","core"],["community-diagnostics","waiting","core"],
+  ["urgent-community","acute-beds","core"],["palliative","quality-life","core"],["palliative","acute-beds","core"],["social-prescribing","connection","core"],["social-prescribing","mental-health","core"],
+  ["care-coordination","continuity","core"],["care-coordination","home-care","core"],
+  ["111","emergency","core"],["111","urgent-community","core"],["ambulance","acute-beds","core"],["ambulance","crisis","core"],["emergency","hospital-diagnostics","core"],
+  ["emergency","inpatient-treatment","core"],["acute-beds","waiting","feedback"],["acute-beds","discharge","core"],["hospital-diagnostics","waiting","core"],["surgery","acute-beds","core"],
+  ["critical-care","acute-beds","core"],["inpatient-treatment","quality-life","core"],["inpatient-treatment","future-demand","feedback"],["discharge","home-care","core"],["discharge","future-demand","feedback"],
+  ["home-care","unpaid-care","feedback"],["home-care","future-demand","feedback"],["residential","future-demand","feedback"],["equipment","home-care","core"],["equipment","unpaid-care","core"],
+  ["safeguarding","trust","feedback"],["carer-support","unpaid-care","core"],["carer-support","quality-life","core"],["benefits-advice","income","core"],["community-assets","mental-health","core"],
+  ["workforce","pharmacy","resource"],["workforce","mental-health","resource"],["workforce","rehabilitation","resource"],["workforce","ambulance","resource"],["workforce","hospital-diagnostics","resource"],
+  ["workforce","residential","resource"],["qualifications","productivity","resource"],["qualifications","thresholds","resource"],["retention","productivity","resource"],["retention","waiting","resource"],
+  ["funding","commissioning","resource"],["funding","diagnostic-capacity","resource"],["funding","home-care","resource"],["premises","general-practice","resource"],["premises","community-diagnostics","resource"],
+  ["technology","general-practice","resource"],["technology","monitoring","resource"],["technology","referral","resource"],["diagnostic-capacity","community-diagnostics","resource"],["diagnostic-capacity","hospital-diagnostics","resource"],
+  ["commissioning","opening","resource"],["commissioning","home-care","resource"],["commissioning","flow","resource"],["thresholds","referral","resource"],["thresholds","acute-beds","resource"],
+  ["productivity","waiting","resource"],["productivity","workforce","feedback"],["flow","acute-beds","resource"],["flow","waiting","resource"],
+  ["incidence","undiagnosed","core"],["incidence","future-demand","feedback"],["recorded-prevalence","monitoring","feedback"],["recorded-prevalence","funding","feedback"],["undiagnosed","crisis","core"],
+  ["undiagnosed","inequality","core"],["control","quality-life","core"],["crisis","mortality","core"],["crisis","independence","core"],["survival","multimorbidity","feedback"],
+  ["survival","unpaid-care","feedback"],["mortality","confidence","feedback"],["quality-life","confidence","feedback"],["independence","unpaid-care","feedback"],["inequality","mortality","core"],
+  ["inequality","quality-life","core"],["future-demand","commissioning","feedback"],["future-demand","thresholds","feedback"],["confidence","trust","feedback"]
+);
