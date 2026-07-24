@@ -44,12 +44,12 @@
       <div class="system-layout">
         <section class="map-card">
           <div class="map-toolbar">
-            <div><button class="layer" data-layer="domains">Domain view</button><button class="layer active" data-layer="all">Show all factors</button><button class="layer" data-layer="feedback">Feedback loops</button></div>
-            <p>Click a factor or domain · scroll horizontally on smaller screens</p>
+            <div><button class="layer active" data-layer="all">Whole system</button><button class="layer" data-layer="neighbourhood">Selected neighbourhood</button><button class="layer" data-layer="feedback">Feedback loops</button><select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select><button id="fitMap" class="map-action">Fit map</button><button id="resetLayout" class="map-action">Rearrange</button></div>
+            <p>Drag the canvas · scroll to zoom · click a node or arrow</p>
           </div>
           <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
-            <svg id="systemLines" aria-hidden="true"></svg>
-            <div id="networkCanvas" class="network-canvas"></div>
+            <div id="cy" class="cy-canvas"></div>
+            <div class="map-key"><strong>Relationship</strong><span><i class="positive"></i>Increases / enables</span><span><i class="negative"></i>Reduces / constrains</span><span><i class="uncertain"></i>Direction uncertain</span></div>
           </div>
         </section>
 
@@ -123,6 +123,7 @@
     </section>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
