@@ -3,11 +3,13 @@
 // ============================================================
 // Keep the existing content and relationships, but use the available canvas
 // efficiently. The map is expected to gain more factors over time, so this
-// layout is intentionally compact without forcing every circle into the centre.
+// layout is compact while maintaining a clear gap between every circle.
 
 (() => {
   const RING_SCALE = { 0:1, 1:.82, 2:.72 };
   const FIT_PADDING = { home:20, whole:20, branch:30, loop:34, timescale:30 };
+  const COLLISION_GAP = { default:14, major:20 };
+  const COLLISION_ITERATIONS = 140;
 
   // ============================================================
   // 01. MAKE LABELS FIT THEIR CIRCLES
@@ -46,7 +48,7 @@
     .update();
 
   // ============================================================
-  // 02. RECALCULATE ALL NODE POSITIONS
+  // 02. CREATE COMPACT ANCHOR POSITIONS
   // ============================================================
   function compactPosition(node) {
     if (node.ring === 0) return { ...MAP_CENTRE };
@@ -60,13 +62,88 @@
     };
   }
 
+  // ============================================================
+  // 03. SEPARATE OVERLAPPING CIRCLES
+  // ============================================================
+  // Nodes retain a gentle pull towards their intended radial position, while
+  // overlapping pairs push one another apart. This gives a stable, repeatable
+  // result rather than a force layout that changes every time the page opens.
+  function resolveCollisions(anchors) {
+    const nodes = AE_MAP_NODES.map((item,index) => ({
+      id:item.id,
+      index,
+      ring:item.ring,
+      size:Number(cy.getElementById(item.id).data("size")) || 96,
+      anchor:{ ...anchors.get(item.id) },
+      position:{ ...anchors.get(item.id) }
+    }));
+
+    const mobility = ring => ring === 0 ? 0 : ring === 1 ? .58 : 1;
+    const spring = ring => ring === 1 ? .035 : ring === 2 ? .018 : 0;
+
+    for (let iteration=0;iteration<COLLISION_ITERATIONS;iteration += 1) {
+      for (let firstIndex=0;firstIndex<nodes.length;firstIndex += 1) {
+        const first = nodes[firstIndex];
+
+        for (let secondIndex=firstIndex + 1;secondIndex<nodes.length;secondIndex += 1) {
+          const second = nodes[secondIndex];
+          let dx = second.position.x - first.position.x;
+          let dy = second.position.y - first.position.y;
+          let distance = Math.hypot(dx,dy);
+
+          // A deterministic direction avoids random movement when two centres
+          // begin in exactly the same position.
+          if (distance < .001) {
+            const angle = ((first.index * 37) + (second.index * 53)) * (Math.PI / 180);
+            dx = Math.cos(angle);
+            dy = Math.sin(angle);
+            distance = 1;
+          }
+
+          const gap = first.ring <= 1 || second.ring <= 1 ? COLLISION_GAP.major : COLLISION_GAP.default;
+          const minimumDistance = ((first.size + second.size) / 2) + gap;
+
+          if (distance >= minimumDistance) continue;
+
+          const overlap = minimumDistance - distance;
+          const unitX = dx / distance;
+          const unitY = dy / distance;
+          const firstMobility = mobility(first.ring);
+          const secondMobility = mobility(second.ring);
+          const totalMobility = firstMobility + secondMobility;
+
+          if (totalMobility === 0) continue;
+
+          const firstShare = firstMobility / totalMobility;
+          const secondShare = secondMobility / totalMobility;
+
+          first.position.x -= unitX * overlap * firstShare;
+          first.position.y -= unitY * overlap * firstShare;
+          second.position.x += unitX * overlap * secondShare;
+          second.position.y += unitY * overlap * secondShare;
+        }
+      }
+
+      // Pull displaced nodes gently back towards the branch where they belong.
+      nodes.forEach(node => {
+        const pull = spring(node.ring);
+        node.position.x += (node.anchor.x - node.position.x) * pull;
+        node.position.y += (node.anchor.y - node.position.y) * pull;
+      });
+    }
+
+    return new Map(nodes.map(node => [node.id,node.position]));
+  }
+
+  const anchorPositions = new Map(AE_MAP_NODES.map(node => [node.id,compactPosition(node)]));
+  const resolvedPositions = resolveCollisions(anchorPositions);
+
   nodePositions.clear();
 
   cy.batch(() => {
-    AE_MAP_NODES.forEach(node => {
-      const position = compactPosition(node);
-      nodePositions.set(node.id,position);
-      cy.getElementById(node.id).position(position);
+    resolvedPositions.forEach((position,id) => {
+      nodePositions.set(id,position);
+      cy.getElementById(id).position(position);
     });
   });
 
@@ -80,7 +157,7 @@
   }
 
   // ============================================================
-  // 03. USE SMALLER FIT MARGINS
+  // 04. USE SMALLER FIT MARGINS
   // ============================================================
   showHome = function(duration=450) {
     clearFocus();
@@ -146,7 +223,7 @@
   };
 
   // ============================================================
-  // 04. APPLY THE REVISED STARTING VIEW
+  // 05. APPLY THE REVISED STARTING VIEW
   // ============================================================
   requestAnimationFrame(() => {
     cy.resize();
