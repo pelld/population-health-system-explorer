@@ -1,28 +1,55 @@
 // ============================================================
-// 00. HELPERS AND VIEW SWITCHING
+// 00. HELPERS, CONSTANTS AND VIEW SWITCHING
 // ============================================================
 const el = id => document.getElementById(id);
 const CLAIM_LABELS = { published:"Published evidence", official:"Official definition/data", hypothesis:"Hypothesis to test", gap:"Known gap" };
 
-document.querySelectorAll(".view-tabs button").forEach(button => button.addEventListener("click", () => {
+// The map uses a large, stable virtual canvas. The browser therefore opens
+// at a readable zoom rather than shrinking every factor onto one screen.
+const MAP_GEOMETRY = { originX:460, originY:410, columnGap:900, rowGap:900, factorColumnGap:205, factorRowGap:92, factorsPerRow:3 };
+const HOME_VIEW = { x:MAP_GEOMETRY.originX + (MAP_GEOMETRY.columnGap * 2), y:MAP_GEOMETRY.originY + (MAP_GEOMETRY.rowGap / 2), zoom:.68 };
+const OVERVIEW_LABEL_ZOOM = .43;
+
+function setActiveLayer(activeButton=null) {
+  document.querySelectorAll(".layer").forEach(button => button.classList.toggle("active",button === activeButton));
+}
+
+document.querySelectorAll(".view-tabs button").forEach(button => button.addEventListener("click",() => {
   document.querySelectorAll(".view-tabs button").forEach(item => item.classList.toggle("active",item === button));
   document.querySelectorAll(".view").forEach(view => view.classList.toggle("active",view.id === `${button.dataset.view}View`));
-  if (button.dataset.view === "system") setTimeout(() => { cy.resize(); cy.fit(undefined,35); },50);
+  if (button.dataset.view === "system") setTimeout(() => cy.resize(),50);
 }));
 
 // ============================================================
-// 01. GRAPH DATA
-// Compound parent nodes provide soft cluster regions. Individual
-// factors remain free-positioned by the force-directed layout.
+// 01. GRAPH DATA AND STABLE DOMAIN POSITIONS
+// Domains retain the intended two-row structure from data.js. Factors are
+// arranged inside each domain so compound regions cannot pile on top of one
+// another. Complexity is retained; only its presentation is controlled.
 // ============================================================
 const FACTOR_INDEX = new Map();
+const FACTOR_POSITIONS = new Map();
 const graphElements = [];
 
 MAP_DOMAINS.forEach(domain => {
+  const domainColumn = Math.round(domain.x / 20);
+  const domainRow = domain.y < 25 ? 0 : 1;
+  const domainCentreX = MAP_GEOMETRY.originX + (domainColumn * MAP_GEOMETRY.columnGap);
+  const domainCentreY = MAP_GEOMETRY.originY + (domainRow * MAP_GEOMETRY.rowGap);
+  const factorRows = Math.ceil(domain.factors.length / MAP_GEOMETRY.factorsPerRow);
+
   graphElements.push({ data:{ id:`domain-${domain.id}`, label:domain.title, kind:"domain", domain:domain.id, detailKey:domain.detailKey, colour:domain.colour } });
-  domain.factors.forEach(([id,label]) => {
+
+  domain.factors.forEach(([id,label],factorIndex) => {
+    const factorColumn = factorIndex % MAP_GEOMETRY.factorsPerRow;
+    const factorRow = Math.floor(factorIndex / MAP_GEOMETRY.factorsPerRow);
+    const position = {
+      x:domainCentreX + ((factorColumn - ((MAP_GEOMETRY.factorsPerRow - 1) / 2)) * MAP_GEOMETRY.factorColumnGap),
+      y:domainCentreY + ((factorRow - ((factorRows - 1) / 2)) * MAP_GEOMETRY.factorRowGap)
+    };
+
     FACTOR_INDEX.set(id,{ id,label,domain:domain.id,domainTitle:domain.title,detailKey:domain.detailKey,colour:domain.colour });
-    graphElements.push({ data:{ id,label,parent:`domain-${domain.id}`,kind:"factor",domain:domain.id,detailKey:domain.detailKey,colour:domain.colour } });
+    FACTOR_POSITIONS.set(id,position);
+    graphElements.push({ data:{ id,label,parent:`domain-${domain.id}`,kind:"factor",domain:domain.id,detailKey:domain.detailKey,colour:domain.colour },position });
   });
 });
 
@@ -33,45 +60,89 @@ MAP_LINKS.forEach(([source,target,type],index) => {
 
 // ============================================================
 // 02. CYTOSCAPE SYSTEM MAP
+// Resting relationships are deliberately quiet. Arrowheads and relationship
+// labels appear when a factor, relationship or feedback loop is selected.
 // ============================================================
 const cy = cytoscape({
   container:el("cy"),
   elements:graphElements,
-  minZoom:.22,
-  maxZoom:2.4,
-  wheelSensitivity:.16,
+  minZoom:.14,
+  maxZoom:2.6,
+  wheelSensitivity:.14,
+  boxSelectionEnabled:false,
   style:[
     { selector:"node[kind='domain']",style:{
-      "background-color":"data(colour)","background-opacity":.08,"border-color":"data(colour)","border-width":2,"border-opacity":.42,
-      "shape":"round-rectangle","padding":"22px","label":"data(label)","font-size":17,"font-weight":800,"color":"#17384a",
-      "text-valign":"top","text-halign":"center","text-margin-y":-10,"text-background-color":"#f8fbfa","text-background-opacity":.92,
-      "text-background-padding":"5px","text-background-shape":"round-rectangle"
+      "background-color":"data(colour)","background-opacity":.055,"border-color":"data(colour)","border-width":2.5,"border-opacity":.46,
+      "shape":"round-rectangle","padding":"38px","label":"data(label)","font-size":21,"font-weight":800,"color":"#17384a",
+      "text-valign":"top","text-halign":"center","text-margin-y":-14,"text-background-color":"#f8fbfa","text-background-opacity":.96,
+      "text-background-padding":"7px","text-background-shape":"round-rectangle","z-index":0
     }},
     { selector:"node[kind='factor']",style:{
-      "width":"label","height":34,"padding":"10px","shape":"round-rectangle","background-color":"#fff","border-color":"data(colour)","border-width":2,
-      "label":"data(label)","font-size":11,"font-weight":650,"color":"#183746","text-wrap":"wrap","text-max-width":120,"text-valign":"center","text-halign":"center",
-      "overlay-opacity":0,"shadow-color":"#17343d","shadow-opacity":.08,"shadow-blur":8,"shadow-offset-y":3
+      "width":"label","height":42,"padding":"13px","shape":"round-rectangle","background-color":"#fff","border-color":"data(colour)","border-width":2.25,
+      "label":"data(label)","font-size":14,"font-weight":650,"color":"#183746","text-wrap":"wrap","text-max-width":155,"text-valign":"center","text-halign":"center",
+      "overlay-opacity":0,"shadow-color":"#17343d","shadow-opacity":.11,"shadow-blur":10,"shadow-offset-y":3,"z-index":5
+    }},
+    { selector:"node.overview-factor",style:{
+      "label":"","width":20,"height":20,"padding":"2px","background-color":"data(colour)","background-opacity":.24,"border-width":1.5,"shadow-opacity":0
     }},
     { selector:"edge",style:{
-      "width":1.5,"line-color":"#83999c","target-arrow-color":"#83999c","target-arrow-shape":"triangle","arrow-scale":.75,
-      "curve-style":"bezier","opacity":.32,"label":"","font-size":8,"color":"#435b64","text-background-color":"#fff","text-background-opacity":.9,
-      "text-background-padding":"3px","text-rotation":"autorotate","text-margin-y":-8
+      "width":1.2,"line-color":"#789092","target-arrow-color":"#789092","target-arrow-shape":"none","arrow-scale":.8,
+      "curve-style":"unbundled-bezier","control-point-distances":18,"control-point-weights":.5,"opacity":.075,"label":"","font-size":10,"font-weight":650,
+      "color":"#435b64","text-background-color":"#fff","text-background-opacity":.96,"text-background-padding":"4px","text-background-shape":"round-rectangle",
+      "text-rotation":"autorotate","text-margin-y":-10,"z-index":1
     }},
     { selector:"edge[polarity='positive']",style:{ "line-color":"#18877f","target-arrow-color":"#18877f" }},
     { selector:"edge[polarity='negative']",style:{ "line-color":"#a64f63","target-arrow-color":"#a64f63","line-style":"dashed" }},
     { selector:"edge[polarity='uncertain']",style:{ "line-color":"#b27a21","target-arrow-color":"#b27a21","line-style":"dotted" }},
-    { selector:".selected-factor",style:{ "background-color":"data(colour)","color":"#fff","border-width":4,"z-index":20 }},
-    { selector:".neighbour",style:{ "border-width":4,"background-color":"#eef8f6","z-index":12 }},
-    { selector:".related-edge",style:{ "opacity":.95,"width":3,"label":"data(label)","z-index":10 }},
-    { selector:".faded",style:{ "opacity":.07 }},
-    { selector:".loop-node",style:{ "border-width":5,"background-color":"#fff7df","z-index":15 }},
-    { selector:".loop-edge",style:{ "opacity":.9,"width":3.5,"label":"data(label)","z-index":14 }}
+    { selector:".selected-factor",style:{ "label":"data(label)","background-color":"data(colour)","background-opacity":1,"color":"#fff","border-width":4.5,"shadow-opacity":.22,"z-index":30 }},
+    { selector:".neighbour",style:{ "label":"data(label)","border-width":4,"background-color":"#eef8f6","background-opacity":1,"z-index":20 }},
+    { selector:".related-edge",style:{ "opacity":.96,"width":3.2,"label":"data(label)","target-arrow-shape":"triangle","z-index":18 }},
+    { selector:".faded",style:{ "opacity":.025 }},
+    { selector:".loop-node",style:{ "label":"data(label)","border-width":5,"background-color":"#fff7df","background-opacity":1,"z-index":25 }},
+    { selector:".loop-edge",style:{ "opacity":.94,"width":3.5,"label":"data(label)","target-arrow-shape":"triangle","z-index":22 }}
   ],
-  layout:{ name:"cose",animate:false,fit:true,padding:45,nodeRepulsion:125000,nodeOverlap:28,idealEdgeLength:115,edgeElasticity:85,nestingFactor:1.25,gravity:.28,numIter:1800,initialTemp:170,coolingFactor:.96,minTemp:1 }
+  layout:{ name:"preset",fit:false,padding:70 }
 });
 
 // ============================================================
-// 03. DETAILS, SELECTION AND EVIDENCE
+// 03. VIEWPORT AND PROGRESSIVE DETAIL
+// ============================================================
+function panForPosition(position,zoom) {
+  return { x:(cy.width() / 2) - (position.x * zoom), y:(cy.height() / 2) - (position.y * zoom) };
+}
+
+function moveToPosition(position,zoom,duration=450) {
+  const pan = panForPosition(position,zoom);
+  if (duration === 0) cy.viewport({ zoom,pan }); else cy.animate({ zoom,pan },{ duration,easing:"ease-in-out-cubic" });
+}
+
+function showHome(duration=450) {
+  clearGraphFocus();
+  setActiveLayer();
+  renderNodeDetails("determinants");
+  moveToPosition(HOME_VIEW,HOME_VIEW.zoom,duration);
+}
+
+function showWholeSystem() {
+  clearGraphFocus();
+  renderNodeDetails("determinants");
+  cy.animate({ fit:{ eles:cy.elements(),padding:70 } },{ duration:500,easing:"ease-in-out-cubic" });
+}
+
+function updateZoomDetail() {
+  const showOverviewNodes = cy.zoom() < OVERVIEW_LABEL_ZOOM;
+  cy.nodes("node[kind='factor']").toggleClass("overview-factor",showOverviewNodes);
+}
+
+cy.on("zoom",updateZoomDetail);
+cy.ready(() => {
+  cy.resize();
+  showHome(0);
+  updateZoomDetail();
+});
+
+// ============================================================
+// 04. DETAILS, SELECTION AND EVIDENCE
 // ============================================================
 function renderBranch(branch,depth) {
   const sourceLinks = (branch.sources || []).map(sourceId => {
@@ -102,15 +173,20 @@ function clearGraphFocus() {
   cy.elements().removeClass("selected-factor neighbour related-edge faded loop-node loop-edge");
 }
 
-function selectFactor(node) {
+function selectFactor(node,{ centre=false }={}) {
   clearGraphFocus();
   const neighbourhood = node.closedNeighborhood();
-  cy.elements().not(neighbourhood).addClass("faded");
+  cy.elements().not(neighbourhood.union(node.parent())).addClass("faded");
   node.addClass("selected-factor");
   node.neighborhood("node").addClass("neighbour");
   node.connectedEdges().addClass("related-edge");
   const factor = FACTOR_INDEX.get(node.id());
   renderNodeDetails(factor.detailKey,factor.label,`Part of ${factor.domainTitle}`);
+
+  if (centre) {
+    const targetZoom = Math.max(cy.zoom(),.82);
+    moveToPosition(node.position(),Math.min(targetZoom,1.05),420);
+  }
 }
 
 cy.on("tap","node[kind='factor']",event => selectFactor(event.target));
@@ -126,40 +202,84 @@ cy.on("tap","edge",event => { clearGraphFocus(); event.target.addClass("related-
 cy.on("tap",event => { if (event.target === cy) { clearGraphFocus(); renderNodeDetails("determinants"); } });
 
 // ============================================================
-// 04. MAP CONTROLS AND FEEDBACK LOOPS
+// 05. MAP CONTROLS, SEARCH AND FEEDBACK LOOPS
 // ============================================================
 function showLoop(loop) {
+  if (!loop) return;
   clearGraphFocus();
-  const nodes = cy.collection(loop.nodes.map(id => cy.getElementById(id)[0]).filter(Boolean)), loopEdges = cy.edges().filter(edge => nodes.contains(edge.source()) && nodes.contains(edge.target()));
+  const nodes = cy.collection(loop.nodes.map(id => cy.getElementById(id)[0]).filter(Boolean));
+  const loopEdges = cy.edges().filter(edge => nodes.contains(edge.source()) && nodes.contains(edge.target()));
   cy.elements().not(nodes.union(loopEdges).union(nodes.parents())).addClass("faded");
-  nodes.addClass("loop-node"); loopEdges.addClass("loop-edge");
-  cy.animate({ fit:{ eles:nodes,padding:90 },duration:450 });
+  nodes.addClass("loop-node");
+  loopEdges.addClass("loop-edge");
+  cy.animate({ fit:{ eles:nodes,padding:110 } },{ duration:500,easing:"ease-in-out-cubic" });
   el("nodeTitle").textContent = `${loop.type === "R" ? "Reinforcing" : "Balancing"} loop: ${loop.title}`;
   el("nodeSummary").textContent = loop.explanation;
   el("nodeDetails").innerHTML = `<section class="detail-section"><strong>Loop type</strong><p>${loop.type === "R" ? "Reinforcing: change tends to amplify further change." : "Balancing: change triggers effects that tend to counter it."}</p></section><section class="detail-section"><strong>Included factors</strong><p>${loop.nodes.map(id => FACTOR_INDEX.get(id)?.label || id).join(" → ")}</p></section><section class="detail-section gap"><strong>Caution</strong><p>This identifies a proposed feedback structure, not its strength, delay or net local effect.</p></section>`;
   el("whyTree").innerHTML = "";
 }
 
+function findFactor(searchText) {
+  const query = searchText.trim().toLowerCase();
+  if (!query) return null;
+  const factors = [...FACTOR_INDEX.values()];
+  return factors.find(item => item.label.toLowerCase() === query || item.id.toLowerCase() === query) || factors.find(item => item.label.toLowerCase().startsWith(query)) || factors.find(item => item.label.toLowerCase().includes(query));
+}
+
+function runFactorSearch() {
+  const factor = findFactor(el("factorSearch").value);
+  if (!factor) {
+    el("factorSearch").setCustomValidity("No matching factor was found.");
+    el("factorSearch").reportValidity();
+    return;
+  }
+
+  el("factorSearch").setCustomValidity("");
+  el("factorSearch").value = factor.label;
+  setActiveLayer();
+  selectFactor(cy.getElementById(factor.id),{ centre:true });
+}
+
+[...FACTOR_INDEX.values()].sort((a,b) => a.label.localeCompare(b.label)).forEach(factor => el("factorOptions").append(new Option(factor.label)));
 SYSTEM_LOOPS.forEach(loop => el("loopSelect").add(new Option(`${loop.type}: ${loop.title}`,loop.id)));
-el("loopSelect").addEventListener("change",() => showLoop(SYSTEM_LOOPS.find(loop => loop.id === el("loopSelect").value)));
+
+el("homeMap").addEventListener("click",() => showHome());
+el("factorSearch").addEventListener("change",runFactorSearch);
+el("factorSearch").addEventListener("keydown",event => { if (event.key === "Enter") { event.preventDefault(); runFactorSearch(); } });
+el("factorSearch").addEventListener("input",() => el("factorSearch").setCustomValidity(""));
+el("loopSelect").addEventListener("change",() => {
+  const feedbackButton = document.querySelector(".layer[data-layer='feedback']");
+  setActiveLayer(feedbackButton);
+  showLoop(SYSTEM_LOOPS.find(loop => loop.id === el("loopSelect").value));
+});
+
 document.querySelectorAll(".layer").forEach(button => button.addEventListener("click",() => {
-  document.querySelectorAll(".layer").forEach(item => item.classList.toggle("active",item === button));
+  setActiveLayer(button);
   const layer = button.dataset.layer;
-  if (layer === "all") { clearGraphFocus(); cy.fit(undefined,35); renderNodeDetails("determinants"); }
+  if (layer === "all") showWholeSystem();
   if (layer === "neighbourhood") {
     const selected = cy.$("node.selected-factor");
-    if (selected.length) selectFactor(selected); else { const node = cy.getElementById("workforce"); selectFactor(node); cy.animate({ fit:{ eles:node.closedNeighborhood(),padding:90 },duration:400 }); }
+    if (selected.length) {
+      selectFactor(selected,{ centre:true });
+    } else {
+      const node = cy.getElementById("workforce");
+      selectFactor(node);
+      cy.animate({ fit:{ eles:node.closedNeighborhood(),padding:110 } },{ duration:450,easing:"ease-in-out-cubic" });
+    }
   }
-  if (layer === "feedback") showLoop(SYSTEM_LOOPS[0]);
+  if (layer === "feedback") showLoop(SYSTEM_LOOPS.find(loop => loop.id === el("loopSelect").value) || SYSTEM_LOOPS[0]);
 }));
 
-el("fitMap").addEventListener("click",() => { clearGraphFocus(); cy.animate({ fit:{ eles:cy.elements(),padding:35 },duration:400 }); });
-el("resetLayout").addEventListener("click",() => { clearGraphFocus(); cy.layout({ name:"cose",animate:true,animationDuration:700,fit:true,padding:45,nodeRepulsion:125000,nodeOverlap:28,idealEdgeLength:115,edgeElasticity:85,nestingFactor:1.25,gravity:.28,numIter:1200 }).run(); });
+el("resetLayout").addEventListener("click",() => {
+  clearGraphFocus();
+  cy.layout({ name:"preset",positions:node => FACTOR_POSITIONS.get(node.id()) || node.position(),animate:true,animationDuration:700,fit:false }).run();
+  setTimeout(() => showHome(),720);
+});
 el("expandTree").addEventListener("click",() => el("whyTree").querySelectorAll("details").forEach(detail => detail.open = true));
 el("collapseTree").addEventListener("click",() => el("whyTree").querySelectorAll("details").forEach(detail => detail.open = false));
 
 // ============================================================
-// 05. CHOICE EXPLORER
+// 06. CHOICE EXPLORER
 // ============================================================
 Object.entries(INTERVENTIONS).forEach(([id,item]) => el("interventionSelect").add(new Option(item.label,id)));
 function renderIntervention() {
@@ -170,7 +290,7 @@ el("interventionSelect").addEventListener("change",renderIntervention);
 renderIntervention();
 
 // ============================================================
-// 06. EVIDENCE MAP
+// 07. EVIDENCE MAP
 // ============================================================
 el("evidenceDiagram").innerHTML = EVIDENCE_NODES.map(item => `<button class="measure-node ${item.status}" data-measure="${item.id}"><span class="measure-label">${item.label}</span><strong>${item.value}</strong><small>${item.note}</small></button>`).join("");
 document.querySelectorAll(".measure-node").forEach(button => button.addEventListener("click",() => {
@@ -179,7 +299,7 @@ document.querySelectorAll(".measure-node").forEach(button => button.addEventList
 }));
 
 // ============================================================
-// 07. SOURCES AND MODALS
+// 08. SOURCES AND MODALS
 // ============================================================
 el("sourceCatalogue").innerHTML = Object.entries(SOURCES).map(([id,source]) => `<article class="source-item" id="source-${id}"><h3>${id}. ${source.title}</h3><p><strong>${source.publisher}</strong> · ${source.type}</p><p>${source.note}</p><a href="${source.url}" target="_blank" rel="noopener">Open original source ↗</a></article>`).join("");
 el("aboutButton").addEventListener("click",() => el("modalBackdrop").hidden = false);
