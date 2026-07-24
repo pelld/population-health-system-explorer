@@ -1,15 +1,16 @@
 // ============================================================
-// 00. COMPACT A&E MANAGEMENT MAP
+// 00. COMPACT LANDSCAPE A&E MANAGEMENT MAP
 // ============================================================
 // Keep the existing content and relationships, but use the available canvas
-// efficiently. The map is expected to gain more factors over time, so this
-// layout is compact while maintaining a clear gap between every circle.
+// efficiently. The network is deliberately wider than it is tall so it fits a
+// desktop screen more naturally, while collision resolution keeps circles apart.
 
 (() => {
   const RING_SCALE = { 0:1, 1:.82, 2:.72 };
-  const FIT_PADDING = { home:20, whole:20, branch:30, loop:34, timescale:30 };
+  const LANDSCAPE_SCALE = { x:1.28, y:.72 };
+  const FIT_PADDING = { home:18, whole:18, branch:28, loop:32, timescale:28 };
   const COLLISION_GAP = { default:14, major:20 };
-  const COLLISION_ITERATIONS = 140;
+  const COLLISION_ITERATIONS = 160;
 
   // ============================================================
   // 01. MAKE LABELS FIT THEIR CIRCLES
@@ -38,6 +39,11 @@
     });
   });
 
+  // ============================================================
+  // 02. IMPROVE NODE AND RELATIONSHIP LABELS
+  // ============================================================
+  // Relationship labels only appear for a hovered, selected or loop edge. A
+  // solid white label card keeps the wording readable over the network lines.
   cy.style()
     .selector("node[ring=0]")
       .style({ "text-max-width":142 })
@@ -45,29 +51,52 @@
       .style({ "text-max-width":106,"line-height":1.02 })
     .selector("node[ring=2]")
       .style({ "text-max-width":78,"line-height":1.0,"font-weight":680 })
+    .selector("edge")
+      .style({
+        "color":"#294650",
+        "font-size":10.5,
+        "font-weight":750,
+        "text-background-color":"#ffffff",
+        "text-background-opacity":1,
+        "text-background-padding":"6px",
+        "text-background-shape":"round-rectangle",
+        "text-border-color":"#c8d6d4",
+        "text-border-width":1,
+        "text-border-opacity":1,
+        "text-rotation":"none",
+        "text-wrap":"wrap",
+        "text-max-width":180,
+        "text-margin-y":-13
+      })
+    .selector(".related-edge")
+      .style({ "z-index":45 })
+    .selector(".hover-edge")
+      .style({ "z-index":42 })
+    .selector(".loop-edge")
+      .style({ "z-index":48 })
     .update();
 
   // ============================================================
-  // 02. CREATE COMPACT ANCHOR POSITIONS
+  // 03. CREATE LANDSCAPE ANCHOR POSITIONS
   // ============================================================
-  function compactPosition(node) {
+  function landscapePosition(node) {
     if (node.ring === 0) return { ...MAP_CENTRE };
 
     const radians = (node.angle * Math.PI) / 180;
     const radius = node.radius * (RING_SCALE[node.ring] || 1);
 
     return {
-      x:MAP_CENTRE.x + (Math.cos(radians) * radius),
-      y:MAP_CENTRE.y + (Math.sin(radians) * radius)
+      x:MAP_CENTRE.x + (Math.cos(radians) * radius * LANDSCAPE_SCALE.x),
+      y:MAP_CENTRE.y + (Math.sin(radians) * radius * LANDSCAPE_SCALE.y)
     };
   }
 
   // ============================================================
-  // 03. SEPARATE OVERLAPPING CIRCLES
+  // 04. SEPARATE OVERLAPPING CIRCLES
   // ============================================================
-  // Nodes retain a gentle pull towards their intended radial position, while
-  // overlapping pairs push one another apart. This gives a stable, repeatable
-  // result rather than a force layout that changes every time the page opens.
+  // Nodes retain a gentle pull towards their intended landscape position,
+  // while overlapping pairs push one another apart. The result is stable and
+  // repeatable rather than changing each time the page opens.
   function resolveCollisions(anchors) {
     const nodes = AE_MAP_NODES.map((item,index) => ({
       id:item.id,
@@ -79,7 +108,7 @@
     }));
 
     const mobility = ring => ring === 0 ? 0 : ring === 1 ? .58 : 1;
-    const spring = ring => ring === 1 ? .035 : ring === 2 ? .018 : 0;
+    const spring = ring => ring === 1 ? .032 : ring === 2 ? .016 : 0;
 
     for (let iteration=0;iteration<COLLISION_ITERATIONS;iteration += 1) {
       for (let firstIndex=0;firstIndex<nodes.length;firstIndex += 1) {
@@ -135,7 +164,7 @@
     return new Map(nodes.map(node => [node.id,node.position]));
   }
 
-  const anchorPositions = new Map(AE_MAP_NODES.map(node => [node.id,compactPosition(node)]));
+  const anchorPositions = new Map(AE_MAP_NODES.map(node => [node.id,landscapePosition(node)]));
   const resolvedPositions = resolveCollisions(anchorPositions);
 
   nodePositions.clear();
@@ -157,7 +186,7 @@
   }
 
   // ============================================================
-  // 04. USE SMALLER FIT MARGINS
+  // 05. USE SMALLER FIT MARGINS
   // ============================================================
   showHome = function(duration=450) {
     clearFocus();
@@ -223,7 +252,7 @@
   };
 
   // ============================================================
-  // 05. APPLY THE REVISED STARTING VIEW
+  // 06. APPLY THE LANDSCAPE STARTING VIEW
   // ============================================================
   requestAnimationFrame(() => {
     cy.resize();
