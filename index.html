@@ -44,8 +44,21 @@
       <div class="system-layout">
         <section class="map-card">
           <div class="map-toolbar">
-            <div><button class="layer active" data-layer="all">Whole system</button><button class="layer" data-layer="neighbourhood">Selected neighbourhood</button><button class="layer" data-layer="feedback">Feedback loops</button><select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select><button id="fitMap" class="map-action">Fit map</button><button id="resetLayout" class="map-action">Rearrange</button></div>
-            <p>Drag the canvas · scroll to zoom · click a node or arrow</p>
+            <div class="map-toolbar-controls">
+              <div class="map-view-controls" role="group" aria-label="Map views">
+                <button id="homeMap" class="map-action home-action">Home</button>
+                <button class="layer" data-layer="all">Whole-system overview</button>
+                <button class="layer" data-layer="neighbourhood">Selected neighbourhood</button>
+                <button class="layer" data-layer="feedback">Feedback loops</button>
+              </div>
+
+              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. workforce"></label>
+              <datalist id="factorOptions"></datalist>
+
+              <select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select>
+              <button id="resetLayout" class="map-action">Reset layout</button>
+            </div>
+            <p>Drag to move · scroll to zoom · click a factor or relationship</p>
           </div>
           <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
             <div id="cy" class="cy-canvas"></div>
