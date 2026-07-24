@@ -11,31 +11,42 @@ document.querySelectorAll(".view-tabs button").forEach(button => button.addEvent
 // ============================================================
 // 01. SYSTEM CONNECTIONS
 // ============================================================
+el("networkCanvas").innerHTML = MAP_DOMAINS.map(domain => `
+  <section class="system-domain" data-domain="${domain.id}" data-detail-key="${domain.detailKey}" style="--x:${domain.x};--y:${domain.y};--domain-colour:${domain.colour}">
+    <button class="domain-heading" data-domain-select="${domain.id}">${domain.title}<small>${domain.subtitle}</small></button>
+    <div class="factor-list">${domain.factors.map(([id,title]) => `<button class="factor-node" data-factor="${id}" data-domain="${domain.id}">${title}</button>`).join("")}</div>
+  </section>`).join("");
+
 function drawConnections() {
-  const map = el("systemMap"), svg = el("systemLines"), mapBox = map.getBoundingClientRect();
-  svg.setAttribute("viewBox", `0 0 ${mapBox.width} ${mapBox.height}`);
+  const canvas = el("networkCanvas"), svg = el("systemLines"), canvasBox = canvas.getBoundingClientRect();
+  svg.setAttribute("viewBox", `0 0 ${canvasBox.width} ${canvasBox.height}`);
   svg.innerHTML = `<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#879b9c"></path></marker></defs>`;
-  SYSTEM_EDGES.forEach(([from,to,type]) => {
-    const start = map.querySelector(`[data-node="${from}"]`).getBoundingClientRect(), end = map.querySelector(`[data-node="${to}"]`).getBoundingClientRect();
-    const x1 = start.left - mapBox.left + start.width / 2, y1 = start.top - mapBox.top + start.height / 2, x2 = end.left - mapBox.left + end.width / 2, y2 = end.top - mapBox.top + end.height / 2;
-    const bend = Math.max(25, Math.abs(x2 - x1) * .36), path = document.createElementNS("http://www.w3.org/2000/svg","path");
+  const domainOnly = document.querySelector(".layer.active")?.dataset.layer === "domains";
+  if (domainOnly) return;
+  MAP_LINKS.forEach(([from,to,type]) => {
+    const startNode = canvas.querySelector(`[data-factor="${from}"]`), endNode = canvas.querySelector(`[data-factor="${to}"]`);
+    if (!startNode || !endNode) return;
+    const start = startNode.getBoundingClientRect(), end = endNode.getBoundingClientRect();
+    const x1 = start.left - canvasBox.left + start.width / 2, y1 = start.top - canvasBox.top + start.height / 2, x2 = end.left - canvasBox.left + end.width / 2, y2 = end.top - canvasBox.top + end.height / 2;
+    const bend = Math.max(18, Math.abs(x2 - x1) * .22), path = document.createElementNS("http://www.w3.org/2000/svg","path");
     path.setAttribute("d",`M ${x1} ${y1} C ${x1 + (x2 > x1 ? bend : -bend)} ${y1}, ${x2 - (x2 > x1 ? bend : -bend)} ${y2}, ${x2} ${y2}`);
-    path.setAttribute("marker-end","url(#arrow)"); path.classList.add(`${type}-line`); path.dataset.edgeType = type; svg.appendChild(path);
+    path.setAttribute("marker-end","url(#arrow)"); path.classList.add("factor-link",`${type}-line`); path.dataset.edgeType = type; svg.appendChild(path);
   });
 }
-window.addEventListener("resize", drawConnections); requestAnimationFrame(drawConnections);
+window.addEventListener("resize", drawConnections);
+requestAnimationFrame(drawConnections);
 
 // ============================================================
 // 02. NODE DETAILS AND LAYERS
 // ============================================================
-function selectNode(nodeId) {
-  const node = SYSTEM_NODES[nodeId];
-  document.querySelectorAll(".system-node").forEach(button => button.classList.toggle("selected", button.dataset.node === nodeId));
-  el("nodeTitle").textContent = node.title; el("nodeSummary").textContent = node.summary;
+function selectNode(detailKey, selectedTitle=null, domainTitle=null) {
+  const node = SYSTEM_NODES[detailKey];
+  el("nodeTitle").textContent = selectedTitle || node.title;
+  el("nodeSummary").textContent = selectedTitle ? `${selectedTitle} sits within ${domainTitle}. ${node.summary}` : node.summary;
   el("nodeDetails").innerHTML = [
     ["What influences it",node.influences,""],["What it changes",node.changes,""],["What we can measure",node.measures,""],["What remains uncertain",node.gaps,"gap"]
   ].map(([title,text,kind]) => `<section class="detail-section ${kind}"><strong>${title}</strong><p>${text}</p></section>`).join("");
-  el("whyTree").innerHTML = (DRIVER_TREES[nodeId] || []).map(branch => renderBranch(branch,0)).join("");
+  el("whyTree").innerHTML = (DRIVER_TREES[detailKey] || []).map(branch => renderBranch(branch,0)).join("");
 }
 
 const CLAIM_LABELS = {
@@ -62,12 +73,27 @@ function setTreeState(open) {
 }
 el("expandTree").addEventListener("click", () => setTreeState(true));
 el("collapseTree").addEventListener("click", () => setTreeState(false));
-document.querySelectorAll(".system-node").forEach(button => button.addEventListener("click", () => selectNode(button.dataset.node)));
+document.querySelectorAll(".domain-heading").forEach(button => button.addEventListener("click", () => {
+  const domain = MAP_DOMAINS.find(item => item.id === button.dataset.domainSelect);
+  document.querySelectorAll(".factor-node").forEach(node => node.classList.remove("selected"));
+  selectNode(domain.detailKey,domain.title,"the whole system");
+}));
+document.querySelectorAll(".factor-node").forEach(button => button.addEventListener("click", () => {
+  const domain = MAP_DOMAINS.find(item => item.id === button.dataset.domain), factor = domain.factors.find(([id]) => id === button.dataset.factor);
+  document.querySelectorAll(".factor-node").forEach(node => node.classList.toggle("selected",node === button));
+  selectNode(domain.detailKey,factor[1],domain.title);
+}));
 document.querySelectorAll(".layer").forEach(button => button.addEventListener("click", () => {
   document.querySelectorAll(".layer").forEach(item => item.classList.toggle("active", item === button));
   const layer = button.dataset.layer;
-  document.querySelectorAll(".system-node").forEach(node => node.classList.toggle("dimmed", layer === "pathway" ? !node.classList.contains("core") : layer === "feedback" ? !node.classList.contains("feedback") : false));
-  document.querySelectorAll("#systemLines path").forEach(path => path.style.opacity = layer === "all" || path.dataset.edgeType === (layer === "pathway" ? "core" : "feedback") ? ".75" : ".08");
+  document.querySelectorAll(".system-domain").forEach(domain => {
+    domain.classList.toggle("domain-only",layer === "domains");
+    domain.classList.toggle("feedback-focus",layer === "feedback");
+  });
+  requestAnimationFrame(() => {
+    drawConnections();
+    document.querySelectorAll("#systemLines path").forEach(path => path.style.opacity = layer === "feedback" && path.dataset.edgeType !== "feedback" ? ".04" : "");
+  });
 }));
 
 // ============================================================
@@ -76,7 +102,7 @@ document.querySelectorAll(".layer").forEach(button => button.addEventListener("c
 Object.entries(INTERVENTIONS).forEach(([id,item]) => el("interventionSelect").add(new Option(item.label,id)));
 function renderIntervention() {
   const item = INTERVENTIONS[el("interventionSelect").value];
-  document.querySelectorAll(".system-node").forEach(node => node.classList.toggle("highlighted", item.highlight.includes(node.dataset.node)));
+  document.querySelectorAll(".system-domain").forEach(domain => domain.classList.toggle("highlighted", item.highlight.includes(domain.dataset.detailKey)));
   el("interventionResult").innerHTML = `<div class="effect"><strong>Intended effect</strong>${item.intended}</div><div class="effect tradeoff"><strong>Possible trade-off</strong>${item.tradeoff}</div>`;
 }
 el("interventionSelect").addEventListener("change",renderIntervention); renderIntervention();
@@ -113,4 +139,4 @@ document.addEventListener("keydown", event => {
     el("sourcesBackdrop").hidden = true;
   }
 });
-selectNode("living");
+selectNode("determinants");
