@@ -35,7 +35,33 @@ function selectNode(nodeId) {
   el("nodeDetails").innerHTML = [
     ["What influences it",node.influences,""],["What it changes",node.changes,""],["What we can measure",node.measures,""],["What remains uncertain",node.gaps,"gap"]
   ].map(([title,text,kind]) => `<section class="detail-section ${kind}"><strong>${title}</strong><p>${text}</p></section>`).join("");
+  el("whyTree").innerHTML = (DRIVER_TREES[nodeId] || []).map(branch => renderBranch(branch,0)).join("");
 }
+
+const CLAIM_LABELS = {
+  published:"Published evidence",
+  official:"Official definition/data",
+  hypothesis:"Hypothesis to test",
+  gap:"Known gap"
+};
+
+function renderBranch(branch, depth) {
+  const sourceLinks = (branch.sources || []).map(sourceId => {
+    const source = SOURCES[sourceId];
+    return `<a class="source-link" href="${source.url}" target="_blank" rel="noopener" title="${source.title}">${sourceId}</a>`;
+  }).join("");
+  const children = (branch.children || []).map(child => renderBranch(child,depth + 1)).join("");
+  return `<details class="why-branch" ${depth === 0 ? "open" : ""}>
+    <summary>${branch.title}<span class="claim-badge ${branch.kind}">${CLAIM_LABELS[branch.kind]}</span></summary>
+    <div class="branch-body"><p>${branch.explanation}</p>${sourceLinks ? `<div class="source-links">${sourceLinks}</div>` : ""}${children}</div>
+  </details>`;
+}
+
+function setTreeState(open) {
+  el("whyTree").querySelectorAll("details").forEach(detail => detail.open = open);
+}
+el("expandTree").addEventListener("click", () => setTreeState(true));
+el("collapseTree").addEventListener("click", () => setTreeState(false));
 document.querySelectorAll(".system-node").forEach(button => button.addEventListener("click", () => selectNode(button.dataset.node)));
 document.querySelectorAll(".layer").forEach(button => button.addEventListener("click", () => {
   document.querySelectorAll(".layer").forEach(item => item.classList.toggle("active", item === button));
@@ -70,4 +96,21 @@ document.querySelectorAll(".measure-node").forEach(button => button.addEventList
 el("aboutButton").addEventListener("click", () => el("modalBackdrop").hidden = false);
 el("closeModal").addEventListener("click", () => el("modalBackdrop").hidden = true);
 el("modalBackdrop").addEventListener("click", event => { if (event.target === el("modalBackdrop")) el("modalBackdrop").hidden = true; });
+
+el("sourceCatalogue").innerHTML = Object.entries(SOURCES).map(([id,source]) => `
+  <article class="source-item" id="source-${id}">
+    <h3>${id}. ${source.title}</h3>
+    <p><strong>${source.publisher}</strong> · ${source.type}</p>
+    <p>${source.note}</p>
+    <a href="${source.url}" target="_blank" rel="noopener">Open original source ↗</a>
+  </article>`).join("");
+el("sourcesButton").addEventListener("click", () => el("sourcesBackdrop").hidden = false);
+el("closeSources").addEventListener("click", () => el("sourcesBackdrop").hidden = true);
+el("sourcesBackdrop").addEventListener("click", event => { if (event.target === el("sourcesBackdrop")) el("sourcesBackdrop").hidden = true; });
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    el("modalBackdrop").hidden = true;
+    el("sourcesBackdrop").hidden = true;
+  }
+});
 selectNode("living");
