@@ -356,3 +356,55 @@ DRIVER_TREES.capacity.push(
     D("Quality-adjusted capacity", "More contacts are not necessarily more effective care. Routine data rarely combines volume, complexity, continuity and outcome into one comparable measure.", "gap")
   ])
 );
+
+// ============================================================
+// 06. EXPANDED SYSTEM NETWORK
+// Domains organise the canvas; factors are the actual map nodes.
+// Each factor inherits the evidence tree of its closest domain
+// until a factor-specific evidence branch is added.
+// ============================================================
+const MAP_DOMAINS = [
+  { id:"determinants", title:"Wider determinants", subtitle:"Conditions in which people are born, live, learn and work", detailKey:"determinants", x:2, y:3, colour:"#4b7ea8", factors:[
+    ["income","Income and debt"],["housing","Housing quality"],["education","Education"],["employment","Employment"],["food","Food environment"],["transport","Transport"],["environment","Air and environment"],["crime","Crime and safety"],["discrimination","Discrimination"],["connection","Social connection"]
+  ]},
+  { id:"population", title:"Population and underlying need", subtitle:"Who lives here and the need already accumulated", detailKey:"risk", x:22, y:3, colour:"#6d8d75", factors:[
+    ["age","Age structure"],["genetics","Genetic susceptibility"],["ethnicity","Ethnicity"],["migration","Migration and turnover"],["disability","Disability"],["frailty","Frailty"],["multimorbidity","Multimorbidity"],["pregnancy","Pregnancy and early years"],["unpaid-care","Caring responsibilities"]
+  ]},
+  { id:"prevention", title:"Risk and prevention", subtitle:"Exposure, protection and action before disease or crisis", detailKey:"risk", x:42, y:3, colour:"#0b8b82", factors:[
+    ["behaviour","Health-related behaviour"],["commercial","Commercial influences"],["occupational","Occupational exposure"],["vaccination","Vaccination"],["screening","Screening"],["risk-finding","Risk identification"],["early-help","Early help"],["health-protection","Health protection"]
+  ]},
+  { id:"access", title:"Access and engagement", subtitle:"Whether people can, will and do reach appropriate support", detailKey:"behaviour", x:62, y:3, colour:"#7d68a2", factors:[
+    ["health-literacy","Health literacy"],["trust","Trust"],["language","Language"],["digital","Digital access"],["travel","Travel and distance"],["opening","Opening and convenience"],["continuity","Continuity"],["eligibility","Eligibility"],["waiting","Waiting"],["help-seeking","Help-seeking"]
+  ]},
+  { id:"primary", title:"Primary and preventive care", subtitle:"First contact, diagnosis and long-term management", detailKey:"management", x:82, y:3, colour:"#158f86", factors:[
+    ["general-practice","General practice"],["pharmacy","Community pharmacy"],["dentistry","Dentistry"],["optometry","Optometry"],["case-finding","Case-finding"],["diagnosis","Diagnosis"],["medicines","Medicines"],["monitoring","Monitoring"],["self-management","Self-management"],["referral","Referral"]
+  ]},
+  { id:"community", title:"Community and mental health", subtitle:"Care close to home, recovery and alternatives to hospital", detailKey:"recovery", x:2, y:49, colour:"#348f9f", factors:[
+    ["community-nursing","Community nursing"],["mental-health","Mental-health care"],["rehabilitation","Rehabilitation"],["therapy","Therapies"],["community-diagnostics","Community diagnostics"],["urgent-community","Urgent community response"],["palliative","Palliative care"],["social-prescribing","Social prescribing"],["care-coordination","Care coordination"]
+  ]},
+  { id:"acute", title:"Urgent and acute care", subtitle:"Response to crisis, hospital treatment and discharge", detailKey:"crisis", x:22, y:49, colour:"#b26a55", factors:[
+    ["111","NHS 111"],["ambulance","Ambulance"],["emergency","Emergency department"],["acute-beds","Acute beds"],["hospital-diagnostics","Hospital diagnostics"],["surgery","Surgery and procedures"],["critical-care","Critical care"],["inpatient-treatment","Inpatient treatment"],["discharge","Discharge"]
+  ]},
+  { id:"social", title:"Social care and daily support", subtitle:"Support for independence, safety and everyday life", detailKey:"recovery", x:42, y:49, colour:"#a87835", factors:[
+    ["home-care","Home care"],["residential","Residential care"],["reablement","Reablement"],["equipment","Equipment and adaptations"],["safeguarding","Safeguarding"],["carer-support","Support for carers"],["benefits-advice","Benefits advice"],["community-assets","Community assets"]
+  ]},
+  { id:"resources", title:"Capacity, resources and rules", subtitle:"What services can actually provide and why", detailKey:"capacity", x:62, y:49, colour:"#4f6f95", factors:[
+    ["workforce","Workforce numbers"],["qualifications","Skills and qualifications"],["retention","Retention and absence"],["funding","Funding"],["premises","Premises and beds"],["technology","Data and technology"],["diagnostic-capacity","Diagnostic capacity"],["commissioning","Commissioning"],["thresholds","Thresholds"],["productivity","Productive time"],["flow","System flow"]
+  ]},
+  { id:"outcomes", title:"Health, life and future need", subtitle:"What happens to people and how success changes the system", detailKey:"outcomes", x:82, y:49, colour:"#bc842b", factors:[
+    ["incidence","New disease"],["recorded-prevalence","Recorded prevalence"],["undiagnosed","Undiagnosed need"],["control","Disease control"],["crisis","Crisis"],["survival","Survival"],["mortality","Mortality"],["quality-life","Quality of life"],["independence","Independence"],["inequality","Health inequality"],["future-demand","Future need"],["confidence","Public confidence"]
+  ]}
+];
+
+const MAP_LINKS = [
+  ["income","housing","context"],["income","food","context"],["income","behaviour","context"],["housing","environment","context"],["education","health-literacy","context"],["employment","occupational","context"],["transport","travel","context"],["discrimination","trust","context"],["connection","mental-health","context"],
+  ["age","frailty","core"],["age","multimorbidity","core"],["genetics","risk-finding","core"],["migration","continuity","context"],["disability","eligibility","context"],["unpaid-care","carer-support","context"],
+  ["behaviour","incidence","core"],["commercial","behaviour","context"],["occupational","incidence","core"],["vaccination","incidence","core"],["screening","case-finding","core"],["risk-finding","case-finding","core"],["early-help","crisis","core"],
+  ["health-literacy","help-seeking","context"],["trust","help-seeking","context"],["digital","opening","context"],["travel","waiting","context"],["opening","general-practice","core"],["continuity","monitoring","core"],["eligibility","community-nursing","core"],["waiting","crisis","core"],
+  ["general-practice","diagnosis","core"],["pharmacy","medicines","core"],["case-finding","recorded-prevalence","core"],["diagnosis","monitoring","core"],["medicines","control","core"],["monitoring","control","core"],["self-management","control","core"],["referral","community-diagnostics","core"],["referral","hospital-diagnostics","core"],
+  ["community-nursing","independence","core"],["mental-health","quality-life","core"],["rehabilitation","independence","core"],["urgent-community","emergency","core"],["care-coordination","discharge","core"],
+  ["111","ambulance","core"],["ambulance","emergency","core"],["emergency","acute-beds","core"],["hospital-diagnostics","inpatient-treatment","core"],["surgery","survival","core"],["critical-care","survival","core"],["inpatient-treatment","discharge","core"],["discharge","reablement","core"],
+  ["home-care","independence","core"],["residential","quality-life","core"],["reablement","independence","core"],["equipment","independence","core"],["safeguarding","quality-life","core"],["community-assets","connection","feedback"],
+  ["workforce","general-practice","resource"],["workforce","community-nursing","resource"],["workforce","acute-beds","resource"],["workforce","home-care","resource"],["qualifications","workforce","resource"],["retention","workforce","resource"],["funding","workforce","resource"],["funding","premises","resource"],["premises","acute-beds","resource"],["technology","care-coordination","resource"],["diagnostic-capacity","diagnosis","resource"],["commissioning","eligibility","resource"],["thresholds","waiting","resource"],["productivity","opening","resource"],["flow","discharge","resource"],
+  ["control","crisis","core"],["crisis","survival","core"],["crisis","quality-life","core"],["survival","recorded-prevalence","feedback"],["survival","future-demand","feedback"],["independence","future-demand","feedback"],["future-demand","workforce","feedback"],["future-demand","funding","feedback"],["inequality","trust","feedback"],["confidence","help-seeking","feedback"]
+];
