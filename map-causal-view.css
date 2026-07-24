@@ -1,0 +1,32 @@
+/* ============================================================
+   00. DIRECT RELATIONSHIP PANEL
+   ============================================================ */
+.relationship-panel { margin-top:18px; padding:15px; border:1px solid #bfd3cf; border-radius:10px; background:#f7fbfa; }
+.relationship-panel-heading { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:12px; }
+.relationship-panel-heading h3 { margin:4px 0 0; color:var(--navy); font-size:19px; }
+.relationship-panel-heading>span { color:var(--muted); font-size:10px; font-weight:750; white-space:nowrap; }
+.relationship-columns { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.relationship-columns>div { min-width:0; }
+.relationship-columns h4 { margin:0 0 7px; color:var(--navy); font-size:10px; letter-spacing:.06em; text-transform:uppercase; }
+.relationship-row { display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%; margin:0 0 6px; padding:9px 10px; text-align:left; color:var(--ink); border:1px solid var(--line); border-radius:7px; background:white; }
+.relationship-row:hover { border-color:#88bdb7; background:#edf8f6; }
+.relationship-statement { min-width:0; font-size:10px; line-height:1.45; }
+.relationship-statement strong { color:var(--navy); }
+.relationship-statement em { color:#536970; font-style:normal; }
+.relationship-row .claim-badge { flex:0 0 auto; font-size:7px; }
+.empty-relationships { margin:0; padding:10px; color:var(--muted); border:1px dashed var(--line); border-radius:7px; background:white; font-size:10px; }
+
+/* ============================================================
+   01. MAP EMPHASIS
+   ============================================================ */
+.map-key { font-size:10px; }
+.map-key strong { font-size:11px; }
+
+@media(max-width:900px) {
+  .relationship-columns { grid-template-columns:1fr; }
+}
+
+@media(max-width:560px) {
+  .relationship-panel-heading { align-items:flex-start; flex-direction:column; gap:5px; }
+  .relationship-row { align-items:flex-start; flex-direction:column; }
+}
