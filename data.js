@@ -72,7 +72,10 @@ const SOURCES = {
   S11:{ title:"Patients registered at a GP practice", publisher:"NHS England", type:"Official definition/data", url:"https://digital.nhs.uk/data-and-information/publications/statistical/patients-registered-at-a-gp-practice", note:"Practice registration denominators by age and sex." },
   S12:{ title:"Fingertips public health profiles", publisher:"Office for Health Improvement and Disparities", type:"Official definition/data", url:"https://fingertips.phe.org.uk/", note:"Local indicators for population health, determinants, services and outcomes." },
   S13:{ title:"Fit for the Future: 10 Year Health Plan for England", publisher:"Department of Health and Social Care", type:"Policy source", url:"https://www.gov.uk/government/publications/10-year-health-plan-for-england-fit-for-the-future/fit-for-the-future-10-year-health-plan-for-england-executive-summary", note:"Current policy direction; a policy source is not evidence that an intervention works." },
-  S14:{ title:"Linked HES–ONS mortality data guide", publisher:"NHS England", type:"Official definition/data", url:"https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/linked-hes-ons-mortality-data/hes-and-ons-linked-mortality-data-guide", note:"Linkage of hospital records to registered deaths for outcome analysis." }
+  S14:{ title:"Linked HES–ONS mortality data guide", publisher:"NHS England", type:"Official definition/data", url:"https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/linked-hes-ons-mortality-data/hes-and-ons-linked-mortality-data-guide", note:"Linkage of hospital records to registered deaths for outcome analysis." },
+  S15:{ title:"NHS Health Check: preventable cardiovascular risk factors", publisher:"UK Health Security Agency", type:"Published evidence", url:"https://ukhsa.blog.gov.uk/2017/01/24/health-matters-combating-high-blood-pressure-with-the-nhs-health-check/", note:"Identifies blood pressure, smoking, cholesterol, obesity, diet, inactivity and alcohol as major modifiable risks." },
+  S16:{ title:"NHS vaccinations", publisher:"NHS", type:"Official guidance", url:"https://www.nhs.uk/vaccinations/", note:"National vaccination schedules and information about infections preventable through vaccination." },
+  S17:{ title:"NHS screening", publisher:"NHS", type:"Official guidance", url:"https://www.nhs.uk/tests-and-treatments/nhs-screening/", note:"National screening programmes intended to identify elevated risk or disease earlier." }
 };
 
 // ============================================================
@@ -153,14 +156,71 @@ const DRIVER_TREES = {
     D("Community, environment and safety", "Air, transport, green space, crime, discrimination and social connection alter exposure and opportunity.", "published", ["S1","S2","S3","S12"])
   ],
   risk:[
-    D("Underlying susceptibility", "Age, genetics, prior illness and life-course exposures affect risk.", "published", ["S12"]),
-    D("Behaviour and commercial exposure", "Smoking, alcohol, diet and activity occur within social and commercial environments.", "published", ["S1","S2"], [
-      D("Opportunity and affordability", "Safe space, time, money and local supply shape feasible choices.", "published", ["S1"]),
-      D("Marketing and product environment", "Availability, pricing and promotion can shape consumption.", "published", ["S2"])
+    D("Tobacco and nicotine exposure", "Smoking causes avoidable cardiovascular, respiratory and cancer risk; second-hand smoke also matters.", "published", ["S1","S12","S15"], [
+      D("What it can lead to", "Lung and other cancers, COPD, coronary heart disease, stroke, peripheral arterial disease, pregnancy complications and shorter life.", "published", ["S12"]),
+      D("Why exposure persists", "Nicotine dependence, stress, household smoking, price and availability, marketing, social norms and unequal access to effective cessation support.", "published", ["S1","S2"]),
+      D("What can prevent harm", "Prevent uptake; smoke-free environments; identify smoking status; offer behavioural support and effective pharmacotherapy; support repeated quit attempts.", "published", ["S12"]),
+      D("What can be measured", "Smoking prevalence and inequality, smoking status recording, quit attempts, treatment reach, four-week quits and longer-term abstinence.", "official", ["S12"])
     ]),
-    D("Preventive reach", "Vaccination, screening and risk-reducing treatment only help if offered, accessible and taken up.", "official", ["S5","S12"], [
-      D("Eligible people identified", "Records, coding and case-finding determine who receives an offer.", "hypothesis"),
-      D("Offer becomes uptake", "Trust, convenience, communication, cost and competing demands affect uptake.", "published", ["S2"])
+    D("High blood pressure", "Sustained raised blood pressure damages blood vessels and organs, often without symptoms.", "published", ["S5","S15"], [
+      D("What it can lead to", "Stroke, coronary heart disease, heart failure, chronic kidney disease, vascular dementia and premature death.", "published", ["S5"]),
+      D("What raises it", "Age and genetics; high dietary salt; excess weight; inactivity; alcohol; kidney disease; some medicines; stress and poor sleep.", "published", ["S15"]),
+      D("What can prevent harm", "Population salt reduction, healthy weight and activity, case-finding, accurate repeat measurement, treatment to target and adherence support.", "published", ["S5","S15"]),
+      D("What can be measured", "Diagnosed versus estimated hypertension, blood-pressure recording, control to target, treatment gap and variation by age, ethnicity and deprivation.", "official", ["S4","S5"])
+    ]),
+    D("Raised cholesterol and atherosclerotic risk", "LDL cholesterol contributes to plaque formation; total cardiovascular risk also reflects age, blood pressure, smoking, diabetes and other factors.", "published", ["S5","S15"], [
+      D("What it can lead to", "Coronary heart disease, myocardial infarction, ischaemic stroke and peripheral arterial disease.", "published", ["S5"]),
+      D("What raises it", "Genetics including familial hypercholesterolaemia, dietary pattern, excess weight, diabetes, kidney disease and some medicines.", "published", ["S5"]),
+      D("What can prevent harm", "Identify high-risk people and familial disease; improve diet; prescribe and optimise lipid-lowering treatment; support adherence.", "published", ["S5"]),
+      D("What can be measured", "Risk assessment, lipid testing, statin prescribing, treatment intensity and cholesterol response.", "official", ["S5"])
+    ]),
+    D("High blood glucose and diabetes risk", "Insulin resistance and impaired glucose regulation can progress to type 2 diabetes and vascular damage.", "published", ["S4","S5","S15"], [
+      D("What it can lead to", "Diabetes, coronary disease, stroke, kidney disease, neuropathy, sight loss, foot disease and infection.", "published", ["S4","S5"]),
+      D("What raises it", "Age, family history, ethnicity, previous gestational diabetes, excess central weight, inactivity, deprivation, poor diet and some medicines.", "published", ["S1","S15"]),
+      D("What can prevent harm", "Healthier food environment, physical activity, weight-management support, diabetes prevention programmes, early diagnosis and control of glucose, blood pressure and lipids.", "published", ["S5","S15"]),
+      D("What can be measured", "Non-diabetic hyperglycaemia, programme referral and completion, HbA1c control, care processes and complications.", "official", ["S4","S5"])
+    ]),
+    D("Diet, excess weight and physical inactivity", "These are overlapping risks shaped by environment and resources, not simply isolated personal choices.", "published", ["S1","S2","S15"], [
+      D("What they can lead to", "Diabetes, cardiovascular disease, some cancers, musculoskeletal problems, fatty liver disease, reduced mobility and poorer mental health.", "published", ["S12"]),
+      D("What drives them", "Food price and availability, marketing, working time, income, stress, sleep, medicines, disability, safe space, transport and access to facilities.", "published", ["S1","S2"]),
+      D("What can prevent harm", "Food and planning policy, active travel, accessible green space, school and workplace action, brief advice, exercise referral and proportionate weight-management support.", "published", ["S2"]),
+      D("What can be measured", "Diet and activity surveys, child and adult weight, local food environment, active travel, programme reach, retention and weight or functional change.", "official", ["S12"])
+    ]),
+    D("Alcohol and other substance use", "Risk varies by amount, pattern, duration, dependence and interaction with other vulnerabilities.", "published", ["S1","S2","S15"], [
+      D("What it can lead to", "Liver disease, cancers, hypertension, stroke, injury, poisoning, mental ill health, family harm and avoidable emergency use.", "published", ["S12"]),
+      D("Why harmful use develops", "Availability and price, marketing, trauma, stress, social norms, dependence, mental illness and limited access to support.", "published", ["S1","S2"]),
+      D("What can prevent harm", "Price and availability measures, licensing, marketing controls, early identification and brief advice, specialist treatment, harm reduction and mental-health support.", "published", ["S2"]),
+      D("What can be measured", "Consumption estimates, alcohol-related admissions and deaths, screening, treatment access, completion and unmet need—each with important under-recording.", "official", ["S10","S12"])
+    ]),
+    D("Infection exposure and incomplete immunity", "Contact with pathogens, susceptibility and insufficient immunity determine infection risk.", "published", ["S16"], [
+      D("What it can lead to", "Respiratory and other infections, sepsis, post-infectious illness, cancer from selected infections and exacerbation of existing conditions.", "published", ["S16"]),
+      D("What raises exposure or susceptibility", "Crowding, poor ventilation, occupational contact, age, pregnancy, immune suppression, chronic disease and low vaccine uptake.", "published", ["S1","S16"]),
+      D("What can prevent harm", "Vaccination, clean air and ventilation, infection control, rapid diagnosis and treatment, outreach and protection of high-risk groups.", "published", ["S16"]),
+      D("What can be measured", "Coverage by eligible group, timeliness, inequality in uptake, outbreaks, infection-related attendance, admission and mortality.", "official", ["S9","S10","S12","S16"])
+    ]),
+    D("Air pollution, damp, cold and occupational exposure", "Environmental exposure can accumulate at home, outdoors and at work.", "published", ["S1","S3"], [
+      D("What it can lead to", "Asthma and COPD exacerbation, cardiovascular disease, lung cancer, infection, injury and occupational disease.", "published", ["S1"]),
+      D("What creates exposure", "Traffic, combustion, housing quality, fuel poverty, ventilation, industrial processes, job design and enforcement.", "published", ["S1","S3"]),
+      D("What can prevent harm", "Clean-air and transport policy, warm and dry homes, ventilation, workplace substitution and controls, protective equipment and enforcement.", "published", ["S1","S2"]),
+      D("What can be measured", "Pollution concentrations, housing hazards, fuel poverty, occupation, respiratory activity and geographic inequalities; individual exposure remains difficult.", "gap", ["S3","S12"])
+    ]),
+    D("Poor mental health, trauma and social isolation", "Mental and physical health risks interact in both directions across the life course.", "published", ["S1","S2"], [
+      D("What it can lead to", "Self-harm, suicide, substance use, reduced self-care, chronic stress, crisis use, unemployment and worsening physical illness.", "published", ["S1"]),
+      D("What contributes", "Trauma, abuse, poverty, insecurity, discrimination, loneliness, caring burden, poor physical health and limited access to early support.", "published", ["S1","S2"]),
+      D("What can prevent harm", "Safe childhoods, financial and housing security, social connection, early help, workplace support, accessible psychological care and crisis prevention.", "published", ["S2"]),
+      D("What can be measured", "Wellbeing surveys, diagnosed prevalence, treatment access and waits, self-harm, suicide and social isolation—none fully measures unmet need.", "gap", ["S4","S12"])
+    ]),
+    D("Falls, frailty and medicine-related harm", "Loss of strength, balance or physiological reserve can combine with hazards and treatment effects.", "published", ["S12"], [
+      D("What it can lead to", "Fracture, head injury, fear of falling, immobility, admission, loss of independence and increased care needs.", "published", ["S12"]),
+      D("What raises risk", "Ageing, previous falls, muscle weakness, poor vision, unsafe housing, alcohol, hypotension and sedating or multiple medicines.", "hypothesis", ["S1"]),
+      D("What can prevent harm", "Strength and balance work, medication review, vision and foot care, osteoporosis treatment, home-hazard reduction and rapid recovery support.", "published", ["S12"]),
+      D("What can be measured", "Risk assessment, programme reach, fractures, ambulance call-outs, admissions, medicines and changes in mobility or independence.", "official", ["S9","S10","S12"])
+    ]),
+    D("Screening and preventive treatment not reaching people", "Effective prevention fails when eligibility, invitation, access, uptake, follow-up or treatment breaks down.", "official", ["S5","S16","S17"], [
+      D("Eligible people not identified", "Incomplete demographic or clinical records and fragmented data can prevent a correct offer.", "hypothesis"),
+      D("Offer does not become uptake", "Trust, language, convenience, transport, digital exclusion, fear, work and caring commitments affect uptake.", "published", ["S2"]),
+      D("Positive result does not become action", "Diagnostic capacity, hand-offs, waits, communication and personal circumstances can interrupt follow-up.", "hypothesis"),
+      D("What can be measured", "Eligibility, offer, uptake, follow-up and outcome at each stage, stratified to show where inequalities arise.", "official", ["S5","S12","S16","S17"])
     ])
   ],
   undiagnosed:[
