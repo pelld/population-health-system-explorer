@@ -299,3 +299,60 @@ const DRIVER_TREES = {
     D("Patient-defined goals", "Routine datasets incompletely capture whether care achieved what mattered to the person.", "gap")
   ]
 };
+
+// ============================================================
+// 05. WHOLE-SYSTEM EMPHASIS
+// Keep this explorer at system-driver level. The separate
+// intervention explorer holds the detailed risk-factor catalogue.
+// ============================================================
+DRIVER_TREES.risk = [
+  D("Underlying susceptibility", "Age, genetics, prior illness and accumulated life-course exposure affect the likelihood of disease.", "published", ["S12"], [
+    D("Population structure", "Two places can have different expected need because their age, ethnicity and population histories differ.", "official", ["S11","S12"]),
+    D("Existing illness and multimorbidity", "One condition, its treatment and reduced physiological reserve can alter the risk and consequences of another.", "published", ["S4","S12"])
+  ]),
+  D("Exposure to preventable risk", "Behavioural, environmental, occupational, infectious and commercial exposures can increase or reduce risk.", "published", ["S1","S2"], [
+    D("Wider conditions shape exposure", "Income, housing, education, work, transport and neighbourhood conditions constrain the choices and exposures available to people.", "published", ["S1","S2","S3"]),
+    D("Commercial and physical environment", "Price, availability, marketing, pollution and the built environment influence risk across whole populations.", "published", ["S1","S2"]),
+    D("Individual behaviour is not an isolated cause", "Behaviour reflects opportunity, resources, habit, dependence, stress, knowledge and social context.", "published", ["S1","S2"])
+  ]),
+  D("Reach of prevention", "Prevention depends on whether effective action exists and reaches the right people early enough.", "official", ["S5","S12","S16","S17"], [
+    D("Eligible population identified", "Records, coding, risk stratification and case-finding determine who is offered support.", "hypothesis"),
+    D("Offer is accessible and acceptable", "Trust, communication, cost, convenience and competing demands affect uptake.", "published", ["S2"]),
+    D("Intervention is completed and effective", "Quality, intensity, adherence, follow-up and the surrounding environment affect whether an offer changes risk.", "hypothesis"),
+    D("Prevented events remain unseen", "Routine data records events that occurred, not the counterfactual events that prevention avoided.", "gap")
+  ])
+];
+
+DRIVER_TREES.capacity.push(
+  D("Capacity by part of the pathway", "A single total hides different types of capacity that are not freely interchangeable.", "hypothesis", [], [
+    D("Primary care capacity", "Appointments depend on clinical and administrative workforce, premises, consultation length, demand management and continuity.", "official", ["S6","S11"], [
+      D("Same-day versus planned care", "Urgent workload can displace prevention, diagnosis, reviews and continuity if total capacity is fixed.", "hypothesis"),
+      D("Practice list and case mix", "List size alone does not represent workload; age, morbidity, turnover, language and deprivation can alter the work required.", "gap", ["S3","S4","S11"])
+    ]),
+    D("Community and mental-health capacity", "Caseloads, visit time, travel, eligibility, specialist skills and interfaces determine how much support can be delivered.", "hypothesis", ["S6"], [
+      D("Geographic delivery", "Travel between homes and dispersed sites consumes capacity that activity counts may not show.", "hypothesis"),
+      D("Caseload intensity", "The same number of people can require very different staff time, frequency and skill.", "gap")
+    ]),
+    D("Acute capacity", "Beds are only usable when staffed and supported by diagnostics, theatres, pharmacy, therapies and discharge pathways.", "official", ["S6","S9","S10"], [
+      D("Staffed rather than physical beds", "A physical bed without the required staff and support services is not usable capacity.", "official", ["S6"]),
+      D("Occupancy and resilience", "Running close to full occupancy leaves less ability to absorb variation, infection outbreaks or peaks in demand.", "hypothesis"),
+      D("Diagnostic and treatment bottlenecks", "A bed may remain occupied because the next test, procedure, review or destination is unavailable.", "hypothesis")
+    ]),
+    D("Social-care and unpaid-care capacity", "Provider supply, eligibility, affordability, workforce and family circumstances affect support outside healthcare.", "published", ["S7","S8"], [
+      D("Market sustainability", "Fees, wage competition, travel costs, provider exits and local demand affect whether commissioned care can actually be supplied.", "published", ["S7","S8"]),
+      D("Unpaid carers", "Family care adds major capacity but is uneven, often invisible and can create health and financial consequences for carers.", "gap")
+    ])
+  ]),
+  D("Commissioning and service design", "Resources become usable services through contracts, pathways, eligibility rules and organisational choices.", "hypothesis", [], [
+    D("Allocation between services", "Funding one part of the pathway has opportunity costs elsewhere, even when organisational budgets are separate.", "hypothesis"),
+    D("Contract incentives and specifications", "Payment rules and performance measures can encourage activity, access, continuity, prevention or cost control in different combinations.", "hypothesis"),
+    D("Eligibility and thresholds", "Narrow criteria protect scarce capacity but transfer work, waiting or unmet need to patients, carers and other services.", "hypothesis"),
+    D("Fragmentation and hand-offs", "Separate organisations, records and criteria can create duplicated assessment, delay and failed transitions.", "hypothesis")
+  ]),
+  D("Capacity visible in data", "Workforce, beds, appointments and activity each describe only part of usable capacity.", "gap", ["S6","S8","S9","S10"], [
+    D("Headcount versus available time", "Headcount differs from full-time equivalent, rostered time, present time and patient-facing time.", "official", ["S6","S8"]),
+    D("Activity versus capacity", "High activity may reflect high capacity, high need, short contacts, repeated work or pressure; it does not identify which on its own.", "gap"),
+    D("Waiting versus unmet need", "Waiting lists contain people who reached a service; people who were not referred, declined, excluded or gave up may be absent.", "gap"),
+    D("Quality-adjusted capacity", "More contacts are not necessarily more effective care. Routine data rarely combines volume, complexity, continuity and outcome into one comparable measure.", "gap")
+  ])
+);
