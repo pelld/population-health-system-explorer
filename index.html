@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore how population need, prevention, treatment, acute care and longer lives interact across the health system.">
-  <title>Population Health — The Whole System</title>
+  <meta name="description" content="Explore why A&E attendance is high or rising, what managers can influence and how quickly change might appear.">
+  <title>A&E Attendance — Management Systems Map</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="map-readability.css">
-  <link rel="stylesheet" href="map-causal-view.css">
+  <link rel="stylesheet" href="ae-manager-map.css">
 </head>
 <body>
   <!-- ============================================================
@@ -15,9 +14,9 @@
        ============================================================ -->
   <header class="masthead">
     <div>
-      <p class="eyebrow">Interactive systems map</p>
-      <h1>Population health: the whole system</h1>
-      <p class="strapline">Explore what shapes health, what treatment changes, and why apparently simple choices have consequences elsewhere.</p>
+      <p class="eyebrow">Population health system explorer</p>
+      <h1>Why is A&amp;E attendance high?</h1>
+      <p class="strapline">A management map for moving from pressure to possible explanations, local evidence and actions over different timescales.</p>
     </div>
     <div class="header-actions">
       <button id="sourcesButton" class="ghost-button">Sources &amp; method</button>
@@ -29,18 +28,22 @@
        01. VIEW SWITCHER
        ============================================================ -->
   <nav class="view-tabs" aria-label="Explorer views">
-    <button class="active" data-view="system"><span>1</span><strong>How the system might work</strong><small>Relationships, feedback and uncertainty</small></button>
-    <button data-view="evidence"><span>2</span><strong>What we can measure</strong><small>Observed values, proxies and gaps</small></button>
+    <button class="active" data-view="system"><span>1</span><strong>What might be driving attendance?</strong><small>Drivers, levers, timescales and ownership</small></button>
+    <button data-view="evidence"><span>2</span><strong>What should we test locally?</strong><small>Measures that distinguish one explanation from another</small></button>
   </nav>
 
   <main>
     <!-- ============================================================
-         02. CONCEPTUAL SYSTEM MAP
+         02. A&E MANAGEMENT SYSTEM MAP
          ============================================================ -->
     <section id="systemView" class="view active">
       <div class="view-intro">
-        <div><p class="eyebrow teal">Conceptual map</p><h2>Health is not a one-way pathway</h2><p>Treatment can prevent harm and extend life. That success can also increase the number of people living longer with conditions and needing future support.</p></div>
-        <div class="legend"><span><i class="core"></i>Health pathway</span><span><i class="context"></i>Wider influence</span><span><i class="feedback"></i>Feedback</span><span><i class="unknown"></i>Important unknown</span></div>
+        <div>
+          <p class="eyebrow teal">Management question</p>
+          <h2>“There are too many people at A&amp;E. What do we do?”</h2>
+          <p>Start by asking why attendance is high. Some drivers are comparatively quick operational levers; others require service redesign, partnership action or long-term prevention. High attendance is not automatically inappropriate attendance.</p>
+        </div>
+        <div class="prototype-warning"><strong>Decision-support prototype</strong><span>Relationships and actions must be tested against local evidence</span></div>
       </div>
 
       <div class="system-layout">
@@ -48,86 +51,98 @@
           <div class="map-toolbar">
             <div class="map-toolbar-controls">
               <div class="map-view-controls" role="group" aria-label="Map views">
-                <button id="homeMap" class="map-action home-action">Home</button>
-                <button class="layer" data-layer="all">Whole-system overview</button>
-                <button class="layer" data-layer="neighbourhood">Selected neighbourhood</button>
-                <button class="layer" data-layer="feedback">Feedback loops</button>
+                <button id="homeMap" class="map-action home-action layer">Start here</button>
+                <button id="wholePicture" class="map-action layer">Whole picture</button>
+                <button id="selectedBranch" class="map-action layer">Selected branch</button>
+                <button id="feedbackButton" class="map-action layer">Feedback loop</button>
               </div>
 
-              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. multimorbidity"></label>
+              <span class="toolbar-divider" aria-hidden="true"></span>
+
+              <div class="timescale-controls" role="group" aria-label="Management timescale">
+                <button class="map-action timescale-button" data-timescale="quick">Quick levers</button>
+                <button class="map-action timescale-button" data-timescale="medium">Medium term</button>
+                <button class="map-action timescale-button" data-timescale="long">Long term</button>
+                <button class="map-action timescale-button" data-timescale="diagnostic">Understand first</button>
+              </div>
+
+              <label class="map-search" for="factorSearch"><span>Find a factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. same-day primary care"></label>
               <datalist id="factorOptions"></datalist>
 
               <select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select>
-              <button id="resetLayout" class="map-action">Reset layout</button>
+              <button id="resetLayout" class="map-action">Reset view</button>
             </div>
-            <p>Drag to move · scroll to zoom · hover or click a factor or relationship</p>
+            <p>Drag · scroll to zoom · hover or click a circle or relationship</p>
           </div>
-          <div id="systemMap" class="system-map" aria-label="Interactive population health systems map">
+
+          <div id="systemMap" class="system-map" aria-label="Interactive map of drivers of A&E attendance">
             <div id="cy" class="cy-canvas"></div>
-            <div class="map-key"><strong>Relationship</strong><span><i class="positive"></i>Increases / enables</span><span><i class="negative"></i>Reduces / constrains</span><span><i class="uncertain"></i>Direction uncertain</span></div>
+            <div id="mapKey" class="map-key"></div>
           </div>
         </section>
 
         <aside id="nodePanel" class="detail-panel">
-          <p class="eyebrow teal">Selected part of the system</p>
-          <h2 id="nodeTitle">Start anywhere</h2>
-          <p id="nodeSummary">Select a node to explore what influences it, what it changes, what can be measured and where the important gaps remain.</p>
-          <div id="nodeDetails" class="detail-sections"></div>
-          <div class="tree-heading">
-            <div><p class="eyebrow teal">Keep asking why</p><h3>Drivers and their drivers</h3></div>
-            <div><button id="expandTree" class="small-button">Expand all</button><button id="collapseTree" class="small-button">Collapse</button></div>
-          </div>
-          <p class="tree-help">Open each row to follow the explanation. Badges distinguish evidence from interpretation; source numbers open the catalogue.</p>
-          <div id="whyTree" class="why-tree"></div>
+          <p class="eyebrow teal">Management interpretation</p>
+          <h2 id="nodeTitle">High or rising A&amp;E attendance</h2>
+          <p id="nodeSummary">Select a circle to see why it may matter, what managers could do, who holds the lever, the likely timescale and what should be measured locally.</p>
+          <div id="nodeDetails"></div>
+          <div id="whyTree" hidden></div>
         </aside>
       </div>
-
-      <section class="choice-explorer">
-        <div><p class="eyebrow teal">Choice explorer</p><h2>What might a decision change?</h2><p>This highlights likely directions and trade-offs. It is not a forecast.</p></div>
-        <label>Choose an intervention<select id="interventionSelect"></select></label>
-        <div id="interventionResult" class="intervention-result"></div>
-      </section>
     </section>
 
     <!-- ============================================================
-         03. MEASUREMENT MAP
+         03. LOCAL ANALYTICAL QUESTIONS
          ============================================================ -->
     <section id="evidenceView" class="view">
       <div class="view-intro">
-        <div><p class="eyebrow teal">Evidence map</p><h2>What can we actually observe?</h2><p>The same system, stripped back to measurable quantities. Missing information is shown rather than hidden.</p></div>
-        <div class="prototype-warning"><strong>Prototype values</strong><span>Illustrative only — not attributed to a real ICB</span></div>
+        <div>
+          <p class="eyebrow teal">Local diagnosis</p>
+          <h2>Which explanation matters here?</h2>
+          <p>The same headline trend can have different causes in different places, cohorts and times of day. These questions help distinguish where action is most plausible.</p>
+        </div>
+        <div class="prototype-warning"><strong>Do not jump to intervention</strong><span>Test the causal explanation before claiming an attendance reduction</span></div>
       </div>
 
       <div class="evidence-layout">
         <section class="evidence-flow">
-          <div class="evidence-heading"><div><p class="eyebrow">Illustrative system</p><h2>From population need to longer-term outcomes</h2></div><label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label></div>
+          <div class="evidence-heading">
+            <div><p class="eyebrow">Illustrative analytical framework</p><h2>Eight explanations to test</h2></div>
+            <label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label>
+          </div>
           <div id="evidenceDiagram" class="evidence-diagram"></div>
         </section>
         <aside class="evidence-side">
-          <div class="status-key"><strong>Evidence status</strong><span><i class="measured"></i>Directly measured</span><span><i class="proxy"></i>Proxy or partial measure</span><span><i class="gap"></i>Important gap</span></div>
-          <article id="evidencePanel"><p class="eyebrow teal">Select a measure</p><h2>Why the gaps matter</h2><p>A measured value does not necessarily reveal its cause. Select any measure to see how it should—and should not—be interpreted.</p></article>
+          <div class="status-key"><strong>How to use this view</strong><span><i class="measured"></i>Test with local data</span><span><i class="proxy"></i>Check data and context first</span></div>
+          <article id="evidencePanel">
+            <p class="eyebrow teal">Select an explanation</p>
+            <h2>Start with segmentation</h2>
+            <p>Break the trend down by population, presentation, arrival route, referral source, time, place, repeat use and outcome before deciding what to change.</p>
+          </article>
         </aside>
       </div>
     </section>
   </main>
 
   <!-- ============================================================
-       04. ABOUT
+       04. ABOUT AND SOURCES
        ============================================================ -->
   <div id="modalBackdrop" class="modal-backdrop" hidden>
     <section class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
       <button id="closeModal" class="close" aria-label="Close">×</button>
-      <p class="eyebrow teal">About</p><h2 id="aboutTitle">A map for thinking, not a causal model</h2>
-      <p>The conceptual map brings together plausible relationships across population health, healthcare and wider determinants. Arrows mean “may influence”, unless a relationship is explicitly described as arithmetic.</p>
-      <p>The evidence view separates what is directly measured, what is represented by a proxy and what remains unknown. Future versions can connect verified public data for selected ICBs.</p>
+      <p class="eyebrow teal">About</p>
+      <h2 id="aboutTitle">A map for management questions, not a prediction</h2>
+      <p>The map begins with a pressure—high or rising A&amp;E attendance—and separates possible explanations. It is designed to help managers move from a headline measure to locally testable hypotheses and proportionate actions.</p>
+      <p>Timescale describes how quickly a lever might plausibly be influenced, not how large its effect will be. The map does not label attendance as inappropriate and does not prove that any intervention will reduce it.</p>
     </section>
   </div>
 
   <div id="sourcesBackdrop" class="modal-backdrop" hidden>
     <section class="modal source-modal" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle">
       <button id="closeSources" class="close" aria-label="Close">×</button>
-      <p class="eyebrow teal">Transparency</p><h2 id="sourcesTitle">Sources, evidence and interpretation</h2>
-      <p>No arrow should imply more certainty than the evidence supports. Each driver is labelled as published evidence, an official definition, a plausible mechanism to test, or a known gap.</p>
+      <p class="eyebrow teal">Transparency</p>
+      <h2 id="sourcesTitle">Sources, evidence and interpretation</h2>
+      <p>Official data sources support measurement and definitions. Some causal links are published evidence; others are explicit hypotheses that should be tested locally rather than treated as established fact.</p>
       <div class="evidence-legend">
         <span class="claim-badge published">Published evidence</span>
         <span class="claim-badge official">Official definition/data</span>
@@ -140,8 +155,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
-  <script src="causal-expansion.js"></script>
+  <script src="ae-manager-data.js"></script>
   <script src="app.js"></script>
-  <script src="map-causal-view.js"></script>
 </body>
 </html>
