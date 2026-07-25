@@ -20,6 +20,7 @@ PROVIDER_CSV_URL = "https://files.digital.nhs.uk/45/16564D/AE_2425_ECDS_pla_outp
 PUBLICATION_URL = "https://digital.nhs.uk/data-and-information/publications/statistical/hospital-accident--emergency-activity/2024-25"
 DOWNLOAD_PATH = Path(".public-data-downloads/AE_2425_ECDS_pla_output.csv")
 OUTPUT_PATH = Path("public-data/ecds-2024-25-provider-routes.json")
+CSV_ENCODING = "cp1252"
 
 SOURCE_TOTAL = "Attendance Source Total"
 SELF_MEASURES = (
@@ -155,7 +156,17 @@ def main() -> None:
         "MEASURE",
         "MEASURE_VALUE",
     ]
-    frame = pd.read_csv(DOWNLOAD_PATH,usecols=use_columns,low_memory=False,dtype=str)
+
+    # The published provider CSV is Windows-1252 rather than UTF-8. Explicitly
+    # setting the encoding preserves organisation names containing accented or
+    # typographic characters and prevents UnicodeDecodeError in GitHub Actions.
+    frame = pd.read_csv(
+        DOWNLOAD_PATH,
+        usecols=use_columns,
+        low_memory=False,
+        dtype=str,
+        encoding=CSV_ENCODING,
+    )
     frame.columns = frame.columns.str.strip()
     for column in ["REPORTING_PERIOD","GEOGRAPHY_LEVEL","ORG_CODE","ORG_DESCRIPTION","MEASURE_TYPE","MEASURE"]:
         frame[column] = frame[column].fillna("").astype(str).str.strip()
