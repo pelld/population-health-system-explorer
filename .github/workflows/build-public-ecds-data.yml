@@ -11,14 +11,28 @@ on:
 permissions:
   contents: write
 
+# ============================================================
+# 00. PREVENT OVERLAPPING DATA BUILDS
+# ============================================================
+# Only the newest run is useful. Cancelling older runs also prevents two jobs
+# trying to commit generated data to main at the same time.
+concurrency:
+  group: build-public-ecds-provider-routes
+  cancel-in-progress: true
+
 jobs:
   build-provider-routes:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
+      # ========================================================
+      # 01. PREPARE THE PUBLIC DATA BUILD
+      # ========================================================
       - name: 01. Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: 02. Set up Python
         uses: actions/setup-python@v5
@@ -28,17 +42,25 @@ jobs:
       - name: 03. Install dependencies
         run: python -m pip install --upgrade pandas requests
 
+      # ========================================================
+      # 02. GENERATE THE SMALL PUBLIC PROVIDER FILE
+      # ========================================================
       - name: 04. Build provider route comparison data
         run: python scripts/build_provider_routes.py
 
+      # ========================================================
+      # 03. COMMIT WITHOUT LOSING NEWER MAIN-BRANCH CHANGES
+      # ========================================================
       - name: 05. Commit generated public data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public-data/ecds-2024-25-provider-routes.json
+
           if git diff --cached --quiet; then
             echo "No provider-data changes to commit."
           else
             git commit -m "Generate public ECDS provider route data"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
