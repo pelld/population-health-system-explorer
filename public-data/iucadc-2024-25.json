@@ -1,0 +1,3320 @@
+{
+  "publication": "Integrated Urgent Care Aggregate Data Collection including NHS 111",
+  "period": "2024-25",
+  "geography": "IUC contract area",
+  "source_url": "https://www.england.nhs.uk/statistics/statistical-work-areas/iucadc-new-from-april-2021/integrated-urgent-care-aggregate-data-collection-iucadc-including-nhs111-statistics-apr-2024-mar-2025/",
+  "source_file_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/08/IUCADC-Apr23-to-Mar25-Revised-1.csv",
+  "flowchart_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/08/IUC-flow-chart-2024-25-Revised-Aug-2025-1.pdf",
+  "specification_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/05/IUC-ADC-Specification-2023-24-v1.0.pdf",
+  "contract_area_count": 26,
+  "england": {
+    "code": "ENG",
+    "name": "England",
+    "months": 12,
+    "lead_suppliers": [],
+    "metrics": {
+      "nhs111-contacts": {
+        "label": "Calls received by NHS 111",
+        "count": 19968400,
+        "display": "count",
+        "denominator": null,
+        "percent": null,
+        "indicator": "A01"
+      },
+      "nhs111-triage": {
+        "label": "Calls assessed by a clinician or Clinical Adviser",
+        "count": 7835400,
+        "display": "percent",
+        "denominator": 16464607,
+        "denominator_label": "triaged calls",
+        "percent": 45.0,
+        "indicator": "D01 / C01",
+        "published_adjusted_percent": true
+      },
+      "nhs111-ae-disposition": {
+        "label": "Final disposition to attend a Type 1 or 2 emergency department",
+        "count": 1213100,
+        "display": "percent",
+        "denominator": 17593300,
+        "denominator_label": "final dispositions",
+        "percent": 7.0,
+        "indicator": "E04 / E01",
+        "published_adjusted_percent": true
+      },
+      "nhs111-direct-booking": {
+        "label": "Calls resulting in an appointment booked before the call ended",
+        "count": 3342100,
+        "display": "percent",
+        "denominator": 17593300,
+        "denominator_label": "final dispositions",
+        "percent": 19.0,
+        "indicator": "G01 / E01",
+        "published_adjusted_percent": true
+      }
+    },
+    "calls": {
+      "received": 19968400,
+      "answered": 18768100,
+      "answered_percent": 93.99,
+      "abandoned": 658000,
+      "abandoned_percent": 3.0,
+      "triaged": 16464607,
+      "final_dispositions": 17593300
+    },
+    "dispositions": {
+      "ambulance": {
+        "label": "Ambulance disposition",
+        "count": 2097900,
+        "percent": 12.0,
+        "indicator": "E02",
+        "published_adjusted_percent": true
+      },
+      "emergency_department": {
+        "label": "Attend Type 1 or 2 ED",
+        "count": 1213100,
+        "percent": 7.0,
+        "indicator": "E04",
+        "published_adjusted_percent": true
+      },
+      "primary_care": {
+        "label": "Contact or speak to primary care",
+        "count": 7661600,
+        "percent": 44.0,
+        "indicator": "E07 + E08 + E10 + E11",
+        "published_adjusted_percent": true
+      },
+      "dental": {
+        "label": "Contact or speak to dental practitioner",
+        "count": 1009600,
+        "percent": 6.0,
+        "indicator": "E12",
+        "published_adjusted_percent": true
+      },
+      "self_care": {
+        "label": "Self-care",
+        "count": 1484800,
+        "percent": 8.0,
+        "indicator": "E16",
+        "published_adjusted_percent": true
+      }
+    },
+    "bookings": {
+      "total": 3342100,
+      "percent_of_dispositions": 19.0,
+      "breakdown": {
+        "gp": {
+          "label": "GP practice or GP access hub",
+          "count": 1300000,
+          "indicator": "G03"
+        },
+        "iuc": {
+          "label": "IUC Treatment Service",
+          "count": 818000,
+          "indicator": "G05"
+        },
+        "utc": {
+          "label": "Urgent Treatment Centre",
+          "count": 466600,
+          "indicator": "G07"
+        },
+        "ed": {
+          "label": "Type 1 or 2 ED booked time slot",
+          "count": 345900,
+          "indicator": "G09"
+        },
+        "sdec": {
+          "label": "Same Day Emergency Care",
+          "count": 1277,
+          "indicator": "G11"
+        },
+        "other": {
+          "label": "Other appointment",
+          "count": 296791,
+          "indicator": "G14"
+        }
+      },
+      "published_adjusted_percent": true
+    },
+    "national_method": "Revised NHS England 2024-25 flowchart; percentages adjusted for missing numerator/denominator months where stated."
+  },
+  "areas": [
+    {
+      "code": "111AL6",
+      "name": "BaNES, Swindon & Wiltshire (Medvivo-PPG)",
+      "months": 12,
+      "lead_suppliers": [
+        "MEDVIVO"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 378916,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 185142,
+          "display": "percent",
+          "denominator": 315578,
+          "denominator_label": "triaged calls",
+          "percent": 58.67,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 9289,
+          "display": "percent",
+          "denominator": 315578,
+          "denominator_label": "final dispositions",
+          "percent": 2.94,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 38062,
+          "display": "percent",
+          "denominator": 315578,
+          "denominator_label": "final dispositions",
+          "percent": 12.06,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 378916,
+        "answered": 354415,
+        "answered_percent": 93.53,
+        "abandoned": 13938,
+        "abandoned_percent": 3.68,
+        "triaged": 315578,
+        "final_dispositions": 315578
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 33905,
+          "percent": 10.74,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 9289,
+          "percent": 2.94,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 123399,
+          "percent": 39.1,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 24638,
+          "percent": 7.81,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 58384,
+          "percent": 18.5,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 38062,
+        "percent_of_dispositions": 12.06,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 16420,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 12117,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 1341,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 389,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 7795,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AI5",
+      "name": "Bristol, North Somerset & South Gloucestershire (BRISDOC)",
+      "months": 12,
+      "lead_suppliers": [
+        "BRISDOC HEALTHCARE SERVICES LTD"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 375629,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 179467,
+          "display": "percent",
+          "denominator": 329730,
+          "denominator_label": "triaged calls",
+          "percent": 54.43,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 28131,
+          "display": "percent",
+          "denominator": 302939,
+          "denominator_label": "final dispositions",
+          "percent": 9.29,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 21634,
+          "display": "percent",
+          "denominator": 302939,
+          "denominator_label": "final dispositions",
+          "percent": 7.14,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 375629,
+        "answered": 349211,
+        "answered_percent": 92.97,
+        "abandoned": 9831,
+        "abandoned_percent": 2.62,
+        "triaged": 329730,
+        "final_dispositions": 302939
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 40866,
+          "percent": 13.49,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 28131,
+          "percent": 9.29,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 77121,
+          "percent": 25.46,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 6671,
+          "percent": 2.2,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 69882,
+          "percent": 23.07,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 21634,
+        "percent_of_dispositions": 7.14,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 21472,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 94,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 17,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 39,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 12,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AC5",
+      "name": "Cambridgeshire and Peterborough",
+      "months": 12,
+      "lead_suppliers": [
+        "HUC"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 358865,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 145697,
+          "display": "percent",
+          "denominator": 278105,
+          "denominator_label": "triaged calls",
+          "percent": 52.39,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 1750,
+          "display": "percent",
+          "denominator": 278105,
+          "denominator_label": "final dispositions",
+          "percent": 0.63,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 63880,
+          "display": "percent",
+          "denominator": 278105,
+          "denominator_label": "final dispositions",
+          "percent": 22.97,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 358865,
+        "answered": 325294,
+        "answered_percent": 90.65,
+        "abandoned": 16194,
+        "abandoned_percent": 4.51,
+        "triaged": 278105,
+        "final_dispositions": 278105
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 33809,
+          "percent": 12.16,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 1750,
+          "percent": 0.63,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 130815,
+          "percent": 47.04,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 16171,
+          "percent": 5.81,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 36072,
+          "percent": 12.97,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 63880,
+        "percent_of_dispositions": 22.97,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 17020,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 27163,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 11782,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 7071,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 3,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 841,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AL3",
+      "name": "Cornwall (HUC)",
+      "months": 12,
+      "lead_suppliers": [
+        "HUC"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 215193,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 144441,
+          "display": "percent",
+          "denominator": 198248,
+          "denominator_label": "triaged calls",
+          "percent": 72.86,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 9616,
+          "display": "percent",
+          "denominator": 198248,
+          "denominator_label": "final dispositions",
+          "percent": 4.85,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 40398,
+          "display": "percent",
+          "denominator": 198248,
+          "denominator_label": "final dispositions",
+          "percent": 20.38,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 215193,
+        "answered": 196862,
+        "answered_percent": 91.48,
+        "abandoned": 9940,
+        "abandoned_percent": 4.62,
+        "triaged": 198248,
+        "final_dispositions": 198248
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 23167,
+          "percent": 11.69,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 9616,
+          "percent": 4.85,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 57341,
+          "percent": 28.92,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 6081,
+          "percent": 3.07,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 68635,
+          "percent": 34.62,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 40398,
+        "percent_of_dispositions": 20.38,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 9605,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 29746,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 312,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 735,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 0,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AL2",
+      "name": "Devon (PPG)",
+      "months": 12,
+      "lead_suppliers": [
+        "PRACTICE PLUS GROUP HOLDINGS"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 427295,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 208410,
+          "display": "percent",
+          "denominator": 361304,
+          "denominator_label": "triaged calls",
+          "percent": 57.68,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 33094,
+          "display": "percent",
+          "denominator": 360912,
+          "denominator_label": "final dispositions",
+          "percent": 9.17,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 47405,
+          "display": "percent",
+          "denominator": 360912,
+          "denominator_label": "final dispositions",
+          "percent": 13.13,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 427295,
+        "answered": 400527,
+        "answered_percent": 93.74,
+        "abandoned": 11263,
+        "abandoned_percent": 2.64,
+        "triaged": 361304,
+        "final_dispositions": 360912
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 61396,
+          "percent": 17.01,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 33094,
+          "percent": 9.17,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 172259,
+          "percent": 47.73,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 7250,
+          "percent": 2.01,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 15762,
+          "percent": 4.37,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 47405,
+        "percent_of_dispositions": 13.13,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 23301,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 6524,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 4655,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 12705,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 220,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AI4",
+      "name": "Dorset (DHC)",
+      "months": 12,
+      "lead_suppliers": [
+        "DORSET HEALTHCARE UNIVERSITY NHS FOUNDATION TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 370166,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 112183,
+          "display": "percent",
+          "denominator": 286381,
+          "denominator_label": "triaged calls",
+          "percent": 39.17,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 22552,
+          "display": "percent",
+          "denominator": 286381,
+          "denominator_label": "final dispositions",
+          "percent": 7.87,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 111186,
+          "display": "percent",
+          "denominator": 286381,
+          "denominator_label": "final dispositions",
+          "percent": 38.82,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 370166,
+        "answered": 281398,
+        "answered_percent": 76.02,
+        "abandoned": 3302,
+        "abandoned_percent": 0.89,
+        "triaged": 286381,
+        "final_dispositions": 286381
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 37022,
+          "percent": 12.93,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 22552,
+          "percent": 7.87,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 123716,
+          "percent": 43.2,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 26850,
+          "percent": 9.38,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 20829,
+          "percent": 7.27,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 111186,
+        "percent_of_dispositions": 38.82,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 18846,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 31786,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 17183,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 22147,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 6,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 21218,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AH9",
+      "name": "Hampshire and Surrey Heath",
+      "months": 12,
+      "lead_suppliers": [
+        "SOUTH CENTRAL AMBULANCE SERVICE NHS FOUNDATION TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 727179,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 368339,
+          "display": "percent",
+          "denominator": 617899,
+          "denominator_label": "triaged calls",
+          "percent": 59.61,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 39028,
+          "display": "percent",
+          "denominator": 617423,
+          "denominator_label": "final dispositions",
+          "percent": 6.32,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 244999,
+          "display": "percent",
+          "denominator": 617423,
+          "denominator_label": "final dispositions",
+          "percent": 39.68,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 727179,
+        "answered": 696318,
+        "answered_percent": 95.76,
+        "abandoned": 30831,
+        "abandoned_percent": 4.24,
+        "triaged": 617899,
+        "final_dispositions": 617423
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 76587,
+          "percent": 12.4,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 39028,
+          "percent": 6.32,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 185625,
+          "percent": 30.06,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 41287,
+          "percent": 6.69,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 104927,
+          "percent": 16.99,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 244999,
+        "percent_of_dispositions": 39.68,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 31713,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 144305,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 14213,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 14813,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 24769,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AA6",
+      "name": "Isle of Wight",
+      "months": 12,
+      "lead_suppliers": [
+        "ISLE OF WIGHT NHS TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 99075,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 49007,
+          "display": "percent",
+          "denominator": 88716,
+          "denominator_label": "triaged calls",
+          "percent": 55.24,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 6197,
+          "display": "percent",
+          "denominator": 88716,
+          "denominator_label": "final dispositions",
+          "percent": 6.99,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 17756,
+          "display": "percent",
+          "denominator": 88716,
+          "denominator_label": "final dispositions",
+          "percent": 20.01,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 99075,
+        "answered": 87212,
+        "answered_percent": 88.03,
+        "abandoned": 9672,
+        "abandoned_percent": 9.76,
+        "triaged": 88716,
+        "final_dispositions": 88716
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 14122,
+          "percent": 15.92,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 6197,
+          "percent": 6.99,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 38281,
+          "percent": 43.15,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 5888,
+          "percent": 6.64,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 3431,
+          "percent": 3.87,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 17756,
+        "percent_of_dispositions": 20.01,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 10465,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 121,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 2577,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 4584,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 9,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AI9",
+      "name": "Kent, Medway & Sussex",
+      "months": 12,
+      "lead_suppliers": [
+        "SOUTH EAST COAST AMBULANCE SERVICE NHS FOUNDATION TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 1050181,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 424236,
+          "display": "percent",
+          "denominator": 936487,
+          "denominator_label": "triaged calls",
+          "percent": 45.3,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 62260,
+          "display": "percent",
+          "denominator": 928504,
+          "denominator_label": "final dispositions",
+          "percent": 6.71,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 241429,
+          "display": "percent",
+          "denominator": 928504,
+          "denominator_label": "final dispositions",
+          "percent": 26.0,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 1050181,
+        "answered": 959862,
+        "answered_percent": 91.4,
+        "abandoned": 56212,
+        "abandoned_percent": 5.35,
+        "triaged": 936487,
+        "final_dispositions": 928504
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 61894,
+          "percent": 6.67,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 62260,
+          "percent": 6.71,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 497679,
+          "percent": 53.6,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 41035,
+          "percent": 4.42,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 69924,
+          "percent": 7.53,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 241429,
+        "percent_of_dispositions": 26.0,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 102087,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 21703,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 65264,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 47919,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 4456,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AG7",
+      "name": "Luton and Bedfordshire",
+      "months": 12,
+      "lead_suppliers": [
+        "HUC"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 288144,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 108896,
+          "display": "percent",
+          "denominator": 240696,
+          "denominator_label": "triaged calls",
+          "percent": 45.24,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 944,
+          "display": "percent",
+          "denominator": 240696,
+          "denominator_label": "final dispositions",
+          "percent": 0.39,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 64488,
+          "display": "percent",
+          "denominator": 240696,
+          "denominator_label": "final dispositions",
+          "percent": 26.79,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 288144,
+        "answered": 261788,
+        "answered_percent": 90.85,
+        "abandoned": 12234,
+        "abandoned_percent": 4.25,
+        "triaged": 240696,
+        "final_dispositions": 240696
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 25880,
+          "percent": 10.75,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 944,
+          "percent": 0.39,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 126643,
+          "percent": 52.62,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 11750,
+          "percent": 4.88,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 24746,
+          "percent": 10.28,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 64488,
+        "percent_of_dispositions": 26.79,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 24058,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 19538,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 17515,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 2068,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 1,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 1308,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AH4",
+      "name": "Mid & South Essex",
+      "months": 12,
+      "lead_suppliers": [
+        "INTEGRATED CARE 24 LTD"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 428585,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 221232,
+          "display": "percent",
+          "denominator": 381984,
+          "denominator_label": "triaged calls",
+          "percent": 57.92,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 27430,
+          "display": "percent",
+          "denominator": 381984,
+          "denominator_label": "final dispositions",
+          "percent": 7.18,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 33547,
+          "display": "percent",
+          "denominator": 381984,
+          "denominator_label": "final dispositions",
+          "percent": 8.78,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 428585,
+        "answered": 400403,
+        "answered_percent": 93.42,
+        "abandoned": 14128,
+        "abandoned_percent": 3.3,
+        "triaged": 381984,
+        "final_dispositions": 381984
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 45324,
+          "percent": 11.87,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 27430,
+          "percent": 7.18,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 174537,
+          "percent": 45.69,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 18019,
+          "percent": 4.72,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 26761,
+          "percent": 7.01,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 33547,
+        "percent_of_dispositions": 8.78,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 12953,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 15940,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 71,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 4548,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 4,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 32,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AL7",
+      "name": "Midlands",
+      "months": 12,
+      "lead_suppliers": [
+        "ML CSU (Stoke)"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 3707101,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 1259181,
+          "display": "percent",
+          "denominator": 3396786,
+          "denominator_label": "triaged calls",
+          "percent": 37.07,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 287280,
+          "display": "percent",
+          "denominator": 3396786,
+          "denominator_label": "final dispositions",
+          "percent": 8.46,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 450205,
+          "display": "percent",
+          "denominator": 3396786,
+          "denominator_label": "final dispositions",
+          "percent": 13.25,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 3707101,
+        "answered": 3614267,
+        "answered_percent": 97.5,
+        "abandoned": 92834,
+        "abandoned_percent": 2.5,
+        "triaged": 3396786,
+        "final_dispositions": 3396786
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 453077,
+          "percent": 13.34,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 287280,
+          "percent": 8.46,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 1505756,
+          "percent": 44.33,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 205291,
+          "percent": 6.04,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 185570,
+          "percent": 5.46,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 450205,
+        "percent_of_dispositions": 13.25,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 233405,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 80649,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 92014,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 36217,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 14,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 7906,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AC7",
+      "name": "Milton Keynes",
+      "months": 12,
+      "lead_suppliers": [
+        "DHU HEALTH CARE C.I.C"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 95790,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 36934,
+          "display": "percent",
+          "denominator": 85963,
+          "denominator_label": "triaged calls",
+          "percent": 42.96,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 4617,
+          "display": "percent",
+          "denominator": 85963,
+          "denominator_label": "final dispositions",
+          "percent": 5.37,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 8674,
+          "display": "percent",
+          "denominator": 85963,
+          "denominator_label": "final dispositions",
+          "percent": 10.09,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 95790,
+        "answered": 93534,
+        "answered_percent": 97.64,
+        "abandoned": 2256,
+        "abandoned_percent": 2.36,
+        "triaged": 85963,
+        "final_dispositions": 85963
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 10775,
+          "percent": 12.53,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 4617,
+          "percent": 5.37,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 35169,
+          "percent": 40.91,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 4345,
+          "percent": 5.05,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 6436,
+          "percent": 7.49,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 8674,
+        "percent_of_dispositions": 10.09,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 6770,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 52,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 330,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 1518,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 4,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111NR1",
+      "name": "National Resilience (Vocare)",
+      "months": 11,
+      "lead_suppliers": [
+        "VOCARE LTD"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 562421,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 141817,
+          "display": "percent",
+          "denominator": 472505,
+          "denominator_label": "triaged calls",
+          "percent": 30.01,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 61544,
+          "display": "percent",
+          "denominator": 472505,
+          "denominator_label": "final dispositions",
+          "percent": 13.03,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 53887,
+          "display": "percent",
+          "denominator": 472505,
+          "denominator_label": "final dispositions",
+          "percent": 11.4,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 562421,
+        "answered": 535685,
+        "answered_percent": 95.25,
+        "abandoned": 5786,
+        "abandoned_percent": 1.03,
+        "triaged": 472505,
+        "final_dispositions": 472505
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 52027,
+          "percent": 11.01,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 61544,
+          "percent": 13.03,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 209416,
+          "percent": 44.32,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 30605,
+          "percent": 6.48,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 11462,
+          "percent": 2.43,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 53887,
+        "percent_of_dispositions": 11.4,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 24952,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 7640,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 0,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 11644,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 9651,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AG8",
+      "name": "Norfolk including Great Yarmouth and Waveney",
+      "months": 12,
+      "lead_suppliers": [
+        "INTEGRATED CARE 24 LTD"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 358967,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 176682,
+          "display": "percent",
+          "denominator": 318336,
+          "denominator_label": "triaged calls",
+          "percent": 55.5,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 17061,
+          "display": "percent",
+          "denominator": 318336,
+          "denominator_label": "final dispositions",
+          "percent": 5.36,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 21470,
+          "display": "percent",
+          "denominator": 318336,
+          "denominator_label": "final dispositions",
+          "percent": 6.74,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 358967,
+        "answered": 334869,
+        "answered_percent": 93.29,
+        "abandoned": 11777,
+        "abandoned_percent": 3.28,
+        "triaged": 318336,
+        "final_dispositions": 318336
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 47555,
+          "percent": 14.94,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 17061,
+          "percent": 5.36,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 124707,
+          "percent": 39.17,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 21288,
+          "percent": 6.69,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 29709,
+          "percent": 9.33,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 21470,
+        "percent_of_dispositions": 6.74,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 14716,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 3844,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 22,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 2863,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 1,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 24,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AA1",
+      "name": "North East",
+      "months": 12,
+      "lead_suppliers": [
+        "NORTH EAST AMBULANCE SERVICE NHS FOUNDATION TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 1106735,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 370576,
+          "display": "percent",
+          "denominator": 969992,
+          "denominator_label": "triaged calls",
+          "percent": 38.2,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 43409,
+          "display": "percent",
+          "denominator": 969992,
+          "denominator_label": "final dispositions",
+          "percent": 4.48,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 198130,
+          "display": "percent",
+          "denominator": 969992,
+          "denominator_label": "final dispositions",
+          "percent": 20.43,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 1106735,
+        "answered": 1001960,
+        "answered_percent": 90.53,
+        "abandoned": 24193,
+        "abandoned_percent": 2.19,
+        "triaged": 969992,
+        "final_dispositions": 969992
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 141414,
+          "percent": 14.58,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 43409,
+          "percent": 4.48,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 399707,
+          "percent": 41.21,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 94994,
+          "percent": 9.79,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 54290,
+          "percent": 5.6,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 198130,
+        "percent_of_dispositions": 20.43,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 66555,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 14659,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 101473,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 7280,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 8163,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AH7",
+      "name": "North East Essex & Suffolk",
+      "months": 12,
+      "lead_suppliers": [
+        "PRACTICE PLUS GROUP HOLDINGS"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 358911,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 157451,
+          "display": "percent",
+          "denominator": 301396,
+          "denominator_label": "triaged calls",
+          "percent": 52.24,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 25499,
+          "display": "percent",
+          "denominator": 301156,
+          "denominator_label": "final dispositions",
+          "percent": 8.47,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 28423,
+          "display": "percent",
+          "denominator": 301156,
+          "denominator_label": "final dispositions",
+          "percent": 9.44,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 358911,
+        "answered": 336592,
+        "answered_percent": 93.78,
+        "abandoned": 9585,
+        "abandoned_percent": 2.67,
+        "triaged": 301396,
+        "final_dispositions": 301156
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 47403,
+          "percent": 15.74,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 25499,
+          "percent": 8.47,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 136761,
+          "percent": 45.41,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 21789,
+          "percent": 7.24,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 13743,
+          "percent": 4.56,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 28423,
+        "percent_of_dispositions": 9.44,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 12260,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 50,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 4009,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 11808,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 1,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 286,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AH5",
+      "name": "North East London",
+      "months": 12,
+      "lead_suppliers": [
+        "LONDON AMBULANCE SERVICE NHS TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 819343,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 273616,
+          "display": "percent",
+          "denominator": 694876,
+          "denominator_label": "triaged calls",
+          "percent": 39.38,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 33415,
+          "display": "percent",
+          "denominator": 680725,
+          "denominator_label": "final dispositions",
+          "percent": 4.91,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 261910,
+          "display": "percent",
+          "denominator": 680725,
+          "denominator_label": "final dispositions",
+          "percent": 38.48,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 819343,
+        "answered": 787826,
+        "answered_percent": 96.15,
+        "abandoned": 29923,
+        "abandoned_percent": 3.65,
+        "triaged": 694876,
+        "final_dispositions": 680725
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 60403,
+          "percent": 8.87,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 33415,
+          "percent": 4.91,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 280896,
+          "percent": 41.26,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 42000,
+          "percent": 6.17,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 71030,
+          "percent": 10.43,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 261910,
+        "percent_of_dispositions": 38.48,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 127014,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 42167,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 35149,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 4980,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 23,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 6691,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AJ1",
+      "name": "North West London",
+      "months": 12,
+      "lead_suppliers": [
+        "LONDON AMBULANCE SERVICE NHS TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 622318,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 251697,
+          "display": "percent",
+          "denominator": 599600,
+          "denominator_label": "triaged calls",
+          "percent": 41.98,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 24494,
+          "display": "percent",
+          "denominator": 584455,
+          "denominator_label": "final dispositions",
+          "percent": 4.19,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 120333,
+          "display": "percent",
+          "denominator": 584455,
+          "denominator_label": "final dispositions",
+          "percent": 20.59,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 622318,
+        "answered": 595302,
+        "answered_percent": 95.66,
+        "abandoned": 20858,
+        "abandoned_percent": 3.35,
+        "triaged": 599600,
+        "final_dispositions": 584455
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 62321,
+          "percent": 10.66,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 24494,
+          "percent": 4.19,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 241437,
+          "percent": 41.31,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 35626,
+          "percent": 6.1,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 66788,
+          "percent": 11.43,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 120333,
+        "percent_of_dispositions": 20.59,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 73196,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 6464,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 12611,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 4428,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 635,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 4382,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AJ3",
+      "name": "North West including Blackpool (ML CSU)",
+      "months": 12,
+      "lead_suppliers": [
+        "ML CSU (BLACKPOOL)"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 1868093,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 773226,
+          "display": "percent",
+          "denominator": 1725375,
+          "denominator_label": "triaged calls",
+          "percent": 44.81,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 89606,
+          "display": "percent",
+          "denominator": 1837502,
+          "denominator_label": "final dispositions",
+          "percent": 4.88,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 278646,
+          "display": "percent",
+          "denominator": 1837502,
+          "denominator_label": "final dispositions",
+          "percent": 15.16,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 1868093,
+        "answered": 1807696,
+        "answered_percent": 96.77,
+        "abandoned": 50449,
+        "abandoned_percent": 2.7,
+        "triaged": 1725375,
+        "final_dispositions": 1837502
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 209483,
+          "percent": 11.4,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 89606,
+          "percent": 4.88,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 893106,
+          "percent": 48.6,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 32192,
+          "percent": 1.75,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 130959,
+          "percent": 7.13,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 278646,
+        "percent_of_dispositions": 15.16,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 112061,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 39729,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 25599,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 67071,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 394,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 33739,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AL5",
+      "name": "Somerset (HUC)",
+      "months": 12,
+      "lead_suppliers": [
+        "HUC"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 207029,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 93005,
+          "display": "percent",
+          "denominator": 158166,
+          "denominator_label": "triaged calls",
+          "percent": 58.8,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 9121,
+          "display": "percent",
+          "denominator": 158166,
+          "denominator_label": "final dispositions",
+          "percent": 5.77,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 30133,
+          "display": "percent",
+          "denominator": 158166,
+          "denominator_label": "final dispositions",
+          "percent": 19.05,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 207029,
+        "answered": 181224,
+        "answered_percent": 87.54,
+        "abandoned": 9681,
+        "abandoned_percent": 4.68,
+        "triaged": 158166,
+        "final_dispositions": 158166
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 19012,
+          "percent": 12.02,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 9121,
+          "percent": 5.77,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 54008,
+          "percent": 34.15,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 15075,
+          "percent": 9.53,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 33309,
+          "percent": 21.06,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 30133,
+        "percent_of_dispositions": 19.05,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 7603,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 21455,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 84,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 990,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 1,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AD7",
+      "name": "South East London",
+      "months": 12,
+      "lead_suppliers": [
+        "LONDON AMBULANCE SERVICE NHS TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 565652,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 206740,
+          "display": "percent",
+          "denominator": 483501,
+          "denominator_label": "triaged calls",
+          "percent": 42.76,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 45476,
+          "display": "percent",
+          "denominator": 471635,
+          "denominator_label": "final dispositions",
+          "percent": 9.64,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 160196,
+          "display": "percent",
+          "denominator": 471635,
+          "denominator_label": "final dispositions",
+          "percent": 33.97,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 565652,
+        "answered": 542746,
+        "answered_percent": 95.95,
+        "abandoned": 21900,
+        "abandoned_percent": 3.87,
+        "triaged": 483501,
+        "final_dispositions": 471635
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 48967,
+          "percent": 10.38,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 45476,
+          "percent": 9.64,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 188289,
+          "percent": 39.92,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 22347,
+          "percent": 4.74,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 54834,
+          "percent": 11.63,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 160196,
+        "percent_of_dispositions": 33.97,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 61085,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 44988,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 5880,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 23384,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 20,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 2448,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AK9",
+      "name": "South West London",
+      "months": 12,
+      "lead_suppliers": [
+        "PRACTICE PLUS GROUP HOLDINGS"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 466969,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 215186,
+          "display": "percent",
+          "denominator": 445445,
+          "denominator_label": "triaged calls",
+          "percent": 48.31,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 21471,
+          "display": "percent",
+          "denominator": 444844,
+          "denominator_label": "final dispositions",
+          "percent": 4.83,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 62993,
+          "display": "percent",
+          "denominator": 444844,
+          "denominator_label": "final dispositions",
+          "percent": 14.16,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 466969,
+        "answered": 447540,
+        "answered_percent": 95.84,
+        "abandoned": 11958,
+        "abandoned_percent": 2.56,
+        "triaged": 445445,
+        "final_dispositions": 444844
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 43205,
+          "percent": 9.71,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 21471,
+          "percent": 4.83,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 181432,
+          "percent": 40.79,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 17984,
+          "percent": 4.04,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 29772,
+          "percent": 6.69,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 62993,
+        "percent_of_dispositions": 14.16,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 41718,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 10138,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 5176,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 5079,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 171,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 710,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AI2",
+      "name": "Surrey Heartlands",
+      "months": 12,
+      "lead_suppliers": [
+        "PRACTICE PLUS GROUP HOLDINGS"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 293261,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 130562,
+          "display": "percent",
+          "denominator": 242957,
+          "denominator_label": "triaged calls",
+          "percent": 53.74,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 18427,
+          "display": "percent",
+          "denominator": 242767,
+          "denominator_label": "final dispositions",
+          "percent": 7.59,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 48870,
+          "display": "percent",
+          "denominator": 242767,
+          "denominator_label": "final dispositions",
+          "percent": 20.13,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 293261,
+        "answered": 275415,
+        "answered_percent": 93.91,
+        "abandoned": 8302,
+        "abandoned_percent": 2.83,
+        "triaged": 242957,
+        "final_dispositions": 242767
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 30591,
+          "percent": 12.6,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 18427,
+          "percent": 7.59,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 114018,
+          "percent": 46.97,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 12956,
+          "percent": 5.34,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 12694,
+          "percent": 5.23,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 48870,
+        "percent_of_dispositions": 20.13,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 19876,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 5325,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 8472,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 10138,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 3,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 5056,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AG9",
+      "name": "Thames Valley",
+      "months": 12,
+      "lead_suppliers": [
+        "SOUTH CENTRAL AMBULANCE SERVICE NHS FOUNDATION TRUST"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 829643,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 243478,
+          "display": "percent",
+          "denominator": 691024,
+          "denominator_label": "triaged calls",
+          "percent": 35.23,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 47217,
+          "display": "percent",
+          "denominator": 690617,
+          "denominator_label": "final dispositions",
+          "percent": 6.84,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 267506,
+          "display": "percent",
+          "denominator": 690617,
+          "denominator_label": "final dispositions",
+          "percent": 38.73,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 829643,
+        "answered": 795658,
+        "answered_percent": 95.9,
+        "abandoned": 33945,
+        "abandoned_percent": 4.09,
+        "triaged": 691024,
+        "final_dispositions": 690617
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 73717,
+          "percent": 10.67,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 47217,
+          "percent": 6.84,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 361599,
+          "percent": 52.36,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 26502,
+          "percent": 3.84,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 36904,
+          "percent": 5.34,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 267506,
+        "percent_of_dispositions": 38.73,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 32882,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 169634,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 9733,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 21231,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 1,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 34015,
+            "indicator": "G14"
+          }
+        }
+      }
+    },
+    {
+      "code": "111AI7",
+      "name": "Yorkshire and Humber (NECS)",
+      "months": 12,
+      "lead_suppliers": [
+        "NECS"
+      ],
+      "metrics": {
+        "nhs111-contacts": {
+          "label": "Calls received by NHS 111",
+          "count": 2078611,
+          "display": "count",
+          "denominator": null,
+          "percent": null,
+          "indicator": "A01"
+        },
+        "nhs111-triage": {
+          "label": "Calls assessed by a clinician or Clinical Adviser",
+          "count": 790813,
+          "display": "percent",
+          "denominator": 1843557,
+          "denominator_label": "triaged calls",
+          "percent": 42.9,
+          "indicator": "D01 / C01"
+        },
+        "nhs111-ae-disposition": {
+          "label": "Final disposition to attend a Type 1 or 2 emergency department",
+          "count": 200009,
+          "display": "percent",
+          "denominator": 1844433,
+          "denominator_label": "final dispositions",
+          "percent": 10.84,
+          "indicator": "E04 / E01"
+        },
+        "nhs111-direct-booking": {
+          "label": "Calls resulting in an appointment booked before the call ended",
+          "count": 202059,
+          "display": "percent",
+          "denominator": 1844433,
+          "denominator_label": "final dispositions",
+          "percent": 10.96,
+          "indicator": "G01 / E01"
+        }
+      },
+      "calls": {
+        "received": 2078611,
+        "answered": 1898550,
+        "answered_percent": 91.34,
+        "abandoned": 77736,
+        "abandoned_percent": 3.74,
+        "triaged": 1843557,
+        "final_dispositions": 1844433
+      },
+      "dispositions": {
+        "ambulance": {
+          "label": "Ambulance disposition",
+          "count": 214710,
+          "percent": 11.64,
+          "indicator": "E02"
+        },
+        "emergency_department": {
+          "label": "Attend Type 1 or 2 ED",
+          "count": 200009,
+          "percent": 10.84,
+          "indicator": "E04"
+        },
+        "primary_care": {
+          "label": "Contact or speak to primary care",
+          "count": 753861,
+          "percent": 40.87,
+          "indicator": "E07 + E08 + E10 + E11"
+        },
+        "dental": {
+          "label": "Contact or speak to dental practitioner",
+          "count": 167030,
+          "percent": 9.06,
+          "indicator": "E12"
+        },
+        "self_care": {
+          "label": "Self-care",
+          "count": 102657,
+          "percent": 5.57,
+          "indicator": "E16"
+        }
+      },
+      "bookings": {
+        "total": 202059,
+        "percent_of_dispositions": 10.96,
+        "breakdown": {
+          "gp": {
+            "label": "GP practice or GP access hub",
+            "count": 64964,
+            "indicator": "G03"
+          },
+          "iuc": {
+            "label": "IUC Treatment Service",
+            "count": 6000,
+            "indicator": "G05"
+          },
+          "utc": {
+            "label": "Urgent Treatment Centre",
+            "count": 7890,
+            "indicator": "G07"
+          },
+          "ed": {
+            "label": "Type 1 or 2 ED booked time slot",
+            "count": 12068,
+            "indicator": "G09"
+          },
+          "sdec": {
+            "label": "Same Day Emergency Care",
+            "count": 0,
+            "indicator": "G11"
+          },
+          "other": {
+            "label": "Other appointment",
+            "count": 123055,
+            "indicator": "G14"
+          }
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Figures use the revised April 2024 to March 2025 official IUC ADC publication released on 14 August 2025.",
+    "Contract areas are reporting geographies coordinated by lead data suppliers; they do not align exactly with ICBs, ambulance trusts or acute providers.",
+    "Primary-care dispositions combine E07, E08, E10 and E11 because the aggregate E06 and E09 items are weekly-only measures.",
+    "Percentages are calculated from the published contract-area counts and may differ slightly from the adjusted national percentages in the NHS England flowchart where missing numerator or denominator months were excluded."
+  ]
+}
