@@ -7,6 +7,17 @@
 (() => {
   const baseSelectNodeForPathways = selectNode;
 
+  const ucrPathway = [
+    "care-home-urgent-events",
+    "ambulance-alternative",
+    "urgent-community-capacity",
+    "ucr-referrals",
+    "ucr-care-contacts",
+    "ucr-two-hour-achievement",
+    "other-professional-route",
+    "ae-attendance"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -35,7 +46,11 @@
       "failed-primary-access",
       "gp-ae-route",
       "ae-attendance"
-    ]
+    ],
+    "urgent-community-capacity":ucrPathway,
+    "ucr-referrals":ucrPathway,
+    "ucr-care-contacts":ucrPathway,
+    "ucr-two-hour-achievement":ucrPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
