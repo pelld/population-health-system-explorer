@@ -131,6 +131,12 @@
           "label": "Other appointment",
           "count": 296791,
           "indicator": "G14"
+        },
+        "remaining": {
+          "label": "Dental and remaining booked appointments",
+          "count": 113532,
+          "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+          "derived": true
         }
       },
       "published_adjusted_percent": true
@@ -256,6 +262,12 @@
             "label": "Other appointment",
             "count": 7795,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -378,6 +390,12 @@
             "label": "Other appointment",
             "count": 12,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -500,6 +518,12 @@
             "label": "Other appointment",
             "count": 841,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -622,6 +646,12 @@
             "label": "Other appointment",
             "count": 0,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -744,6 +774,12 @@
             "label": "Other appointment",
             "count": 220,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -866,6 +902,12 @@
             "label": "Other appointment",
             "count": 21218,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -988,6 +1030,12 @@
             "label": "Other appointment",
             "count": 24769,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 15186,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1110,6 +1158,12 @@
             "label": "Other appointment",
             "count": 9,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1232,6 +1286,12 @@
             "label": "Other appointment",
             "count": 4456,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1354,6 +1414,12 @@
             "label": "Other appointment",
             "count": 1308,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1476,6 +1542,12 @@
             "label": "Other appointment",
             "count": 32,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1598,6 +1670,12 @@
             "label": "Other appointment",
             "count": 7906,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1720,6 +1798,12 @@
             "label": "Other appointment",
             "count": 4,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1842,6 +1926,12 @@
             "label": "Other appointment",
             "count": 9651,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -1964,6 +2054,12 @@
             "label": "Other appointment",
             "count": 24,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2086,6 +2182,12 @@
             "label": "Other appointment",
             "count": 8163,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2208,6 +2310,12 @@
             "label": "Other appointment",
             "count": 286,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 9,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2330,6 +2438,12 @@
             "label": "Other appointment",
             "count": 6691,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 45886,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2452,6 +2566,12 @@
             "label": "Other appointment",
             "count": 4382,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 18617,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2574,6 +2694,12 @@
             "label": "Other appointment",
             "count": 33739,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 53,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2696,6 +2822,12 @@
             "label": "Other appointment",
             "count": 1,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2818,6 +2950,12 @@
             "label": "Other appointment",
             "count": 2448,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 22391,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -2940,6 +3078,12 @@
             "label": "Other appointment",
             "count": 710,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 1,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -3062,6 +3206,12 @@
             "label": "Other appointment",
             "count": 5056,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -3184,6 +3334,12 @@
             "label": "Other appointment",
             "count": 34015,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 10,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
@@ -3306,6 +3462,12 @@
             "label": "Other appointment",
             "count": 123055,
             "indicator": "G14"
+          },
+          "remaining": {
+            "label": "Dental and remaining booked appointments",
+            "count": 0,
+            "indicator": "G01 less displayed G03/G05/G07/G09/G11/G14 categories",
+            "derived": true
           }
         }
       }
