@@ -1,0 +1,68 @@
+{
+  "publication": "Hospital Accident and Emergency Activity, 2024-25",
+  "period": "2024-25",
+  "geography": "England",
+  "source_url": "https://digital.nhs.uk/data-and-information/publications/statistical/hospital-accident--emergency-activity/2024-25",
+  "source_file_url": "https://files.digital.nhs.uk/C4/82ACBB/AE2425_ECDS_National_Data_Tables.xlsx",
+  "denominator": {
+    "count": 25822265,
+    "definition": "Unplanned ECDS attendances in the annual national attendance-source table."
+  },
+  "routes": {
+    "ae-attendance": {
+      "count": 25822265,
+      "percent": 100.0,
+      "label": "All ECDS attendances in the route table",
+      "definition": "Attendance Source Total.",
+      "derived": false
+    },
+    "self-presentation": {
+      "count": 17248608,
+      "percent": 66.8,
+      "label": "Self-referral",
+      "definition": "Combined from the two published self-referral SNOMED categories.",
+      "derived": true
+    },
+    "nhs111-ae-route": {
+      "count": 1502600,
+      "percent": 5.82,
+      "label": "NHS 111 referral",
+      "definition": "Referred by National Health Service 111 service.",
+      "derived": false
+    },
+    "gp-ae-route": {
+      "count": 1299735,
+      "percent": 5.03,
+      "label": "Primary health care team referral",
+      "definition": "Referred by a member of the Primary Health Care Team; this is broader than GP referral alone.",
+      "derived": false
+    },
+    "ambulance-ae-route": {
+      "count": 2389027,
+      "percent": 9.25,
+      "label": "Ambulance service referral",
+      "definition": "Attendance source recorded as referral by the ambulance service.",
+      "derived": false,
+      "secondary": {
+        "count": 4512335,
+        "percent": 17.47,
+        "label": "Arrived by ambulance",
+        "definition": "Arrival mode, which is separate from attendance source."
+      }
+    },
+    "other-professional-route": {
+      "count": 1856377,
+      "percent": 7.19,
+      "label": "Other recorded attendance sources",
+      "definition": "All recorded attendance-source categories other than self-referral, NHS 111, primary health care team, ambulance service and Not Known.",
+      "derived": true
+    },
+    "unknown-route": {
+      "count": 1525918,
+      "percent": 5.91,
+      "label": "Attendance source not known",
+      "definition": "Published Not Known attendance-source category.",
+      "derived": false
+    }
+  }
+}
