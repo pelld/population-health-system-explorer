@@ -19,7 +19,7 @@
   }
 
   function compactCount(value) {
-    if (value >= 1000000) return `${(value / 1000000).toFixed(value >= 10000000 ? 2 : 2)}m`;
+    if (value >= 1000000) return `${(value / 1000000).toFixed(2)}m`;
     if (value >= 1000) return `${(value / 1000).toFixed(1)}k`;
     return String(value);
   }
@@ -38,6 +38,50 @@
     return;
   }
 
+  // ============================================================
+  // 01. ALIGN THE VISIBLE ROUTES WITH THE PUBLISHED DEFINITIONS
+  // ============================================================
+  // ECDS publishes "member of Primary Health Care Team", which is broader than
+  // GP referral alone. Ambulance source of referral and ambulance arrival mode
+  // are also separate published fields, so the map says so explicitly.
+  const routeTextOverrides = {
+    "self-presentation": {
+      label:"Self-referral or self-presentation",
+      summary:"The attendance source is recorded in one of the two published ECDS self-referral categories.",
+      caution:"The combined figure is derived from two published SNOMED categories. It does not imply that the attendance was unnecessary."
+    },
+    "gp-ae-route": {
+      label:"Primary health care team referral to A&E",
+      summary:"The attendance source is recorded as referral by a member of the Primary Health Care Team. This includes, but is broader than, GP referral alone.",
+      caution:"The public annual category cannot isolate GP referrals from all other members of the Primary Health Care Team."
+    },
+    "ambulance-ae-route": {
+      label:"Ambulance route into A&E",
+      summary:"ECDS separately records referral by the ambulance service and arrival by ambulance. Both describe the route, but they are not interchangeable.",
+      caution:"The source-of-referral percentage and arrival-mode percentage use the same attendance total but answer different questions."
+    },
+    "other-professional-route": {
+      label:"Other recorded referral sources",
+      summary:"This transparent remainder groups the many smaller published attendance-source categories after self-referral, NHS 111, primary health care team, ambulance service and Not Known are separated.",
+      caution:"The group contains several distinct routes and should be expanded rather than treated as one operational service."
+    },
+    "unknown-route": {
+      label:"Attendance source not known",
+      summary:"The ECDS attendance-source field is recorded as Not Known.",
+      caution:"Differences in completeness can materially change the apparent share of every other route."
+    }
+  };
+
+  Object.entries(routeTextOverrides).forEach(([nodeId,changes]) => {
+    const node = NODE_BY_ID.get(nodeId);
+    if (!node) return;
+    Object.assign(node,changes);
+    cy.getElementById(nodeId).data("label",changes.label);
+  });
+
+  const factorOptions = el("factorOptions");
+  if (factorOptions) factorOptions.innerHTML = AE_MAP_NODES.map(node => `<option value="${node.label}"></option>`).join("");
+
   const OPERATIONAL_METRICS = Object.fromEntries(
     Object.entries(publicData.routes).map(([nodeId,route]) => [nodeId,{
       value:nodeId === "ae-attendance" ? compactCount(route.count) : formatPercent(route.percent),
@@ -54,7 +98,7 @@
   );
 
   // ============================================================
-  // 01. CREATE THE MAP NUMBER LAYER AND TOOLBAR CONTROL
+  // 02. CREATE THE MAP NUMBER LAYER AND TOOLBAR CONTROL
   // ============================================================
   const metricLayer = document.createElement("div");
   metricLayer.className = "metric-layer";
@@ -81,7 +125,7 @@
   }
 
   // ============================================================
-  // 02. CREATE ONE HTML BADGE FOR EACH ROUTE
+  // 03. CREATE ONE HTML BADGE FOR EACH ROUTE
   // ============================================================
   Object.entries(OPERATIONAL_METRICS).forEach(([nodeId,metric]) => {
     if (!cy.getElementById(nodeId).length) return;
@@ -130,7 +174,7 @@
   window.addEventListener("resize",updateMetricPositions);
 
   // ============================================================
-  // 03. ADD COUNT, PERCENTAGE, PERIOD AND DEFINITION TO THE DRAWER
+  // 04. ADD COUNT, PERCENTAGE, PERIOD AND DEFINITION TO THE DRAWER
   // ============================================================
   renderNodeDetails = function(node) {
     baseRenderNodeDetails(node);
