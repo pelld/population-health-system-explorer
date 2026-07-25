@@ -1,0 +1,6299 @@
+{
+  "publication": "Appointments in General Practice — April 2025 release",
+  "period": "2024-25",
+  "geography": "Integrated Care Board",
+  "source_url": "https://digital.nhs.uk/data-and-information/publications/statistical/appointments-in-general-practice/april-2025",
+  "source_file_url": "https://files.digital.nhs.uk/34/684B0F/Appointments_GP_Regional_CSV_Apr_25.zip",
+  "supporting_information_url": "https://digital.nhs.uk/data-and-information/publications/statistical/appointments-in-general-practice/appointments-in-general-practice-supporting-information",
+  "icb_count": 42,
+  "england": {
+    "code": "ENG",
+    "name": "England",
+    "region": "England",
+    "months": 12,
+    "metrics": {
+      "gpad-appointments": {
+        "label": "Appointments recorded in GP practice appointment systems",
+        "count": 368990304,
+        "display": "count",
+        "percent": null,
+        "denominator": null
+      },
+      "same-day-capacity": {
+        "label": "Appointments taking place on the same day they were booked",
+        "count": 160303075,
+        "display": "percent",
+        "percent": 43.44,
+        "denominator": 368990304,
+        "denominator_label": "recorded appointments"
+      },
+      "gp-clinical-assessment": {
+        "label": "Appointments recorded with a GP",
+        "count": 164717950,
+        "display": "percent",
+        "percent": 44.64,
+        "denominator": 368990304,
+        "denominator_label": "recorded appointments"
+      }
+    },
+    "booking_delay": {
+      "same_day": {
+        "label": "Same Day",
+        "count": 160303075,
+        "percent": 43.44
+      },
+      "one_day": {
+        "label": "1 Day",
+        "count": 27530503,
+        "percent": 7.46
+      },
+      "two_to_seven": {
+        "label": "2 to 7 Days",
+        "count": 65098296,
+        "percent": 17.64
+      },
+      "eight_to_fourteen": {
+        "label": "8  to 14 Days",
+        "count": 47504575,
+        "percent": 12.87
+      },
+      "fifteen_to_twenty_one": {
+        "label": "15  to 21 Days",
+        "count": 28020513,
+        "percent": 7.59
+      },
+      "twenty_two_to_twenty_eight": {
+        "label": "22  to 28 Days",
+        "count": 19106175,
+        "percent": 5.18
+      },
+      "over_twenty_eight": {
+        "label": "More than 28 Days",
+        "count": 21091706,
+        "percent": 5.72
+      },
+      "unknown": {
+        "label": "Unknown / Data Quality",
+        "count": 335461,
+        "percent": 0.09
+      }
+    },
+    "mode": {
+      "face_to_face": {
+        "label": "Face-to-Face",
+        "count": 241388049,
+        "percent": 65.42
+      },
+      "telephone": {
+        "label": "Telephone",
+        "count": 92821879,
+        "percent": 25.16
+      },
+      "home_visit": {
+        "label": "Home Visit",
+        "count": 4230817,
+        "percent": 1.15
+      },
+      "video_online": {
+        "label": "Video/Online",
+        "count": 20459110,
+        "percent": 5.54
+      },
+      "unknown": {
+        "label": "Unknown",
+        "count": 10090449,
+        "percent": 2.73
+      }
+    },
+    "hcp": {
+      "gp": {
+        "label": "GP",
+        "count": 164717950,
+        "percent": 44.64
+      },
+      "other_practice_staff": {
+        "label": "Other Practice staff",
+        "count": 194444845,
+        "percent": 52.7
+      },
+      "unknown": {
+        "label": "Unknown",
+        "count": 9827509,
+        "percent": 2.66
+      }
+    },
+    "status": {
+      "attended": {
+        "label": "Attended",
+        "count": 330929592,
+        "percent": 89.69
+      },
+      "dna": {
+        "label": "DNA",
+        "count": 16109686,
+        "percent": 4.37
+      },
+      "unknown": {
+        "label": "Unknown",
+        "count": 21951026,
+        "percent": 5.95
+      }
+    },
+    "data_quality": {
+      "unknown_booking_percent": 0.09,
+      "unknown_mode_percent": 2.73,
+      "unknown_hcp_percent": 2.66,
+      "unknown_status_percent": 5.95
+    },
+    "validation": {
+      "booking_gap": 0,
+      "mode_gap": 0,
+      "hcp_gap": 0,
+      "status_gap": 0
+    }
+  },
+  "icbs": [
+    {
+      "code": "E54000040",
+      "name": "NHS Bath and North East Somerset, Swindon and Wiltshire Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6612113,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2587152,
+          "display": "percent",
+          "percent": 39.13,
+          "denominator": 6612113,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2616541,
+          "display": "percent",
+          "percent": 39.57,
+          "denominator": 6612113,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2587152,
+          "percent": 39.13
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 368348,
+          "percent": 5.57
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1101455,
+          "percent": 16.66
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 935595,
+          "percent": 14.15
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 617406,
+          "percent": 9.34
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 449032,
+          "percent": 6.79
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 549117,
+          "percent": 8.3
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4008,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4299247,
+          "percent": 65.02
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1668798,
+          "percent": 25.24
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 63633,
+          "percent": 0.96
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 295448,
+          "percent": 4.47
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 284987,
+          "percent": 4.31
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2616541,
+          "percent": 39.57
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3752261,
+          "percent": 56.75
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 243311,
+          "percent": 3.68
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 6064377,
+          "percent": 91.72
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 195514,
+          "percent": 2.96
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 352222,
+          "percent": 5.33
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 4.31,
+        "unknown_hcp_percent": 3.68,
+        "unknown_status_percent": 5.33
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000024",
+      "name": "NHS Bedfordshire, Luton and Milton Keynes Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6213703,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2578706,
+          "display": "percent",
+          "percent": 41.5,
+          "denominator": 6213703,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2563299,
+          "display": "percent",
+          "percent": 41.25,
+          "denominator": 6213703,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2578706,
+          "percent": 41.5
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 501468,
+          "percent": 8.07
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1093589,
+          "percent": 17.6
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 775263,
+          "percent": 12.48
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 490617,
+          "percent": 7.9
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 344243,
+          "percent": 5.54
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 425666,
+          "percent": 6.85
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4151,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4354097,
+          "percent": 70.07
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1121440,
+          "percent": 18.05
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 28959,
+          "percent": 0.47
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 337464,
+          "percent": 5.43
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 371743,
+          "percent": 5.98
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2563299,
+          "percent": 41.25
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3303912,
+          "percent": 53.17
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 346492,
+          "percent": 5.58
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5594002,
+          "percent": 90.03
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 251785,
+          "percent": 4.05
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 367916,
+          "percent": 5.92
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 5.98,
+        "unknown_hcp_percent": 5.58,
+        "unknown_status_percent": 5.92
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000055",
+      "name": "NHS Birmingham and Solihull Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 9258402,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4469280,
+          "display": "percent",
+          "percent": 48.27,
+          "denominator": 9258402,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4565758,
+          "display": "percent",
+          "percent": 49.31,
+          "denominator": 9258402,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4469280,
+          "percent": 48.27
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 744545,
+          "percent": 8.04
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1702527,
+          "percent": 18.39
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1142112,
+          "percent": 12.34
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 568359,
+          "percent": 6.14
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 331480,
+          "percent": 3.58
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 293624,
+          "percent": 3.17
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 6475,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 6309356,
+          "percent": 68.15
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2211584,
+          "percent": 23.89
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 94918,
+          "percent": 1.03
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 460920,
+          "percent": 4.98
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 181624,
+          "percent": 1.96
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4565758,
+          "percent": 49.31
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 4538936,
+          "percent": 49.03
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 153708,
+          "percent": 1.66
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 8190887,
+          "percent": 88.47
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 560066,
+          "percent": 6.05
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 507449,
+          "percent": 5.48
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 1.96,
+        "unknown_hcp_percent": 1.66,
+        "unknown_status_percent": 5.48
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000062",
+      "name": "NHS Black Country Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 7968214,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3780841,
+          "display": "percent",
+          "percent": 47.45,
+          "denominator": 7968214,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3731674,
+          "display": "percent",
+          "percent": 46.83,
+          "denominator": 7968214,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3780841,
+          "percent": 47.45
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 625871,
+          "percent": 7.85
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1429869,
+          "percent": 17.94
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 976690,
+          "percent": 12.26
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 519016,
+          "percent": 6.51
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 307618,
+          "percent": 3.86
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 320821,
+          "percent": 4.03
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 7488,
+          "percent": 0.09
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5513877,
+          "percent": 69.2
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1650394,
+          "percent": 20.71
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 105788,
+          "percent": 1.33
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 463314,
+          "percent": 5.81
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 234841,
+          "percent": 2.95
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3731674,
+          "percent": 46.83
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3863593,
+          "percent": 48.49
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 372947,
+          "percent": 4.68
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7059193,
+          "percent": 88.59
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 416103,
+          "percent": 5.22
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 492918,
+          "percent": 6.19
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.09,
+        "unknown_mode_percent": 2.95,
+        "unknown_hcp_percent": 4.68,
+        "unknown_status_percent": 6.19
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000039",
+      "name": "NHS Bristol, North Somerset and South Gloucestershire Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5981164,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2291362,
+          "display": "percent",
+          "percent": 38.31,
+          "denominator": 5981164,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2607501,
+          "display": "percent",
+          "percent": 43.6,
+          "denominator": 5981164,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2291362,
+          "percent": 38.31
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 414897,
+          "percent": 6.94
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1180254,
+          "percent": 19.73
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 952748,
+          "percent": 15.93
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 531845,
+          "percent": 8.89
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 345367,
+          "percent": 5.77
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 260555,
+          "percent": 4.36
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4136,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3801269,
+          "percent": 63.55
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1775118,
+          "percent": 29.68
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 98197,
+          "percent": 1.64
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 217120,
+          "percent": 3.63
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 89460,
+          "percent": 1.5
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2607501,
+          "percent": 43.6
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3300182,
+          "percent": 55.18
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 73481,
+          "percent": 1.23
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5339011,
+          "percent": 89.26
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 308983,
+          "percent": 5.17
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 333170,
+          "percent": 5.57
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 1.5,
+        "unknown_hcp_percent": 1.23,
+        "unknown_status_percent": 5.57
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000044",
+      "name": "NHS Buckinghamshire, Oxfordshire and Berkshire West Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 10797466,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4751393,
+          "display": "percent",
+          "percent": 44.0,
+          "denominator": 10797466,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 5183026,
+          "display": "percent",
+          "percent": 48.0,
+          "denominator": 10797466,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4751393,
+          "percent": 44.0
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 800796,
+          "percent": 7.42
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1937682,
+          "percent": 17.95
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1397855,
+          "percent": 12.95
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 837419,
+          "percent": 7.76
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 563682,
+          "percent": 5.22
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 499128,
+          "percent": 4.62
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 9511,
+          "percent": 0.09
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 6623322,
+          "percent": 61.34
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3401398,
+          "percent": 31.5
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 132870,
+          "percent": 1.23
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 424643,
+          "percent": 3.93
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 215233,
+          "percent": 1.99
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 5183026,
+          "percent": 48.0
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 5468669,
+          "percent": 50.65
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 145771,
+          "percent": 1.35
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 9742285,
+          "percent": 90.23
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 465908,
+          "percent": 4.31
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 589273,
+          "percent": 5.46
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.09,
+        "unknown_mode_percent": 1.99,
+        "unknown_hcp_percent": 1.35,
+        "unknown_status_percent": 5.46
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000056",
+      "name": "NHS Cambridgeshire and Peterborough Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6612945,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2991294,
+          "display": "percent",
+          "percent": 45.23,
+          "denominator": 6612945,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2437651,
+          "display": "percent",
+          "percent": 36.86,
+          "denominator": 6612945,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2991294,
+          "percent": 45.23
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 468121,
+          "percent": 7.08
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1110578,
+          "percent": 16.79
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 791977,
+          "percent": 11.98
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 479980,
+          "percent": 7.26
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 342343,
+          "percent": 5.18
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 425346,
+          "percent": 6.43
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 3306,
+          "percent": 0.05
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4278658,
+          "percent": 64.7
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1636822,
+          "percent": 24.75
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 49821,
+          "percent": 0.75
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 367938,
+          "percent": 5.56
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 279706,
+          "percent": 4.23
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2437651,
+          "percent": 36.86
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3918208,
+          "percent": 59.25
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 257086,
+          "percent": 3.89
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5956345,
+          "percent": 90.07
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 224137,
+          "percent": 3.39
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 432463,
+          "percent": 6.54
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.05,
+        "unknown_mode_percent": 4.23,
+        "unknown_hcp_percent": 3.89,
+        "unknown_status_percent": 6.54
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000008",
+      "name": "NHS Cheshire and Merseyside Integrated Care Board",
+      "region": "North West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 15638161,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 7257427,
+          "display": "percent",
+          "percent": 46.41,
+          "denominator": 15638161,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 7556792,
+          "display": "percent",
+          "percent": 48.32,
+          "denominator": 15638161,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 7257427,
+          "percent": 46.41
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1219526,
+          "percent": 7.8
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 2690438,
+          "percent": 17.2
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1969792,
+          "percent": 12.6
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 1103725,
+          "percent": 7.06
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 712507,
+          "percent": 4.56
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 668322,
+          "percent": 4.27
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 16424,
+          "percent": 0.11
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 9959179,
+          "percent": 63.69
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 4034762,
+          "percent": 25.8
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 340880,
+          "percent": 2.18
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 1099558,
+          "percent": 7.03
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 203782,
+          "percent": 1.3
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 7556792,
+          "percent": 48.32
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 7719251,
+          "percent": 49.36
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 362118,
+          "percent": 2.32
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 13953273,
+          "percent": 89.23
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 802235,
+          "percent": 5.13
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 882653,
+          "percent": 5.64
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.11,
+        "unknown_mode_percent": 1.3,
+        "unknown_hcp_percent": 2.32,
+        "unknown_status_percent": 5.64
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000036",
+      "name": "NHS Cornwall and the Isles of Scilly Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 4565802,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2016416,
+          "display": "percent",
+          "percent": 44.16,
+          "denominator": 4565802,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 1960219,
+          "display": "percent",
+          "percent": 42.93,
+          "denominator": 4565802,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2016416,
+          "percent": 44.16
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 272839,
+          "percent": 5.98
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 715311,
+          "percent": 15.67
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 593702,
+          "percent": 13.0
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 364602,
+          "percent": 7.99
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 265224,
+          "percent": 5.81
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 335130,
+          "percent": 7.34
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 2578,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 2738774,
+          "percent": 59.98
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1273970,
+          "percent": 27.9
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 42077,
+          "percent": 0.92
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 340131,
+          "percent": 7.45
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 170850,
+          "percent": 3.74
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 1960219,
+          "percent": 42.93
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2294485,
+          "percent": 50.25
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 311098,
+          "percent": 6.81
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 4117942,
+          "percent": 90.19
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 152913,
+          "percent": 3.35
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 294947,
+          "percent": 6.46
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 3.74,
+        "unknown_hcp_percent": 6.81,
+        "unknown_status_percent": 6.46
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000018",
+      "name": "NHS Coventry and Warwickshire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5867373,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2955551,
+          "display": "percent",
+          "percent": 50.37,
+          "denominator": 5867373,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3044300,
+          "display": "percent",
+          "percent": 51.89,
+          "denominator": 5867373,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2955551,
+          "percent": 50.37
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 460076,
+          "percent": 7.84
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1106369,
+          "percent": 18.86
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 638842,
+          "percent": 10.89
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 324783,
+          "percent": 5.54
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 196406,
+          "percent": 3.35
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 180485,
+          "percent": 3.08
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4861,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3598419,
+          "percent": 61.33
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1862297,
+          "percent": 31.74
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 75845,
+          "percent": 1.29
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 249445,
+          "percent": 4.25
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 81367,
+          "percent": 1.39
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3044300,
+          "percent": 51.89
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2776710,
+          "percent": 47.32
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 46363,
+          "percent": 0.79
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5213953,
+          "percent": 88.86
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 286391,
+          "percent": 4.88
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 367029,
+          "percent": 6.26
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 1.39,
+        "unknown_hcp_percent": 0.79,
+        "unknown_status_percent": 6.26
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000058",
+      "name": "NHS Derby and Derbyshire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 7111487,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2823021,
+          "display": "percent",
+          "percent": 39.7,
+          "denominator": 7111487,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3109971,
+          "display": "percent",
+          "percent": 43.73,
+          "denominator": 7111487,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2823021,
+          "percent": 39.7
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 455444,
+          "percent": 6.4
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1085315,
+          "percent": 15.26
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 921716,
+          "percent": 12.96
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 595504,
+          "percent": 8.37
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 478133,
+          "percent": 6.72
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 738608,
+          "percent": 10.39
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 13746,
+          "percent": 0.19
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4974997,
+          "percent": 69.96
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1477686,
+          "percent": 20.78
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 79971,
+          "percent": 1.12
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 355603,
+          "percent": 5.0
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 223230,
+          "percent": 3.14
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3109971,
+          "percent": 43.73
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3816789,
+          "percent": 53.67
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 184727,
+          "percent": 2.6
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 6441739,
+          "percent": 90.58
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 231665,
+          "percent": 3.26
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 438083,
+          "percent": 6.16
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.19,
+        "unknown_mode_percent": 3.14,
+        "unknown_hcp_percent": 2.6,
+        "unknown_status_percent": 6.16
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000037",
+      "name": "NHS Devon Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 9447227,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4062306,
+          "display": "percent",
+          "percent": 43.0,
+          "denominator": 9447227,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3811142,
+          "display": "percent",
+          "percent": 40.34,
+          "denominator": 9447227,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4062306,
+          "percent": 43.0
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 658730,
+          "percent": 6.97
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1573738,
+          "percent": 16.66
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1216518,
+          "percent": 12.88
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 746831,
+          "percent": 7.91
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 538617,
+          "percent": 5.7
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 644321,
+          "percent": 6.82
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 6166,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5468010,
+          "percent": 57.88
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2637186,
+          "percent": 27.91
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 105799,
+          "percent": 1.12
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 692986,
+          "percent": 7.34
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 543246,
+          "percent": 5.75
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3811142,
+          "percent": 40.34
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 5131315,
+          "percent": 54.32
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 504770,
+          "percent": 5.34
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 8606047,
+          "percent": 91.1
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 285846,
+          "percent": 3.03
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 555334,
+          "percent": 5.88
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 5.75,
+        "unknown_hcp_percent": 5.34,
+        "unknown_status_percent": 5.88
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000041",
+      "name": "NHS Dorset Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5537731,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2054501,
+          "display": "percent",
+          "percent": 37.1,
+          "denominator": 5537731,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2133186,
+          "display": "percent",
+          "percent": 38.52,
+          "denominator": 5537731,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2054501,
+          "percent": 37.1
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 375234,
+          "percent": 6.78
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 866064,
+          "percent": 15.64
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 713604,
+          "percent": 12.89
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 525582,
+          "percent": 9.49
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 418831,
+          "percent": 7.56
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 579712,
+          "percent": 10.47
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4203,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3862213,
+          "percent": 69.74
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1028148,
+          "percent": 18.57
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 52235,
+          "percent": 0.94
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 292405,
+          "percent": 5.28
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 302730,
+          "percent": 5.47
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2133186,
+          "percent": 38.52
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3115751,
+          "percent": 56.26
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 288794,
+          "percent": 5.22
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5035527,
+          "percent": 90.93
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 174080,
+          "percent": 3.14
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 328124,
+          "percent": 5.93
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 5.47,
+        "unknown_hcp_percent": 5.22,
+        "unknown_status_percent": 5.93
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000034",
+      "name": "NHS Frimley Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 4699123,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2233004,
+          "display": "percent",
+          "percent": 47.52,
+          "denominator": 4699123,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2358440,
+          "display": "percent",
+          "percent": 50.19,
+          "denominator": 4699123,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2233004,
+          "percent": 47.52
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 335784,
+          "percent": 7.15
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 825008,
+          "percent": 17.56
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 554694,
+          "percent": 11.8
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 336422,
+          "percent": 7.16
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 229269,
+          "percent": 4.88
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 179969,
+          "percent": 3.83
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4973,
+          "percent": 0.11
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 2469073,
+          "percent": 52.54
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1829076,
+          "percent": 38.92
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 63386,
+          "percent": 1.35
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 312601,
+          "percent": 6.65
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 24987,
+          "percent": 0.53
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2358440,
+          "percent": 50.19
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2241340,
+          "percent": 47.7
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 99343,
+          "percent": 2.11
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 4196793,
+          "percent": 89.31
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 253514,
+          "percent": 5.39
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 248816,
+          "percent": 5.29
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.11,
+        "unknown_mode_percent": 0.53,
+        "unknown_hcp_percent": 2.11,
+        "unknown_status_percent": 5.29
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000043",
+      "name": "NHS Gloucestershire Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 4722716,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 1913868,
+          "display": "percent",
+          "percent": 40.52,
+          "denominator": 4722716,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 1877637,
+          "display": "percent",
+          "percent": 39.76,
+          "denominator": 4722716,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 1913868,
+          "percent": 40.52
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 274463,
+          "percent": 5.81
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 655260,
+          "percent": 13.87
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 556904,
+          "percent": 11.79
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 425134,
+          "percent": 9.0
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 364047,
+          "percent": 7.71
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 530505,
+          "percent": 11.23
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 2535,
+          "percent": 0.05
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3100147,
+          "percent": 65.64
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 969963,
+          "percent": 20.54
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 40580,
+          "percent": 0.86
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 368644,
+          "percent": 7.81
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 243382,
+          "percent": 5.15
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 1877637,
+          "percent": 39.76
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2631021,
+          "percent": 55.71
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 214058,
+          "percent": 4.53
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 4310240,
+          "percent": 91.27
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 147255,
+          "percent": 3.12
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 265221,
+          "percent": 5.62
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.05,
+        "unknown_mode_percent": 5.15,
+        "unknown_hcp_percent": 4.53,
+        "unknown_status_percent": 5.62
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000057",
+      "name": "NHS Greater Manchester Integrated Care Board",
+      "region": "North West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 17055402,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 7415093,
+          "display": "percent",
+          "percent": 43.48,
+          "denominator": 17055402,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 8255778,
+          "display": "percent",
+          "percent": 48.41,
+          "denominator": 17055402,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 7415093,
+          "percent": 43.48
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1355548,
+          "percent": 7.95
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 3082129,
+          "percent": 18.07
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 2222604,
+          "percent": 13.03
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 1250339,
+          "percent": 7.33
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 857780,
+          "percent": 5.03
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 861211,
+          "percent": 5.05
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 10698,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 11206084,
+          "percent": 65.7
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 4511710,
+          "percent": 26.45
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 315779,
+          "percent": 1.85
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 823577,
+          "percent": 4.83
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 198252,
+          "percent": 1.16
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 8255778,
+          "percent": 48.41
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 8463874,
+          "percent": 49.63
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 335750,
+          "percent": 1.97
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 15074221,
+          "percent": 88.38
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 1000379,
+          "percent": 5.87
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 980802,
+          "percent": 5.75
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 1.16,
+        "unknown_hcp_percent": 1.97,
+        "unknown_status_percent": 5.75
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000042",
+      "name": "NHS Hampshire and the Isle of Wight Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 11749147,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4943402,
+          "display": "percent",
+          "percent": 42.07,
+          "denominator": 11749147,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 5103870,
+          "display": "percent",
+          "percent": 43.44,
+          "denominator": 11749147,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4943402,
+          "percent": 42.07
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 822372,
+          "percent": 7.0
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1987415,
+          "percent": 16.92
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1530606,
+          "percent": 13.03
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 999951,
+          "percent": 8.51
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 691622,
+          "percent": 5.89
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 758826,
+          "percent": 6.46
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 14953,
+          "percent": 0.13
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 6982696,
+          "percent": 59.43
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3747843,
+          "percent": 31.9
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 137295,
+          "percent": 1.17
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 567603,
+          "percent": 4.83
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 313710,
+          "percent": 2.67
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 5103870,
+          "percent": 43.44
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 6324301,
+          "percent": 53.83
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 320976,
+          "percent": 2.73
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 10473859,
+          "percent": 89.15
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 538889,
+          "percent": 4.59
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 736399,
+          "percent": 6.27
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.13,
+        "unknown_mode_percent": 2.67,
+        "unknown_hcp_percent": 2.73,
+        "unknown_status_percent": 6.27
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000019",
+      "name": "NHS Herefordshire and Worcestershire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5558063,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2445173,
+          "display": "percent",
+          "percent": 43.99,
+          "denominator": 5558063,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2590827,
+          "display": "percent",
+          "percent": 46.61,
+          "denominator": 5558063,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2445173,
+          "percent": 43.99
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 378823,
+          "percent": 6.82
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 921607,
+          "percent": 16.58
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 716678,
+          "percent": 12.89
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 452133,
+          "percent": 8.13
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 322089,
+          "percent": 5.79
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 314568,
+          "percent": 5.66
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 6992,
+          "percent": 0.13
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3475004,
+          "percent": 62.52
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1576508,
+          "percent": 28.36
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 107521,
+          "percent": 1.93
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 344220,
+          "percent": 6.19
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 54810,
+          "percent": 0.99
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2590827,
+          "percent": 46.61
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2882759,
+          "percent": 51.87
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 84477,
+          "percent": 1.52
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5055558,
+          "percent": 90.96
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 221141,
+          "percent": 3.98
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 281364,
+          "percent": 5.06
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.13,
+        "unknown_mode_percent": 0.99,
+        "unknown_hcp_percent": 1.52,
+        "unknown_status_percent": 5.06
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000025",
+      "name": "NHS Hertfordshire and West Essex Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 8565543,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3855262,
+          "display": "percent",
+          "percent": 45.01,
+          "denominator": 8565543,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4396310,
+          "display": "percent",
+          "percent": 51.33,
+          "denominator": 8565543,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3855262,
+          "percent": 45.01
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 589400,
+          "percent": 6.88
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1448507,
+          "percent": 16.91
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1106765,
+          "percent": 12.92
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 673670,
+          "percent": 7.86
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 447414,
+          "percent": 5.22
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 439476,
+          "percent": 5.13
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 5049,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5800639,
+          "percent": 67.72
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2068149,
+          "percent": 24.14
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 71963,
+          "percent": 0.84
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 395984,
+          "percent": 4.62
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 228808,
+          "percent": 2.67
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4396310,
+          "percent": 51.33
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3970895,
+          "percent": 46.36
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 198338,
+          "percent": 2.32
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7730475,
+          "percent": 90.25
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 309759,
+          "percent": 3.62
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 525309,
+          "percent": 6.13
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 2.67,
+        "unknown_hcp_percent": 2.32,
+        "unknown_status_percent": 6.13
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000051",
+      "name": "NHS Humber and North Yorkshire Integrated Care Board",
+      "region": "North East and Yorkshire",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 11717471,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4775082,
+          "display": "percent",
+          "percent": 40.75,
+          "denominator": 11717471,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4612124,
+          "display": "percent",
+          "percent": 39.36,
+          "denominator": 11717471,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4775082,
+          "percent": 40.75
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 869623,
+          "percent": 7.42
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 2082984,
+          "percent": 17.78
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1576449,
+          "percent": 13.45
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 969454,
+          "percent": 8.27
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 662913,
+          "percent": 5.66
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 774839,
+          "percent": 6.61
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 6127,
+          "percent": 0.05
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 7792448,
+          "percent": 66.5
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2287764,
+          "percent": 19.52
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 111800,
+          "percent": 0.95
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 1031027,
+          "percent": 8.8
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 494432,
+          "percent": 4.22
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4612124,
+          "percent": 39.36
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 6568163,
+          "percent": 56.05
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 537184,
+          "percent": 4.58
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 10707755,
+          "percent": 91.38
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 359646,
+          "percent": 3.07
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 650070,
+          "percent": 5.55
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.05,
+        "unknown_mode_percent": 4.22,
+        "unknown_hcp_percent": 4.58,
+        "unknown_status_percent": 5.55
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000032",
+      "name": "NHS Kent and Medway Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 11121285,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4480642,
+          "display": "percent",
+          "percent": 40.29,
+          "denominator": 11121285,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4968495,
+          "display": "percent",
+          "percent": 44.68,
+          "denominator": 11121285,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4480642,
+          "percent": 40.29
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 799047,
+          "percent": 7.18
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1926291,
+          "percent": 17.32
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1467640,
+          "percent": 13.2
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 944524,
+          "percent": 8.49
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 690480,
+          "percent": 6.21
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 798131,
+          "percent": 7.18
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 14530,
+          "percent": 0.13
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 7021715,
+          "percent": 63.14
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3138107,
+          "percent": 28.22
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 160053,
+          "percent": 1.44
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 618769,
+          "percent": 5.56
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 182641,
+          "percent": 1.64
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4968495,
+          "percent": 44.68
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 6054521,
+          "percent": 54.44
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 98269,
+          "percent": 0.88
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 9833486,
+          "percent": 88.42
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 499030,
+          "percent": 4.49
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 788769,
+          "percent": 7.09
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.13,
+        "unknown_mode_percent": 1.64,
+        "unknown_hcp_percent": 0.88,
+        "unknown_status_percent": 7.09
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000048",
+      "name": "NHS Lancashire and South Cumbria Integrated Care Board",
+      "region": "North West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 10293722,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4298612,
+          "display": "percent",
+          "percent": 41.76,
+          "denominator": 10293722,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4439437,
+          "display": "percent",
+          "percent": 43.13,
+          "denominator": 10293722,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4298612,
+          "percent": 41.76
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 730760,
+          "percent": 7.1
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1815648,
+          "percent": 17.64
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1377593,
+          "percent": 13.38
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 830565,
+          "percent": 8.07
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 621697,
+          "percent": 6.04
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 610439,
+          "percent": 5.93
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 8408,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 7218196,
+          "percent": 70.12
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2483140,
+          "percent": 24.12
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 212638,
+          "percent": 2.07
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 277398,
+          "percent": 2.69
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 102350,
+          "percent": 0.99
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4439437,
+          "percent": 43.13
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 5663847,
+          "percent": 55.02
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 190438,
+          "percent": 1.85
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 9185189,
+          "percent": 89.23
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 514680,
+          "percent": 5.0
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 593853,
+          "percent": 5.77
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 0.99,
+        "unknown_hcp_percent": 1.85,
+        "unknown_status_percent": 5.77
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000015",
+      "name": "NHS Leicester, Leicestershire and Rutland Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 7881384,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3232077,
+          "display": "percent",
+          "percent": 41.01,
+          "denominator": 7881384,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3296951,
+          "display": "percent",
+          "percent": 41.83,
+          "denominator": 7881384,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3232077,
+          "percent": 41.01
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 535555,
+          "percent": 6.8
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1389359,
+          "percent": 17.63
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1020063,
+          "percent": 12.94
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 660806,
+          "percent": 8.38
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 458573,
+          "percent": 5.82
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 579336,
+          "percent": 7.35
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 5615,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5616543,
+          "percent": 71.26
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1571963,
+          "percent": 19.95
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 43618,
+          "percent": 0.55
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 356338,
+          "percent": 4.52
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 292922,
+          "percent": 3.72
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3296951,
+          "percent": 41.83
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 4320883,
+          "percent": 54.82
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 263550,
+          "percent": 3.34
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7092116,
+          "percent": 89.99
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 295036,
+          "percent": 3.74
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 494232,
+          "percent": 6.27
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 3.72,
+        "unknown_hcp_percent": 3.34,
+        "unknown_status_percent": 6.27
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000013",
+      "name": "NHS Lincolnshire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5664859,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2486619,
+          "display": "percent",
+          "percent": 43.9,
+          "denominator": 5664859,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 1887926,
+          "display": "percent",
+          "percent": 33.33,
+          "denominator": 5664859,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2486619,
+          "percent": 43.9
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 328918,
+          "percent": 5.81
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 833519,
+          "percent": 14.71
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 681850,
+          "percent": 12.04
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 494319,
+          "percent": 8.73
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 365282,
+          "percent": 6.45
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 461514,
+          "percent": 8.15
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 12838,
+          "percent": 0.23
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3753194,
+          "percent": 66.25
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1306028,
+          "percent": 23.05
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 78157,
+          "percent": 1.38
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 294524,
+          "percent": 5.2
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 232956,
+          "percent": 4.11
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 1887926,
+          "percent": 33.33
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3565535,
+          "percent": 62.94
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 211398,
+          "percent": 3.73
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5138792,
+          "percent": 90.71
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 178668,
+          "percent": 3.15
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 347399,
+          "percent": 6.13
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.23,
+        "unknown_mode_percent": 4.11,
+        "unknown_hcp_percent": 3.73,
+        "unknown_status_percent": 6.13
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000026",
+      "name": "NHS Mid and South Essex Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6937431,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2908634,
+          "display": "percent",
+          "percent": 41.93,
+          "denominator": 6937431,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2881351,
+          "display": "percent",
+          "percent": 41.53,
+          "denominator": 6937431,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2908634,
+          "percent": 41.93
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 551933,
+          "percent": 7.96
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1245373,
+          "percent": 17.95
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 912468,
+          "percent": 13.15
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 570404,
+          "percent": 8.22
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 365626,
+          "percent": 5.27
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 376537,
+          "percent": 5.43
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 6456,
+          "percent": 0.09
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5168825,
+          "percent": 74.51
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1330002,
+          "percent": 19.17
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 36021,
+          "percent": 0.52
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 206350,
+          "percent": 2.97
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 196233,
+          "percent": 2.83
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2881351,
+          "percent": 41.53
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3893977,
+          "percent": 56.13
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 162103,
+          "percent": 2.34
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 6279011,
+          "percent": 90.51
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 215662,
+          "percent": 3.11
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 442758,
+          "percent": 6.38
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.09,
+        "unknown_mode_percent": 2.83,
+        "unknown_hcp_percent": 2.34,
+        "unknown_status_percent": 6.38
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000022",
+      "name": "NHS Norfolk and Waveney Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 7526598,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2812288,
+          "display": "percent",
+          "percent": 37.36,
+          "denominator": 7526598,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2620731,
+          "display": "percent",
+          "percent": 34.82,
+          "denominator": 7526598,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2812288,
+          "percent": 37.36
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 413953,
+          "percent": 5.5
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1171858,
+          "percent": 15.57
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1014463,
+          "percent": 13.48
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 757611,
+          "percent": 10.07
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 624500,
+          "percent": 8.3
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 727948,
+          "percent": 9.67
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 3977,
+          "percent": 0.05
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5674105,
+          "percent": 75.39
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1224814,
+          "percent": 16.27
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 102379,
+          "percent": 1.36
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 186420,
+          "percent": 2.48
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 338880,
+          "percent": 4.5
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2620731,
+          "percent": 34.82
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 4597960,
+          "percent": 61.09
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 307907,
+          "percent": 4.09
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 6789879,
+          "percent": 90.21
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 250886,
+          "percent": 3.33
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 485833,
+          "percent": 6.45
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.05,
+        "unknown_mode_percent": 4.5,
+        "unknown_hcp_percent": 4.09,
+        "unknown_status_percent": 6.45
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000028",
+      "name": "NHS North Central London Integrated Care Board",
+      "region": "London",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 8436243,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4364670,
+          "display": "percent",
+          "percent": 51.74,
+          "denominator": 8436243,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4830952,
+          "display": "percent",
+          "percent": 57.26,
+          "denominator": 8436243,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4364670,
+          "percent": 51.74
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 780115,
+          "percent": 9.25
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1641518,
+          "percent": 19.46
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 907489,
+          "percent": 10.76
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 397005,
+          "percent": 4.71
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 211924,
+          "percent": 2.51
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 123578,
+          "percent": 1.46
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 9944,
+          "percent": 0.12
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4783321,
+          "percent": 56.7
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3027546,
+          "percent": 35.89
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 41534,
+          "percent": 0.49
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 481290,
+          "percent": 5.71
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 102552,
+          "percent": 1.22
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4830952,
+          "percent": 57.26
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3569578,
+          "percent": 42.31
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 35713,
+          "percent": 0.42
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7545960,
+          "percent": 89.45
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 467671,
+          "percent": 5.54
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 422612,
+          "percent": 5.01
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.12,
+        "unknown_mode_percent": 1.22,
+        "unknown_hcp_percent": 0.42,
+        "unknown_status_percent": 5.01
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000029",
+      "name": "NHS North East London Integrated Care Board",
+      "region": "London",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 12385360,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 5743938,
+          "display": "percent",
+          "percent": 46.38,
+          "denominator": 12385360,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 6553429,
+          "display": "percent",
+          "percent": 52.91,
+          "denominator": 12385360,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 5743938,
+          "percent": 46.38
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1190499,
+          "percent": 9.61
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 2683398,
+          "percent": 21.67
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1568565,
+          "percent": 12.66
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 645422,
+          "percent": 5.21
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 314111,
+          "percent": 2.54
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 228142,
+          "percent": 1.84
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 11285,
+          "percent": 0.09
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 7537271,
+          "percent": 60.86
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3913448,
+          "percent": 31.6
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 81908,
+          "percent": 0.66
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 712030,
+          "percent": 5.75
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 140703,
+          "percent": 1.14
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 6553429,
+          "percent": 52.91
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 5774530,
+          "percent": 46.62
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 57401,
+          "percent": 0.46
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 10865336,
+          "percent": 87.73
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 837148,
+          "percent": 6.76
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 682876,
+          "percent": 5.51
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.09,
+        "unknown_mode_percent": 1.14,
+        "unknown_hcp_percent": 0.46,
+        "unknown_status_percent": 5.51
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000050",
+      "name": "NHS North East and North Cumbria Integrated Care Board",
+      "region": "North East and Yorkshire",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 20510608,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 8252191,
+          "display": "percent",
+          "percent": 40.23,
+          "denominator": 20510608,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 7973525,
+          "display": "percent",
+          "percent": 38.88,
+          "denominator": 20510608,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 8252191,
+          "percent": 40.23
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1474570,
+          "percent": 7.19
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 3712560,
+          "percent": 18.1
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 2888184,
+          "percent": 14.08
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 1701851,
+          "percent": 8.3
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 1160488,
+          "percent": 5.66
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 1301330,
+          "percent": 6.34
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 19434,
+          "percent": 0.09
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 14380451,
+          "percent": 70.11
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 4312158,
+          "percent": 21.02
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 260926,
+          "percent": 1.27
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 938512,
+          "percent": 4.58
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 618561,
+          "percent": 3.02
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 7973525,
+          "percent": 38.88
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 11853282,
+          "percent": 57.79
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 683801,
+          "percent": 3.33
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 18530427,
+          "percent": 90.35
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 829554,
+          "percent": 4.04
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 1150627,
+          "percent": 5.61
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.09,
+        "unknown_mode_percent": 3.02,
+        "unknown_hcp_percent": 3.33,
+        "unknown_status_percent": 5.61
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000027",
+      "name": "NHS North West London Integrated Care Board",
+      "region": "London",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 15992283,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 7124187,
+          "display": "percent",
+          "percent": 44.55,
+          "denominator": 15992283,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 7680962,
+          "display": "percent",
+          "percent": 48.03,
+          "denominator": 15992283,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 7124187,
+          "percent": 44.55
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1465277,
+          "percent": 9.16
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 3425651,
+          "percent": 21.42
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 2164481,
+          "percent": 13.53
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 964848,
+          "percent": 6.03
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 463103,
+          "percent": 2.9
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 356330,
+          "percent": 2.23
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 28406,
+          "percent": 0.18
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 10656424,
+          "percent": 66.63
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 4423020,
+          "percent": 27.66
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 69508,
+          "percent": 0.43
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 448993,
+          "percent": 2.81
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 394338,
+          "percent": 2.47
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 7680962,
+          "percent": 48.03
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 7961842,
+          "percent": 49.79
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 349479,
+          "percent": 2.19
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 14220160,
+          "percent": 88.92
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 829821,
+          "percent": 5.19
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 942302,
+          "percent": 5.89
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.18,
+        "unknown_mode_percent": 2.47,
+        "unknown_hcp_percent": 2.19,
+        "unknown_status_percent": 5.89
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000059",
+      "name": "NHS Northamptonshire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 5005441,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2297794,
+          "display": "percent",
+          "percent": 45.91,
+          "denominator": 5005441,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2082297,
+          "display": "percent",
+          "percent": 41.6,
+          "denominator": 5005441,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2297794,
+          "percent": 45.91
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 369951,
+          "percent": 7.39
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 858914,
+          "percent": 17.16
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 623659,
+          "percent": 12.46
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 368298,
+          "percent": 7.36
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 244621,
+          "percent": 4.89
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 238522,
+          "percent": 4.77
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 3682,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3075410,
+          "percent": 61.44
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1251547,
+          "percent": 25.0
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 35302,
+          "percent": 0.71
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 469970,
+          "percent": 9.39
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 173212,
+          "percent": 3.46
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2082297,
+          "percent": 41.6
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2751035,
+          "percent": 54.96
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 172109,
+          "percent": 3.44
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 4574593,
+          "percent": 91.39
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 159586,
+          "percent": 3.19
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 271262,
+          "percent": 5.42
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 3.46,
+        "unknown_hcp_percent": 3.44,
+        "unknown_status_percent": 5.42
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000060",
+      "name": "NHS Nottingham and Nottinghamshire Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 7867187,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3295386,
+          "display": "percent",
+          "percent": 41.89,
+          "denominator": 7867187,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3311194,
+          "display": "percent",
+          "percent": 42.09,
+          "denominator": 7867187,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3295386,
+          "percent": 41.89
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 476409,
+          "percent": 6.06
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1211254,
+          "percent": 15.4
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 963713,
+          "percent": 12.25
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 684162,
+          "percent": 8.7
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 548045,
+          "percent": 6.97
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 683548,
+          "percent": 8.69
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 4670,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5409076,
+          "percent": 68.75
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1525172,
+          "percent": 19.39
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 65211,
+          "percent": 0.83
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 486097,
+          "percent": 6.18
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 381631,
+          "percent": 4.85
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3311194,
+          "percent": 42.09
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 4214951,
+          "percent": 53.58
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 341042,
+          "percent": 4.33
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7087061,
+          "percent": 90.08
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 310236,
+          "percent": 3.94
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 469890,
+          "percent": 5.97
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 4.85,
+        "unknown_hcp_percent": 4.33,
+        "unknown_status_percent": 5.97
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000011",
+      "name": "NHS Shropshire, Telford and Wrekin Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 3110416,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 1407647,
+          "display": "percent",
+          "percent": 45.26,
+          "denominator": 3110416,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 1339751,
+          "display": "percent",
+          "percent": 43.07,
+          "denominator": 3110416,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 1407647,
+          "percent": 45.26
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 210914,
+          "percent": 6.78
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 529559,
+          "percent": 17.03
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 410020,
+          "percent": 13.18
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 227522,
+          "percent": 7.31
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 162193,
+          "percent": 5.21
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 160568,
+          "percent": 5.16
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 1993,
+          "percent": 0.06
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 2063013,
+          "percent": 66.33
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 655797,
+          "percent": 21.08
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 51863,
+          "percent": 1.67
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 292774,
+          "percent": 9.41
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 46969,
+          "percent": 1.51
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 1339751,
+          "percent": 43.07
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 1729276,
+          "percent": 55.6
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 41389,
+          "percent": 1.33
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 2814707,
+          "percent": 90.49
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 123633,
+          "percent": 3.97
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 172076,
+          "percent": 5.53
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.06,
+        "unknown_mode_percent": 1.51,
+        "unknown_hcp_percent": 1.33,
+        "unknown_status_percent": 5.53
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000038",
+      "name": "NHS Somerset Integrated Care Board",
+      "region": "South West",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 3574146,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 1420941,
+          "display": "percent",
+          "percent": 39.76,
+          "denominator": 3574146,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 1467754,
+          "display": "percent",
+          "percent": 41.07,
+          "denominator": 3574146,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 1420941,
+          "percent": 39.76
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 246808,
+          "percent": 6.91
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 582728,
+          "percent": 16.3
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 451704,
+          "percent": 12.64
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 325960,
+          "percent": 9.12
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 246303,
+          "percent": 6.89
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 298152,
+          "percent": 8.34
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 1550,
+          "percent": 0.04
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 2301932,
+          "percent": 64.41
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 964586,
+          "percent": 26.99
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 64867,
+          "percent": 1.81
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 196143,
+          "percent": 5.49
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 46618,
+          "percent": 1.3
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 1467754,
+          "percent": 41.07
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2060233,
+          "percent": 57.64
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 46159,
+          "percent": 1.29
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 3204546,
+          "percent": 89.66
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 166735,
+          "percent": 4.67
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 202865,
+          "percent": 5.68
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.04,
+        "unknown_mode_percent": 1.3,
+        "unknown_hcp_percent": 1.29,
+        "unknown_status_percent": 5.68
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000030",
+      "name": "NHS South East London Integrated Care Board",
+      "region": "London",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 9157786,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4051744,
+          "display": "percent",
+          "percent": 44.24,
+          "denominator": 9157786,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 5154480,
+          "display": "percent",
+          "percent": 56.29,
+          "denominator": 9157786,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4051744,
+          "percent": 44.24
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 815542,
+          "percent": 8.91
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1907702,
+          "percent": 20.83
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1274009,
+          "percent": 13.91
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 590184,
+          "percent": 6.44
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 311786,
+          "percent": 3.4
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 194935,
+          "percent": 2.13
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 11884,
+          "percent": 0.13
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5357985,
+          "percent": 58.51
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3063963,
+          "percent": 33.46
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 55986,
+          "percent": 0.61
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 567431,
+          "percent": 6.2
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 112421,
+          "percent": 1.23
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 5154480,
+          "percent": 56.29
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3866112,
+          "percent": 42.22
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 137194,
+          "percent": 1.5
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7998015,
+          "percent": 87.34
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 579891,
+          "percent": 6.33
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 579880,
+          "percent": 6.33
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.13,
+        "unknown_mode_percent": 1.23,
+        "unknown_hcp_percent": 1.5,
+        "unknown_status_percent": 6.33
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000031",
+      "name": "NHS South West London Integrated Care Board",
+      "region": "London",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 8783061,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4035398,
+          "display": "percent",
+          "percent": 45.95,
+          "denominator": 8783061,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 5009453,
+          "display": "percent",
+          "percent": 57.04,
+          "denominator": 8783061,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4035398,
+          "percent": 45.95
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 727585,
+          "percent": 8.28
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1770656,
+          "percent": 20.16
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1174388,
+          "percent": 13.37
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 528771,
+          "percent": 6.02
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 304164,
+          "percent": 3.46
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 229438,
+          "percent": 2.61
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 12661,
+          "percent": 0.14
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 5163688,
+          "percent": 58.79
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2534584,
+          "percent": 28.86
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 105615,
+          "percent": 1.2
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 920885,
+          "percent": 10.48
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 58289,
+          "percent": 0.66
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 5009453,
+          "percent": 57.04
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3735602,
+          "percent": 42.53
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 38006,
+          "percent": 0.43
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 7850475,
+          "percent": 89.38
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 477441,
+          "percent": 5.44
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 455145,
+          "percent": 5.18
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.14,
+        "unknown_mode_percent": 0.66,
+        "unknown_hcp_percent": 0.43,
+        "unknown_status_percent": 5.18
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000061",
+      "name": "NHS South Yorkshire Integrated Care Board",
+      "region": "North East and Yorkshire",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 9802098,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4158704,
+          "display": "percent",
+          "percent": 42.43,
+          "denominator": 9802098,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4147735,
+          "display": "percent",
+          "percent": 42.31,
+          "denominator": 9802098,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4158704,
+          "percent": 42.43
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 679190,
+          "percent": 6.93
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1580688,
+          "percent": 16.13
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1248674,
+          "percent": 12.74
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 798368,
+          "percent": 8.14
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 575593,
+          "percent": 5.87
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 755670,
+          "percent": 7.71
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 5211,
+          "percent": 0.05
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 6650902,
+          "percent": 67.85
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 2070747,
+          "percent": 21.13
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 108538,
+          "percent": 1.11
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 621652,
+          "percent": 6.34
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 350259,
+          "percent": 3.57
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4147735,
+          "percent": 42.31
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 5355535,
+          "percent": 54.64
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 298828,
+          "percent": 3.05
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 8741765,
+          "percent": 89.18
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 392103,
+          "percent": 4.0
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 668230,
+          "percent": 6.82
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.05,
+        "unknown_mode_percent": 3.57,
+        "unknown_hcp_percent": 3.05,
+        "unknown_status_percent": 6.82
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000010",
+      "name": "NHS Staffordshire and Stoke-on-Trent Integrated Care Board",
+      "region": "Midlands",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6629670,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3084063,
+          "display": "percent",
+          "percent": 46.52,
+          "denominator": 6629670,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2833618,
+          "display": "percent",
+          "percent": 42.74,
+          "denominator": 6629670,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3084063,
+          "percent": 46.52
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 473259,
+          "percent": 7.14
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1200916,
+          "percent": 18.11
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 878790,
+          "percent": 13.26
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 452396,
+          "percent": 6.82
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 265158,
+          "percent": 4.0
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 269935,
+          "percent": 4.07
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 5153,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4578504,
+          "percent": 69.06
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1320333,
+          "percent": 19.92
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 133146,
+          "percent": 2.01
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 481915,
+          "percent": 7.27
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 115772,
+          "percent": 1.75
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2833618,
+          "percent": 42.74
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 3693338,
+          "percent": 55.71
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 102714,
+          "percent": 1.55
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5920186,
+          "percent": 89.3
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 295062,
+          "percent": 4.45
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 414422,
+          "percent": 6.25
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 1.75,
+        "unknown_hcp_percent": 1.55,
+        "unknown_status_percent": 6.25
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000023",
+      "name": "NHS Suffolk and North East Essex Integrated Care Board",
+      "region": "East of England",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6718687,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 2939803,
+          "display": "percent",
+          "percent": 43.76,
+          "denominator": 6718687,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 2377068,
+          "display": "percent",
+          "percent": 35.38,
+          "denominator": 6718687,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 2939803,
+          "percent": 43.76
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 465710,
+          "percent": 6.93
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1161145,
+          "percent": 17.28
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 850228,
+          "percent": 12.65
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 508471,
+          "percent": 7.57
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 345864,
+          "percent": 5.15
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 445032,
+          "percent": 6.62
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 2434,
+          "percent": 0.04
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 4640510,
+          "percent": 69.07
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1596517,
+          "percent": 23.76
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 68473,
+          "percent": 1.02
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 196779,
+          "percent": 2.93
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 216408,
+          "percent": 3.22
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 2377068,
+          "percent": 35.38
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 4146091,
+          "percent": 61.71
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 195528,
+          "percent": 2.91
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 6147726,
+          "percent": 91.5
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 202532,
+          "percent": 3.01
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 368429,
+          "percent": 5.48
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.04,
+        "unknown_mode_percent": 3.22,
+        "unknown_hcp_percent": 2.91,
+        "unknown_status_percent": 5.48
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000052",
+      "name": "NHS Surrey Heartlands Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 6655879,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 3188558,
+          "display": "percent",
+          "percent": 47.91,
+          "denominator": 6655879,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 3691394,
+          "display": "percent",
+          "percent": 55.46,
+          "denominator": 6655879,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 3188558,
+          "percent": 47.91
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 465599,
+          "percent": 7.0
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1082772,
+          "percent": 16.27
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 789852,
+          "percent": 11.87
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 457637,
+          "percent": 6.88
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 319764,
+          "percent": 4.8
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 346557,
+          "percent": 5.21
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 5140,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 3918071,
+          "percent": 58.87
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 1775111,
+          "percent": 26.67
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 65326,
+          "percent": 0.98
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 789067,
+          "percent": 11.86
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 108304,
+          "percent": 1.63
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 3691394,
+          "percent": 55.46
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 2897235,
+          "percent": 43.53
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 67250,
+          "percent": 1.01
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 5759718,
+          "percent": 86.54
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 250246,
+          "percent": 3.76
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 645915,
+          "percent": 9.7
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 1.63,
+        "unknown_hcp_percent": 1.01,
+        "unknown_status_percent": 9.7
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000053",
+      "name": "NHS Sussex Integrated Care Board",
+      "region": "South East",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 11590211,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 4975061,
+          "display": "percent",
+          "percent": 42.92,
+          "denominator": 11590211,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 4784250,
+          "display": "percent",
+          "percent": 41.28,
+          "denominator": 11590211,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 4975061,
+          "percent": 42.92
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 831714,
+          "percent": 7.18
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 1855479,
+          "percent": 16.01
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 1420670,
+          "percent": 12.26
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 938996,
+          "percent": 8.1
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 681201,
+          "percent": 5.88
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 879105,
+          "percent": 7.58
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 7985,
+          "percent": 0.07
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 7131953,
+          "percent": 61.53
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3179922,
+          "percent": 27.44
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 125489,
+          "percent": 1.08
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 547418,
+          "percent": 4.72
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 605429,
+          "percent": 5.22
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 4784250,
+          "percent": 41.28
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 6300859,
+          "percent": 54.36
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 505102,
+          "percent": 4.36
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 10479241,
+          "percent": 90.41
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 398171,
+          "percent": 3.44
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 712799,
+          "percent": 6.15
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.07,
+        "unknown_mode_percent": 5.22,
+        "unknown_hcp_percent": 4.36,
+        "unknown_status_percent": 6.15
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    },
+    {
+      "code": "E54000054",
+      "name": "NHS West Yorkshire Integrated Care Board",
+      "region": "North East and Yorkshire",
+      "months": 12,
+      "metrics": {
+        "gpad-appointments": {
+          "label": "Appointments recorded in GP practice appointment systems",
+          "count": 17666696,
+          "display": "count",
+          "percent": null,
+          "denominator": null
+        },
+        "same-day-capacity": {
+          "label": "Appointments taking place on the same day they were booked",
+          "count": 7543984,
+          "display": "percent",
+          "percent": 42.7,
+          "denominator": 17666696,
+          "denominator_label": "recorded appointments"
+        },
+        "gp-clinical-assessment": {
+          "label": "Appointments recorded with a GP",
+          "count": 6869151,
+          "display": "percent",
+          "percent": 38.88,
+          "denominator": 17666696,
+          "denominator_label": "recorded appointments"
+        }
+      },
+      "booking_delay": {
+        "same_day": {
+          "label": "Same Day",
+          "count": 7543984,
+          "percent": 42.7
+        },
+        "one_day": {
+          "label": "1 Day",
+          "count": 1505287,
+          "percent": 8.52
+        },
+        "two_to_seven": {
+          "label": "2 to 7 Days",
+          "count": 2915209,
+          "percent": 16.5
+        },
+        "eight_to_fourteen": {
+          "label": "8  to 14 Days",
+          "count": 2124958,
+          "percent": 12.03
+        },
+        "fifteen_to_twenty_one": {
+          "label": "15  to 21 Days",
+          "count": 1359621,
+          "percent": 7.7
+        },
+        "twenty_two_to_twenty_eight": {
+          "label": "22  to 28 Days",
+          "count": 957082,
+          "percent": 5.42
+        },
+        "over_twenty_eight": {
+          "label": "More than 28 Days",
+          "count": 1246730,
+          "percent": 7.06
+        },
+        "unknown": {
+          "label": "Unknown / Data Quality",
+          "count": 13825,
+          "percent": 0.08
+        }
+      },
+      "mode": {
+        "face_to_face": {
+          "label": "Face-to-Face",
+          "count": 12679451,
+          "percent": 71.77
+        },
+        "telephone": {
+          "label": "Telephone",
+          "count": 3382758,
+          "percent": 19.15
+        },
+        "home_visit": {
+          "label": "Home Visit",
+          "count": 144942,
+          "percent": 0.82
+        },
+        "video_online": {
+          "label": "Video/Online",
+          "count": 927724,
+          "percent": 5.25
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 531821,
+          "percent": 3.01
+        }
+      },
+      "hcp": {
+        "gp": {
+          "label": "GP",
+          "count": 6869151,
+          "percent": 38.88
+        },
+        "other_practice_staff": {
+          "label": "Other Practice staff",
+          "count": 10356208,
+          "percent": 58.62
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 441337,
+          "percent": 2.5
+        }
+      },
+      "status": {
+        "attended": {
+          "label": "Attended",
+          "count": 16007721,
+          "percent": 90.61
+        },
+        "dna": {
+          "label": "DNA",
+          "count": 649685,
+          "percent": 3.68
+        },
+        "unknown": {
+          "label": "Unknown",
+          "count": 1009290,
+          "percent": 5.71
+        }
+      },
+      "data_quality": {
+        "unknown_booking_percent": 0.08,
+        "unknown_mode_percent": 3.01,
+        "unknown_hcp_percent": 2.5,
+        "unknown_status_percent": 5.71
+      },
+      "validation": {
+        "booking_gap": 0,
+        "mode_gap": 0,
+        "hcp_gap": 0,
+        "status_gap": 0
+      }
+    }
+  ],
+  "quality_summary": {
+    "icbs_with_fewer_than_12_months": [],
+    "category_reconciliation_failures": []
+  },
+  "notes": [
+    "Figures cover appointments recorded in GP practice appointment systems from April 2024 to March 2025.",
+    "GPAD measures appointments recorded in appointment systems, not all requests for help, unmet demand or all primary-care workload.",
+    "Same-day appointments, clinician type, mode and status are overlapping dimensions of the same appointments; they are not sequential pathway outcomes.",
+    "ICB geography is taken directly from the published ICB fields in the source archive."
+  ]
+}
