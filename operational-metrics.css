@@ -1,0 +1,151 @@
+/* ============================================================
+   00. NUMBERS ON THE OPERATIONAL MAP
+   ============================================================ */
+.metric-layer {
+  position:absolute;
+  z-index:10;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  transition:opacity .16s ease;
+}
+
+.metric-layer.is-hidden {
+  opacity:0;
+}
+
+.node-metric-badge {
+  position:absolute;
+  display:none;
+  min-width:54px;
+  padding:5px 7px 4px;
+  color:#123746;
+  border:1px solid #bfd2cf;
+  border-radius:9px;
+  background:#fffffff5;
+  box-shadow:0 5px 14px #102f3d24;
+  font:inherit;
+  line-height:1;
+  text-align:center;
+  pointer-events:auto;
+  transform:translate(-50%,-50%);
+  cursor:pointer;
+}
+
+.node-metric-badge.is-visible {
+  display:block;
+}
+
+.node-metric-badge strong {
+  display:block;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:-.02em;
+}
+
+.node-metric-badge span {
+  display:block;
+  margin-top:3px;
+  color:#61767e;
+  font-size:7.5px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.numbers-toggle.active {
+  color:white;
+  border-color:var(--teal);
+  background:var(--teal);
+}
+
+.metric-scope {
+  align-self:center;
+  padding:6px 8px;
+  color:#49636c;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#f8fbfa;
+  font-size:9px;
+  font-weight:750;
+  white-space:nowrap;
+}
+
+/* ============================================================
+   01. NUMBER CARD IN THE DETAILS DRAWER
+   ============================================================ */
+.operational-metric-card {
+  margin:0 0 13px;
+  padding:13px;
+  border:1px solid #bcd4d0;
+  border-radius:12px;
+  background:linear-gradient(145deg,#f4fbf9,#ffffff);
+  box-shadow:0 8px 22px #102f3d12;
+}
+
+.operational-metric-heading {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.operational-metric-heading .eyebrow {
+  margin:0 0 3px;
+}
+
+.operational-metric-heading strong {
+  color:var(--navy);
+  font-size:30px;
+  line-height:1;
+  letter-spacing:-.04em;
+}
+
+.operational-metric-heading > span {
+  color:#5b7078;
+  font-size:9px;
+  font-weight:750;
+  line-height:1.35;
+  text-align:right;
+}
+
+.operational-metric-card h3 {
+  margin:9px 0 3px;
+  color:var(--navy);
+  font-size:13px;
+}
+
+.operational-metric-card p {
+  margin:4px 0;
+  font-size:10.5px;
+  line-height:1.45;
+}
+
+.operational-metric-card .metric-exact {
+  color:var(--teal);
+  font-weight:800;
+}
+
+.operational-metric-card .metric-note {
+  padding-top:7px;
+  color:#526970;
+  border-top:1px solid #dce8e6;
+}
+
+.operational-metric-card a {
+  display:inline-block;
+  margin-top:6px;
+  color:var(--teal);
+  font-size:9.5px;
+  font-weight:800;
+}
+
+@media(max-width:900px) {
+  .metric-scope {
+    display:none;
+  }
+
+  .node-metric-badge {
+    min-width:48px;
+    padding:4px 6px 3px;
+  }
+}
