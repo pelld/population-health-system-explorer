@@ -1,0 +1,1131 @@
+{
+  "publication": "Ambulance Quality Indicators — Ambulance Systems Indicators",
+  "period": "2024-25",
+  "geography": "Ambulance service",
+  "source_url": "https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/",
+  "source_file_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/07/AmbSYS-to-Jun-2026-b4Uah.csv",
+  "specification_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/07/20220725-AmbSYS-specification.pdf",
+  "trust_count": 11,
+  "definitions": {
+    "ambulance-calls": {
+      "code": "A1",
+      "label": "Emergency calls",
+      "definition": "Emergency calls recorded by the ambulance service.",
+      "display": "count",
+      "denominator_code": null,
+      "denominator_label": null
+    },
+    "ambulance-incidents": {
+      "code": "A7",
+      "label": "Ambulance incidents",
+      "definition": "Incidents created from ambulance-service contacts and referrals.",
+      "display": "count",
+      "denominator_code": "A1",
+      "denominator_label": "emergency calls"
+    },
+    "ambulance-hear-treat": {
+      "code": "A17",
+      "label": "Resolved remotely (Hear & Treat)",
+      "definition": "Incidents with no face-to-face ambulance response.",
+      "display": "percent",
+      "denominator_code": "A7",
+      "denominator_label": "ambulance incidents"
+    },
+    "ambulance-response": {
+      "code": "A56",
+      "label": "Face-to-face ambulance response",
+      "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+      "display": "percent",
+      "denominator_code": "A7",
+      "denominator_label": "ambulance incidents"
+    },
+    "ambulance-alternative": {
+      "code": "A55",
+      "label": "Treated or referred without conveyance (See & Treat)",
+      "definition": "Face-to-face incidents where no patient was transported.",
+      "display": "percent",
+      "denominator_code": "A56",
+      "denominator_label": "face-to-face responses"
+    },
+    "ambulance-conveyed-ae": {
+      "code": "A53",
+      "label": "Conveyed to A&E by ambulance",
+      "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+      "display": "percent",
+      "denominator_code": "A56",
+      "denominator_label": "face-to-face responses"
+    },
+    "ambulance-other-conveyance": {
+      "code": "A54",
+      "label": "Conveyed somewhere other than A&E",
+      "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+      "display": "percent",
+      "denominator_code": "A56",
+      "denominator_label": "face-to-face responses"
+    }
+  },
+  "england": {
+    "code": "Eng",
+    "name": "England",
+    "months": 12,
+    "metrics": {
+      "ambulance-calls": {
+        "indicator": "A1",
+        "label": "Emergency calls",
+        "definition": "Emergency calls recorded by the ambulance service.",
+        "display": "count",
+        "count": 9741996,
+        "percent": null,
+        "denominator_indicator": null,
+        "denominator_label": null,
+        "denominator_count": null
+      },
+      "ambulance-incidents": {
+        "indicator": "A7",
+        "label": "Ambulance incidents",
+        "definition": "Incidents created from ambulance-service contacts and referrals.",
+        "display": "count",
+        "count": 8986264,
+        "percent": 92.24,
+        "denominator_indicator": "A1",
+        "denominator_label": "emergency calls",
+        "denominator_count": 9741996
+      },
+      "ambulance-hear-treat": {
+        "indicator": "A17",
+        "label": "Resolved remotely (Hear & Treat)",
+        "definition": "Incidents with no face-to-face ambulance response.",
+        "display": "percent",
+        "count": 1417493,
+        "percent": 15.77,
+        "denominator_indicator": "A7",
+        "denominator_label": "ambulance incidents",
+        "denominator_count": 8986264
+      },
+      "ambulance-response": {
+        "indicator": "A56",
+        "label": "Face-to-face ambulance response",
+        "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+        "display": "percent",
+        "count": 7568771,
+        "percent": 84.23,
+        "denominator_indicator": "A7",
+        "denominator_label": "ambulance incidents",
+        "denominator_count": 8986264
+      },
+      "ambulance-alternative": {
+        "indicator": "A55",
+        "label": "Treated or referred without conveyance (See & Treat)",
+        "definition": "Face-to-face incidents where no patient was transported.",
+        "display": "percent",
+        "count": 2660468,
+        "percent": 35.15,
+        "denominator_indicator": "A56",
+        "denominator_label": "face-to-face responses",
+        "denominator_count": 7568771
+      },
+      "ambulance-conveyed-ae": {
+        "indicator": "A53",
+        "label": "Conveyed to A&E by ambulance",
+        "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+        "display": "percent",
+        "count": 4486491,
+        "percent": 59.28,
+        "denominator_indicator": "A56",
+        "denominator_label": "face-to-face responses",
+        "denominator_count": 7568771
+      },
+      "ambulance-other-conveyance": {
+        "indicator": "A54",
+        "label": "Conveyed somewhere other than A&E",
+        "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+        "display": "percent",
+        "count": 421812,
+        "percent": 5.57,
+        "denominator_indicator": "A56",
+        "denominator_label": "face-to-face responses",
+        "denominator_count": 7568771
+      }
+    },
+    "validation": {
+      "incident_outcome_gap": 0,
+      "face_to_face_component_gap": 0
+    }
+  },
+  "trusts": [
+    {
+      "code": "RX9",
+      "name": "EAST MIDLANDS AMBULANCE SERVICE NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 948214,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 830317,
+          "percent": 87.57,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 948214
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 155858,
+          "percent": 18.77,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 830317
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 674459,
+          "percent": 81.23,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 830317
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 237600,
+          "percent": 35.23,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 674459
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 381159,
+          "percent": 56.51,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 674459
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 55700,
+          "percent": 8.26,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 674459
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RYC",
+      "name": "EAST OF ENGLAND AMBULANCE SERVICE NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 1077999,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 917013,
+          "percent": 85.07,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 1077999
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 101324,
+          "percent": 11.05,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 917013
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 815689,
+          "percent": 88.95,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 917013
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 317822,
+          "percent": 38.96,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 815689
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 469916,
+          "percent": 57.61,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 815689
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 27951,
+          "percent": 3.43,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 815689
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "R1F",
+      "name": "ISLE OF WIGHT NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 22856,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 32064,
+          "percent": 140.29,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 22856
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 2602,
+          "percent": 8.12,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 32064
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 29462,
+          "percent": 91.88,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 32064
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 11096,
+          "percent": 37.66,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 29462
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 18035,
+          "percent": 61.21,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 29462
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 331,
+          "percent": 1.12,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 29462
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RRU",
+      "name": "LONDON AMBULANCE SERVICE NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 1543031,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 1361036,
+          "percent": 88.21,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 1543031
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 273139,
+          "percent": 20.07,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1361036
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 1087897,
+          "percent": 79.93,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1361036
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 362445,
+          "percent": 33.32,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 1087897
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 690222,
+          "percent": 63.45,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 1087897
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 35230,
+          "percent": 3.24,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 1087897
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RX6",
+      "name": "NORTH EAST AMBULANCE SERVICE NHS FOUNDATION TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 413370,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 467734,
+          "percent": 113.15,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 413370
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 38074,
+          "percent": 8.14,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 467734
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 429660,
+          "percent": 91.86,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 467734
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 139063,
+          "percent": 32.37,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 429660
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 255312,
+          "percent": 59.42,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 429660
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 35285,
+          "percent": 8.21,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 429660
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RX7",
+      "name": "NORTH WEST AMBULANCE SERVICE NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 1177662,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 1118443,
+          "percent": 94.97,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 1177662
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 163492,
+          "percent": 14.62,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1118443
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 954951,
+          "percent": 85.38,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1118443
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 308494,
+          "percent": 32.3,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 954951
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 576783,
+          "percent": 60.4,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 954951
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 69674,
+          "percent": 7.3,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 954951
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RYE",
+      "name": "SOUTH CENTRAL AMBULANCE SERVICE NHS FOUNDATION TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 626732,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 622065,
+          "percent": 99.26,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 626732
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 86358,
+          "percent": 13.88,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 622065
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 535707,
+          "percent": 86.12,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 622065
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 202519,
+          "percent": 37.8,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 535707
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 309924,
+          "percent": 57.85,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 535707
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 23264,
+          "percent": 4.34,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 535707
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RYD",
+      "name": "SOUTH EAST COAST AMBULANCE SERVICE NHS FOUNDATION TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 913371,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 778417,
+          "percent": 85.22,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 913371
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 112237,
+          "percent": 14.42,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 778417
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 666180,
+          "percent": 85.58,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 778417
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 237933,
+          "percent": 35.72,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 666180
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 412317,
+          "percent": 61.89,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 666180
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 15930,
+          "percent": 2.39,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 666180
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RYF",
+      "name": "SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 1056445,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 917503,
+          "percent": 86.85,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 1056445
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 130100,
+          "percent": 14.18,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 917503
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 787403,
+          "percent": 85.82,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 917503
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 337292,
+          "percent": 42.84,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 787403
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 410294,
+          "percent": 52.11,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 787403
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 39817,
+          "percent": 5.06,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 787403
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RYA",
+      "name": "WEST MIDLANDS AMBULANCE SERVICE UNIVERSITY NHS FOUNDATION TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 1151119,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 1036353,
+          "percent": 90.03,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 1151119
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 212995,
+          "percent": 20.55,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1036353
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 823358,
+          "percent": 79.45,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 1036353
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 274372,
+          "percent": 33.32,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 823358
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 488879,
+          "percent": 59.38,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 823358
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 60107,
+          "percent": 7.3,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 823358
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    },
+    {
+      "code": "RX8",
+      "name": "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+      "months": 12,
+      "metrics": {
+        "ambulance-calls": {
+          "indicator": "A1",
+          "label": "Emergency calls",
+          "definition": "Emergency calls recorded by the ambulance service.",
+          "display": "count",
+          "count": 811197,
+          "percent": null,
+          "denominator_indicator": null,
+          "denominator_label": null,
+          "denominator_count": null
+        },
+        "ambulance-incidents": {
+          "indicator": "A7",
+          "label": "Ambulance incidents",
+          "definition": "Incidents created from ambulance-service contacts and referrals.",
+          "display": "count",
+          "count": 905319,
+          "percent": 111.6,
+          "denominator_indicator": "A1",
+          "denominator_label": "emergency calls",
+          "denominator_count": 811197
+        },
+        "ambulance-hear-treat": {
+          "indicator": "A17",
+          "label": "Resolved remotely (Hear & Treat)",
+          "definition": "Incidents with no face-to-face ambulance response.",
+          "display": "percent",
+          "count": 141314,
+          "percent": 15.61,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 905319
+        },
+        "ambulance-response": {
+          "indicator": "A56",
+          "label": "Face-to-face ambulance response",
+          "definition": "Incidents with a face-to-face response. A56 is defined as A53 + A54 + A55.",
+          "display": "percent",
+          "count": 764005,
+          "percent": 84.39,
+          "denominator_indicator": "A7",
+          "denominator_label": "ambulance incidents",
+          "denominator_count": 905319
+        },
+        "ambulance-alternative": {
+          "indicator": "A55",
+          "label": "Treated or referred without conveyance (See & Treat)",
+          "definition": "Face-to-face incidents where no patient was transported.",
+          "display": "percent",
+          "count": 231832,
+          "percent": 30.34,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 764005
+        },
+        "ambulance-conveyed-ae": {
+          "indicator": "A53",
+          "label": "Conveyed to A&E by ambulance",
+          "definition": "Face-to-face incidents where one or more patients were transported to an emergency department.",
+          "display": "percent",
+          "count": 473650,
+          "percent": 62.0,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 764005
+        },
+        "ambulance-other-conveyance": {
+          "indicator": "A54",
+          "label": "Conveyed somewhere other than A&E",
+          "definition": "Face-to-face incidents where patients were transported to a facility other than an emergency department.",
+          "display": "percent",
+          "count": 58523,
+          "percent": 7.66,
+          "denominator_indicator": "A56",
+          "denominator_label": "face-to-face responses",
+          "denominator_count": 764005
+        }
+      },
+      "validation": {
+        "incident_outcome_gap": 0,
+        "face_to_face_component_gap": 0
+      }
+    }
+  ],
+  "notes": [
+    "The figures are annual sums of the twelve monthly AmbSYS returns from April 2024 to March 2025.",
+    "Hear & Treat is shown as a percentage of incidents; face-to-face response is also shown as a percentage of incidents.",
+    "See & Treat, conveyance to A&E and conveyance elsewhere are shown as percentages of face-to-face responses so that they form a meaningful operational split.",
+    "Ambulance-service geographies are much larger than ICBs and do not align directly with ECDS provider geographies."
+  ]
+}
