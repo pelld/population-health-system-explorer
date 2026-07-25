@@ -1,0 +1,64 @@
+name: Build public ambulance pathway data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-public-ambulance-data.yml"
+      - "scripts/build_ambulance_aqi.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# ============================================================
+# 00. PREVENT OVERLAPPING AMBULANCE DATA BUILDS
+# ============================================================
+concurrency:
+  group: build-public-ambulance-pathway-data
+  cancel-in-progress: true
+
+jobs:
+  build-ambulance-pathway-data:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      # ========================================================
+      # 01. PREPARE THE PUBLIC DATA BUILD
+      # ========================================================
+      - name: 01. Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 02. Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 03. Install dependencies
+        run: python -m pip install --upgrade pandas requests
+
+      # ========================================================
+      # 02. GENERATE THE 2024-25 AMBULANCE PATHWAY FILE
+      # ========================================================
+      - name: 04. Build ambulance AQI pathway data
+        run: python scripts/build_ambulance_aqi.py
+
+      # ========================================================
+      # 03. COMMIT THE SMALL GENERATED PUBLIC FILE
+      # ========================================================
+      - name: 05. Commit generated public data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-data/ambulance-aqi-2024-25.json
+
+          if git diff --cached --quiet; then
+            echo "No ambulance-data changes to commit."
+          else
+            git commit -m "Generate public ambulance pathway data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
