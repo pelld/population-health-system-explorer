@@ -1,0 +1,101 @@
+REPORTING_PERIOD,GEOGRAPHY_LEVEL,ORG_CODE,ORG_DESCRIPTION,MEASURE_TYPE,MEASURE,MEASURE_VALUE
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,1 - Immediate resuscitation,125
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,2 - Very urgent,10
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,3 - Urgent,125
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,4 - Standard,16995
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,5 - Non-urgent,260
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Acuity ,Not Known,2470
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,0,260
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,15,275
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,16,230
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,17,250
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,18,325
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,19,270
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age , 10-14,1580
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age , 1-4,1175
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age , 5-9,1250
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,20-24,1005
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,25-29,1095
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,30-34,1130
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,35-39,1150
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,40-44,1090
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,45-49,930
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,50-54,1095
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,55-59,1180
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,60-64,1135
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,65-69,1065
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,70-74,995
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,75-79,1035
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,80-84,805
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,85-89,460
+2425,Provider,RYF,SOUTH WESTERN AMBULANCE SERVICE NHS FOUNDATION TRUST,Age ,90+,210
+2425,Commissioning Region,Y56,LONDON COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),713030
+2425,Commissioning Region,Y58,SOUTH WEST COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),411765
+2425,Commissioning Region,Y59,SOUTH EAST COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),683205
+2425,Commissioning Region,Y60,MIDLANDS COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),830280
+2425,Commissioning Region,Y61,EAST OF ENGLAND COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),489400
+2425,Commissioning Region,Y62,NORTH WEST COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),570090
+2425,Commissioning Region,Y63,NORTH EAST AND YORKSHIRE COMMISSIONING REGION,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),807500
+2425,Commissioning Region,,Independent Providers,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),7065
+2425,National,ENG,ENGLAND,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),4512335
+2425,Provider,ACH01,WHITSTABLE MEDICAL PRACTICE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),20
+2425,Provider,AD903,URGENT CARE CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),135
+2425,Provider,AD913,BECKENHAM BEACON UCC,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,AH6,URGENT CARE CENTRE- HURLEY GROUP HQ,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),15
+2425,Provider,ANH,MALLING HEALTH,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,AXA,TOWER HAMLETS GP CARE GROUP CIC,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),3835
+2425,Provider,AXT05,CORBY URGENT CARE CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),60
+2425,Provider,D0W0K,HEALTH & WELLBEING CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),10
+2425,Provider,D9Y0V,NHS HAMPSHIRE AND ISLE OF WIGHT ICB - D9Y0V,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,DCX01,GREENWICH HEALTH LIMITED,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),60
+2425,Provider,DJV01,HERNE BAY HEALTH CARE LTD,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,F4I4D,WHITEGATE DRIVE HEALTH CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,F7H7R,MIU/UTC @ TETBURY HOSPITAL TRUST LTD,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,NIT03,SELLY OAK HEALTH CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,NNF,CITY HEALTH CARE PARTNERSHIP CIC,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),1630
+2425,Provider,NNJ07,LOUGHBOROUGH URGENT CARE CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),15
+2425,Provider,NQT,HCRG CARE LTD,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,NQT5G,URGENT CARE CENTRE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,NQT5H,PAULTON MEMORIAL HOSPITAL,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,NR318,SEATON HOUSE,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),30
+2425,Provider,NTPAD,PRACTICE PLUS GROUP SURGICAL CENTRE - ST MARYS PORTSMOUTH,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),65
+2425,Provider,NTPAN,PRACTICE PLUS GROUP URGENT TREATMENT CENTRE - SOUTHAMPTON,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),20
+2425,Provider,NVE16,FAVERSHAM MIU,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),*
+2425,Provider,R0A,MANCHESTER UNIVERSITY NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),77835
+2425,Provider,R0B,SOUTH TYNESIDE AND SUNDERLAND NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),50265
+2425,Provider,R0D,UNIVERSITY HOSPITALS DORSET NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),49900
+2425,Provider,R1D,SHROPSHIRE COMMUNITY HEALTH NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),10
+2425,Provider,R1F,ISLE OF WIGHT NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),17495
+2425,Provider,R1H,BARTS HEALTH NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),80265
+2425,Provider,R1K,LONDON NORTH WEST UNIVERSITY HEALTHCARE NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),62815
+2425,Provider,RA2,ROYAL SURREY COUNTY HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),19180
+2425,Provider,RA7,UNIVERSITY HOSPITALS BRISTOL AND WESTON NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),44210
+2425,Provider,RA9,TORBAY AND SOUTH DEVON NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),23845
+2425,Provider,RAE,BRADFORD TEACHING HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),38135
+2425,Provider,RAJ,MID AND SOUTH ESSEX NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),82170
+2425,Provider,RAL,ROYAL FREE LONDON NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),54170
+2425,Provider,RAP,NORTH MIDDLESEX UNIVERSITY HOSPITAL NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),22525
+2425,Provider,RAS,THE HILLINGDON HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),26475
+2425,Provider,RAT,NORTH EAST LONDON NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),380
+2425,Provider,RAX,KINGSTON HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),12105
+2425,Provider,RBD,DORSET COUNTY HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),17405
+2425,Provider,RBK,WALSALL HEALTHCARE NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),37445
+2425,Provider,RBL,WIRRAL UNIVERSITY TEACHING HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),24515
+2425,Provider,RBN,MERSEY AND WEST LANCASHIRE TEACHING HOSPITALS NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),44885
+2425,Provider,RBS,ALDER HEY CHILDREN'S NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),3465
+2425,Provider,RBT,MID CHESHIRE HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),21245
+2425,Provider,RC9,BEDFORDSHIRE HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),48980
+2425,Provider,RCB,YORK AND SCARBOROUGH TEACHING HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),50740
+2425,Provider,RCD,HARROGATE AND DISTRICT NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),14810
+2425,Provider,RCF,AIREDALE NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),17340
+2425,Provider,RCU,SHEFFIELD CHILDREN'S NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),3955
+2425,Provider,RCX,"THE QUEEN ELIZABETH HOSPITAL, KING'S LYNN, NHS FOUNDATION TRUST",Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),24035
+2425,Provider,RD1,ROYAL UNITED HOSPITALS BATH NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),27485
+2425,Provider,RD8,MILTON KEYNES UNIVERSITY HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),24460
+2425,Provider,RDE,EAST SUFFOLK AND NORTH ESSEX NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),63900
+2425,Provider,RDR,SUSSEX COMMUNITY NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),275
+2425,Provider,RDU,FRIMLEY HEALTH NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),65580
+2425,Provider,REF,ROYAL CORNWALL HOSPITALS NHS TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),32805
+2425,Provider,REM,LIVERPOOL UNIVERSITY HOSPITALS NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),54315
+2425,Provider,RF4,"BARKING, HAVERING AND REDBRIDGE UNIVERSITY HOSPITALS NHS TRUST",Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),58480
+2425,Provider,RFF,BARNSLEY HOSPITAL NHS FOUNDATION TRUST,Arrival Mode ,Brought in by ambulance (including helicopter / Air Ambulance),25755

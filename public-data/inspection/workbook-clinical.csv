@@ -1,0 +1,255 @@
+,,,,,
+,,,,,
+Attendances by key clinical fields,,,,,
+"The table below shows a count of A&E attendances (excluding planned attendances) and a rate of total attendances, broken down by the following key clinical fields:
+- Chief Complaint
+- First and secondary diagnosis codes
+- Investigation Code
+- Treatment Code
+",,,,,
+,,,,,
+"Copyright © 2025, NHS England.",,,,,
+Activity in English NHS Hospitals and English NHS commissioned activity in the independent sector.,,,,,
+For more information on data quality please see the data quality note accompanying this publication.,,,,,
+,,,,,
+Reporting Period,Measure Type,Code,Description,Attendances,% of total attendances
+2024/25,Chief Complaint,102556003,Pain in upper limb (finding),415904,1.61
+2024/25,Chief Complaint,10601006,Pain in lower limb (finding),738452,2.86
+2024/25,Chief Complaint,1089261000000101,Major injury involving multiple body regions (disorder),6533,0.03
+2024/25,Chief Complaint,1156755000,,1150,0
+2024/25,Chief Complaint,125593007,Injury of face (disorder),204309,0.79
+2024/25,Chief Complaint,125666000,Burn (disorder),110062,0.43
+2024/25,Chief Complaint,127278005,Injury of upper extremity (disorder),1377702,5.34
+2024/25,Chief Complaint,127279002,Injury of lower extremity (disorder),1346278,5.21
+2024/25,Chief Complaint,128069005,Injury of abdomen (disorder),12667,0.05
+2024/25,Chief Complaint,13094009,Apnea in the newborn (finding),3461,0.01
+2024/25,Chief Complaint,13791008,Asthenia (finding),628720,2.43
+2024/25,Chief Complaint,14380007,Foreign body in mouth (disorder),23973,0.09
+2024/25,Chief Complaint,14760008,Constipation (finding),70933,0.27
+2024/25,Chief Complaint,15188001,Hearing loss (disorder),18909,0.07
+2024/25,Chief Complaint,161152002,Social problem (finding),28149,0.11
+2024/25,Chief Complaint,161887000,Spontaneous bruising (disorder),6676,0.03
+2024/25,Chief Complaint,161891005,Backache (finding),396724,1.54
+2024/25,Chief Complaint,161898004,Falls (finding),150361,0.58
+2024/25,Chief Complaint,162214009,Crying infant (finding),35205,0.14
+2024/25,Chief Complaint,162356005,Earache symptom (finding),241674,0.94
+2024/25,Chief Complaint,170720001,Follow-up ophthalmological assessment (regime/therapy),121516,0.47
+2024/25,Chief Complaint,18165001,Jaundice (finding),18392,0.07
+2024/25,Chief Complaint,182888003,Medication requested (situation),46394,0.18
+2024/25,Chief Complaint,1874001000000104,,17961,0.07
+2024/25,Chief Complaint,1874011000000102,,1836,0.01
+2024/25,Chief Complaint,193462001,Insomnia (disorder),1484,0.01
+2024/25,Chief Complaint,19491003,Injury of nose (disorder),19831,0.08
+2024/25,Chief Complaint,20502007,Pain in scrotum (finding),74886,0.29
+2024/25,Chief Complaint,21522001,Abdominal pain (finding),1579475,6.12
+2024/25,Chief Complaint,21631000119105,Limb ischemia (disorder),4770,0.02
+2024/25,Chief Complaint,225358003,Wound care (regime/therapy),201240,0.78
+2024/25,Chief Complaint,225565007,Perineal pain (finding),34576,0.13
+2024/25,Chief Complaint,22631008,Unsteady when walking (finding),65273,0.25
+2024/25,Chief Complaint,230145002,Difficulty breathing (finding),463079,1.79
+2024/25,Chief Complaint,23168003,Speech dysfunction (finding),44398,0.17
+2024/25,Chief Complaint,246679005,Discharge from eye (finding),23080,0.09
+2024/25,Chief Complaint,247355005,Flank pain (finding),124648,0.48
+2024/25,Chief Complaint,248004009,Physical aggression (finding),20816,0.08
+2024/25,Chief Complaint,248020004,Bizarre behavior (finding),63737,0.25
+2024/25,Chief Complaint,248062006,Self-injurious behavior (finding),72647,0.28
+2024/25,Chief Complaint,249366005,Bleeding from nose (finding),69486,0.27
+2024/25,Chief Complaint,25064002,Headache (finding),448765,1.74
+2024/25,Chief Complaint,26079004,Tremor (finding),7369,0.03
+2024/25,Chief Complaint,262525000,Chest injury (disorder),120544,0.47
+2024/25,Chief Complaint,262595009,Traumatic amputation (disorder),612,0
+2024/25,Chief Complaint,262599003,Foreign body in respiratory tract (disorder),7200,0.03
+2024/25,Chief Complaint,267036007,Dyspnea (finding),955375,3.7
+2024/25,Chief Complaint,267064002,Retention of urine (disorder),107229,0.42
+2024/25,Chief Complaint,267102003,Sore throat symptom (finding),289678,1.12
+2024/25,Chief Complaint,271594007,Syncope (disorder),138022,0.53
+2024/25,Chief Complaint,271771009,Joint swelling (finding),35002,0.14
+2024/25,Chief Complaint,271807003,Eruption of skin (disorder),396134,1.53
+2024/25,Chief Complaint,276464002,Injury of anus (disorder),1260,0
+2024/25,Chief Complaint,281398003,Groin mass (finding),15692,0.06
+2024/25,Chief Complaint,282752000,Injury of eye region (disorder),56333,0.22
+2024/25,Chief Complaint,282765009,Upper back injury (disorder),24585,0.1
+2024/25,Chief Complaint,282766005,Lower back injury (disorder),117270,0.45
+2024/25,Chief Complaint,283682007,Bite - wound (disorder),142676,0.55
+2024/25,Chief Complaint,28442001,Polyuria (finding),56709,0.22
+2024/25,Chief Complaint,289530006,Bleeding from vagina (finding),126187,0.49
+2024/25,Chief Complaint,289610003,Vaginal problem (finding),28590,0.11
+2024/25,Chief Complaint,290085007,Breast problem (finding),8283,0.03
+2024/25,Chief Complaint,297982009,Skin problem (finding),578184,2.24
+2024/25,Chief Complaint,29857009,Chest pain (finding),1443299,5.59
+2024/25,Chief Complaint,2999009,Injury of ear (disorder),10371,0.04
+2024/25,Chief Complaint,299972003,Sting of skin (disorder),9684,0.04
+2024/25,Chief Complaint,300132001,Ear discharge (finding),26082,0.1
+2024/25,Chief Complaint,300528000,Penis problem (finding),23572,0.09
+2024/25,Chief Complaint,3006004,Disturbance of consciousness (finding),62813,0.24
+2024/25,Chief Complaint,302866003,Hypoglycemia (disorder),17881,0.07
+2024/25,Chief Complaint,312608009,Laceration - injury (disorder),339353,1.31
+2024/25,Chief Complaint,312609001,Puncture wound - injury (disorder),42531,0.16
+2024/25,Chief Complaint,33334006,Foreign body in digestive tract (disorder),21701,0.08
+2024/25,Chief Complaint,34124000,Foreign body in vagina (disorder),5265,0.02
+2024/25,Chief Complaint,3415004,Cyanosis (finding),3648,0.01
+2024/25,Chief Complaint,34436003,Blood in urine (finding),96955,0.38
+2024/25,Chief Complaint,361137007,Irregular heart beat (finding),7314,0.03
+2024/25,Chief Complaint,366979004,Depressed mood (finding),23808,0.09
+2024/25,Chief Complaint,370977006,Frostbite (disorder),179,0
+2024/25,Chief Complaint,371704001,Injury due to chemical exposure (disorder),5294,0.02
+2024/25,Chief Complaint,371708003,Injury caused by electrical exposure (disorder),5285,0.02
+2024/25,Chief Complaint,385486001,Postoperative complication (disorder),50977,0.2
+2024/25,Chief Complaint,386661006,Fever (finding),699984,2.71
+2024/25,Chief Complaint,386689009,Hypothermia (finding),4177,0.02
+2024/25,Chief Complaint,399963005,Abrasion (disorder),42673,0.17
+2024/25,Chief Complaint,404640003,Dizziness (finding),240851,0.93
+2024/25,Chief Complaint,405729008,Hematochezia (finding),62893,0.24
+2024/25,Chief Complaint,40739000,Dysphagia (disorder),7295,0.03
+2024/25,Chief Complaint,40917007,Clouded consciousness (finding),126952,0.49
+2024/25,Chief Complaint,409668002,Photophobia (finding),4815,0.02
+2024/25,Chief Complaint,410429000,Cardiac arrest (disorder),10744,0.04
+2024/25,Chief Complaint,41652007,Pain in eye (finding),200070,0.77
+2024/25,Chief Complaint,417746004,Traumatic injury (disorder),19974,0.08
+2024/25,Chief Complaint,417981005,Exposure to blood and/or body fluid (event),17524,0.07
+2024/25,Chief Complaint,418363000,Itching of skin (finding),28326,0.11
+2024/25,Chief Complaint,421581006,Pharyngeal swelling (finding),20951,0.08
+2024/25,Chief Complaint,422400008,Vomiting (disorder),393206,1.52
+2024/25,Chief Complaint,422587007,Nausea (finding),20516,0.08
+2024/25,Chief Complaint,422970001,Cardiac arrest due to trauma (disorder),322,0
+2024/25,Chief Complaint,427461000,Near syncope (disorder),158165,0.61
+2024/25,Chief Complaint,428566005,Gestation less than 20 weeks (finding),140626,0.54
+2024/25,Chief Complaint,429715006,Gestation greater than 20 weeks (finding),8566,0.03
+2024/25,Chief Complaint,430576002,At risk for injury due to fall (finding),6833,0.03
+2024/25,Chief Complaint,44077006,Numbness (finding),77430,0.3
+2024/25,Chief Complaint,444905003,Mass of soft tissue (finding),10694,0.04
+2024/25,Chief Complaint,449614009,Swelling of lower limb (finding),41544,0.16
+2024/25,Chief Complaint,450724008,Injury of cervical region of back (disorder),4750,0.02
+2024/25,Chief Complaint,47609003,Foreign body in esophagus (disorder),9791,0.04
+2024/25,Chief Complaint,48694002,Anxiety (finding),31600,0.12
+2024/25,Chief Complaint,49650001,Dysuria (finding),175649,0.68
+2024/25,Chief Complaint,49727002,Cough (finding),435728,1.69
+2024/25,Chief Complaint,55899000,Foreign body on external eye (disorder),82716,0.32
+2024/25,Chief Complaint,56890008,Victim of sexual aggression (finding),1150,0
+2024/25,Chief Complaint,57335002,"Toxic effect of gas, fumes AND/OR vapors (disorder)",5465,0.02
+2024/25,Chief Complaint,60728008,Swollen abdomen (finding),20050,0.08
+2024/25,Chief Complaint,60862001,Tinnitus (finding),4308,0.02
+2024/25,Chief Complaint,62315008,Diarrhea (finding),143591,0.56
+2024/25,Chief Complaint,63102001,Visual disturbance (disorder),176976,0.69
+2024/25,Chief Complaint,6471006,Suicidal thoughts (finding),77693,0.3
+2024/25,Chief Complaint,65958008,Hiccoughs (finding),1093,0
+2024/25,Chief Complaint,66214007,Substance abuse (disorder),158013,0.61
+2024/25,Chief Complaint,66857006,Hemoptysis (finding),28142,0.11
+2024/25,Chief Complaint,68235000,Nasal congestion (finding),17196,0.07
+2024/25,Chief Complaint,6923002,Injury of perineum (disorder),5921,0.02
+2024/25,Chief Complaint,7011001,Hallucinations (finding),19558,0.08
+2024/25,Chief Complaint,70176004,Foreign body in rectum (disorder),1483,0.01
+2024/25,Chief Complaint,70407001,Stridor (finding),68901,0.27
+2024/25,Chief Complaint,713514005,Muscle weakness of limb (finding),86286,0.33
+2024/25,Chief Complaint,74699008,Foreign body in nose (disorder),14880,0.06
+2024/25,Chief Complaint,75441006,Foreign body in ear (disorder),45272,0.18
+2024/25,Chief Complaint,75478009,Poisoning (disorder),75019,0.29
+2024/25,Chief Complaint,75705005,Red eye (disorder),114250,0.44
+2024/25,Chief Complaint,762898005,Swelling of bilateral lower limbs (finding),22267,0.09
+2024/25,Chief Complaint,77880009,Rectal pain (finding),31211,0.12
+2024/25,Chief Complaint,78680009,"Hospital admission, emergency, direct (procedure)",142093,0.55
+2024/25,Chief Complaint,79890006,Loss of appetite (finding),20905,0.08
+2024/25,Chief Complaint,80313002,Palpitations (finding),241824,0.94
+2024/25,Chief Complaint,80394007,Hyperglycemia (disorder),42386,0.16
+2024/25,Chief Complaint,81680005,Neck pain (finding),80507,0.31
+2024/25,Chief Complaint,82271004,Injury of head (disorder),731894,2.83
+2024/25,Chief Complaint,83128009,Oliguria (finding),31694,0.12
+2024/25,Chief Complaint,84387000,Asymptomatic (finding),126377,0.49
+2024/25,Chief Complaint,87317003,Respiratory arrest (disorder),2002,0.01
+2024/25,Chief Complaint,8765009,Hematemesis (disorder),50976,0.2
+2024/25,Chief Complaint,87970004,Nonfatal submersion (disorder),812,0
+2024/25,Chief Complaint,90460009,Injury of neck (disorder),52182,0.2
+2024/25,Chief Complaint,91175000,Seizure (finding),212207,0.82
+2024/25,Chief Complaint,93459000,Foreign body in subcutaneous tissue (disorder),49062,0.19
+2024/25,Chief Complaint,95666008,Weakness of face muscles (finding),48903,0.19
+2024/25,Chief Complaint,95668009,Pain in face (finding),155720,0.6
+2024/25,Chief Complaint,INVALID,INVALID,340100,1.32
+2024/25,Chief Complaint,NOT SUBMITTED,NOT SUBMITTED,4543453,17.6
+2024/25,Chief Complaint,Chief Complaint_TOTAL,Chief Complaint_TOTAL,25822265,100
+2024/25,First Diagnosis Code,10001005,Bacterial sepsis (disorder),246,0
+2024/25,First Diagnosis Code,1001000119102,Pulmonary embolism with pulmonary infarction (disorder),70,0
+2024/25,First Diagnosis Code,1003421003,Intra-abdominal omphalomesenteric duct cyst (disorder),1,0
+2024/25,First Diagnosis Code,1003433008,Malrotation of small intestine (disorder),2,0
+2024/25,First Diagnosis Code,1003549007,Agenesis of radius (disorder),1,0
+2024/25,First Diagnosis Code,1004090008,Entrapment of left ulnar nerve at elbow (disorder),1,0
+2024/25,First Diagnosis Code,1004092000,Entrapment of right ulnar nerve at elbow (disorder),1,0
+2024/25,First Diagnosis Code,10041001,Tracheal stenosis following tracheostomy (disorder),1,0
+2024/25,First Diagnosis Code,100491000119103,Myelopathy co-occurrent and due to spinal stenosis of lumbar region (disorder),47,0
+2024/25,First Diagnosis Code,10050004,Contusion of chest (disorder),35689,0.14
+2024/25,First Diagnosis Code,100731000119107,Low grade astrocytoma of brain (disorder),2,0
+2024/25,First Diagnosis Code,10087007,Infection caused by Schistosoma (disorder),44,0
+2024/25,First Diagnosis Code,1010213000,Congenital dysplasia of right hip (disorder),1,0
+2024/25,First Diagnosis Code,1010229008,Neural hearing loss of left ear (disorder),17,0
+2024/25,First Diagnosis Code,1010230003,Neural hearing loss of right ear (disorder),12,0
+2024/25,First Diagnosis Code,1010333003,Emphysema of left lung (disorder),3,0
+2024/25,First Diagnosis Code,1010334009,Emphysema of right lung (disorder),4,0
+2024/25,First Diagnosis Code,1010397000,Severe deficiency of glucose-6-phosphate dehydrogenase (disorder),1,0
+2024/25,First Diagnosis Code,1010405004,Paroxysmal atrial fibrillation with rapid ventricular response (disorder),73,0
+2024/25,First Diagnosis Code,1010568002,Undescended left testicle (disorder),4,0
+2024/25,First Diagnosis Code,1010569005,Undescended right testicle (disorder),2,0
+2024/25,First Diagnosis Code,1010626008,Recurrent peritonsillar abscess (disorder),1,0
+2024/25,First Diagnosis Code,1010634002,Pneumonia caused by Acinetobacter (disorder),1,0
+2024/25,First Diagnosis Code,1010660001,Infantile hemangioma of subglottis (disorder),1,0
+2024/25,First Diagnosis Code,1010668008,Stickler syndrome type 1 (disorder),1,0
+2024/25,First Diagnosis Code,1010672007,Benign positional paroxysmal vertigo lateral canal (disorder),4,0
+2024/25,First Diagnosis Code,1010673002,Benign positional paroxysmal vertigo posterior canal (disorder),23,0
+2024/25,First Diagnosis Code,1010730002,Thromboembolus of artery of lower limb (disorder),1,0
+2024/25,First Diagnosis Code,10121008,Open wound of nape of neck without complication (disorder),1,0
+2024/25,First Diagnosis Code,101281000119107,Congestive heart failure due to cardiomyopathy (disorder),2,0
+2024/25,First Diagnosis Code,101301000119106,Acute hypercapnic respiratory failure due to obstructive sleep apnea (disorder),3,0
+2024/25,First Diagnosis Code,10137002,Epidermal burn of chin (disorder),5,0
+2024/25,First Diagnosis Code,101421000119107,Dementia due to Parkinson's disease (disorder),3,0
+2024/25,First Diagnosis Code,101621000119105,Postoperative neuroma of upper limb (disorder),1,0
+2024/25,First Diagnosis Code,10180006,Focal hemosiderosis (disorder),1,0
+2024/25,First Diagnosis Code,10211000132109,Perinatal depression (disorder),2,0
+2024/25,First Diagnosis Code,102361000119104,Chronic pneumonia (disorder),1,0
+2024/25,First Diagnosis Code,102452004,Abscess of thyroid (disorder),1,0
+2024/25,First Diagnosis Code,102453009,Peritonsillar cellulitis (disorder),161,0
+2024/25,First Diagnosis Code,10277002,Cerebellopontine angle syndrome (disorder),1,0
+2024/25,First Diagnosis Code,10283004,Congenital stenosis of cervical canal (disorder),1,0
+2024/25,First Diagnosis Code,102878001,Recurrent miscarriage (disorder),6,0
+2024/25,First Diagnosis Code,10301003,Tick-borne relapsing fever (disorder),3,0
+2024/25,First Diagnosis Code,103081004,Immunodeficiency secondary to chemotherapy (disorder),2,0
+2024/25,First Diagnosis Code,10321002,Abscess of mastoid (disorder),16,0
+2024/25,First Diagnosis Code,10327003,Cocaine-induced mood disorder (disorder),4,0
+2024/25,First Diagnosis Code,1033051000000101,Influenza due to zoonotic influenza virus (disorder),1,0
+2024/25,First Diagnosis Code,1033071000000105,Influenza due to pandemic influenza virus (disorder),1,0
+2024/25,First Diagnosis Code,1033091000000109,Influenza due to seasonal influenza virus (disorder),14,0
+2024/25,First Diagnosis Code,1033111000000104,Influenza with pneumonia due to seasonal influenza virus (disorder),3,0
+2024/25,First Diagnosis Code,10335000,Chronic right-sided heart failure (disorder),3,0
+2024/25,First Diagnosis Code,1033571000000100,Minor postpartum haemorrhage (disorder),2,0
+2024/25,First Diagnosis Code,1033591000000101,Major postpartum haemorrhage (disorder),2,0
+2024/25,First Diagnosis Code,1033961000000104,Gouty tophi of toe (disorder),4,0
+2024/25,First Diagnosis Code,10347006,Solar urticaria (disorder),7,0
+2024/25,First Diagnosis Code,10349009,Multi-infarct dementia with delirium (disorder),5,0
+2024/25,First Diagnosis Code,10351000132101,Post polypectomy electrocoagulation syndrome (disorder),6,0
+2024/25,First Diagnosis Code,10351008,Suppurative tonsillitis (disorder),5,0
+2024/25,First Diagnosis Code,1035521000000103,Lymphoedema following cancer (disorder),1,0
+2024/25,First Diagnosis Code,1035841000000108,Lymphoedema following breast cancer (disorder),2,0
+2024/25,First Diagnosis Code,10366006,Open wound of pelvic region with complication (disorder),2,0
+2024/25,First Diagnosis Code,1036671000000106,Severe sepsis (disorder),7,0
+2024/25,First Diagnosis Code,103691000119106,Gastric ulcer caused by Helicobacter pylori (disorder),4,0
+2024/25,First Diagnosis Code,103735009,Palliative care (regime/therapy),1113,0
+2024/25,First Diagnosis Code,103742009,Renewal of prescription (procedure),20021,0.08
+2024/25,First Diagnosis Code,10380004,Crushing injury of finger (disorder),10490,0.04
+2024/25,First Diagnosis Code,10385009,Poisoning caused by digoxin (disorder),12,0
+2024/25,First Diagnosis Code,10392004,Injury of abdominal aorta (disorder),75,0
+2024/25,First Diagnosis Code,10394003,Friedreich's ataxia (disorder),4,0
+2024/25,First Diagnosis Code,104041000119108,Fungal sinusitis (disorder),5,0
+2024/25,First Diagnosis Code,10446001,Aspergilloma (disorder),5,0
+2024/25,First Diagnosis Code,10469003,Chronic hypokalemia (disorder),4,0
+2024/25,First Diagnosis Code,1048003,Capillary specimen collection (procedure),2,0
+2024/25,First Diagnosis Code,10481000119108,Colloid brain cyst (disorder),8,0
+2024/25,First Diagnosis Code,1048451000000103,Acute kidney injury due to acute tubular necrosis due to hypovolaemia (disorder),2,0
+2024/25,First Diagnosis Code,1048481000000109,Acute kidney injury due to acute tubular necrosis due to circulatory failure (disorder),1,0
+2024/25,First Diagnosis Code,1048491000000106,Acute kidney injury due to acute tubular necrosis due to sepsis (disorder),6,0
+2024/25,First Diagnosis Code,1048501000000100,Acute kidney injury due to acute tubular necrosis with histological evidence (disorder),1,0
+2024/25,First Diagnosis Code,1048521000000109,Acute kidney injury due to acute tubular necrosis due to sepsis with histological evidence (disorder),1,0
+2024/25,First Diagnosis Code,10491000119106,Complication of colostomy (disorder),2,0
+2024/25,First Diagnosis Code,10491005,Herpes zoster with meningitis (disorder),2,0
+2024/25,First Diagnosis Code,104951000119106,Vitreous hemorrhage due to type 1 diabetes mellitus (disorder),8,0
+2024/25,First Diagnosis Code,105421000119105,Early onset Alzheimer's disease with behavioral disturbance (disorder),1,0
+2024/25,First Diagnosis Code,1054451000000109,Nonvascular ulcer of leg (disorder),7,0
+2024/25,First Diagnosis Code,105526001,Homeless family (finding),5,0
+2024/25,First Diagnosis Code,10553007,Poisoning caused by vitamin D (disorder),2,0
+2024/25,First Diagnosis Code,105629000,Chlamydial infection (disorder),964,0

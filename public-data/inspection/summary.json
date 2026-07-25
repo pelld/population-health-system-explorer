@@ -1,0 +1,103 @@
+{
+  "publication": "Hospital Accident and Emergency Activity, 2024-25",
+  "period": "2024-25",
+  "public_sources": {
+    "national_workbook": "https://files.digital.nhs.uk/C4/82ACBB/AE2425_ECDS_National_Data_Tables.xlsx",
+    "provider_csv": "https://files.digital.nhs.uk/45/16564D/AE_2425_ECDS_pla_output.csv"
+  },
+  "national_workbook": {
+    "sheet_names": [
+      "Title Page",
+      "Demographics",
+      "Attendance cat and dep type",
+      "Source, arrival, discharge",
+      "Time of day distribution",
+      "Clinical"
+    ],
+    "matching_sheets": [
+      {
+        "sheet": "Title Page",
+        "matching_rows_zero_based": [
+          10,
+          11
+        ]
+      },
+      {
+        "sheet": "Source, arrival, discharge",
+        "matching_rows_zero_based": [
+          2,
+          3,
+          10,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      {
+        "sheet": "Time of day distribution",
+        "matching_rows_zero_based": [
+          3,
+          10,
+          12,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          24,
+          25,
+          27,
+          28,
+          30
+        ]
+      },
+      {
+        "sheet": "Clinical",
+        "matching_rows_zero_based": [
+          147668,
+          148956,
+          150321,
+          151303
+        ]
+      }
+    ]
+  },
+  "provider_csv": {
+    "columns": [
+      "REPORTING_PERIOD",
+      "GEOGRAPHY_LEVEL",
+      "ORG_CODE",
+      "ORG_DESCRIPTION",
+      "MEASURE_TYPE",
+      "MEASURE",
+      "MEASURE_VALUE"
+    ],
+    "keyword_hit_count_saved": 100
+  }
+}
