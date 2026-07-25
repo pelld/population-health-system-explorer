@@ -102,7 +102,7 @@
         <div>
           <p class="eyebrow teal">Operational measurement</p>
           <h2>Where do volumes and conversion rates differ?</h2>
-          <p>For each route, use the correct starting denominator and follow activity through the next stage. Compare ICBs only after checking population, case mix, service configuration and data completeness.</p>
+          <p>For each route, use the correct starting denominator and follow activity through the next stage. Compare systems only after checking population, case mix, service configuration and data completeness.</p>
         </div>
         <div class="prototype-warning"><strong>Do not compare percentages alone</strong><span>Every conversion rate needs its numerator, denominator and pathway definition</span></div>
       </div>
@@ -111,7 +111,7 @@
         <section class="evidence-flow">
           <div class="evidence-heading">
             <div><p class="eyebrow">Initial analytical framework</p><h2>Routes and outcomes to measure</h2></div>
-            <label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label>
+            <label>Population<select id="populationSelect"><option>Illustrative system</option></select></label>
           </div>
           <div id="evidenceDiagram" class="evidence-diagram"></div>
         </section>
@@ -120,7 +120,7 @@
           <article id="evidencePanel">
             <p class="eyebrow teal">Select a route or conversion</p>
             <h2>Start with route and denominator</h2>
-            <p>For example: calls → incidents → responses → assessments → conveyances → A&amp;E attendances → admissions. Compare each stage between systems, then investigate why the conversion differs.</p>
+            <p>For example: ambulance calls → incidents → Hear &amp; Treat or face-to-face response → See &amp; Treat, conveyance to A&amp;E or conveyance elsewhere.</p>
           </article>
         </aside>
       </div>
@@ -159,6 +159,7 @@
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
   <script src="operational-map-data.js"></script>
+  <script src="operational-map-corrections.js"></script>
   <script src="app.js"></script>
   <script src="ae-compact-layout.js"></script>
   <script src="ae-panel-behaviour.js"></script>
