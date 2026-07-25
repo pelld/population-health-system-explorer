@@ -1,8 +1,8 @@
 // ============================================================
 // 00. OPERATIONAL PATHWAY SELECTION
 // ============================================================
-// Clicking the high-level ambulance route should show the complete measurable
-// branch rather than only the nodes one relationship away from it.
+// Clicking a high-level route should show its complete measurable branch rather
+// than only the nodes one relationship away from the selected circle.
 
 (() => {
   const baseSelectNodeForPathways = selectNode;
@@ -17,6 +17,14 @@
       "ambulance-conveyed-ae",
       "ambulance-other-conveyance",
       "ambulance-ae-route",
+      "ae-attendance"
+    ],
+    "nhs111-ae-route":[
+      "nhs111-contacts",
+      "nhs111-triage",
+      "nhs111-ae-disposition",
+      "nhs111-direct-booking",
+      "nhs111-ae-route",
       "ae-attendance"
     ]
   };
@@ -47,3 +55,25 @@
     }
   };
 })();
+
+// ============================================================
+// 01. LOAD THE NHS 111 / IUC PRESENTATION LAYER
+// ============================================================
+// This loader runs after all static scripts, including the ambulance layer, so the
+// context-specific selectors can hand over cleanly without changing index.html.
+
+window.addEventListener("load",() => {
+  if (!document.querySelector('link[href="iuc-metrics.css"]')) {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href = "iuc-metrics.css";
+    document.head.append(stylesheet);
+  }
+
+  if (!document.querySelector('script[src="iuc-metrics.js"]')) {
+    const script = document.createElement("script");
+    script.src = "iuc-metrics.js";
+    script.async = false;
+    document.body.append(script);
+  }
+});
