@@ -1,11 +1,9 @@
 // ============================================================
 // 00. AMBULANCE PATHWAY: STAGES THAT BRANCH INTO OUTCOMES
 // ============================================================
-// The operational map should not show a stage unless it helps define a useful
-// denominator or branches into different outcomes. This correction replaces the
-// previous single assessment chain with the published ambulance operating logic:
-// incidents can be resolved remotely or receive a face-to-face response; a
-// face-to-face response can end at scene, at A&E or at another destination.
+// The operational map should not show a stage unless it defines a useful
+// denominator or branches into different outcomes. ECDS attendance source is
+// kept separate from ambulance-service operational outcomes.
 
 (() => {
   // ============================================================
@@ -45,14 +43,15 @@
 
   const ambulanceRoute = AE_MAP_NODES.find(node => node.id === "ambulance-ae-route");
   if (ambulanceRoute) Object.assign(ambulanceRoute,{
-    label:"Conveyed to A&E by ambulance",
-    summary:"Following ambulance assessment, the patient is transported to an emergency department.",
-    measures:"Conveyances to A&E; percentage of face-to-face responses; call category; diagnosis; A&E treatment; admission and recontact.",
-    caution:"ECDS also records ambulance service as a source of referral. That is different from the ambulance-service outcome measure of conveyance to A&E."
+    label:"Ambulance service recorded as attendance source",
+    summary:"The public ECDS attendance-source field records the ambulance service as the source of referral for the A&E attendance.",
+    why:"This is a classification of the A&E attendance. It is not the same measure as arrival by ambulance or ambulance-service conveyance to an ED.",
+    measures:"ECDS ambulance-service attendance source; arrival mode; provider; A&E outcome and completeness.",
+    caution:"Do not interpret the ECDS attendance-source percentage as the ambulance-service conveyance rate."
   });
 
   // ============================================================
-  // 03. ADD THE OTHER OUTCOMES OF AN AMBULANCE INCIDENT
+  // 03. ADD THE OUTCOMES OF AN AMBULANCE INCIDENT
   // ============================================================
   if (!AE_MAP_NODES.some(node => node.id === "ambulance-hear-treat")) {
     AE_MAP_NODES.push(AE_NODE("ambulance-hear-treat","Resolved remotely (Hear & Treat)","ambulance",2,-58,610,{
@@ -65,8 +64,19 @@
     }));
   }
 
+  if (!AE_MAP_NODES.some(node => node.id === "ambulance-conveyed-ae")) {
+    AE_MAP_NODES.push(AE_NODE("ambulance-conveyed-ae","Conveyed to A&E by ambulance","ambulance",2,-10,610,{
+      summary:"Following a face-to-face ambulance assessment, the patient is transported to an emergency department.",
+      why:"This is an ambulance-service operational outcome and can be compared with See & Treat and conveyance to other destinations.",
+      action:"Compare conveyance rates after face-to-face response with case mix, pathway availability, recontacts and A&E outcomes.",
+      timescale:"quick", owner:"Ambulance services, ICBs and acute providers",
+      measures:"Conveyances to A&E; percentage of face-to-face responses; call category; diagnosis; A&E treatment; admission and recontact.",
+      caution:"A lower conveyance rate is not automatically safer or better.", evidence:"official", sources:["S9"]
+    }));
+  }
+
   if (!AE_MAP_NODES.some(node => node.id === "ambulance-other-conveyance")) {
-    AE_MAP_NODES.push(AE_NODE("ambulance-other-conveyance","Conveyed somewhere other than A&E","ambulance",2,-10,720,{
+    AE_MAP_NODES.push(AE_NODE("ambulance-other-conveyance","Conveyed somewhere other than A&E","ambulance",2,6,720,{
       summary:"The patient is transported to another destination rather than an emergency department.",
       why:"Direct conveyance to specialist, urgent, maternity, mental-health or other services can bypass A&E where an appropriate pathway exists.",
       action:"Separate destinations and compare their availability, use and outcomes between systems.",
@@ -98,7 +108,8 @@
     AE_LINK("ambulance-incidents","ambulance-hear-treat","is resolved remotely","positive","official",["S9"]),
     AE_LINK("ambulance-incidents","ambulance-response","receives a face-to-face response","positive","official",["S9"]),
     AE_LINK("ambulance-response","ambulance-alternative","ends with treatment or referral at scene","positive","official",["S9"]),
-    AE_LINK("ambulance-response","ambulance-ae-route","ends with conveyance to A&E","positive","official",["S9"]),
-    AE_LINK("ambulance-response","ambulance-other-conveyance","ends with conveyance to another destination","positive","hypothesis",["S9"])
+    AE_LINK("ambulance-response","ambulance-conveyed-ae","ends with conveyance to A&E","positive","official",["S9"]),
+    AE_LINK("ambulance-response","ambulance-other-conveyance","ends with conveyance to another destination","positive","hypothesis",["S9"]),
+    AE_LINK("ambulance-conveyed-ae","ambulance-ae-route","contributes to the recorded ambulance route","uncertain","hypothesis",["S9"])
   );
 })();
