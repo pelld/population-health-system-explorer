@@ -60,14 +60,37 @@
 
 .metric-scope {
   align-self:center;
+  max-width:260px;
   padding:6px 8px;
+  overflow:hidden;
   color:#49636c;
   border:1px solid var(--line);
   border-radius:999px;
   background:#f8fbfa;
   font-size:9px;
   font-weight:750;
+  text-overflow:ellipsis;
   white-space:nowrap;
+}
+
+.provider-metric-control {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#49636c;
+  font-size:9px;
+  font-weight:750;
+}
+
+.provider-metric-control select {
+  min-height:34px;
+  width:min(270px,26vw);
+  padding:0 8px;
+  color:var(--ink);
+  border:1px solid #b8c7c3;
+  border-radius:6px;
+  background:white;
+  font-size:10px;
 }
 
 /* ============================================================
@@ -101,6 +124,7 @@
 }
 
 .operational-metric-heading > span {
+  max-width:155px;
   color:#5b7078;
   font-size:9px;
   font-weight:750;
@@ -129,6 +153,15 @@
   padding-top:7px;
   color:#526970;
   border-top:1px solid #dce8e6;
+}
+
+.operational-metric-card .metric-warning {
+  padding:7px 8px;
+  color:#7d3445;
+  border:1px solid #dfb3bd;
+  border-radius:7px;
+  background:#fff8f9;
+  font-weight:700;
 }
 
 .operational-metric-card a {
@@ -172,6 +205,15 @@
 @media(max-width:900px) {
   .metric-scope {
     display:none;
+  }
+
+  .provider-metric-control {
+    width:100%;
+  }
+
+  .provider-metric-control select {
+    flex:1;
+    width:auto;
   }
 
   .node-metric-badge {
