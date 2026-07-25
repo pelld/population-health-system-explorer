@@ -1,11 +1,10 @@
-name: Build public ECDS data
+name: Build public ECDS provider data
 
 on:
   push:
     branches: [main]
     paths:
       - ".github/workflows/build-public-ecds-data.yml"
-      - "scripts/inspect_public_ecds.py"
       - "scripts/build_provider_routes.py"
   workflow_dispatch:
 
@@ -13,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  inspect-public-data:
+  build-provider-routes:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
@@ -27,22 +26,19 @@ jobs:
           python-version: "3.12"
 
       - name: 03. Install dependencies
-        run: python -m pip install --upgrade pandas openpyxl requests
+        run: python -m pip install --upgrade pandas requests
 
-      - name: 04. Download and inspect public ECDS files
-        run: python scripts/inspect_public_ecds.py
-
-      - name: 05. Build provider-level route metrics
+      - name: 04. Build provider-level route metrics
         run: python scripts/build_provider_routes.py
 
-      - name: 06. Commit generated public data
+      - name: 05. Commit generated public data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A public-data
+          git add public-data/ecds-2024-25-provider-routes.json
           if git diff --cached --quiet; then
-            echo "No public-data changes to commit."
+            echo "No provider-data changes to commit."
           else
-            git commit -m "Generate public ECDS route data"
+            git commit -m "Generate public ECDS provider route data"
             git push
           fi
