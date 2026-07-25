@@ -9,6 +9,8 @@ on:
       - "ambulance-metrics.js"
       - "iuc-metrics.js"
       - "gpad-metrics.js"
+      - "ucr-map-data.js"
+      - "ucr-metrics.js"
 
 jobs:
   check-javascript:
@@ -23,3 +25,5 @@ jobs:
           node --check ambulance-metrics.js
           node --check iuc-metrics.js
           node --check gpad-metrics.js
+          node --check ucr-map-data.js
+          node --check ucr-metrics.js
