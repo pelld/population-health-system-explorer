@@ -7,6 +7,7 @@ on:
       - ".github/workflows/build-public-iucadc.yml"
       - "scripts/build_iucadc_2024_25.py"
       - "scripts/finalise_iucadc_2024_25.py"
+      - "scripts/complete_iucadc_breakdowns.py"
   workflow_dispatch:
 
 permissions:
@@ -41,7 +42,10 @@ jobs:
       - name: 05. Apply revised published England totals
         run: python scripts/finalise_iucadc_2024_25.py
 
-      - name: 06. Commit generated public data
+      - name: 06. Reconcile booking breakdowns
+        run: python scripts/complete_iucadc_breakdowns.py
+
+      - name: 07. Commit generated public data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
