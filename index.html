@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the direct and upstream determinants of A&E attendance, what can be measured locally and what managers may be able to influence.">
-  <title>A&E Attendance — Determinants Map</title>
+  <meta name="description" content="Explore how people reach A&E, how activity moves through hospital and which operational, population and wider factors explain differences between systems.">
+  <title>Population Health System Explorer — Operational Map</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="ae-manager-map.css">
   <link rel="stylesheet" href="ae-compact-layout.css">
@@ -17,8 +17,8 @@
   <header class="masthead">
     <div>
       <p class="eyebrow">Population health system explorer</p>
-      <h1>Why is A&amp;E attendance high?</h1>
-      <p class="strapline">A map of the direct determinants of attendance, the upstream factors that shape them and the evidence needed to understand what matters locally.</p>
+      <h1>How does activity reach and move through A&amp;E?</h1>
+      <p class="strapline">An operational map of access routes, conversion points, hospital flow and the population and service factors that shape them.</p>
     </div>
     <div class="header-actions">
       <button id="sourcesButton" class="ghost-button">Sources &amp; method</button>
@@ -30,22 +30,22 @@
        01. VIEW SWITCHER
        ============================================================ -->
   <nav class="view-tabs" aria-label="Explorer views">
-    <button class="active" data-view="system"><span>1</span><strong>What determines attendance?</strong><small>Direct determinants and upstream causes</small></button>
-    <button data-view="evidence"><span>2</span><strong>What should we test locally?</strong><small>Measures that distinguish one determinant from another</small></button>
+    <button class="active" data-view="system"><span>1</span><strong>Operational system map</strong><small>Routes, stages, conversion points and feedback</small></button>
+    <button data-view="evidence"><span>2</span><strong>What should we measure?</strong><small>Counts, rates, denominators and comparison points</small></button>
   </nav>
 
   <main>
     <!-- ============================================================
-         02. A&E DETERMINANTS MAP
+         02. OPERATIONAL SYSTEM MAP
          ============================================================ -->
     <section id="systemView" class="view active">
       <div class="view-intro">
         <div>
-          <p class="eyebrow teal">Management question</p>
-          <h2>“There are too many people at A&amp;E. What do we do?”</h2>
-          <p>Start by separating the specific determinants of attendance from the upstream factors that create them. Some determinants may be measurable and influenceable quickly; others reflect longer-term need or circumstances outside direct NHS control.</p>
+          <p class="eyebrow teal">Operational question</p>
+          <h2>Why do more people reach A&amp;E in one system than another?</h2>
+          <p>Start with the recorded routes into A&amp;E, then work backwards through each pathway and forwards into admission, bed use and discharge. Compare conversion rates only after considering population, case mix, service capacity and data quality.</p>
         </div>
-        <div class="prototype-warning"><strong>Decision-support prototype</strong><span>Relationships and actions must be tested against local evidence</span></div>
+        <div class="prototype-warning"><strong>System-map prototype</strong><span>Values and local comparisons will be added to the mapped stages</span></div>
       </div>
 
       <div class="system-layout">
@@ -54,21 +54,21 @@
             <div class="map-toolbar-controls">
               <div class="map-view-controls" role="group" aria-label="Map views">
                 <button id="homeMap" class="map-action home-action layer">Start here</button>
-                <button id="wholePicture" class="map-action layer">Whole picture</button>
-                <button id="selectedBranch" class="map-action layer">Selected branch</button>
+                <button id="wholePicture" class="map-action layer">Whole system</button>
+                <button id="selectedBranch" class="map-action layer">Selected pathway</button>
                 <button id="feedbackButton" class="map-action layer">Feedback loop</button>
               </div>
 
               <span class="toolbar-divider" aria-hidden="true"></span>
 
-              <div class="timescale-controls" role="group" aria-label="Management timescale">
-                <button class="map-action timescale-button" data-timescale="quick">Quick levers</button>
-                <button class="map-action timescale-button" data-timescale="medium">Medium term</button>
-                <button class="map-action timescale-button" data-timescale="long">Long term</button>
-                <button class="map-action timescale-button" data-timescale="diagnostic">Understand first</button>
+              <div class="timescale-controls" role="group" aria-label="Factor type">
+                <button class="map-action timescale-button" data-timescale="quick">Operational stages</button>
+                <button class="map-action timescale-button" data-timescale="medium">Service capacity</button>
+                <button class="map-action timescale-button" data-timescale="long">Population context</button>
+                <button class="map-action timescale-button" data-timescale="diagnostic">Data checks</button>
               </div>
 
-              <label class="map-search" for="factorSearch"><span>Find a determinant</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. no same-day appointment"></label>
+              <label class="map-search" for="factorSearch"><span>Find a stage or factor</span><input id="factorSearch" list="factorOptions" type="search" autocomplete="off" placeholder="e.g. ambulance conveyance"></label>
               <datalist id="factorOptions"></datalist>
 
               <select id="loopSelect" class="map-select" aria-label="Choose feedback loop"></select>
@@ -77,16 +77,16 @@
             <p>Drag empty space to move · scroll to zoom · click a circle or relationship</p>
           </div>
 
-          <div id="systemMap" class="system-map" aria-label="Interactive map of determinants of A&E attendance">
+          <div id="systemMap" class="system-map" aria-label="Interactive operational map of routes into A&E and hospital flow">
             <div id="cy" class="cy-canvas"></div>
             <div id="mapKey" class="map-key"></div>
           </div>
         </section>
 
         <aside id="nodePanel" class="detail-panel">
-          <p class="eyebrow teal">Management interpretation</p>
+          <p class="eyebrow teal">Operational interpretation</p>
           <h2 id="nodeTitle">A&amp;E attendance</h2>
-          <p id="nodeSummary">Select a determinant to see why it may matter, what would indicate it locally, what sits upstream and what managers might be able to influence.</p>
+          <p id="nodeSummary">Select a route, stage or conversion point to see what it means, which denominator is needed, what may explain variation and what could be investigated.</p>
           <div id="nodeDetails"></div>
           <div id="whyTree" hidden></div>
         </aside>
@@ -94,32 +94,32 @@
     </section>
 
     <!-- ============================================================
-         03. LOCAL ANALYTICAL QUESTIONS
+         03. MEASUREMENT QUESTIONS
          ============================================================ -->
     <section id="evidenceView" class="view">
       <div class="view-intro">
         <div>
-          <p class="eyebrow teal">Local diagnosis</p>
-          <h2>Which determinants matter here?</h2>
-          <p>The same headline trend can have different causes in different places, cohorts and times of day. Test the determinant before deciding what to change.</p>
+          <p class="eyebrow teal">Operational measurement</p>
+          <h2>Where do volumes and conversion rates differ?</h2>
+          <p>For each route, use the correct starting denominator and follow activity through the next stage. Compare ICBs only after checking population, case mix, service configuration and data completeness.</p>
         </div>
-        <div class="prototype-warning"><strong>Do not jump to intervention</strong><span>Test the causal explanation before claiming an attendance reduction</span></div>
+        <div class="prototype-warning"><strong>Do not compare percentages alone</strong><span>Every conversion rate needs its numerator, denominator and pathway definition</span></div>
       </div>
 
       <div class="evidence-layout">
         <section class="evidence-flow">
           <div class="evidence-heading">
-            <div><p class="eyebrow">Illustrative analytical framework</p><h2>Direct determinants to test</h2></div>
+            <div><p class="eyebrow">Initial analytical framework</p><h2>Routes and outcomes to measure</h2></div>
             <label>Population<select id="populationSelect"><option>Illustrative ICB</option></select></label>
           </div>
           <div id="evidenceDiagram" class="evidence-diagram"></div>
         </section>
         <aside class="evidence-side">
-          <div class="status-key"><strong>How to use this view</strong><span><i class="measured"></i>Test with local data</span><span><i class="proxy"></i>Check data and context first</span></div>
+          <div class="status-key"><strong>How to use this view</strong><span><i class="measured"></i>Operational measure</span><span><i class="proxy"></i>Definition or data gap</span></div>
           <article id="evidencePanel">
-            <p class="eyebrow teal">Select a determinant</p>
-            <h2>Start with segmentation</h2>
-            <p>Break attendance down by population, presentation, time, arrival route, referral source, prior care, repeat use and outcome before deciding what to change.</p>
+            <p class="eyebrow teal">Select a route or conversion</p>
+            <h2>Start with route and denominator</h2>
+            <p>For example: calls → incidents → responses → assessments → conveyances → A&amp;E attendances → admissions. Compare each stage between systems, then investigate why the conversion differs.</p>
           </article>
         </aside>
       </div>
@@ -133,9 +133,9 @@
     <section class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
       <button id="closeModal" class="close" aria-label="Close">×</button>
       <p class="eyebrow teal">About</p>
-      <h2 id="aboutTitle">A determinants map, not a prediction</h2>
-      <p>The central outcome is A&amp;E attendance. The larger circles are direct determinants that may lead to attendance; the smaller circles are upstream factors that help create those determinants.</p>
-      <p>Management responses, timescales and ownership are shown in the details drawer. The map does not label attendance as inappropriate and does not prove that changing a determinant will reduce attendance.</p>
+      <h2 id="aboutTitle">A connected operational system map</h2>
+      <p>The map starts with routes into A&amp;E, but it is not limited to A&amp;E. It connects urgent contacts, primary care, ambulance activity, hospital admission, bed use, discharge, repeat use and the wider factors that shape them.</p>
+      <p>It is deliberately not a Sankey diagram. Line width does not yet represent volume. Counts, rates and conversion measures will be attached to the relevant stages without replacing the connected system view.</p>
     </section>
   </div>
 
@@ -143,8 +143,8 @@
     <section class="modal source-modal" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle">
       <button id="closeSources" class="close" aria-label="Close">×</button>
       <p class="eyebrow teal">Transparency</p>
-      <h2 id="sourcesTitle">Sources, evidence and interpretation</h2>
-      <p>Official data sources support measurement and definitions. Some causal links are published evidence; others are explicit hypotheses that should be tested locally rather than treated as established fact.</p>
+      <h2 id="sourcesTitle">Sources, definitions and interpretation</h2>
+      <p>Operational datasets use different units and definitions. Source of referral, arrival mode and previous service contact are related but not interchangeable. Comparisons must show data completeness and denominator definitions.</p>
       <div class="evidence-legend">
         <span class="claim-badge published">Published evidence</span>
         <span class="claim-badge official">Official definition/data</span>
@@ -157,9 +157,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
   <script src="data.js"></script>
-  <script src="ae-manager-data.js"></script>
+  <script src="operational-map-data.js"></script>
   <script src="app.js"></script>
   <script src="ae-compact-layout.js"></script>
   <script src="ae-panel-behaviour.js"></script>
+  <script src="operational-overrides.js"></script>
 </body>
 </html>
