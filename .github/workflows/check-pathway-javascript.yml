@@ -8,6 +8,7 @@ on:
       - "operational-pathway-selection.js"
       - "ambulance-metrics.js"
       - "iuc-metrics.js"
+      - "gpad-metrics.js"
 
 jobs:
   check-javascript:
@@ -21,3 +22,4 @@ jobs:
           node --check operational-pathway-selection.js
           node --check ambulance-metrics.js
           node --check iuc-metrics.js
+          node --check gpad-metrics.js
