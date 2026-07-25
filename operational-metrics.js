@@ -1,9 +1,8 @@
 // ============================================================
 // 00. PUBLIC ANNUAL ECDS ROUTE METRICS
 // ============================================================
-// The map uses the complete 2024-25 public ECDS attendance-source table rather
-// than mixing a current SitRep total with older route percentages. The small JSON
-// file is generated from the NHS England annual workbook and is publicly auditable.
+// National and provider figures come from the public 2024-25 ECDS publication.
+// The selector changes the badges without changing the structure of the map.
 
 (async () => {
   const map = el("systemMap");
@@ -11,9 +10,13 @@
   const baseRenderNodeDetails = renderNodeDetails;
   const metricBadges = new Map();
   let numbersVisible = true;
+  let selectedProvider = null;
 
   if (!map || !toolbarControls) return;
 
+  // ============================================================
+  // 01. FORMATTERS AND PUBLIC FILES
+  // ============================================================
   function formatCount(value) {
     return new Intl.NumberFormat("en-GB").format(value);
   }
@@ -25,25 +28,30 @@
   }
 
   function formatPercent(value) {
+    if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
     return `${Number(value).toFixed(Number(value) >= 10 ? 1 : 2)}%`;
   }
 
-  let publicData;
-  try {
-    const response = await fetch("public-data/ecds-2024-25-route-metrics.json", { cache:"no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    publicData = await response.json();
-  } catch (error) {
-    console.error("Could not load public ECDS route metrics",error);
-    return;
+  async function loadJson(path,required=true) {
+    try {
+      const response = await fetch(path,{ cache:"no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      if (required) console.error(`Could not load ${path}`,error);
+      return null;
+    }
   }
 
+  const [nationalData,providerData] = await Promise.all([
+    loadJson("public-data/ecds-2024-25-route-metrics.json",true),
+    loadJson("public-data/ecds-2024-25-provider-routes.json",false)
+  ]);
+  if (!nationalData) return;
+
   // ============================================================
-  // 01. ALIGN THE VISIBLE ROUTES WITH THE PUBLISHED DEFINITIONS
+  // 02. ALIGN MAP WORDING WITH THE PUBLISHED FIELDS
   // ============================================================
-  // ECDS publishes "member of Primary Health Care Team", which is broader than
-  // GP referral alone. Ambulance source of referral and ambulance arrival mode
-  // are also separate published fields, so the map says so explicitly.
   const routeTextOverrides = {
     "self-presentation": {
       label:"Self-referral or self-presentation",
@@ -56,13 +64,13 @@
       caution:"The public annual category cannot isolate GP referrals from all other members of the Primary Health Care Team."
     },
     "ambulance-ae-route": {
-      label:"Ambulance route into A&E",
-      summary:"ECDS separately records referral by the ambulance service and arrival by ambulance. Both describe the route, but they are not interchangeable.",
-      caution:"The source-of-referral percentage and arrival-mode percentage use the same attendance total but answer different questions."
+      label:"Ambulance service recorded as attendance source",
+      summary:"ECDS records the ambulance service as the attendance source. Arrival by ambulance and ambulance-service conveyance are separate measures.",
+      caution:"Do not treat this percentage as the ambulance-service conveyance rate."
     },
     "other-professional-route": {
       label:"Other recorded referral sources",
-      summary:"This transparent remainder groups the many smaller published attendance-source categories after self-referral, NHS 111, primary health care team, ambulance service and Not Known are separated.",
+      summary:"This transparent remainder groups the smaller published attendance-source categories after the main routes and Not Known are separated.",
       caution:"The group contains several distinct routes and should be expanded rather than treated as one operational service."
     },
     "unknown-route": {
@@ -82,23 +90,51 @@
   const factorOptions = el("factorOptions");
   if (factorOptions) factorOptions.innerHTML = AE_MAP_NODES.map(node => `<option value="${node.label}"></option>`).join("");
 
-  const OPERATIONAL_METRICS = Object.fromEntries(
-    Object.entries(publicData.routes).map(([nodeId,route]) => [nodeId,{
-      value:nodeId === "ae-attendance" ? compactCount(route.count) : formatPercent(route.percent),
-      exact:`${formatCount(route.count)} attendances`,
-      label:route.label,
-      period:publicData.period,
-      geography:publicData.geography,
-      comparison:nodeId === "ae-attendance" ? "Annual ECDS attendance-source denominator" : `${formatPercent(route.percent)} of the ECDS attendance-source total`,
-      note:`${route.definition}${route.derived ? " This is a transparent grouping derived from published categories." : ""}`,
-      secondary:route.secondary || null,
-      sourceLabel:publicData.publication,
-      sourceUrl:publicData.source_url
-    }])
-  );
+  // ============================================================
+  // 03. SELECT ENGLAND OR A PROVIDER
+  // ============================================================
+  const scopeLabel = document.createElement("span");
+  scopeLabel.className = "metric-scope";
+
+  const providerControl = document.createElement("label");
+  providerControl.className = "provider-metric-control";
+  providerControl.innerHTML = `<span>Numbers for</span><select id="providerMetricSelect" aria-label="Choose England or an ECDS provider"><option value="">England</option></select>`;
+
+  const providerSelect = providerControl.querySelector("select");
+  if (providerData?.providers?.length) {
+    providerData.providers.forEach(provider => providerSelect.add(new Option(`${provider.name} (${provider.code})`,provider.code)));
+  } else {
+    providerControl.hidden = true;
+  }
+
+  function geographyName() {
+    return selectedProvider ? selectedProvider.name : nationalData.geography;
+  }
+
+  function routeFor(nodeId) {
+    return selectedProvider?.routes?.[nodeId] || nationalData.routes[nodeId] || null;
+  }
+
+  function nationalRouteFor(nodeId) {
+    return nationalData.routes[nodeId] || null;
+  }
+
+  function updateScope() {
+    scopeLabel.textContent = `${geographyName()} · ECDS ${nationalData.period}`;
+  }
+
+  providerSelect.addEventListener("change",() => {
+    selectedProvider = providerData?.providers?.find(provider => provider.code === providerSelect.value) || null;
+    updateScope();
+    refreshBadgeValues();
+    const selectedNode = cy.$("node.selected-node").first();
+    const nodeId = selectedNode.length ? selectedNode.id() : "ae-attendance";
+    renderNodeDetails(NODE_BY_ID.get(nodeId));
+    requestAnimationFrame(updateMetricPositions);
+  });
 
   // ============================================================
-  // 02. CREATE THE MAP NUMBER LAYER AND TOOLBAR CONTROL
+  // 04. NUMBER CONTROLS AND BADGES
   // ============================================================
   const metricLayer = document.createElement("div");
   metricLayer.className = "metric-layer";
@@ -112,34 +148,38 @@
   numbersButton.textContent = "Hide numbers";
   numbersButton.setAttribute("aria-pressed","true");
 
-  const scopeLabel = document.createElement("span");
-  scopeLabel.className = "metric-scope";
-  scopeLabel.textContent = `${publicData.geography} · ECDS ${publicData.period}`;
-
   const legendButton = el("toggleLegend");
   if (legendButton) {
     legendButton.insertAdjacentElement("afterend",numbersButton);
-    numbersButton.insertAdjacentElement("afterend",scopeLabel);
+    numbersButton.insertAdjacentElement("afterend",providerControl);
+    providerControl.insertAdjacentElement("afterend",scopeLabel);
   } else {
-    toolbarControls.append(numbersButton,scopeLabel);
+    toolbarControls.append(numbersButton,providerControl,scopeLabel);
   }
 
-  // ============================================================
-  // 03. CREATE ONE HTML BADGE FOR EACH ROUTE
-  // ============================================================
-  Object.entries(OPERATIONAL_METRICS).forEach(([nodeId,metric]) => {
+  Object.keys(nationalData.routes).forEach(nodeId => {
     if (!cy.getElementById(nodeId).length) return;
-
     const badge = document.createElement("button");
     badge.type = "button";
     badge.className = "node-metric-badge";
     badge.dataset.nodeId = nodeId;
-    badge.innerHTML = `<strong>${metric.value}</strong><span>${metric.period}</span>`;
-    badge.title = `${metric.label}: ${metric.exact} (${metric.geography}, ${metric.period})`;
     badge.addEventListener("click",() => selectNode(cy.getElementById(nodeId),{ centre:false }));
     metricLayer.append(badge);
     metricBadges.set(nodeId,badge);
   });
+
+  function refreshBadgeValues() {
+    metricBadges.forEach((badge,nodeId) => {
+      const route = routeFor(nodeId);
+      if (!route) {
+        badge.classList.remove("is-visible");
+        return;
+      }
+      const value = nodeId === "ae-attendance" ? compactCount(route.count) : formatPercent(route.percent);
+      badge.innerHTML = `<strong>${value}</strong><span>${selectedProvider ? selectedProvider.code : nationalData.period}</span>`;
+      badge.title = `${geographyName()}: ${formatCount(route.count)} attendances${nodeId === "ae-attendance" ? "" : ` (${formatPercent(route.percent)})`}`;
+    });
+  }
 
   function updateMetricPositions() {
     const zoom = cy.zoom();
@@ -147,7 +187,8 @@
 
     metricBadges.forEach((badge,nodeId) => {
       const node = cy.getElementById(nodeId);
-      if (!node.length || !showAtThisZoom || node.style("display") === "none") {
+      const hiddenByPathway = node.hasClass("faded") || node.hasClass("timescale-faded");
+      if (!node.length || !showAtThisZoom || hiddenByPathway || node.style("display") === "none") {
         badge.classList.remove("is-visible");
         return;
       }
@@ -170,41 +211,67 @@
     updateMetricPositions();
   });
 
+  // clearFocus is called by node, edge, loop, pathway and filter interactions.
+  // Scheduling after it means the final set of faded nodes is used.
+  const baseClearFocusForMetrics = clearFocus;
+  clearFocus = function(...args) {
+    const result = baseClearFocusForMetrics(...args);
+    requestAnimationFrame(updateMetricPositions);
+    return result;
+  };
+
   cy.on("pan zoom position render",updateMetricPositions);
   window.addEventListener("resize",updateMetricPositions);
 
   // ============================================================
-  // 04. ADD COUNT, PERCENTAGE, PERIOD AND DEFINITION TO THE DRAWER
+  // 05. COUNT, PERCENTAGE AND PROVIDER COMPARISON IN THE DRAWER
   // ============================================================
   renderNodeDetails = function(node) {
     baseRenderNodeDetails(node);
-    const metric = OPERATIONAL_METRICS[node.id];
-    if (!metric) return;
+    const route = routeFor(node.id);
+    const nationalRoute = nationalRouteFor(node.id);
+    if (!route || !nationalRoute) return;
 
-    const secondary = metric.secondary ? `
+    const isTotal = node.id === "ae-attendance";
+    const displayValue = isTotal ? compactCount(route.count) : formatPercent(route.percent);
+    const nationalValue = isTotal ? compactCount(nationalRoute.count) : formatPercent(nationalRoute.percent);
+    const difference = !isTotal && selectedProvider ? Number(route.percent) - Number(nationalRoute.percent) : null;
+    const comparison = selectedProvider
+      ? isTotal
+        ? "Provider-submitted activity; this is not a resident-population rate."
+        : `${Math.abs(difference).toFixed(2)} percentage points ${difference >= 0 ? "above" : "below"} England (${nationalValue}).`
+      : isTotal
+        ? "Annual ECDS attendance-source denominator."
+        : `${formatPercent(route.percent)} of the England ECDS attendance-source total.`;
+
+    const secondary = route.secondary ? `
       <div class="metric-secondary">
-        <strong>${formatPercent(metric.secondary.percent)} · ${formatCount(metric.secondary.count)}</strong>
-        <span>${metric.secondary.label}</span>
-        <p>${metric.secondary.definition}</p>
+        <strong>${formatPercent(route.secondary.percent)} · ${formatCount(route.secondary.count)}</strong>
+        <span>${route.secondary.label || nationalRoute.secondary?.label || "Arrived by ambulance"}</span>
+        <p>${nationalRoute.secondary?.definition || "Arrival mode is separate from attendance source."}</p>
       </div>` : "";
 
+    const suppressed = route.suppressed_component ? `<p class="metric-warning">At least one component value was suppressed in the public provider file.</p>` : "";
     const metricCard = document.createElement("section");
     metricCard.className = "operational-metric-card";
     metricCard.innerHTML = `
       <div class="operational-metric-heading">
-        <div><p class="eyebrow teal">Published annual figure</p><strong>${metric.value}</strong></div>
-        <span>${metric.geography}<br>${metric.period}</span>
+        <div><p class="eyebrow teal">Published annual figure</p><strong>${displayValue}</strong></div>
+        <span>${geographyName()}<br>${nationalData.period}</span>
       </div>
-      <h3>${metric.label}</h3>
-      <p class="metric-exact">${metric.exact}</p>
-      <p>${metric.comparison}</p>
+      <h3>${nationalRoute.label}</h3>
+      <p class="metric-exact">${formatCount(route.count)} attendances</p>
+      <p>${comparison}</p>
       ${secondary}
-      <p class="metric-note">${metric.note}</p>
-      <a href="${metric.sourceUrl}" target="_blank" rel="noopener">${metric.sourceLabel}</a>`;
+      ${suppressed}
+      <p class="metric-note">${nationalRoute.definition}${nationalRoute.derived ? " This is a transparent grouping derived from published categories." : ""}</p>
+      <a href="${nationalData.source_url}" target="_blank" rel="noopener">${nationalData.publication}</a>`;
 
     el("nodeDetails").prepend(metricCard);
   };
 
+  updateScope();
+  refreshBadgeValues();
   requestAnimationFrame(() => {
     updateMetricPositions();
     renderNodeDetails(NODE_BY_ID.get("ae-attendance"));
