@@ -1,74 +1,11 @@
 // ============================================================
-// 00. LATEST PUBLIC OPERATIONAL METRICS
+// 00. PUBLIC ANNUAL ECDS ROUTE METRICS
 // ============================================================
-// These are England-level official figures. They demonstrate how numbers can sit
-// on the connected map without pretending that national totals explain ICB-level
-// variation. Local and ICB data can later use the same object structure.
+// The map uses the complete 2024-25 public ECDS attendance-source table rather
+// than mixing a current SitRep total with older route percentages. The small JSON
+// file is generated from the NHS England annual workbook and is publicly auditable.
 
-const OPERATIONAL_METRICS = {
-  "ae-attendance": {
-    value:"2.44m", exact:"2,437,906", label:"All A&E attendances", period:"Jun 2026", geography:"England", comparison:"+3.7% vs Jun 2025",
-    sourceLabel:"NHS England A&E attendances and emergency admissions", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2026-27/",
-    note:"All department types, including major A&E departments, minor injury units and walk-in centres."
-  },
-  "ae-assessment-treatment": {
-    value:"75.0%", exact:"1,828,989 of 2,437,906", label:"Admitted, transferred or discharged within four hours", period:"Jun 2026", geography:"England", comparison:"75.6% in Jun 2025",
-    sourceLabel:"NHS England A&E statistical commentary", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2026-27/",
-    note:"All A&E department types. Type 1 performance was 61.2%."
-  },
-  "hospital-flow-pressure": {
-    value:"49,466", exact:"49,466", label:"Patients delayed over 12 hours after a decision to admit", period:"Jun 2026", geography:"England", comparison:"+27.9% vs Jun 2025",
-    sourceLabel:"NHS England A&E statistical commentary", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2026-27/",
-    note:"There were also 126,819 delays of more than four hours from decision to admit to admission."
-  },
-  "nhs111-contacts": {
-    value:"55k/day", exact:"Average 55,000 calls per day", label:"NHS 111 calls received", period:"Jun 2026", geography:"England", comparison:"Provisional",
-    sourceLabel:"NHS England provisional IUC ADC", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/iucadc-new-from-april-2021/integrated-urgent-care-aggregate-data-collection-iucadc-inc-nhs111-statistics-apr-2026-mar-2027/",
-    note:"Telephone calls only. Online contacts are not included in this provisional headline."
-  },
-  "nhs111-ae-disposition": {
-    value:"15.0%", exact:"15.0% of triaged calls", label:"Recommended to attend an Emergency Treatment Centre", period:"Jun 2026", geography:"England", comparison:"Provisional",
-    sourceLabel:"NHS England provisional IUC ADC", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/iucadc-new-from-april-2021/integrated-urgent-care-aggregate-data-collection-iucadc-inc-nhs111-statistics-apr-2026-mar-2027/",
-    note:"This is a disposition, not confirmed subsequent attendance, and ETC is broader than a major ED. A further 11.5% were referred to the ambulance service."
-  },
-  "ambulance-incidents": {
-    value:"815k", exact:"815,127", label:"Ambulance incidents", period:"Jun 2026", geography:"England", comparison:"27.1k per day",
-    sourceLabel:"NHS England Ambulance Quality Indicators", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/ambulance-quality-indicators-data-2026-27/",
-    note:"Incidents are not the same denominator as 999 calls. Some incidents originate from NHS 111."
-  },
-  "ambulance-assessment": {
-    value:"651k", exact:"650,770", label:"Incidents receiving a face-to-face response", period:"Jun 2026", geography:"England", comparison:"21.7k per day",
-    sourceLabel:"NHS England Ambulance Quality Indicators", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/ambulance-quality-indicators-data-2026-27/",
-    note:"Face-to-face response is the nearest published national stage to the map's patient-assessment node."
-  },
-  "ambulance-ae-route": {
-    value:"381k", exact:"381,106", label:"Ambulance incidents conveyed to an ED", period:"Jun 2026", geography:"England", comparison:"46.8% of incidents",
-    sourceLabel:"NHS England Ambulance Quality Indicators", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/ambulance-quality-indicators-data-2026-27/",
-    note:"The percentage uses all ambulance incidents as its denominator, not only face-to-face responses."
-  },
-  "ambulance-alternative": {
-    value:"48.8%", exact:"20.2% Hear & Treat + 28.6% See & Treat", label:"Incidents closed by telephone or at scene", period:"Jun 2026", geography:"England", comparison:"Hear & Treat highest on record",
-    sourceLabel:"NHS England Ambulance Quality Indicators", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/ambulance-quality-indicators-data-2026-27/",
-    note:"The two percentages describe different operational outcomes and are shown together only as context."
-  },
-  "handover-delay": {
-    value:"29:11", exact:"29 minutes 11 seconds", label:"Average ambulance handover time", period:"Jun 2026", geography:"England", comparison:"Slower than Jun 2025",
-    sourceLabel:"NHS England Ambulance Quality Indicators", sourceUrl:"https://www.england.nhs.uk/statistics/statistical-work-areas/ambulance-quality-indicators/ambulance-quality-indicators-data-2026-27/",
-    note:"National average; trust-level and ICB-related comparisons require the separate handover and management-information files."
-  },
-  "gpad-appointments": {
-    value:"30.0m", exact:"30.0 million", label:"Appointments recorded across general practice", period:"May 2026", geography:"England", comparison:"98.9% of GP practices represented",
-    sourceLabel:"Appointments in General Practice, May 2026", sourceUrl:"https://digital.nhs.uk/data-and-information/publications/statistical/appointments-in-general-practice/may-2026",
-    note:"This is recorded appointment activity, not the totality of general-practice workload or attempted demand."
-  },
-  "same-day-capacity": {
-    value:"44.9%", exact:"44.9% of appointments", label:"Appointments taking place on the day they were booked", period:"May 2026", geography:"England", comparison:"National GPAD figure",
-    sourceLabel:"Appointments in General Practice, May 2026", sourceUrl:"https://digital.nhs.uk/data-and-information/publications/statistical/appointments-in-general-practice/may-2026",
-    note:"Same-day booking does not establish that the appointment met urgent need or was clinically suitable."
-  }
-};
-
-(() => {
+(async () => {
   const map = el("systemMap");
   const toolbarControls = document.querySelector(".map-toolbar-controls");
   const baseRenderNodeDetails = renderNodeDetails;
@@ -76,6 +13,45 @@ const OPERATIONAL_METRICS = {
   let numbersVisible = true;
 
   if (!map || !toolbarControls) return;
+
+  function formatCount(value) {
+    return new Intl.NumberFormat("en-GB").format(value);
+  }
+
+  function compactCount(value) {
+    if (value >= 1000000) return `${(value / 1000000).toFixed(value >= 10000000 ? 2 : 2)}m`;
+    if (value >= 1000) return `${(value / 1000).toFixed(1)}k`;
+    return String(value);
+  }
+
+  function formatPercent(value) {
+    return `${Number(value).toFixed(Number(value) >= 10 ? 1 : 2)}%`;
+  }
+
+  let publicData;
+  try {
+    const response = await fetch("public-data/ecds-2024-25-route-metrics.json", { cache:"no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    publicData = await response.json();
+  } catch (error) {
+    console.error("Could not load public ECDS route metrics",error);
+    return;
+  }
+
+  const OPERATIONAL_METRICS = Object.fromEntries(
+    Object.entries(publicData.routes).map(([nodeId,route]) => [nodeId,{
+      value:nodeId === "ae-attendance" ? compactCount(route.count) : formatPercent(route.percent),
+      exact:`${formatCount(route.count)} attendances`,
+      label:route.label,
+      period:publicData.period,
+      geography:publicData.geography,
+      comparison:nodeId === "ae-attendance" ? "Annual ECDS attendance-source denominator" : `${formatPercent(route.percent)} of the ECDS attendance-source total`,
+      note:`${route.definition}${route.derived ? " This is a transparent grouping derived from published categories." : ""}`,
+      secondary:route.secondary || null,
+      sourceLabel:publicData.publication,
+      sourceUrl:publicData.source_url
+    }])
+  );
 
   // ============================================================
   // 01. CREATE THE MAP NUMBER LAYER AND TOOLBAR CONTROL
@@ -94,7 +70,7 @@ const OPERATIONAL_METRICS = {
 
   const scopeLabel = document.createElement("span");
   scopeLabel.className = "metric-scope";
-  scopeLabel.textContent = "England · latest public data";
+  scopeLabel.textContent = `${publicData.geography} · ECDS ${publicData.period}`;
 
   const legendButton = el("toggleLegend");
   if (legendButton) {
@@ -105,7 +81,7 @@ const OPERATIONAL_METRICS = {
   }
 
   // ============================================================
-  // 02. CREATE ONE HTML BADGE FOR EACH NUMBERED NODE
+  // 02. CREATE ONE HTML BADGE FOR EACH ROUTE
   // ============================================================
   Object.entries(OPERATIONAL_METRICS).forEach(([nodeId,metric]) => {
     if (!cy.getElementById(nodeId).length) return;
@@ -154,23 +130,31 @@ const OPERATIONAL_METRICS = {
   window.addEventListener("resize",updateMetricPositions);
 
   // ============================================================
-  // 03. ADD THE FULL NUMBER, PERIOD AND SOURCE TO THE DETAILS DRAWER
+  // 03. ADD COUNT, PERCENTAGE, PERIOD AND DEFINITION TO THE DRAWER
   // ============================================================
   renderNodeDetails = function(node) {
     baseRenderNodeDetails(node);
     const metric = OPERATIONAL_METRICS[node.id];
     if (!metric) return;
 
+    const secondary = metric.secondary ? `
+      <div class="metric-secondary">
+        <strong>${formatPercent(metric.secondary.percent)} · ${formatCount(metric.secondary.count)}</strong>
+        <span>${metric.secondary.label}</span>
+        <p>${metric.secondary.definition}</p>
+      </div>` : "";
+
     const metricCard = document.createElement("section");
     metricCard.className = "operational-metric-card";
     metricCard.innerHTML = `
       <div class="operational-metric-heading">
-        <div><p class="eyebrow teal">Latest public figure</p><strong>${metric.value}</strong></div>
+        <div><p class="eyebrow teal">Published annual figure</p><strong>${metric.value}</strong></div>
         <span>${metric.geography}<br>${metric.period}</span>
       </div>
       <h3>${metric.label}</h3>
       <p class="metric-exact">${metric.exact}</p>
       <p>${metric.comparison}</p>
+      ${secondary}
       <p class="metric-note">${metric.note}</p>
       <a href="${metric.sourceUrl}" target="_blank" rel="noopener">${metric.sourceLabel}</a>`;
 
