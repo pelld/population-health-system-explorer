@@ -47,6 +47,13 @@ def read_table(content: bytes,sheet_name: str) -> pd.DataFrame:
     frame["name"] = frame["name"].fillna("").astype(str).str.strip()
     frame["type"] = frame["type"].fillna("").astype(str).str.strip()
 
+    # The workbook includes a published "Unknown" ICB bucket. Keep the national
+    # total intact but do not present the unknown bucket as a named ICB choice.
+    is_unknown_named_geography = frame["type"].isin(["ICB","Provider"]) & (
+        frame["code"].str.casefold().eq("unknown") | frame["name"].str.casefold().eq("unknown")
+    )
+    frame = frame.loc[~is_unknown_named_geography].copy()
+
     for month in MONTH_COLUMNS:
         frame[month] = pd.to_numeric(frame[month],errors="coerce")
 
@@ -63,6 +70,23 @@ def safe_float(value: Any,digits: int = 2) -> float | None:
     if value is None or pd.isna(value):
         return None
     return round(float(value),digits)
+
+
+def clean_name(name: str,organisation_type: str) -> str:
+    if organisation_type == "National":
+        return "England"
+
+    cleaned = name.title() if name.isupper() else name
+    replacements = {
+        "Nhs ":"NHS ",
+        " Icb":" ICB",
+        " C.i.c.":" C.I.C.",
+        " Cic":" CIC",
+        " Nhs":" NHS",
+    }
+    for old,new in replacements.items():
+        cleaned = cleaned.replace(old,new)
+    return cleaned
 
 
 def month_values(row: pd.Series,multiplier: float = 1.0) -> list[dict[str,Any]]:
@@ -96,7 +120,7 @@ def build_geography(
 
     return {
         "code":code,
-        "name":name.title() if name.isupper() else name,
+        "name":clean_name(name,organisation_type),
         "type":organisation_type,
         "metrics":{
             "ucr-referrals":{
@@ -167,8 +191,8 @@ def main() -> None:
 
     if england is None:
         raise RuntimeError("National UCR row was not found in all three tables.")
-    if len(icbs) < 40:
-        raise RuntimeError(f"Expected approximately 42 ICB rows; found {len(icbs)}")
+    if len(icbs) != 42:
+        raise RuntimeError(f"Expected 42 named ICB rows; found {len(icbs)}")
     if len(providers) < 80:
         raise RuntimeError(f"Expected a substantial provider list; found {len(providers)}")
 
