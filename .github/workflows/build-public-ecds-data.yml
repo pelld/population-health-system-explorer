@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public-data/ecds-2024-25-inspection.json
+          git add -A public-data
           if git diff --cached --quiet; then
             echo "No public-data changes to commit."
           else
