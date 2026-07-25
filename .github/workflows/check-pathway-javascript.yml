@@ -1,0 +1,23 @@
+name: Check pathway JavaScript
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/check-pathway-javascript.yml"
+      - "operational-pathway-selection.js"
+      - "ambulance-metrics.js"
+      - "iuc-metrics.js"
+
+jobs:
+  check-javascript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 01. Check out repository
+        uses: actions/checkout@v4
+
+      - name: 02. Check JavaScript syntax
+        run: |
+          node --check operational-pathway-selection.js
+          node --check ambulance-metrics.js
+          node --check iuc-metrics.js
