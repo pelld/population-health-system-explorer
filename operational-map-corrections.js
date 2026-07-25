@@ -112,4 +112,17 @@
     AE_LINK("ambulance-response","ambulance-other-conveyance","ends with conveyance to another destination","positive","hypothesis",["S9"]),
     AE_LINK("ambulance-conveyed-ae","ambulance-ae-route","contributes to the recorded ambulance route","uncertain","hypothesis",["S9"])
   );
+
+  // ============================================================
+  // 05. CORRECT LINKS AND FEEDBACK LOOPS THAT USED THE OLD MEANING
+  // ============================================================
+  const routeToAttendance = AE_MAP_LINKS.find(link => link.source === "ambulance-ae-route" && link.target === "ae-attendance");
+  if (routeToAttendance) routeToAttendance.label = "is recorded as an ambulance-service attendance source";
+
+  const ruralityLink = AE_MAP_LINKS.find(link => link.source === "rurality-transport" && link.target === "ambulance-ae-route");
+  if (ruralityLink) ruralityLink.target = "ambulance-conveyed-ae";
+
+  AE_MAP_LOOPS.forEach(loop => {
+    loop.nodes = loop.nodes.map(id => id === "ambulance-ae-route" ? "ambulance-conveyed-ae" : id);
+  });
 })();
