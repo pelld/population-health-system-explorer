@@ -9,6 +9,7 @@
   const toolbarControls = document.querySelector(".map-toolbar-controls");
   const baseRenderNodeDetails = renderNodeDetails;
   const metricBadges = new Map();
+
   let numbersVisible = true;
   let selectedProvider = null;
   let providerData = null;
@@ -31,6 +32,13 @@
   function formatPercent(value) {
     if (value === null || value === undefined || Number.isNaN(Number(value))) return "—";
     return `${Number(value).toFixed(Number(value) >= 10 ? 1 : 2)}%`;
+  }
+
+  function median(values) {
+    const ordered = values.filter(Number.isFinite).sort((a,b) => a - b);
+    if (!ordered.length) return null;
+    const middle = Math.floor(ordered.length / 2);
+    return ordered.length % 2 ? ordered[middle] : (ordered[middle - 1] + ordered[middle]) / 2;
   }
 
   async function loadJson(path,required=true) {
@@ -134,7 +142,8 @@
   }
 
   function routeFor(nodeId) {
-    return selectedProvider?.routes?.[nodeId] || nationalData.routes[nodeId] || null;
+    if (selectedProvider) return selectedProvider.routes?.[nodeId] || null;
+    return nationalData.routes[nodeId] || null;
   }
 
   function nationalRouteFor(nodeId) {
@@ -149,6 +158,7 @@
     selectedProvider = providerData?.providers?.find(provider => provider.code === providerSelect.value) || null;
     updateScope();
     refreshBadgeValues();
+
     const selectedNode = cy.$("node.selected-node").first();
     const nodeId = selectedNode.length ? selectedNode.id() : "ae-attendance";
     renderNodeDetails(NODE_BY_ID.get(nodeId));
@@ -156,7 +166,73 @@
   });
 
   // ============================================================
-  // 04. NUMBER CONTROLS AND BADGES
+  // 04. PROVIDER COMPARISON METHODS
+  // ============================================================
+  function providerMetric(provider,nodeId) {
+    if (nodeId === "ae-attendance") return Number(provider.total);
+    const route = provider.routes?.[nodeId];
+    if (!route || route.suppressed_component) return null;
+    const value = Number(route.percent);
+    return Number.isFinite(value) ? value : null;
+  }
+
+  function rankWithin(providers,nodeId,selectedCode) {
+    const ranked = providers
+      .map(provider => ({ provider,value:providerMetric(provider,nodeId) }))
+      .filter(item => Number.isFinite(item.value))
+      .sort((a,b) => b.value - a.value);
+
+    const index = ranked.findIndex(item => item.provider.code === selectedCode);
+    if (index < 0) return null;
+
+    return {
+      rank:index + 1,
+      total:ranked.length,
+      value:ranked[index].value,
+      higherThan:ranked.length > 1 ? Math.round(((ranked.length - index - 1) / (ranked.length - 1)) * 100) : 0
+    };
+  }
+
+  function similarVolumeProviders() {
+    if (!selectedProvider || !providerData?.providers?.length) return [];
+
+    const lower = selectedProvider.total * .75;
+    const upper = selectedProvider.total * 1.25;
+    let peers = providerData.providers.filter(provider => provider.total >= lower && provider.total <= upper);
+
+    if (peers.length < 8) {
+      peers = providerData.providers
+        .slice()
+        .sort((a,b) => Math.abs(Math.log(a.total / selectedProvider.total)) - Math.abs(Math.log(b.total / selectedProvider.total)))
+        .slice(0,15);
+    }
+    return peers;
+  }
+
+  function comparisonStats(nodeId) {
+    if (!selectedProvider || !providerData?.providers?.length) return null;
+
+    const selectedMetric = providerMetric(selectedProvider,nodeId);
+    if (!Number.isFinite(selectedMetric)) return { unavailable:true };
+
+    const allRank = rankWithin(providerData.providers,nodeId,selectedProvider.code);
+    const peers = similarVolumeProviders();
+    const peerRank = rankWithin(peers,nodeId,selectedProvider.code);
+    const peerValues = peers.map(provider => providerMetric(provider,nodeId)).filter(Number.isFinite);
+    const withinQuarter = peers.length >= 8 && peers.every(provider => provider.total >= selectedProvider.total * .75 && provider.total <= selectedProvider.total * 1.25);
+
+    return {
+      selectedMetric,
+      allRank,
+      peerRank,
+      peerMedian:median(peerValues),
+      peerCount:peerValues.length,
+      peerMethod:withinQuarter ? "annual attendance volume within ±25%" : "the nearest 15 providers by annual attendance volume"
+    };
+  }
+
+  // ============================================================
+  // 05. NUMBER CONTROLS AND BADGES
   // ============================================================
   const metricLayer = document.createElement("div");
   metricLayer.className = "metric-layer";
@@ -181,6 +257,7 @@
 
   Object.keys(nationalData.routes).forEach(nodeId => {
     if (!cy.getElementById(nodeId).length) return;
+
     const badge = document.createElement("button");
     badge.type = "button";
     badge.className = "node-metric-badge";
@@ -194,10 +271,13 @@
     metricBadges.forEach((badge,nodeId) => {
       const route = routeFor(nodeId);
       if (!route) {
+        badge.dataset.hasMetric = "false";
         badge.classList.remove("is-visible");
         return;
       }
+
       const value = nodeId === "ae-attendance" ? compactCount(route.count) : formatPercent(route.percent);
+      badge.dataset.hasMetric = "true";
       badge.innerHTML = `<strong>${value}</strong><span>${selectedProvider ? selectedProvider.code : nationalData.period}</span>`;
       badge.title = `${geographyName()}: ${formatCount(route.count)} attendances${nodeId === "ae-attendance" ? "" : ` (${formatPercent(route.percent)})`}`;
     });
@@ -210,7 +290,8 @@
     metricBadges.forEach((badge,nodeId) => {
       const node = cy.getElementById(nodeId);
       const hiddenByPathway = node.hasClass("faded") || node.hasClass("timescale-faded");
-      if (!node.length || !showAtThisZoom || hiddenByPathway || node.style("display") === "none") {
+
+      if (!node.length || badge.dataset.hasMetric === "false" || !showAtThisZoom || hiddenByPathway || node.style("display") === "none") {
         badge.classList.remove("is-visible");
         return;
       }
@@ -233,8 +314,6 @@
     updateMetricPositions();
   });
 
-  // clearFocus is called by node, edge, loop, pathway and filter interactions.
-  // Scheduling after it means the final set of faded nodes is used.
   const baseClearFocusForMetrics = clearFocus;
   clearFocus = function(...args) {
     const result = baseClearFocusForMetrics(...args);
@@ -246,10 +325,11 @@
   window.addEventListener("resize",updateMetricPositions);
 
   // ============================================================
-  // 05. COUNT, PERCENTAGE AND PROVIDER COMPARISON IN THE DRAWER
+  // 06. COUNT, PERCENTAGE AND PROVIDER COMPARISON IN THE DRAWER
   // ============================================================
   renderNodeDetails = function(node) {
     baseRenderNodeDetails(node);
+
     const route = routeFor(node.id);
     const nationalRoute = nationalRouteFor(node.id);
     if (!route || !nationalRoute) return;
@@ -258,9 +338,10 @@
     const displayValue = isTotal ? compactCount(route.count) : formatPercent(route.percent);
     const nationalValue = isTotal ? compactCount(nationalRoute.count) : formatPercent(nationalRoute.percent);
     const difference = !isTotal && selectedProvider ? Number(route.percent) - Number(nationalRoute.percent) : null;
+
     const comparison = selectedProvider
       ? isTotal
-        ? "Provider-submitted activity; this is not a resident-population rate."
+        ? `${formatPercent((route.count / nationalRoute.count) * 100)} of the England attendance total was submitted by this provider.`
         : `${Math.abs(difference).toFixed(2)} percentage points ${difference >= 0 ? "above" : "below"} England (${nationalValue}).`
       : isTotal
         ? "Annual ECDS attendance-source denominator."
@@ -273,8 +354,49 @@
         <p>${nationalRoute.secondary?.definition || "Arrival mode is separate from attendance source."}</p>
       </div>` : "";
 
+    const stats = comparisonStats(node.id);
+    let comparisonPanel = "";
+
+    if (selectedProvider && stats?.unavailable) {
+      comparisonPanel = `<p class="metric-warning">This route cannot be ranked because its published provider value contains suppression or is unavailable.</p>`;
+    } else if (selectedProvider && stats) {
+      const allRankLabel = isTotal ? "Activity-volume rank" : "All-provider rank";
+      const peerValue = isTotal ? compactCount(stats.peerMedian) : formatPercent(stats.peerMedian);
+      const percentileText = stats.allRank ? `${stats.allRank.higherThan}% of providers have a lower recorded value` : "Not available";
+
+      comparisonPanel = `
+        <div class="provider-comparison-grid">
+          <div>
+            <span>${allRankLabel}</span>
+            <strong>${stats.allRank ? `${stats.allRank.rank} of ${stats.allRank.total}` : "—"}</strong>
+            <small>${isTotal ? "Ranks submitted attendance volume, not performance" : percentileText}</small>
+          </div>
+          <div>
+            <span>Similar-volume median</span>
+            <strong>${peerValue}</strong>
+            <small>${stats.peerCount} providers included</small>
+          </div>
+          <div>
+            <span>Rank among volume peers</span>
+            <strong>${stats.peerRank ? `${stats.peerRank.rank} of ${stats.peerRank.total}` : "—"}</strong>
+            <small>${stats.peerMethod}</small>
+          </div>
+        </div>
+        <p class="metric-comparison-warning"><strong>Comparability warning:</strong> the peer group controls only for annual attendance volume. It does not adjust for department type, specialist role, case mix, catchment population or multiple sites.</p>`;
+    }
+
+    const unknownRoute = selectedProvider?.routes?.["unknown-route"];
+    const nationalUnknown = nationalData.routes["unknown-route"];
+    const dataQuality = selectedProvider && unknownRoute ? `
+      <div class="metric-data-quality">
+        <span>Attendance source recorded as Not Known</span>
+        <strong>${formatPercent(unknownRoute.percent)}</strong>
+        <small>England: ${formatPercent(nationalUnknown.percent)}. This can affect every route comparison.</small>
+      </div>` : "";
+
     const suppressed = route.suppressed_component ? `<p class="metric-warning">At least one component value was suppressed in the public provider file.</p>` : "";
-    const denominatorNote = selectedProvider?.denominator_derived ? `<p class="metric-warning">This provider total was derived by summing its published attendance-source categories.</p>` : "";
+    const denominatorNote = selectedProvider?.denominator_derived ? `<p class="metric-warning">This provider total was derived by summing its published attendance-source categories. Suppressed cells may make the total slightly incomplete.</p>` : "";
+
     const metricCard = document.createElement("section");
     metricCard.className = "operational-metric-card";
     metricCard.innerHTML = `
@@ -285,6 +407,8 @@
       <h3>${nationalRoute.label}</h3>
       <p class="metric-exact">${formatCount(route.count)} attendances</p>
       <p>${comparison}</p>
+      ${comparisonPanel}
+      ${dataQuality}
       ${secondary}
       ${suppressed}
       ${denominatorNote}
@@ -295,7 +419,7 @@
   };
 
   // ============================================================
-  // 06. LOAD PROVIDERS WITHOUT HIDING THE CONTROL
+  // 07. LOAD PROVIDERS WITHOUT HIDING THE CONTROL
   // ============================================================
   updateScope();
   refreshBadgeValues();
@@ -307,8 +431,6 @@
   providerData = await loadProviderData();
   populateProviderSelect(providerData);
 
-  // A Pages deployment can briefly expose the JavaScript before the generated
-  // JSON. Retry once rather than requiring the user to know why the control vanished.
   if (!providerData) {
     setTimeout(async () => {
       const retryData = await loadProviderData();
