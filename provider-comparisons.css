@@ -1,0 +1,92 @@
+/* ============================================================
+   00. PROVIDER COMPARISON SUMMARY
+   ============================================================ */
+.provider-comparison-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+  margin:10px 0 8px;
+}
+
+.provider-comparison-grid > div {
+  min-width:0;
+  padding:9px;
+  border:1px solid #cbdad7;
+  border-radius:9px;
+  background:#ffffff;
+}
+
+.provider-comparison-grid span,
+.provider-comparison-grid strong,
+.provider-comparison-grid small {
+  display:block;
+}
+
+.provider-comparison-grid span {
+  color:#526970;
+  font-size:8.5px;
+  font-weight:800;
+  line-height:1.25;
+  text-transform:uppercase;
+  letter-spacing:.035em;
+}
+
+.provider-comparison-grid strong {
+  margin-top:4px;
+  color:var(--navy);
+  font-size:16px;
+  line-height:1.05;
+}
+
+.provider-comparison-grid small {
+  margin-top:4px;
+  color:#657980;
+  font-size:8.5px;
+  line-height:1.35;
+}
+
+/* ============================================================
+   01. COMPARABILITY AND DATA-QUALITY WARNINGS
+   ============================================================ */
+.operational-metric-card .metric-comparison-warning {
+  padding:8px 9px;
+  color:#6b541f;
+  border:1px solid #e2ce94;
+  border-radius:8px;
+  background:#fffaf0;
+}
+
+.metric-data-quality {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:3px 10px;
+  margin:9px 0;
+  padding:9px;
+  border:1px solid #cbdad7;
+  border-radius:8px;
+  background:#f7faf9;
+}
+
+.metric-data-quality span {
+  color:#405a63;
+  font-size:9px;
+  font-weight:800;
+}
+
+.metric-data-quality strong {
+  color:var(--navy);
+  font-size:14px;
+}
+
+.metric-data-quality small {
+  grid-column:1 / -1;
+  color:#657980;
+  font-size:8.5px;
+  line-height:1.35;
+}
+
+@media(max-width:520px) {
+  .provider-comparison-grid {
+    grid-template-columns:1fr;
+  }
+}
