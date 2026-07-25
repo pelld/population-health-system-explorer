@@ -1,0 +1,187 @@
+/* ============================================================
+   00. GPAD ICB SELECTOR
+   ============================================================ */
+.gpad-metric-control {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#554772;
+  font-size:9px;
+  font-weight:750;
+}
+
+.gpad-metric-control[hidden],
+.gpad-metric-scope[hidden] {
+  display:none;
+}
+
+.gpad-metric-control select {
+  min-height:34px;
+  width:min(300px,28vw);
+  padding:0 8px;
+  color:var(--ink);
+  border:1px solid #c8bfdc;
+  border-radius:6px;
+  background:#fbf9ff;
+  font-size:10px;
+}
+
+.gpad-metric-scope {
+  align-self:center;
+  max-width:260px;
+  padding:6px 8px;
+  overflow:hidden;
+  color:#594a75;
+  border:1px solid #d6cfea;
+  border-radius:999px;
+  background:#fbf9ff;
+  font-size:9px;
+  font-weight:750;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* ============================================================
+   01. MAP BADGES
+   ============================================================ */
+.gpad-metric-layer {
+  z-index:21;
+}
+
+.gpad-metric-badge {
+  color:#493b67;
+  border-color:#c5b8df;
+  background:#fdfbfff5;
+  box-shadow:0 5px 14px #3e315626;
+}
+
+.gpad-metric-badge span {
+  color:#74658d;
+}
+
+/* ============================================================
+   02. DETAILS AND COMPARISON CARDS
+   ============================================================ */
+.gpad-operational-card {
+  border-color:#cfc5e2;
+  background:linear-gradient(145deg,#faf7ff,#ffffff);
+}
+
+.gpad-denominator,
+.gpad-rank-card {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:2px 10px;
+  margin:9px 0;
+  padding:9px;
+  border:1px solid #ddd6ea;
+  border-radius:8px;
+  background:#fff;
+}
+
+.gpad-denominator span,
+.gpad-rank-card span {
+  color:#665878;
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.gpad-denominator strong,
+.gpad-rank-card strong {
+  grid-row:1 / span 2;
+  grid-column:2;
+  align-self:center;
+  color:var(--navy);
+  font-size:17px;
+}
+
+.gpad-denominator small,
+.gpad-rank-card small {
+  color:#71677d;
+  font-size:9px;
+  line-height:1.35;
+}
+
+.gpad-breakdown {
+  margin:10px 0;
+  padding-top:9px;
+  border-top:1px solid #e4dfec;
+}
+
+.gpad-breakdown h4 {
+  margin:0 0 7px;
+  color:var(--navy);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.gpad-breakdown-grid,
+.gpad-quality-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:6px;
+}
+
+.gpad-breakdown-grid > div,
+.gpad-quality-grid > div {
+  min-width:0;
+  padding:7px;
+  border:1px solid #e1dce9;
+  border-radius:7px;
+  background:#fff;
+}
+
+.gpad-breakdown-grid span,
+.gpad-breakdown-grid strong,
+.gpad-breakdown-grid small,
+.gpad-quality-grid span,
+.gpad-quality-grid strong {
+  display:block;
+}
+
+.gpad-breakdown-grid span,
+.gpad-quality-grid span {
+  color:#5f566a;
+  font-size:8.5px;
+  line-height:1.25;
+}
+
+.gpad-breakdown-grid strong,
+.gpad-quality-grid strong {
+  margin-top:2px;
+  color:var(--navy);
+  font-size:13px;
+}
+
+.gpad-breakdown-grid small {
+  margin-top:2px;
+  color:#7b7285;
+  font-size:8px;
+}
+
+.gpad-quality-grid {
+  margin:9px 0;
+}
+
+@media(max-width:900px) {
+  .gpad-metric-control {
+    width:100%;
+  }
+
+  .gpad-metric-control select {
+    flex:1;
+    width:auto;
+  }
+
+  .gpad-metric-scope {
+    display:none;
+  }
+
+  .gpad-breakdown-grid,
+  .gpad-quality-grid {
+    grid-template-columns:1fr;
+  }
+}
