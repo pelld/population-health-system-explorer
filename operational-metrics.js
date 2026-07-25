@@ -11,6 +11,7 @@
   const metricBadges = new Map();
   let numbersVisible = true;
   let selectedProvider = null;
+  let providerData = null;
 
   if (!map || !toolbarControls) return;
 
@@ -34,7 +35,8 @@
 
   async function loadJson(path,required=true) {
     try {
-      const response = await fetch(path,{ cache:"no-store" });
+      const separator = path.includes("?") ? "&" : "?";
+      const response = await fetch(`${path}${separator}v=${Date.now()}`,{ cache:"no-store" });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return await response.json();
     } catch (error) {
@@ -43,10 +45,20 @@
     }
   }
 
-  const [nationalData,providerData] = await Promise.all([
-    loadJson("public-data/ecds-2024-25-route-metrics.json",true),
-    loadJson("public-data/ecds-2024-25-provider-routes.json",false)
-  ]);
+  async function loadProviderData() {
+    const publicPaths = [
+      "public-data/ecds-2024-25-provider-routes.json",
+      "https://raw.githubusercontent.com/pelld/population-health-system-explorer/main/public-data/ecds-2024-25-provider-routes.json"
+    ];
+
+    for (const path of publicPaths) {
+      const data = await loadJson(path,false);
+      if (data?.providers?.length) return data;
+    }
+    return null;
+  }
+
+  const nationalData = await loadJson("public-data/ecds-2024-25-route-metrics.json",true);
   if (!nationalData) return;
 
   // ============================================================
@@ -98,13 +110,23 @@
 
   const providerControl = document.createElement("label");
   providerControl.className = "provider-metric-control";
-  providerControl.innerHTML = `<span>Numbers for</span><select id="providerMetricSelect" aria-label="Choose England or an ECDS provider"><option value="">England</option></select>`;
+  providerControl.innerHTML = `<span>Numbers for</span><select id="providerMetricSelect" aria-label="Choose England or an ECDS provider"><option value="">England</option><option value="__loading" disabled>Loading providers…</option></select>`;
 
   const providerSelect = providerControl.querySelector("select");
-  if (providerData?.providers?.length) {
-    providerData.providers.forEach(provider => providerSelect.add(new Option(`${provider.name} (${provider.code})`,provider.code)));
-  } else {
-    providerControl.hidden = true;
+
+  function populateProviderSelect(data) {
+    providerData = data;
+    providerSelect.innerHTML = `<option value="">England</option>`;
+
+    if (providerData?.providers?.length) {
+      providerData.providers.forEach(provider => providerSelect.add(new Option(`${provider.name} (${provider.code})`,provider.code)));
+      providerSelect.disabled = false;
+      providerControl.title = `${providerData.provider_count || providerData.providers.length} public ECDS providers available`;
+    } else {
+      providerSelect.add(new Option("Provider data unavailable","__unavailable"));
+      providerSelect.disabled = true;
+      providerControl.title = "The public provider file could not be loaded.";
+    }
   }
 
   function geographyName() {
@@ -252,6 +274,7 @@
       </div>` : "";
 
     const suppressed = route.suppressed_component ? `<p class="metric-warning">At least one component value was suppressed in the public provider file.</p>` : "";
+    const denominatorNote = selectedProvider?.denominator_derived ? `<p class="metric-warning">This provider total was derived by summing its published attendance-source categories.</p>` : "";
     const metricCard = document.createElement("section");
     metricCard.className = "operational-metric-card";
     metricCard.innerHTML = `
@@ -264,16 +287,32 @@
       <p>${comparison}</p>
       ${secondary}
       ${suppressed}
+      ${denominatorNote}
       <p class="metric-note">${nationalRoute.definition}${nationalRoute.derived ? " This is a transparent grouping derived from published categories." : ""}</p>
       <a href="${nationalData.source_url}" target="_blank" rel="noopener">${nationalData.publication}</a>`;
 
     el("nodeDetails").prepend(metricCard);
   };
 
+  // ============================================================
+  // 06. LOAD PROVIDERS WITHOUT HIDING THE CONTROL
+  // ============================================================
   updateScope();
   refreshBadgeValues();
   requestAnimationFrame(() => {
     updateMetricPositions();
     renderNodeDetails(NODE_BY_ID.get("ae-attendance"));
   });
+
+  providerData = await loadProviderData();
+  populateProviderSelect(providerData);
+
+  // A Pages deployment can briefly expose the JavaScript before the generated
+  // JSON. Retry once rather than requiring the user to know why the control vanished.
+  if (!providerData) {
+    setTimeout(async () => {
+      const retryData = await loadProviderData();
+      if (retryData) populateProviderSelect(retryData);
+    },3000);
+  }
 })();
