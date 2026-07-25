@@ -68,6 +68,26 @@ def measure_value(frame: pd.DataFrame, measure_type: str, measure: str) -> tuple
     return int(round(sum(observed))), suppressed
 
 
+def attendance_source_total(provider_frame: pd.DataFrame) -> tuple[int | None, bool, bool]:
+    published_total, total_suppressed = measure_value(provider_frame,"Attendance Source",SOURCE_TOTAL)
+    if published_total:
+        return published_total,total_suppressed,False
+
+    # Some provider extracts omit an explicit total. In that case, sum all
+    # published attendance-source rows and flag that the denominator is derived.
+    source_rows = provider_frame.loc[
+        provider_frame["MEASURE_TYPE"].eq("Attendance Source")
+        & ~provider_frame["MEASURE"].eq(SOURCE_TOTAL),
+        "MEASURE_VALUE"
+    ]
+    observed = [numeric_value(value) for value in source_rows]
+    observed = [value for value in observed if value is not None]
+    suppressed = any(str(value).strip() == "*" for value in source_rows)
+    if not observed:
+        return None,suppressed,True
+    return int(round(sum(observed))),suppressed,True
+
+
 def route(count: int, total: int, suppressed: bool = False) -> dict[str, Any]:
     return {
         "count": count,
@@ -77,19 +97,19 @@ def route(count: int, total: int, suppressed: bool = False) -> dict[str, Any]:
 
 
 def build_provider(provider_frame: pd.DataFrame) -> dict[str, Any] | None:
-    source_total, total_suppressed = measure_value(provider_frame, "Attendance Source", SOURCE_TOTAL)
+    source_total,total_suppressed,total_derived = attendance_source_total(provider_frame)
     if not source_total or source_total <= 0:
         return None
 
-    self_values = [measure_value(provider_frame, "Attendance Source", measure) for measure in SELF_MEASURES]
-    self_count = sum(value or 0 for value, _ in self_values)
-    self_suppressed = any(suppressed for _, suppressed in self_values)
+    self_values = [measure_value(provider_frame,"Attendance Source",measure) for measure in SELF_MEASURES]
+    self_count = sum(value or 0 for value,_ in self_values)
+    self_suppressed = any(suppressed for _,suppressed in self_values)
 
-    nhs111_count, nhs111_suppressed = measure_value(provider_frame, "Attendance Source", NHS111_MEASURE)
-    primary_count, primary_suppressed = measure_value(provider_frame, "Attendance Source", PRIMARY_MEASURE)
-    ambulance_count, ambulance_suppressed = measure_value(provider_frame, "Attendance Source", AMBULANCE_REFERRAL_MEASURE)
-    unknown_count, unknown_suppressed = measure_value(provider_frame, "Attendance Source", UNKNOWN_MEASURE)
-    ambulance_arrival_count, arrival_suppressed = measure_value(provider_frame, "Arrival Mode", AMBULANCE_ARRIVAL_MEASURE)
+    nhs111_count,nhs111_suppressed = measure_value(provider_frame,"Attendance Source",NHS111_MEASURE)
+    primary_count,primary_suppressed = measure_value(provider_frame,"Attendance Source",PRIMARY_MEASURE)
+    ambulance_count,ambulance_suppressed = measure_value(provider_frame,"Attendance Source",AMBULANCE_REFERRAL_MEASURE)
+    unknown_count,unknown_suppressed = measure_value(provider_frame,"Attendance Source",UNKNOWN_MEASURE)
+    ambulance_arrival_count,arrival_suppressed = measure_value(provider_frame,"Arrival Mode",AMBULANCE_ARRIVAL_MEASURE)
 
     nhs111_count = nhs111_count or 0
     primary_count = primary_count or 0
@@ -99,13 +119,13 @@ def build_provider(provider_frame: pd.DataFrame) -> dict[str, Any] | None:
 
     first = provider_frame.iloc[0]
     routes = {
-        "ae-attendance": route(source_total,source_total,total_suppressed),
-        "self-presentation": route(self_count,source_total,self_suppressed),
-        "nhs111-ae-route": route(nhs111_count,source_total,nhs111_suppressed),
-        "gp-ae-route": route(primary_count,source_total,primary_suppressed),
-        "ambulance-ae-route": route(ambulance_count,source_total,ambulance_suppressed),
-        "other-professional-route": route(other_count,source_total,False),
-        "unknown-route": route(unknown_count,source_total,unknown_suppressed),
+        "ae-attendance":route(source_total,source_total,total_suppressed),
+        "self-presentation":route(self_count,source_total,self_suppressed),
+        "nhs111-ae-route":route(nhs111_count,source_total,nhs111_suppressed),
+        "gp-ae-route":route(primary_count,source_total,primary_suppressed),
+        "ambulance-ae-route":route(ambulance_count,source_total,ambulance_suppressed),
+        "other-professional-route":route(other_count,source_total,False),
+        "unknown-route":route(unknown_count,source_total,unknown_suppressed),
     }
 
     if ambulance_arrival_count is not None:
@@ -118,6 +138,7 @@ def build_provider(provider_frame: pd.DataFrame) -> dict[str, Any] | None:
         "code":str(first["ORG_CODE"]).strip(),
         "name":str(first["ORG_DESCRIPTION"]).strip(),
         "total":source_total,
+        "denominator_derived":total_derived,
         "routes":routes,
     }
 
@@ -146,12 +167,12 @@ def main() -> None:
     ].copy()
 
     providers = []
-    for _, provider_frame in frame.groupby(["ORG_CODE","ORG_DESCRIPTION"],dropna=False,sort=False):
+    for _,provider_frame in frame.groupby(["ORG_CODE","ORG_DESCRIPTION"],dropna=False,sort=False):
         provider = build_provider(provider_frame)
         if provider:
             providers.append(provider)
 
-    providers.sort(key=lambda provider: provider["name"])
+    providers.sort(key=lambda provider:provider["name"])
     output = {
         "publication":"Hospital Accident and Emergency Activity, 2024-25",
         "period":"2024-25",
