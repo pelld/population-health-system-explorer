@@ -1,9 +1,9 @@
 # ============================================================
 # 00. INSPECT THE OFFICIAL MARCH 2025 CSDS CORE-DATA ZIP
 # ============================================================
-# Downloads the published long-format CSV and records the organisation levels,
-# count types and dimensions. It also captures plausible England headline rows so
-# the production extractor can use published totals rather than overlapping sums.
+# Downloads the published long-format CSV and records organisation levels,
+# count types, dimensions and exact published total rows. The production build
+# will use these total records rather than sums across overlapping breakdowns.
 
 from __future__ import annotations
 
@@ -34,41 +34,16 @@ def main() -> None:
 
     frame["MEASURE_VALUE_NUM"] = pd.to_numeric(frame["MEASURE_VALUE"],errors="coerce")
 
-    org_levels = (
-        frame.groupby(["ORG_LEVEL"],dropna=False)
-        .size()
-        .reset_index(name="rows")
-        .sort_values("rows",ascending=False)
-    )
+    org_levels = frame.groupby(["ORG_LEVEL"],dropna=False).size().reset_index(name="rows").sort_values("rows",ascending=False)
+    count_types = frame.groupby(["COUNT_OF"],dropna=False).size().reset_index(name="rows").sort_values("rows",ascending=False)
+    dimensions = frame.groupby(["COUNT_OF","DIMENSION"],dropna=False).size().reset_index(name="rows").sort_values(["COUNT_OF","rows"],ascending=[True,False])
 
-    count_types = (
-        frame.groupby(["COUNT_OF"],dropna=False)
-        .size()
-        .reset_index(name="rows")
-        .sort_values("rows",ascending=False)
-    )
+    total_rows = frame.loc[frame["DIMENSION"].fillna("").str.startswith("Total")].copy()
+    total_rows = total_rows.sort_values(["COUNT_OF","ORG_LEVEL","ORG_NAME"])
 
-    dimensions = (
-        frame.groupby(["COUNT_OF","DIMENSION"],dropna=False)
-        .size()
-        .reset_index(name="rows")
-        .sort_values(["COUNT_OF","rows"],ascending=[True,False])
-    )
-
-    national = frame.loc[
-        frame["ORG_LEVEL"].fillna("").str.lower().isin(["national","england"])
-        | frame["ORG_NAME"].fillna("").str.lower().eq("england")
-    ].copy()
-
-    headline_candidates = national.loc[
-        national["COUNT_OF"].fillna("").str.contains("referral|person|contact",case=False,regex=True)
-    ].sort_values(["COUNT_OF","DIMENSION","MEASURE","MEASURE_2"])
-
-    simple_dimension_candidates = headline_candidates.loc[
-        headline_candidates["DIMENSION"].fillna("").str.contains("total|all|org|provider",case=False,regex=True)
-        | headline_candidates["MEASURE"].fillna("").str.contains("total|all",case=False,regex=True)
-        | headline_candidates["MEASURE_2"].fillna("").str.contains("total|all",case=False,regex=True)
-    ]
+    all_submitters = total_rows.loc[total_rows["ORG_LEVEL"].eq("All Submitters")].copy()
+    icb_totals = total_rows.loc[total_rows["ORG_LEVEL"].eq("ICB")].copy()
+    provider_totals = total_rows.loc[total_rows["ORG_LEVEL"].eq("Provider")].copy()
 
     output = {
         "source_url":SOURCE_URL,
@@ -79,8 +54,10 @@ def main() -> None:
         "organisation_levels":records(org_levels,50),
         "count_types":records(count_types,50),
         "dimension_count_combinations":records(dimensions,500),
-        "national_headline_candidates":records(headline_candidates,400),
-        "national_simple_dimension_candidates":records(simple_dimension_candidates,400),
+        "all_submitters_total_rows":records(all_submitters,100),
+        "icb_total_row_counts":records(icb_totals.groupby(["COUNT_OF","DIMENSION"]).size().reset_index(name="rows"),100),
+        "provider_total_row_counts":records(provider_totals.groupby(["COUNT_OF","DIMENSION"]).size().reset_index(name="rows"),100),
+        "sample_icb_total_rows":records(icb_totals,100),
     }
 
     OUTPUT_PATH.parent.mkdir(parents=True,exist_ok=True)
