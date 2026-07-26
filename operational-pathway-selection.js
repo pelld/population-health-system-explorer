@@ -62,8 +62,23 @@
     "occupied-overnight-beds",
     "overnight-bed-occupancy",
     "hospital-flow-pressure",
+    "discharge-ready",
     "delayed-discharge",
+    "acute-additional-bed-days",
     "actual-discharge"
+  ];
+
+  const acuteDischargePathway = [
+    "emergency-admission",
+    "hes-bed-days",
+    "occupied-overnight-beds",
+    "discharge-ready",
+    "delayed-discharge",
+    "acute-additional-bed-days",
+    "actual-discharge",
+    "post-discharge-support",
+    "community-bed-capacity",
+    "social-care-capacity"
   ];
 
   const PATHWAYS = {
@@ -118,7 +133,11 @@
     "hes-mean-los":hesPathway,
     "available-overnight-beds":hesPathway,
     "occupied-overnight-beds":hesPathway,
-    "overnight-bed-occupancy":hesPathway
+    "overnight-bed-occupancy":hesPathway,
+    "discharge-ready":acuteDischargePathway,
+    "delayed-discharge":acuteDischargePathway,
+    "acute-additional-bed-days":acuteDischargePathway,
+    "actual-discharge":acuteDischargePathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
