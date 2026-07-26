@@ -1,0 +1,112 @@
+{
+  "publication": "Discharge Ready Date — revised monthly data, 2024-25",
+  "period": "2024-25",
+  "icb_count": 42,
+  "provider_count": 134,
+  "utla_count": 153,
+  "england_metrics": {
+    "drd-discharges": {
+      "label": "Discharges included in the Discharge Ready Date publication",
+      "display": "count",
+      "count": 4035716
+    },
+    "drd-same-day": {
+      "label": "Discharged on the discharge-ready date",
+      "display": "percent",
+      "percent": 86.46,
+      "count": 3489312,
+      "denominator": 4035716
+    },
+    "drd-delayed": {
+      "label": "Discharged one or more days after the discharge-ready date",
+      "display": "percent",
+      "percent": 13.54,
+      "count": 546404,
+      "denominator": 4035716
+    },
+    "drd-bed-days": {
+      "label": "Bed-days after the discharge-ready date",
+      "display": "count",
+      "count": 3329387
+    },
+    "drd-average-delay": {
+      "label": "Average days after discharge-ready date among delayed discharges",
+      "display": "days",
+      "days": 6.09,
+      "days_including_zero": 0.82
+    }
+  },
+  "england_thresholds": [
+    {
+      "key": "no_delay",
+      "label": "Same day / no delay",
+      "count": 3489312,
+      "percent_all": 86.46,
+      "percent_delayed": null,
+      "bed_days": 0
+    },
+    {
+      "key": "one_day",
+      "label": "1 day",
+      "count": 179651,
+      "percent_all": 4.45,
+      "percent_delayed": 32.88,
+      "bed_days": 179651
+    },
+    {
+      "key": "two_three",
+      "label": "2–3 days",
+      "count": 129998,
+      "percent_all": 3.22,
+      "percent_delayed": 23.79,
+      "bed_days": 311917
+    },
+    {
+      "key": "four_six",
+      "label": "4–6 days",
+      "count": 93010,
+      "percent_all": 2.3,
+      "percent_delayed": 17.02,
+      "bed_days": 451764
+    },
+    {
+      "key": "seven_thirteen",
+      "label": "7–13 days",
+      "count": 83887,
+      "percent_all": 2.08,
+      "percent_delayed": 15.35,
+      "bed_days": 767515
+    },
+    {
+      "key": "fourteen_twenty",
+      "label": "14–20 days",
+      "count": 28804,
+      "percent_all": 0.71,
+      "percent_delayed": 5.27,
+      "bed_days": 471437
+    },
+    {
+      "key": "twenty_one_plus",
+      "label": "21 days or more",
+      "count": 31054,
+      "percent_all": 0.77,
+      "percent_delayed": 5.68,
+      "bed_days": 1147103
+    }
+  ],
+  "england_coverage": {
+    "months_with_published_data": 12,
+    "average_monthly_acceptable_provider_percent": 93.51,
+    "minimum_monthly_acceptable_provider_percent": 88.89,
+    "average_monthly_utla_coverage_percent": null,
+    "minimum_monthly_utla_coverage_percent": null
+  },
+  "validation": {
+    "england_months_reconciled": 12,
+    "england_annual_discharge_gap": 0,
+    "england_annual_bed_day_gap": 0,
+    "icb_count": 42,
+    "provider_count": 134,
+    "utla_count": 153
+  }
+}
