@@ -1,0 +1,113 @@
+/* ============================================================
+   00. DISCHARGE READY DATE TOOLBAR AND BADGES
+   ============================================================ */
+.drd-metric-control {
+  display:grid;
+  gap:3px;
+  min-width:265px;
+  font-size:.72rem;
+  font-weight:700;
+  color:#38515d;
+}
+
+.drd-metric-control[hidden],
+.drd-metric-scope[hidden] {
+  display:none !important;
+}
+
+.drd-metric-control select {
+  width:100%;
+  min-height:36px;
+  border:1px solid #c4d2d8;
+  border-radius:9px;
+  background:#fff;
+  padding:6px 9px;
+  color:#193746;
+}
+
+.drd-metric-scope {
+  align-self:end;
+  max-width:300px;
+  padding:7px 10px;
+  border-radius:9px;
+  background:#f7e8ea;
+  color:#7c3d45;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+.drd-metric-badge {
+  border-color:#a9565e;
+  background:#fff7f7;
+  color:#733b42;
+}
+
+/* ============================================================
+   01. DETAIL PANELS
+   ============================================================ */
+.drd-operational-card h4 {
+  margin:15px 0 7px;
+  color:#334f5c;
+  font-size:.82rem;
+}
+
+.drd-summary-grid,
+.drd-threshold-grid,
+.drd-month-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+}
+
+.drd-summary-grid > div,
+.drd-threshold-grid > div,
+.drd-month-grid > div,
+.drd-rank-card {
+  display:grid;
+  gap:2px;
+  padding:9px;
+  border:1px solid #ead3d6;
+  border-radius:10px;
+  background:#fffafa;
+}
+
+.drd-summary-grid span,
+.drd-threshold-grid span,
+.drd-month-grid span,
+.drd-rank-card span {
+  color:#5b707a;
+  font-size:.7rem;
+}
+
+.drd-summary-grid strong,
+.drd-threshold-grid strong,
+.drd-month-grid strong,
+.drd-rank-card strong {
+  color:#743b43;
+  font-size:.94rem;
+}
+
+.drd-summary-grid small,
+.drd-threshold-grid small,
+.drd-month-grid small,
+.drd-rank-card small {
+  color:#687c85;
+  font-size:.65rem;
+  line-height:1.35;
+}
+
+.drd-rank-card {
+  margin-top:9px;
+}
+
+@media (max-width:760px) {
+  .drd-metric-control {
+    min-width:100%;
+  }
+
+  .drd-summary-grid,
+  .drd-threshold-grid,
+  .drd-month-grid {
+    grid-template-columns:1fr;
+  }
+}
