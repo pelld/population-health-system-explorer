@@ -39,6 +39,18 @@
     "post-discharge-support"
   ];
 
+  const communityBedPathway = [
+    "post-discharge-support",
+    "community-bed-capacity",
+    "community-bed-rehab",
+    "community-bed-step-up",
+    "community-bed-assessment",
+    "community-bed-los",
+    "emergency-admission",
+    "delayed-discharge",
+    "social-care-capacity"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -80,7 +92,12 @@
     "csds-people-referred":csdsPathway,
     "csds-people-contacted":csdsPathway,
     "csds-care-contacts":csdsPathway,
-    "csds-care-activities":csdsPathway
+    "csds-care-activities":csdsPathway,
+    "community-bed-capacity":communityBedPathway,
+    "community-bed-rehab":communityBedPathway,
+    "community-bed-step-up":communityBedPathway,
+    "community-bed-assessment":communityBedPathway,
+    "community-bed-los":communityBedPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
