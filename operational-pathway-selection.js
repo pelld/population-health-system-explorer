@@ -18,6 +18,15 @@
     "ae-attendance"
   ];
 
+  const communityWaitPathway = [
+    "urgent-community-capacity",
+    "community-waiting-list",
+    "community-under-18",
+    "community-18-52",
+    "community-over-52",
+    "repeat-urgent-use"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -50,7 +59,11 @@
     "urgent-community-capacity":ucrPathway,
     "ucr-referrals":ucrPathway,
     "ucr-care-contacts":ucrPathway,
-    "ucr-two-hour-achievement":ucrPathway
+    "ucr-two-hour-achievement":ucrPathway,
+    "community-waiting-list":communityWaitPathway,
+    "community-under-18":communityWaitPathway,
+    "community-18-52":communityWaitPathway,
+    "community-over-52":communityWaitPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
