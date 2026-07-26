@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/build-public-community-waits.yml"
       - "scripts/build_community_waits_2024_25.py"
+      - "scripts/run_community_waits_2024_25.py"
   workflow_dispatch:
 
 permissions:
@@ -35,7 +36,7 @@ jobs:
         run: python -m pip install --upgrade pandas requests openpyxl
 
       - name: 04. Build March stock and corrected England trend
-        run: python scripts/build_community_waits_2024_25.py
+        run: python scripts/run_community_waits_2024_25.py
 
       - name: 05. Commit generated public data
         run: |
