@@ -39,6 +39,7 @@ on:
       - "qof-sources.js"
       - "qof-map-data.js"
       - "qof-metrics.js"
+      - "qof-metrics-fixes.js"
 
 jobs:
   check-javascript:
@@ -83,3 +84,4 @@ jobs:
           node --check qof-sources.js
           node --check qof-map-data.js
           node --check qof-metrics.js
+          node --check qof-metrics-fixes.js
