@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 331, in <module>
+    main()
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 287, in main
+    validation = validate(england, icbs, practices, tables)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 241, in validate
+    raise RuntimeError(f"Published practices over 90% changed: {over_90}")
+RuntimeError: Published practices over 90% changed: 5152
