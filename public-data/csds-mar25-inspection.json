@@ -1,118 +1,208 @@
 {
   "source_url": "https://files.digital.nhs.uk/39/AF1D09/csds-mar25-exp-core-data.zip",
   "zip_bytes": 2876752,
-  "file_count": 1,
-  "files": [
+  "csv_name": "csds-mar25-exp-core-data.csv",
+  "rows": 273535,
+  "columns": [
+    "REPORTING_PERIOD_START",
+    "REPORTING_PERIOD_END",
+    "ORG_CODE",
+    "ORG_NAME",
+    "ORG_LEVEL",
+    "DIMENSION",
+    "COUNT_OF",
+    "MEASURE",
+    "MEASURE_DESC",
+    "MEASURE_2",
+    "MEASURE_2_DESC",
+    "MEASURE_VALUE",
+    "MEASURE_VALUE_0_18",
+    "MEASURE_VALUE_19_64",
+    "MEASURE_VALUE_65_PLUS",
+    "MEASURE_VALUE_NUM"
+  ],
+  "organisation_levels": [
     {
-      "name": "csds-mar25-exp-core-data.csv",
-      "bytes": 50641242,
-      "encoding": "utf-8-sig",
-      "row_count_including_header": 273536,
-      "column_count": 15,
-      "columns": [
-        "REPORTING_PERIOD_START",
-        "REPORTING_PERIOD_END",
-        "ORG_CODE",
-        "ORG_NAME",
-        "ORG_LEVEL",
-        "DIMENSION",
-        "COUNT_OF",
-        "MEASURE",
-        "MEASURE_DESC",
-        "MEASURE_2",
-        "MEASURE_2_DESC",
-        "MEASURE_VALUE",
-        "MEASURE_VALUE_0_18",
-        "MEASURE_VALUE_19_64",
-        "MEASURE_VALUE_65_PLUS"
-      ],
-      "sample_rows": [
-        [
-          "2025-03-01",
-          "2025-03-31",
-          "RPG",
-          "OXLEAS NHS FOUNDATION TRUST",
-          "Provider",
-          "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
-          "Referrals",
-          "40 to 44",
-          "",
-          "010",
-          "Catheter Problems",
-          "5.0",
-          "0.0",
-          "5.0",
-          "0.0"
-        ],
-        [
-          "2025-03-01",
-          "2025-03-31",
-          "RPG",
-          "OXLEAS NHS FOUNDATION TRUST",
-          "Provider",
-          "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
-          "Referrals",
-          "40 to 44",
-          "",
-          "023",
-          "Ear Infections/Problems",
-          "5.0",
-          "0.0",
-          "5.0",
-          "0.0"
-        ],
-        [
-          "2025-03-01",
-          "2025-03-31",
-          "RPG",
-          "OXLEAS NHS FOUNDATION TRUST",
-          "Provider",
-          "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
-          "Referrals",
-          "40 to 44",
-          "",
-          "028",
-          "Equipment Provision",
-          "5.0",
-          "0.0",
-          "5.0",
-          "0.0"
-        ],
-        [
-          "2025-03-01",
-          "2025-03-31",
-          "RPG",
-          "OXLEAS NHS FOUNDATION TRUST",
-          "Provider",
-          "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
-          "Referrals",
-          "40 to 44",
-          "",
-          "049",
-          "Pain/Symptom Control",
-          "5.0",
-          "0.0",
-          "5.0",
-          "0.0"
-        ],
-        [
-          "2025-03-01",
-          "2025-03-31",
-          "RPG",
-          "OXLEAS NHS FOUNDATION TRUST",
-          "Provider",
-          "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
-          "Referrals",
-          "40 to 44",
-          "",
-          "056",
-          "Rehabilitation",
-          "5.0",
-          "0.0",
-          "5.0",
-          "0.0"
-        ]
-      ]
+      "ORG_LEVEL": "Local Authority of Residence (Upper)",
+      "rows": 120701
+    },
+    {
+      "ORG_LEVEL": "Provider",
+      "rows": 91703
+    },
+    {
+      "ORG_LEVEL": "ICB",
+      "rows": 46336
+    },
+    {
+      "ORG_LEVEL": "NHS England (Region)",
+      "rows": 12585
+    },
+    {
+      "ORG_LEVEL": "All Submitters",
+      "rows": 2210
     }
-  ]
+  ],
+  "count_types": [
+    {
+      "COUNT_OF": "Referrals",
+      "rows": 193511
+    },
+    {
+      "COUNT_OF": "PatientWithReferral",
+      "rows": 27569
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "rows": 26381
+    },
+    {
+      "COUNT_OF": "UniqueCareContacts",
+      "rows": 11156
+    },
+    {
+      "COUNT_OF": "PatientWithCareContact",
+      "rows": 9953
+    },
+    {
+      "COUNT_OF": "CareActivities",
+      "rows": 3898
+    },
+    {
+      "COUNT_OF": "PatientWithReferralAndGender",
+      "rows": 425
+    },
+    {
+      "COUNT_OF": "PatientWithCareContactAndGender",
+      "rows": 421
+    },
+    {
+      "COUNT_OF": "Organisation",
+      "rows": 221
+    }
+  ],
+  "dimension_count_combinations": [
+    {
+      "COUNT_OF": "CareActivities",
+      "DIMENSION": "ActivityType",
+      "rows": 3489
+    },
+    {
+      "COUNT_OF": "CareActivities",
+      "DIMENSION": "TotalCareActivities",
+      "rows": 409
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "Age_CareContactDate_Gender",
+      "rows": 17697
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "ConsultType_AttendCode_Group",
+      "rows": 2903
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "ConsultationMedium",
+      "rows": 2440
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "AttendCode_Group",
+      "rows": 1810
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "ConsultType",
+      "rows": 1105
+    },
+    {
+      "COUNT_OF": "CareContacts",
+      "DIMENSION": "TotalCareContacts",
+      "rows": 426
+    },
+    {
+      "COUNT_OF": "Organisation",
+      "DIMENSION": "TotalOrganisation",
+      "rows": 221
+    },
+    {
+      "COUNT_OF": "PatientWithCareContact",
+      "DIMENSION": "Age_CareContactDate_Group",
+      "rows": 8237
+    },
+    {
+      "COUNT_OF": "PatientWithCareContact",
+      "DIMENSION": "Gender",
+      "rows": 1290
+    },
+    {
+      "COUNT_OF": "PatientWithCareContact",
+      "DIMENSION": "TotalPatientWithCareContact",
+      "rows": 426
+    },
+    {
+      "COUNT_OF": "PatientWithCareContactAndGender",
+      "DIMENSION": "TotalPatientWithCareContactAndGender",
+      "rows": 421
+    },
+    {
+      "COUNT_OF": "PatientWithReferral",
+      "DIMENSION": "AgeYr_Referral_ReceivedDate_Gender_PatientWithReferrals",
+      "rows": 17744
+    },
+    {
+      "COUNT_OF": "PatientWithReferral",
+      "DIMENSION": "AgeYr_Referral_ReceivedDate",
+      "rows": 8135
+    },
+    {
+      "COUNT_OF": "PatientWithReferral",
+      "DIMENSION": "Gender",
+      "rows": 1259
+    },
+    {
+      "COUNT_OF": "PatientWithReferral",
+      "DIMENSION": "TotalPatientWithReferral",
+      "rows": 431
+    },
+    {
+      "COUNT_OF": "PatientWithReferralAndGender",
+      "DIMENSION": "TotalPatientWithReferralAndGender",
+      "rows": 425
+    },
+    {
+      "COUNT_OF": "Referrals",
+      "DIMENSION": "AgeYr_Referral_ReceivedDate_Group_PrimaryReferralReason",
+      "rows": 152357
+    },
+    {
+      "COUNT_OF": "Referrals",
+      "DIMENSION": "AgeYr_Referral_ReceivedDate_Gender_Referrals",
+      "rows": 17744
+    },
+    {
+      "COUNT_OF": "Referrals",
+      "DIMENSION": "PrimaryReferralReason",
+      "rows": 16694
+    },
+    {
+      "COUNT_OF": "Referrals",
+      "DIMENSION": "SourceOfReferral",
+      "rows": 6285
+    },
+    {
+      "COUNT_OF": "Referrals",
+      "DIMENSION": "TotalReferrals",
+      "rows": 431
+    },
+    {
+      "COUNT_OF": "UniqueCareContacts",
+      "DIMENSION": "ServiceType",
+      "rows": 11156
+    }
+  ],
+  "national_headline_candidates": [],
+  "national_simple_dimension_candidates": []
 }
