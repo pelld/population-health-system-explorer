@@ -7,7 +7,7 @@
 
 from __future__ import annotations
 
-import scripts.build_community_waits_2024_25 as build
+import build_community_waits_2024_25 as build
 
 
 _original_read_organisation_table = build.read_organisation_table
