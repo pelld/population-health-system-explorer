@@ -27,6 +27,18 @@
     "repeat-urgent-use"
   ];
 
+  const csdsPathway = [
+    "community-professional-referral",
+    "csds-referrals",
+    "csds-people-referred",
+    "community-waiting-list",
+    "csds-people-contacted",
+    "csds-care-contacts",
+    "csds-care-activities",
+    "community-workforce",
+    "post-discharge-support"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -63,7 +75,12 @@
     "community-waiting-list":communityWaitPathway,
     "community-under-18":communityWaitPathway,
     "community-18-52":communityWaitPathway,
-    "community-over-52":communityWaitPathway
+    "community-over-52":communityWaitPathway,
+    "csds-referrals":csdsPathway,
+    "csds-people-referred":csdsPathway,
+    "csds-people-contacted":csdsPathway,
+    "csds-care-contacts":csdsPathway,
+    "csds-care-activities":csdsPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
