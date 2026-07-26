@@ -35,30 +35,19 @@ jobs:
       - name: 03. Install dependencies
         run: python -m pip install --upgrade pandas requests openpyxl
 
-      - name: 04. Build March stock and preserve diagnostics
-        run: |
-          mkdir -p public-data
-          set +e
-          python scripts/run_community_waits_2024_25.py > public-data/community-waits-build-log.txt 2>&1
-          status=$?
-          cat public-data/community-waits-build-log.txt
-          echo "exit_status=${status}" >> public-data/community-waits-build-log.txt
-          exit 0
+      - name: 04. Build March stock and corrected England trend
+        run: python scripts/run_community_waits_2024_25.py
 
-      - name: 05. Commit generated data or diagnostic log
+      - name: 05. Commit generated public data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public-data/community-waits-build-log.txt
-
-          if [ -f public-data/community-waits-2024-25.json ]; then
-            git add public-data/community-waits-2024-25.json
-          fi
+          git add public-data/community-waits-2024-25.json
 
           if git diff --cached --quiet; then
             echo "No community-waiting-list changes to commit."
           else
-            git commit -m "Generate community waiting-list build output"
+            git commit -m "Generate public community waiting-list data"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
