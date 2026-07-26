@@ -1,0 +1,44 @@
+name: Summarise public discharge ready date data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/summarise-public-drd.yml"
+      - "scripts/summarise_drd_2024_25.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  summarise-drd:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 01. Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 02. Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 03. Build compact validation summary
+        run: python scripts/summarise_drd_2024_25.py
+
+      - name: 04. Commit summary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-data/drd-2024-25-summary.json
+          if git diff --cached --quiet; then
+            echo "No DRD summary changes to commit."
+          else
+            git commit -m "Summarise public discharge ready date 2024-25 data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
