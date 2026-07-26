@@ -1,9 +1,4 @@
 Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_gpps_2025.py", line 319, in <module>
-    main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_gpps_2025.py", line 276, in main
-    validation = validate(england,icbs,practices)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_gpps_2025.py", line 232, in validate
-    raise RuntimeError(f"Published England response rate changed: {england['response_rate_percent']}")
-RuntimeError: Published England response rate changed: 25.83
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_build_gpps_2025.py", line 10, in <module>
+    from scripts import build_gpps_2025 as build
+ModuleNotFoundError: No module named 'scripts'
