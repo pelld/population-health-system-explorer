@@ -1,7 +1,2 @@
-Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_community_waits_2024_25.py", line 23, in <module>
-    build.main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_community_waits_2024_25.py", line 335, in main
-    raise RuntimeError(f"Unexpected March England over-52 total: {england['waiting_list']['over_52']}")
-RuntimeError: Unexpected March England over-52 total: 77700
-exit_status=1
+Wrote public-data/community-waits-2024-25.json: 42 ICBs and 142 providers
+exit_status=0
