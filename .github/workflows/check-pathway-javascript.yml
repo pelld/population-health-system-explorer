@@ -21,6 +21,9 @@ on:
       - "community-bed-sources.js"
       - "community-bed-map-data.js"
       - "community-bed-metrics.js"
+      - "hes-apc-sources.js"
+      - "hes-apc-map-data.js"
+      - "hes-apc-metrics.js"
 
 jobs:
   check-javascript:
@@ -47,3 +50,6 @@ jobs:
           node --check community-bed-sources.js
           node --check community-bed-map-data.js
           node --check community-bed-metrics.js
+          node --check hes-apc-sources.js
+          node --check hes-apc-map-data.js
+          node --check hes-apc-metrics.js
