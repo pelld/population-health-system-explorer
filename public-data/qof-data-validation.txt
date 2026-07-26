@@ -1,1 +1,0 @@
-Validated all QOF totals: 21 condition groups, 76 indicators, 42 ICBs and 6,188 practices.
