@@ -95,6 +95,24 @@
     "post-discharge-support"
   ];
 
+  const gppsPathway = [
+    "urgent-primary-demand",
+    "gpps-phone-access",
+    "gpps-website-access",
+    "gpps-app-access",
+    "gpps-reception-helpfulness",
+    "gpps-contact-experience",
+    "gpps-continuity",
+    "gpad-appointments",
+    "same-day-capacity",
+    "gp-clinical-assessment",
+    "gpps-listened",
+    "gpps-care-concern",
+    "failed-primary-access",
+    "gp-ae-route",
+    "ae-attendance"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -156,7 +174,15 @@
     "drd-same-day":drdPathway,
     "drd-delayed":drdPathway,
     "drd-bed-days":drdPathway,
-    "drd-average-delay":drdPathway
+    "drd-average-delay":drdPathway,
+    "gpps-phone-access":gppsPathway,
+    "gpps-website-access":gppsPathway,
+    "gpps-app-access":gppsPathway,
+    "gpps-reception-helpfulness":gppsPathway,
+    "gpps-contact-experience":gppsPathway,
+    "gpps-continuity":gppsPathway,
+    "gpps-listened":gppsPathway,
+    "gpps-care-concern":gppsPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
