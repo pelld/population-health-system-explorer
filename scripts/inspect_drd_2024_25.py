@@ -50,10 +50,20 @@ def inspect_file(label: str,url: str) -> dict[str,Any]:
     dimensions: dict[str,list[str]] = {}
     for column in frame.columns:
         normalised = column.lower().replace("_"," ")
-        if any(token in normalised for token in ("level","geography","organisation","org type","metric","measure","breakdown","threshold","status","period","month")):
+        if any(token in normalised for token in ("type","level","geography","organisation","metric","measure","breakdown","threshold","status","period","month")):
             values = sorted({str(value).strip() for value in frame[column].dropna() if str(value).strip()})
             if len(values) <= 300:
                 dimensions[column] = values
+
+    type_profiles = {}
+    if "Data Type" in frame.columns:
+        for data_type,rows in frame.groupby("Data Type",dropna=False):
+            type_profiles[str(data_type)] = {
+                "rows":len(rows),
+                "codes":int(rows["Code"].nunique(dropna=True)) if "Code" in rows else None,
+                "organisations":int(rows["Organisation Name"].nunique(dropna=True)) if "Organisation Name" in rows else None,
+                "measures":sorted({str(value).strip() for value in rows["Measure"].dropna() if str(value).strip()}),
+            }
 
     sample_rows = [
         {column:scalar(row[column]) for column in frame.columns}
@@ -67,6 +77,7 @@ def inspect_file(label: str,url: str) -> dict[str,Any]:
         "rows":len(frame),
         "columns":list(frame.columns),
         "dimensions":dimensions,
+        "type_profiles":type_profiles,
         "sample_rows":sample_rows,
     }
 
