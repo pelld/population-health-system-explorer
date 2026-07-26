@@ -58,6 +58,9 @@
     "non-elective-bed-days",
     "hes-bed-days",
     "hes-mean-los",
+    "available-overnight-beds",
+    "occupied-overnight-beds",
+    "overnight-bed-occupancy",
     "hospital-flow-pressure",
     "delayed-discharge",
     "actual-discharge"
@@ -112,7 +115,10 @@
     "community-bed-los":communityBedPathway,
     "emergency-admission":hesPathway,
     "hes-bed-days":hesPathway,
-    "hes-mean-los":hesPathway
+    "hes-mean-los":hesPathway,
+    "available-overnight-beds":hesPathway,
+    "occupied-overnight-beds":hesPathway,
+    "overnight-bed-occupancy":hesPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
