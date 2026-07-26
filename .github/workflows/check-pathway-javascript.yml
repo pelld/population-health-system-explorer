@@ -15,6 +15,9 @@ on:
       - "community-waits-map-data.js"
       - "community-waits-metrics.js"
       - "community-waits-metrics-fixes.js"
+      - "csds-sources.js"
+      - "csds-map-data.js"
+      - "csds-metrics.js"
 
 jobs:
   check-javascript:
@@ -35,3 +38,6 @@ jobs:
           node --check community-waits-map-data.js
           node --check community-waits-metrics.js
           node --check community-waits-metrics-fixes.js
+          node --check csds-sources.js
+          node --check csds-map-data.js
+          node --check csds-metrics.js
