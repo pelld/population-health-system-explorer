@@ -24,6 +24,9 @@ on:
       - "hes-apc-sources.js"
       - "hes-apc-map-data.js"
       - "hes-apc-metrics.js"
+      - "bed-occupancy-sources.js"
+      - "bed-occupancy-map-data.js"
+      - "bed-occupancy-metrics.js"
 
 jobs:
   check-javascript:
@@ -53,3 +56,6 @@ jobs:
           node --check hes-apc-sources.js
           node --check hes-apc-map-data.js
           node --check hes-apc-metrics.js
+          node --check bed-occupancy-sources.js
+          node --check bed-occupancy-map-data.js
+          node --check bed-occupancy-metrics.js
