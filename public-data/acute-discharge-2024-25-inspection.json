@@ -93,6 +93,332 @@
           "Safeguarding concern preventing discharge or Court of protection"
         ]
       },
+      "national_metric_shape": [
+        {
+          "metric": "Awaiting Diagnostic test",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting a medical decision/intervention including writing the discharge summary",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting community equipment and adaptations to housing",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting confirmation from community hub/single point of access that referral received and actioned",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting medicines to take home ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting referral to community single point of access",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting therapy decision to discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting transport",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Declared as not meeting the criteria to reside at morning board round and then later in day meets the criteria to reside so discharge stopped ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Homeless/no right of recourse to public funds/no place to discharge to",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Individual/family not in agreement with discharge plans",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "No Plan",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 14+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "01/04/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 21+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "01/04/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 7+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "01/04/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients discharged",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/04/2024",
+          "last_period": "30/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients remaining in hospital who no longer meet the criteria to reside",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/04/2024",
+          "last_period": "30/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients who no longer meet the criteria to reside",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/04/2024",
+          "last_period": "30/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P0 - Domestic home without reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P0 - Other without reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Domestic home with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Hotel with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Other with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Care Home \n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Community Rehab Setting\n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Designated Setting \n(isolation before moving to care home)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Hospice \n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3 - Care Home\n(new admission, likely permanent)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3 - Designated Setting\n(isolation before moving to care home as new admission)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3b - Care Home\n(existing resident discharged back)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 1: awaiting availability of resource for assessment and start of care at home",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 2: awaiting availability of rehabilitation bed in community hospital or other bedded setting",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 3: awaiting availability of a bed in a residential or nursing home that is likely to be a permanent placement",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Remains in hospital to avoid spread of (non-Covid 19) infectious disease and because there is no other suitable location to discharge to",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Repatriation/Transfer to another acute trust for specialist treatment or ongoing treatment",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Safeguarding concern preventing discharge or Court of protection",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/04/2024",
+          "last_period": "01/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        }
+      ],
       "sample_rows": [
         {
           "Period": "01/04/2024",
@@ -491,6 +817,332 @@
           "Safeguarding concern preventing discharge or Court of protection"
         ]
       },
+      "national_metric_shape": [
+        {
+          "metric": "Awaiting Diagnostic test",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting a medical decision/intervention including writing the discharge summary",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting community equipment and adaptations to housing",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting confirmation from community hub/single point of access that referral received and actioned",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting medicines to take home ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting referral to community single point of access",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting therapy decision to discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Awaiting transport",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Declared as not meeting the criteria to reside at morning board round and then later in day meets the criteria to reside so discharge stopped ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Homeless/no right of recourse to public funds/no place to discharge to",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Individual/family not in agreement with discharge plans",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "No Plan",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 14+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "06/05/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 21+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "06/05/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 7+ days",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "06/05/2024",
+          "last_period": "29/04/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients discharged",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/05/2024",
+          "last_period": "31/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients remaining in hospital who no longer meet the criteria to reside",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/05/2024",
+          "last_period": "31/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Number of patients who no longer meet the criteria to reside",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/05/2024",
+          "last_period": "31/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P0 - Domestic home without reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P0 - Other without reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Domestic home with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Hotel with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P1 - Other with reablement support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Care Home \n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Community Rehab Setting\n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Designated Setting \n(isolation before moving to care home)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P2 - Hospice \n(short term 24hr support)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3 - Care Home\n(new admission, likely permanent)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3 - Designated Setting\n(isolation before moving to care home as new admission)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "P3b - Care Home\n(existing resident discharged back)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 1: awaiting availability of resource for assessment and start of care at home",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 2: awaiting availability of rehabilitation bed in community hospital or other bedded setting",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Pathway 3: awaiting availability of a bed in a residential or nursing home that is likely to be a permanent placement",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Remains in hospital to avoid spread of (non-Covid 19) infectious disease and because there is no other suitable location to discharge to",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Repatriation/Transfer to another acute trust for specialist treatment or ongoing treatment",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        },
+        {
+          "metric": "Safeguarding concern preventing discharge or Court of protection",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/05/2024",
+          "last_period": "01/05/2024",
+          "metric_type": [],
+          "metric_group": []
+        }
+      ],
       "sample_rows": [
         {
           "Period": "01/05/2024",
@@ -917,6 +1569,671 @@
           "NCTR not discharged"
         ]
       },
+      "national_metric_shape": [
+        {
+          "metric": "Capacity – Awaiting restart of existing social care arrangements (Pathway 0)",
+          "rows": 2,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Bed-based rehabilitation, reablement or recovery services not yet available (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – End of life care inc Fast-Track CHC not yet available (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Equipment and associated training not yet delivered (Pathway 1-3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Home-based rehabilitation, reablement or recovery services not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Housing adaptations not yet completed (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Housing provision not yet available (Pathway 0 or 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Mental health admitted patient care not yet available (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Other home-based community health services not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Other home-based social care service not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Residential/nursing home care not yet available (Pathway 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process – Awaiting confirmation of funding eligibility",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process – Waiting for confirmation of immediate care needs and pathway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process– Awaiting necessary referrals by care transfer hub",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process - Awaiting medical review of need for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting formal decision to discharge (inc diagnostic test results)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting medicines to take home, discharge letter or other discharge documentation",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting patient transport services",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting referral to care transfer hub for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting therapy review of need for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Remaining in hospital due to infection prevention and control restrictions",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Bed-based rehabilitation, reablement or recovery service arrangements still underway (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Home based rehabilitation, reablement or recovery service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Other home-based community health service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Other home-based social care service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Residential/nursing home care arrangements still underway (Pathway 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – End of life care inc Fast-Track CHC arrangement still underway (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Further action requested by agreed provider",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Homeless with no recourse to public funds ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Housing provision arrangement for homelessness still underway (Pathway 0 or 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Out of area discharge arrangements requested but not completed",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Patient/family/carer choice discussions on package still underway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Self-funded care package arrangements still underway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 14 days or over",
+          "rows": 4,
+          "periods": 4,
+          "first_period": "03/06/2024",
+          "last_period": "24/06/2024",
+          "metric_type": [
+            "Weekly snaphot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 21 days or over",
+          "rows": 4,
+          "periods": 4,
+          "first_period": "03/06/2024",
+          "last_period": "24/06/2024",
+          "metric_type": [
+            "Weekly snaphot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 7 days or over",
+          "rows": 4,
+          "periods": 4,
+          "first_period": "03/06/2024",
+          "last_period": "24/06/2024",
+          "metric_type": [
+            "Weekly snaphot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of patients discharged",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/06/2024",
+          "last_period": "30/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharges"
+          ]
+        },
+        {
+          "metric": "Number of patients remaining in hospital who no longer meet the criteria to reside",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/06/2024",
+          "last_period": "30/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "NCTR not discharged"
+          ]
+        },
+        {
+          "metric": "Number of patients who no longer meet the criteria to reside",
+          "rows": 30,
+          "periods": 30,
+          "first_period": "01/06/2024",
+          "last_period": "30/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "NCTR"
+          ]
+        },
+        {
+          "metric": "Pathway 0: Discharge back to an original care home placement when the care home has confirmed they can continue to meet the persons needs with the same level of support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 0: Discharge to a domestic home, hotel, or other temporary accommodation without the need for new/increased care or support from health and social care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge back to original care home placement with rehabilitation, reablement and recovery or with an increased level of support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with other new/additional support (eg end of life care)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with rehabilitation, reablement and recovery",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 2: Short-term bed/hospice for rehabilitation, reablement and recovery / end of life care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 3: Discharge to a care home as a new admission",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 3: Discharge to a care home/hospice as a new admission for end-of-life care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns - Issues with discharge destination readiness",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Awaiting determination of mental capacity",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Ongoing safeguarding concern",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Patient /family/carer concerns over discharge readiness",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/06/2024",
+          "last_period": "01/06/2024",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        }
+      ],
       "sample_rows": [
         {
           "Period": "01/06/2024",
@@ -1403,6 +2720,671 @@
           "NCTR not discharged"
         ]
       },
+      "national_metric_shape": [
+        {
+          "metric": "Capacity – Awaiting restart of existing social care arrangements (Pathway 0)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Bed-based rehabilitation, reablement or recovery services not yet available (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – End of life care inc Fast-Track CHC not yet available (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Equipment and associated training not yet delivered (Pathway 1-3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Home-based rehabilitation, reablement or recovery services not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Housing adaptations not yet completed (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Housing provision not yet available (Pathway 0 or 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Mental health admitted patient care not yet available (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Other home-based community health services not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Other home-based social care service not yet available (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Capacity – Residential/nursing home care not yet available (Pathway 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process – Awaiting confirmation of funding eligibility",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process – Waiting for confirmation of immediate care needs and pathway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Care transfer hub process– Awaiting necessary referrals by care transfer hub",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process - Awaiting medical review of need for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting formal decision to discharge (inc diagnostic test results)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting medicines to take home, discharge letter or other discharge documentation",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting patient transport services",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting referral to care transfer hub for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Awaiting therapy review of need for supported discharge",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Hospital process – Remaining in hospital due to infection prevention and control restrictions",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Bed-based rehabilitation, reablement or recovery service arrangements still underway (Pathway 2)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Home based rehabilitation, reablement or recovery service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Other home-based community health service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Other home-based social care service arrangements still underway (Pathway 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Residential/nursing home care arrangements still underway (Pathway 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – End of life care inc Fast-Track CHC arrangement still underway (Pathway 1 or 3)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Further action requested by agreed provider",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Homeless with no recourse to public funds ",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Housing provision arrangement for homelessness still underway (Pathway 0 or 1)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Out of area discharge arrangements requested but not completed",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Patient/family/carer choice discussions on package still underway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Interface process – Self-funded care package arrangements still underway",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 14 days or over",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "03/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 21 days or over",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "03/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of additional bed days, patients with length of stay of 7 days or over",
+          "rows": 5,
+          "periods": 5,
+          "first_period": "03/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Additional bed days lost"
+          ]
+        },
+        {
+          "metric": "Number of patients discharged",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharges"
+          ]
+        },
+        {
+          "metric": "Number of patients remaining in hospital who no longer meet the criteria to reside",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "NCTR not discharged"
+          ]
+        },
+        {
+          "metric": "Number of patients who no longer meet the criteria to reside",
+          "rows": 31,
+          "periods": 31,
+          "first_period": "01/03/2025",
+          "last_period": "31/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "NCTR"
+          ]
+        },
+        {
+          "metric": "Pathway 0: Discharge back to an original care home placement when the care home has confirmed they can continue to meet the persons needs with the same level of support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 0: Discharge to a domestic home, hotel, or other temporary accommodation without the need for new/increased care or support from health and social care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge back to original care home placement with rehabilitation, reablement and recovery or with an increased level of support",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with other new/additional support (eg end of life care)",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with rehabilitation, reablement and recovery",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 2: Short-term bed/hospice for rehabilitation, reablement and recovery / end of life care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 3: Discharge to a care home as a new admission",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Pathway 3: Discharge to a care home/hospice as a new admission for end-of-life care",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Daily metric"
+          ],
+          "metric_group": [
+            "Discharge destination"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns - Issues with discharge destination readiness",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Awaiting determination of mental capacity",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Ongoing safeguarding concern",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        },
+        {
+          "metric": "Wellbeing concerns – Patient /family/carer concerns over discharge readiness",
+          "rows": 1,
+          "periods": 1,
+          "first_period": "01/03/2025",
+          "last_period": "01/03/2025",
+          "metric_type": [
+            "Weekly snapshot metric"
+          ],
+          "metric_group": [
+            "Delay reason"
+          ]
+        }
+      ],
       "sample_rows": [
         {
           "Period": "01/03/2025",
@@ -1766,5 +3748,2461 @@
         }
       ]
     }
-  ]
+  ],
+  "national_timeseries": {
+    "url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/07/Daily-discharge-sitrep-timeseries-data-webfile-April2021-June2026.xlsx",
+    "bytes": 304219,
+    "sheet_names": [
+      "Cover Sheet ",
+      "Contents ",
+      "Daily Series",
+      "Weekly Series"
+    ],
+    "sheets": [
+      {
+        "name": "Cover Sheet ",
+        "max_row": 11,
+        "max_column": 124,
+        "preview": [
+          {
+            "row": 2,
+            "values": [
+              null,
+              "Title:",
+              "Acute Daily Discharge Situation Report ",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              null,
+              "Summary:",
+              "Acute daily discharge situation report commenced on 8 April 2020 and collects data on the inpatient population of each acute Trust and their discharge status each day. \nData are unvalidated management information.",
+              null,
+              null,
+              null,
+              "#DIV/0!",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              null,
+              "Period:",
+              "2025-12-01 00:00:00",
+              "-",
+              "2026-06-30 00:00:00",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              "Source:",
+              "NHS England data collection",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              null,
+              "Basis:",
+              "Provider",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              null,
+              "Published:",
+              "2026-07-09 00:00:00",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              null,
+              "Revised:",
+              "-",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              null,
+              "Status:",
+              "Published",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              null,
+              "Contact:",
+              "england.bedsanddischarges@nhs.net",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Contents ",
+        "max_row": 12,
+        "max_column": 4,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              2,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              null,
+              "Contents",
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              null,
+              "Daily Series",
+              "National daily metrics from April 2022",
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              "Weekly Series",
+              "National weekly metrics from April 2022",
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Daily Series",
+        "max_row": 1922,
+        "max_column": 19,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              null,
+              "Daily Series: National daily metrics from April 2021",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              null,
+              "Notes\n1. Discharge location data was not collected prior to 12/05/2021\n2. Discharge data collections change from daily to weekly from 20/06/2022. No data was collected for 19/06/2022 as a result.\n3. Data collected on discharge pathways changed from 27/05/2024. More information is available here.",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              null,
+              "Contents",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Number of patients discharged by pathway",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Number of patients discharged by pathway type",
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              "Date",
+              "Number of patients who no longer meet the criteria to reside",
+              "Number of patients discharged",
+              "Number of patients remaining in hospital who no longer meet the criteria to reside",
+              "Pathway 0: Discharge to a domestic home, hotel, or other temporary accommodation without the need for new/increased care or support from health and social care",
+              "Pathway 0: Discharge back to an original care home placement when the care home has confirmed they can continue to meet the person’s needs with the same level of support",
+              "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with rehabilitation, reablement and recovery",
+              "Pathway 1: Discharge to a domestic home, hotel, or other temporary accommodation, or hospice at home with other new/additional support (eg end of life care)",
+              "Pathway 1: Discharge back to original care home placement with rehabilitation, reablement and recovery or with an increased level of support",
+              "Pathway 2: Short-term bed/hospice for rehabilitation, reablement and recovery / end of life care",
+              "Pathway 3: Discharge to a care home as a new admission",
+              "Pathway 3: Discharge to a care home/hospice as a new admission for end-of-life care",
+              null,
+              "Pathway 0 Total",
+              "Pathway 1 Total",
+              "Pathway 2 Total",
+              "Pathway 3 Total",
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              null,
+              "2021-04-01 00:00:00",
+              17663,
+              9279,
+              8384,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              null,
+              "2021-04-02 00:00:00",
+              14470,
+              7342,
+              7128,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              null,
+              "2021-04-03 00:00:00",
+              12180,
+              5175,
+              7005,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              null,
+              "2021-04-04 00:00:00",
+              11043,
+              4394,
+              6649,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              null,
+              "2021-04-05 00:00:00",
+              11253,
+              4577,
+              6676,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              null,
+              "2021-04-06 00:00:00",
+              14575,
+              6698,
+              7877,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              null,
+              "2021-04-07 00:00:00",
+              16916,
+              8521,
+              8395,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              null,
+              "2021-04-08 00:00:00",
+              17461,
+              8987,
+              8474,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 14,
+            "values": [
+              null,
+              "2021-04-09 00:00:00",
+              17514,
+              9443,
+              8071,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 15,
+            "values": [
+              null,
+              "2021-04-10 00:00:00",
+              13653,
+              6342,
+              7311,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 16,
+            "values": [
+              null,
+              "2021-04-11 00:00:00",
+              11596,
+              4540,
+              7056,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 17,
+            "values": [
+              null,
+              "2021-04-12 00:00:00",
+              15350,
+              6904,
+              8446,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 18,
+            "values": [
+              null,
+              "2021-04-13 00:00:00",
+              17628,
+              8856,
+              8772,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              null,
+              "2021-04-14 00:00:00",
+              17826,
+              9370,
+              8456,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              null,
+              "2021-04-15 00:00:00",
+              19043,
+              9427,
+              9616,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              null,
+              "2021-04-16 00:00:00",
+              18090,
+              9769,
+              8321,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              null,
+              "2021-04-17 00:00:00",
+              13663,
+              6144,
+              7519,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              null,
+              "2021-04-18 00:00:00",
+              11724,
+              4589,
+              7135,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 24,
+            "values": [
+              null,
+              "2021-04-19 00:00:00",
+              15641,
+              7200,
+              8441,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 25,
+            "values": [
+              null,
+              "2021-04-20 00:00:00",
+              17521,
+              9088,
+              8433,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 26,
+            "values": [
+              null,
+              "2021-04-21 00:00:00",
+              17769,
+              9142,
+              8627,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 27,
+            "values": [
+              null,
+              "2021-04-22 00:00:00",
+              18015,
+              9520,
+              8495,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 28,
+            "values": [
+              null,
+              "2021-04-23 00:00:00",
+              17992,
+              9479,
+              8513,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 29,
+            "values": [
+              null,
+              "2021-04-24 00:00:00",
+              13652,
+              6220,
+              7432,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 30,
+            "values": [
+              null,
+              "2021-04-25 00:00:00",
+              12066,
+              4574,
+              7492,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 31,
+            "values": [
+              null,
+              "2021-04-26 00:00:00",
+              15708,
+              7250,
+              8458,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 32,
+            "values": [
+              null,
+              "2021-04-27 00:00:00",
+              17597,
+              9124,
+              8473,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 33,
+            "values": [
+              null,
+              "2021-04-28 00:00:00",
+              17986,
+              9269,
+              8717,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 34,
+            "values": [
+              null,
+              "2021-04-29 00:00:00",
+              17627,
+              9287,
+              8340,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          },
+          {
+            "row": 35,
+            "values": [
+              null,
+              "2021-04-30 00:00:00",
+              17814,
+              9353,
+              8461,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              null,
+              0,
+              0,
+              0,
+              0,
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Weekly Series",
+        "max_row": 281,
+        "max_column": 48,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              null,
+              "Weekly Series: National weekly metrics from April 2021",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              null,
+              "Contents",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              null,
+              "Notes:\n1. Submitting providers choose on which day of the week their snapshot will be collected depending on local operational practices, they do not have to select the same day of the week every collection window, and different submitting providers may have selected different days in any given collection window.",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Number of patients delayed by reason with a length of stay of 14 days or over",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Hospital process",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Wellbeing concerns",
+              null,
+              null,
+              null,
+              "Care transfer hub process",
+              null,
+              null,
+              "Interface process",
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              null,
+              "Week commencing",
+              "Number of additional bed days, patients with a length of stay of 7 days or over",
+              "Number of additional bed days, patients with a length of stay of 14 days or over",
+              "Number of additional bed days, patients with a length of stay of 21 days or over",
+              "Hospital process – Awaiting therapy review of need for supported discharge",
+              "Hospital process - Awaiting medical review of need for supported discharge",
+              "Hospital process – Awaiting referral to care transfer hub for supported discharge",
+              "Hospital process – Awaiting patient transport services",
+              "Hospital process – Awaiting medicines to take home, discharge letter or other discharge documentation",
+              "Hospital process – Remaining in hospital due to infection prevention and control restrictions",
+              "Hospital process – Awaiting formal decision to discharge (inc diagnostic test results)",
+              "Wellbeing concerns – Patient /family/carer concerns over discharge readiness",
+              "Wellbeing concerns – Ongoing safeguarding concern",
+              "Wellbeing concerns – Awaiting determination of mental capacity",
+              "Wellbeing concerns - Issues with discharge destination readiness",
+              "Care transfer hub process – Waiting for confirmation of immediate care needs and pathway",
+              "Care transfer hub process– Awaiting necessary referrals by care transfer hub",
+              "Care transfer hub process – Awaiting confirmation of funding eligibility",
+              "Interface process – Home based rehabilitation, reablement or recovery service arrangements still underway (Pathway 1)",
+              "Interface process – Other home-based social care service arrangements still underway (Pathway 1)",
+              "Interface process – Other home-based community health service arrangements still underway (Pathway 1)",
+              "Interface process – Housing provision arrangement for homelessness still underway (Pathway 0 or 1)",
+              "Interface process – Bed-based rehabilitation, reablement or recovery service arrangements still underway (Pathway 2)",
+              "Interface process – Residential/nursing home care arrangements still underway (Pathway 3)",
+              "Interface process – End of life care inc Fast-Track CHC arrangement still underway (Pathway 1 or 3)",
+              "Interface process – Further action requested by agreed provider",
+              "Interface process – Homeless with no recourse to public funds ",
+              "Interface process – Self-funded care package arrangements still underway",
+              "Interface process – Patient/family/carer choice discussions on package still underway"
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              null,
+              "2021-03-26 00:00:00",
+              0,
+              21880,
+              16873,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              null,
+              "2021-04-02 00:00:00",
+              0,
+              24903,
+              19424,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              null,
+              "2021-04-09 00:00:00",
+              0,
+              25671,
+              20584,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              null,
+              "2021-04-16 00:00:00",
+              0,
+              27931,
+              22846,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              null,
+              "2021-04-23 00:00:00",
+              0,
+              27943,
+              22274,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              null,
+              "2021-04-30 00:00:00",
+              0,
+              28490,
+              22385,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 14,
+            "values": [
+              null,
+              "2021-05-07 00:00:00",
+              0,
+              30774,
+              24116,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 15,
+            "values": [
+              null,
+              "2021-05-14 00:00:00",
+              0,
+              30731,
+              23995,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 16,
+            "values": [
+              null,
+              "2021-05-21 00:00:00",
+              0,
+              30224,
+              23148,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 17,
+            "values": [
+              null,
+              "2021-05-28 00:00:00",
+              0,
+              32544,
+              24753,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 18,
+            "values": [
+              null,
+              "2021-06-04 00:00:00",
+              0,
+              32548,
+              25375,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              null,
+              "2021-06-11 00:00:00",
+              0,
+              31341,
+              24342,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              null,
+              "2021-06-18 00:00:00",
+              0,
+              34878,
+              27436,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              null,
+              "2021-06-25 00:00:00",
+              0,
+              37495,
+              29723,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              null,
+              "2021-07-02 00:00:00",
+              0,
+              38230,
+              30191,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              null,
+              "2021-07-09 00:00:00",
+              0,
+              39692,
+              31469,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 24,
+            "values": [
+              null,
+              "2021-07-16 00:00:00",
+              0,
+              40955,
+              32871,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 25,
+            "values": [
+              null,
+              "2021-07-23 00:00:00",
+              0,
+              41774,
+              33095,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 26,
+            "values": [
+              null,
+              "2021-07-30 00:00:00",
+              0,
+              42896,
+              34403,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 27,
+            "values": [
+              null,
+              "2021-08-06 00:00:00",
+              0,
+              46188,
+              37557,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 28,
+            "values": [
+              null,
+              "2021-08-13 00:00:00",
+              0,
+              49745,
+              40922,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 29,
+            "values": [
+              null,
+              "2021-08-20 00:00:00",
+              0,
+              49356,
+              40586,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 30,
+            "values": [
+              null,
+              "2021-08-27 00:00:00",
+              0,
+              56388,
+              46417,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 31,
+            "values": [
+              null,
+              "2021-09-03 00:00:00",
+              0,
+              58343,
+              48688,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 32,
+            "values": [
+              null,
+              "2021-09-10 00:00:00",
+              0,
+              59098,
+              49997,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 33,
+            "values": [
+              null,
+              "2021-09-17 00:00:00",
+              0,
+              59515,
+              49362,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 34,
+            "values": [
+              null,
+              "2021-09-24 00:00:00",
+              0,
+              60136,
+              50110,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 35,
+            "values": [
+              null,
+              "2021-10-01 00:00:00",
+              0,
+              56717,
+              48507,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          },
+          {
+            "row": 36,
+            "values": [
+              null,
+              "2021-10-08 00:00:00",
+              0,
+              59313,
+              50513,
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
