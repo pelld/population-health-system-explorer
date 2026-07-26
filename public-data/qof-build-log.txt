@@ -1,11 +1,13 @@
-Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_build_qof_2024_25.py", line 71, in <module>
-    main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_build_qof_2024_25.py", line 57, in main
-    build.main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 287, in main
-    validation = validate(england, icbs, practices, tables)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 241, in validate
-    raise RuntimeError(f"Published practices over 90% changed: {over_90}")
-RuntimeError: Published practices over 90% changed: 5152
+Wrote public-data/qof-2024-25.json: 42 ICBs
+Wrote public-data/qof-2024-25-practices.json: 6188 practices
+{
+  "practice_count": 6188,
+  "icb_count": 42,
+  "indicator_count": 76,
+  "included_list_size": 63766671,
+  "practices_over_90_percent": 5149,
+  "new_depression_diagnoses": 714592,
+  "headline_prevalence_reconciled": 3,
+  "headline_pca_reconciled": 2
+}
+Compacted public-data/qof-2024-25-practices.json
