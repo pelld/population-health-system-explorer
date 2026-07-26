@@ -1,0 +1,3427 @@
+{
+  "csv_files": [
+    {
+      "label": "national",
+      "rows": 1,
+      "column_count": 1235,
+      "identifier_columns": [
+        "national",
+        "distributed",
+        "received",
+        "resprate",
+        "localgpservicesphone_1.count",
+        "localgpservicesphone_2.count",
+        "localgpservicesphone_3.count",
+        "localgpservicesphone_4.count",
+        "localgpservicesphone_5.count",
+        "localgpservicesphone_6.count",
+        "localgpservicesphone.counteval",
+        "localgpservicesphone.basefulluw"
+      ],
+      "first_identifier_values": {
+        "national": "1",
+        "distributed": "2721415",
+        "received": "702837",
+        "resprate": "0.258261603",
+        "localgpservicesphone_1.count": "51112.15715",
+        "localgpservicesphone_2.count": "134561.4828",
+        "localgpservicesphone_3.count": "209932.5403",
+        "localgpservicesphone_4.count": "80817.21313",
+        "localgpservicesphone_5.count": "137831.4805",
+        "localgpservicesphone_6.count": "87633.66778",
+        "localgpservicesphone.counteval": "344494.0231",
+        "localgpservicesphone.basefulluw": "701605"
+      },
+      "candidate_columns": [
+        {
+          "column": "localgpservicesphone_1.count",
+          "first_value": "51112.15715"
+        },
+        {
+          "column": "localgpservicesphone_2.count",
+          "first_value": "134561.4828"
+        },
+        {
+          "column": "localgpservicesphone_3.count",
+          "first_value": "209932.5403"
+        },
+        {
+          "column": "localgpservicesphone_4.count",
+          "first_value": "80817.21313"
+        },
+        {
+          "column": "localgpservicesphone_5.count",
+          "first_value": "137831.4805"
+        },
+        {
+          "column": "localgpservicesphone_6.count",
+          "first_value": "87633.66778"
+        },
+        {
+          "column": "localgpservicesphone.counteval",
+          "first_value": "344494.0231"
+        },
+        {
+          "column": "localgpservicesphone.basefulluw",
+          "first_value": "701605"
+        },
+        {
+          "column": "localgpservicesphone.baseevaluw",
+          "first_value": "664460"
+        },
+        {
+          "column": "localgpservicesphone.basefullw",
+          "first_value": "701888.5416"
+        },
+        {
+          "column": "localgpservicesphone.baseevalw",
+          "first_value": "650776.3845"
+        },
+        {
+          "column": "localgpservicesphone_1.pct",
+          "first_value": "0.072820903"
+        },
+        {
+          "column": "localgpservicesphone_2.pct",
+          "first_value": "0.206770691"
+        },
+        {
+          "column": "localgpservicesphone_3.pct",
+          "first_value": "0.322587828"
+        },
+        {
+          "column": "localgpservicesphone_4.pct",
+          "first_value": "0.124185842"
+        },
+        {
+          "column": "localgpservicesphone_5.pct",
+          "first_value": "0.211795455"
+        },
+        {
+          "column": "localgpservicesphone_6.pct",
+          "first_value": "0.134660184"
+        },
+        {
+          "column": "localgpservicesphone.pcteval",
+          "first_value": "0.529358519"
+        },
+        {
+          "column": "localgpservicesphone.lowileval",
+          "first_value": "0.527608016"
+        },
+        {
+          "column": "localgpservicesphone.hiwileval",
+          "first_value": "0.5311083"
+        },
+        {
+          "column": "localgpserviceswebsite_1.count",
+          "first_value": "307756.4095"
+        },
+        {
+          "column": "localgpserviceswebsite_2.count",
+          "first_value": "89235.10897"
+        },
+        {
+          "column": "localgpserviceswebsite_3.count",
+          "first_value": "111757.1821"
+        },
+        {
+          "column": "localgpserviceswebsite_4.count",
+          "first_value": "58306.1087"
+        },
+        {
+          "column": "localgpserviceswebsite_5.count",
+          "first_value": "72800.64966"
+        },
+        {
+          "column": "localgpserviceswebsite_6.count",
+          "first_value": "60101.41758"
+        },
+        {
+          "column": "localgpserviceswebsite.counteval",
+          "first_value": "200992.2911"
+        },
+        {
+          "column": "localgpserviceswebsite.basefulluw",
+          "first_value": "698719"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevaluw",
+          "first_value": "344811"
+        },
+        {
+          "column": "localgpserviceswebsite.basefullw",
+          "first_value": "699956.8766"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevalw",
+          "first_value": "392200.467"
+        },
+        {
+          "column": "localgpserviceswebsite_1.pct",
+          "first_value": "0.4396791"
+        },
+        {
+          "column": "localgpserviceswebsite_2.pct",
+          "first_value": "0.227524229"
+        },
+        {
+          "column": "localgpserviceswebsite_3.pct",
+          "first_value": "0.284949131"
+        },
+        {
+          "column": "localgpserviceswebsite_4.pct",
+          "first_value": "0.148664047"
+        },
+        {
+          "column": "localgpserviceswebsite_5.pct",
+          "first_value": "0.185621017"
+        },
+        {
+          "column": "localgpserviceswebsite_6.pct",
+          "first_value": "0.153241576"
+        },
+        {
+          "column": "localgpserviceswebsite.pcteval",
+          "first_value": "0.51247336"
+        },
+        {
+          "column": "localgpserviceswebsite.lowileval",
+          "first_value": "0.510716916"
+        },
+        {
+          "column": "localgpserviceswebsite.hiwileval",
+          "first_value": "0.514229496"
+        },
+        {
+          "column": "localgpservicesapp_1.count",
+          "first_value": "403341.1303"
+        },
+        {
+          "column": "localgpservicesapp_2.count",
+          "first_value": "68582.02373"
+        },
+        {
+          "column": "localgpservicesapp_3.count",
+          "first_value": "76905.42724"
+        },
+        {
+          "column": "localgpservicesapp_4.count",
+          "first_value": "46006.3216"
+        },
+        {
+          "column": "localgpservicesapp_5.count",
+          "first_value": "49721.41406"
+        },
+        {
+          "column": "localgpservicesapp_6.count",
+          "first_value": "55466.15581"
+        },
+        {
+          "column": "localgpservicesapp.counteval",
+          "first_value": "145487.451"
+        },
+        {
+          "column": "localgpservicesapp.basefulluw",
+          "first_value": "698810"
+        },
+        {
+          "column": "localgpservicesapp.baseevaluw",
+          "first_value": "271115"
+        },
+        {
+          "column": "localgpservicesapp.basefullw",
+          "first_value": "700022.4728"
+        },
+        {
+          "column": "localgpservicesapp.baseevalw",
+          "first_value": "296681.3424"
+        },
+        {
+          "column": "localgpservicesapp_1.pct",
+          "first_value": "0.576183117"
+        },
+        {
+          "column": "localgpservicesapp_2.pct",
+          "first_value": "0.231163925"
+        },
+        {
+          "column": "localgpservicesapp_3.pct",
+          "first_value": "0.259218954"
+        },
+        {
+          "column": "localgpservicesapp_4.pct",
+          "first_value": "0.155069817"
+        },
+        {
+          "column": "localgpservicesapp_5.pct",
+          "first_value": "0.167591982"
+        },
+        {
+          "column": "localgpservicesapp_6.pct",
+          "first_value": "0.186955322"
+        },
+        {
+          "column": "localgpservicesapp.pcteval",
+          "first_value": "0.490382879"
+        },
+        {
+          "column": "localgpservicesapp.lowileval",
+          "first_value": "0.488626601"
+        },
+        {
+          "column": "localgpservicesapp.hiwileval",
+          "first_value": "0.492139396"
+        },
+        {
+          "column": "localgpservicesreception_1.count",
+          "first_value": "283701.8843"
+        },
+        {
+          "column": "localgpservicesreception_2.count",
+          "first_value": "272804.4627"
+        },
+        {
+          "column": "localgpservicesreception_3.count",
+          "first_value": "74076.74311"
+        },
+        {
+          "column": "localgpservicesreception_4.count",
+          "first_value": "37518.29604"
+        },
+        {
+          "column": "localgpservicesreception_5.count",
+          "first_value": "33732.91509"
+        },
+        {
+          "column": "localgpservicesreception.counteval",
+          "first_value": "556506.347"
+        },
+        {
+          "column": "localgpservicesreception.basefulluw",
+          "first_value": "701587"
+        },
+        {
+          "column": "localgpservicesreception.baseevaluw",
+          "first_value": "680531"
+        },
+        {
+          "column": "localgpservicesreception.basefullw",
+          "first_value": "701834.3012"
+        },
+        {
+          "column": "localgpservicesreception.baseevalw",
+          "first_value": "668101.3861"
+        },
+        {
+          "column": "localgpservicesreception_1.pct",
+          "first_value": "0.42463897"
+        },
+        {
+          "column": "localgpservicesreception_2.pct",
+          "first_value": "0.40832794"
+        },
+        {
+          "column": "localgpservicesreception_3.pct",
+          "first_value": "0.1108765"
+        },
+        {
+          "column": "localgpservicesreception_4.pct",
+          "first_value": "0.056156591"
+        },
+        {
+          "column": "localgpservicesreception_5.pct",
+          "first_value": "0.048063931"
+        },
+        {
+          "column": "localgpservicesreception.pcteval",
+          "first_value": "0.83296691"
+        },
+        {
+          "column": "localgpservicesreception.lowileval",
+          "first_value": "0.831654911"
+        },
+        {
+          "column": "localgpservicesreception.hiwileval",
+          "first_value": "0.834270721"
+        },
+        {
+          "column": "localgpservicesprefhp_1.count",
+          "first_value": "224109.6489"
+        },
+        {
+          "column": "localgpservicesprefhp_2.count",
+          "first_value": "473426.1675"
+        },
+        {
+          "column": "localgpservicesprefhp.counteval",
+          "first_value": "224109.6489"
+        },
+        {
+          "column": "localgpservicesprefhp.basefulluw",
+          "first_value": "695605"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevaluw",
+          "first_value": "695605"
+        },
+        {
+          "column": "localgpservicesprefhp.basefullw",
+          "first_value": "697535.8164"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevalw",
+          "first_value": "697535.8164"
+        },
+        {
+          "column": "localgpservicesprefhp_1.pct",
+          "first_value": "0.321287658"
+        },
+        {
+          "column": "localgpservicesprefhp_2.pct",
+          "first_value": "0.678712342"
+        },
+        {
+          "column": "localgpservicesprefhp.pcteval",
+          "first_value": "0.321287658"
+        },
+        {
+          "column": "localgpservicesprefhp.lowileval",
+          "first_value": "0.319645373"
+        },
+        {
+          "column": "localgpservicesprefhp.hiwileval",
+          "first_value": "0.322934376"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.count",
+          "first_value": "38403.73643"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.count",
+          "first_value": "44715.61958"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.count",
+          "first_value": "88368.38489"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.count",
+          "first_value": "36562.89662"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.count",
+          "first_value": "14960.8618"
+        },
+        {
+          "column": "localgpservicesprefhpsee.counteval",
+          "first_value": "83119.35602"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefulluw",
+          "first_value": "248088"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevaluw",
+          "first_value": "233882"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefullw",
+          "first_value": "223011.4993"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevalw",
+          "first_value": "208050.6375"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.pct",
+          "first_value": "0.18458841"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.pct",
+          "first_value": "0.214926617"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.pct",
+          "first_value": "0.4247446"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.pct",
+          "first_value": "0.175740373"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.pct",
+          "first_value": "0.067085607"
+        },
+        {
+          "column": "localgpservicesprefhpsee.pcteval",
+          "first_value": "0.399515027"
+        },
+        {
+          "column": "localgpservicesprefhpsee.lowileval",
+          "first_value": "0.396632455"
+        },
+        {
+          "column": "localgpservicesprefhpsee.hiwileval",
+          "first_value": "0.402404576"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.count",
+          "first_value": "380063.2584"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.count",
+          "first_value": "70584.22257"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.count",
+          "first_value": "106578.3659"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.count",
+          "first_value": "26818.9906"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.count",
+          "first_value": "11239.25504"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.count",
+          "first_value": "7633.469869"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.count",
+          "first_value": "50346.76329"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.count",
+          "first_value": "16265.77824"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefulluw",
+          "first_value": "552745"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevaluw",
+          "first_value": "552745"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefullw",
+          "first_value": "530030.5401"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevalw",
+          "first_value": "530030.5401"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.pct",
+          "first_value": "0.717059169"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.pct",
+          "first_value": "0.133170105"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.pct",
+          "first_value": "0.20107967"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.pct",
+          "first_value": "0.050598953"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.pct",
+          "first_value": "0.02120492"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.pct",
+          "first_value": "0.014401943"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.pct",
+          "first_value": "0.094988419"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.pct",
+          "first_value": "0.030688379"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.count",
+          "first_value": "68661.13827"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.count",
+          "first_value": "15515.18746"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.count",
+          "first_value": "9450.538364"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.count",
+          "first_value": "14664.31223"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.count",
+          "first_value": "13262.72803"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.count",
+          "first_value": "3603.139683"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.count",
+          "first_value": "15926.06109"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.count",
+          "first_value": "8801.078025"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.count",
+          "first_value": "5718.558161"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.count",
+          "first_value": "3848.899746"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.count",
+          "first_value": "14854.45393"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.count",
+          "first_value": "23131.37803"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefulluw",
+          "first_value": "117044"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevaluw",
+          "first_value": "117044"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefullw",
+          "first_value": "134012.6829"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevalw",
+          "first_value": "134012.6829"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.pct",
+          "first_value": "0.512348061"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.pct",
+          "first_value": "0.115774023"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.pct",
+          "first_value": "0.070519731"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.pct",
+          "first_value": "0.109424809"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.pct",
+          "first_value": "0.098966215"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.pct",
+          "first_value": "0.026886557"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.pct",
+          "first_value": "0.118839954"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.pct",
+          "first_value": "0.065673471"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.pct",
+          "first_value": "0.042671768"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.pct",
+          "first_value": "0.028720414"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.pct",
+          "first_value": "0.110843643"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.pct",
+          "first_value": "0.172605887"
+        },
+        {
+          "column": "gpcontactoverall_1.count",
+          "first_value": "264746.7592"
+        },
+        {
+          "column": "gpcontactoverall_2.count",
+          "first_value": "207080.3328"
+        },
+        {
+          "column": "gpcontactoverall_3.count",
+          "first_value": "91869.89916"
+        },
+        {
+          "column": "gpcontactoverall_4.count",
+          "first_value": "59036.16319"
+        },
+        {
+          "column": "gpcontactoverall_5.count",
+          "first_value": "55110.6623"
+        },
+        {
+          "column": "gpcontactoverall.counteval",
+          "first_value": "471827.092"
+        },
+        {
+          "column": "gpcontactoverall.basefulluw",
+          "first_value": "686100"
+        },
+        {
+          "column": "gpcontactoverall.baseevaluw",
+          "first_value": "686100"
+        },
+        {
+          "column": "gpcontactoverall.basefullw",
+          "first_value": "677843.8166"
+        },
+        {
+          "column": "gpcontactoverall.baseevalw",
+          "first_value": "677843.8166"
+        },
+        {
+          "column": "gpcontactoverall_1.pct",
+          "first_value": "0.390571917"
+        },
+        {
+          "column": "gpcontactoverall_2.pct",
+          "first_value": "0.305498594"
+        },
+        {
+          "column": "gpcontactoverall_3.pct",
+          "first_value": "0.135532547"
+        },
+        {
+          "column": "gpcontactoverall_4.pct",
+          "first_value": "0.08709405"
+        },
+        {
+          "column": "gpcontactoverall_5.pct",
+          "first_value": "0.081302892"
+        },
+        {
+          "column": "gpcontactoverall.pcteval",
+          "first_value": "0.696070511"
+        },
+        {
+          "column": "gpcontactoverall.lowileval",
+          "first_value": "0.694437268"
+        },
+        {
+          "column": "gpcontactoverall.hiwileval",
+          "first_value": "0.697698825"
+        },
+        {
+          "column": "lastgpapptlisten_1.count",
+          "first_value": "409932.0871"
+        },
+        {
+          "column": "lastgpapptlisten_2.count",
+          "first_value": "162670.1098"
+        },
+        {
+          "column": "lastgpapptlisten_3.count",
+          "first_value": "47831.34926"
+        },
+        {
+          "column": "lastgpapptlisten_4.count",
+          "first_value": "20036.65923"
+        },
+        {
+          "column": "lastgpapptlisten_5.count",
+          "first_value": "18490.32592"
+        },
+        {
+          "column": "lastgpapptlisten_6.count",
+          "first_value": "12887.02456"
+        },
+        {
+          "column": "lastgpapptlisten.counteval",
+          "first_value": "572602.1969"
+        },
+        {
+          "column": "lastgpapptlisten.basefulluw",
+          "first_value": "682779"
+        },
+        {
+          "column": "lastgpapptlisten.baseevaluw",
+          "first_value": "671414"
+        },
+        {
+          "column": "lastgpapptlisten.basefullw",
+          "first_value": "671847.5559"
+        },
+        {
+          "column": "lastgpapptlisten.baseevalw",
+          "first_value": "658960.5313"
+        },
+        {
+          "column": "lastgpapptlisten_1.pct",
+          "first_value": "0.622088984"
+        },
+        {
+          "column": "lastgpapptlisten_2.pct",
+          "first_value": "0.246858654"
+        },
+        {
+          "column": "lastgpapptlisten_3.pct",
+          "first_value": "0.072586061"
+        },
+        {
+          "column": "lastgpapptlisten_4.pct",
+          "first_value": "0.030406463"
+        },
+        {
+          "column": "lastgpapptlisten_5.pct",
+          "first_value": "0.028059838"
+        },
+        {
+          "column": "lastgpapptlisten_6.pct",
+          "first_value": "0.019181471"
+        },
+        {
+          "column": "lastgpapptlisten.pcteval",
+          "first_value": "0.868947638"
+        },
+        {
+          "column": "lastgpapptlisten.lowileval",
+          "first_value": "0.867743625"
+        },
+        {
+          "column": "lastgpapptlisten.hiwileval",
+          "first_value": "0.87014233"
+        },
+        {
+          "column": "lastgpapptcare_1.count",
+          "first_value": "400546.8695"
+        },
+        {
+          "column": "lastgpapptcare_2.count",
+          "first_value": "162762.6125"
+        },
+        {
+          "column": "lastgpapptcare_3.count",
+          "first_value": "54324.17122"
+        },
+        {
+          "column": "lastgpapptcare_4.count",
+          "first_value": "20518.05999"
+        },
+        {
+          "column": "lastgpapptcare_5.count",
+          "first_value": "20050.60796"
+        },
+        {
+          "column": "lastgpapptcare_6.count",
+          "first_value": "13623.49211"
+        },
+        {
+          "column": "lastgpapptcare.counteval",
+          "first_value": "563309.482"
+        },
+        {
+          "column": "lastgpapptcare.basefulluw",
+          "first_value": "682755"
+        },
+        {
+          "column": "lastgpapptcare.baseevaluw",
+          "first_value": "670865"
+        },
+        {
+          "column": "lastgpapptcare.basefullw",
+          "first_value": "671825.8133"
+        },
+        {
+          "column": "lastgpapptcare.baseevalw",
+          "first_value": "658202.3211"
+        },
+        {
+          "column": "lastgpapptcare_1.pct",
+          "first_value": "0.608546729"
+        },
+        {
+          "column": "lastgpapptcare_2.pct",
+          "first_value": "0.247283559"
+        },
+        {
+          "column": "lastgpapptcare_3.pct",
+          "first_value": "0.082534153"
+        },
+        {
+          "column": "lastgpapptcare_4.pct",
+          "first_value": "0.031172877"
+        },
+        {
+          "column": "lastgpapptcare_5.pct",
+          "first_value": "0.030462682"
+        },
+        {
+          "column": "lastgpapptcare_6.pct",
+          "first_value": "0.02027831"
+        },
+        {
+          "column": "lastgpapptcare.pcteval",
+          "first_value": "0.855830288"
+        },
+        {
+          "column": "lastgpapptcare.lowileval",
+          "first_value": "0.854577358"
+        },
+        {
+          "column": "lastgpapptcare.hiwileval",
+          "first_value": "0.857074228"
+        }
+      ]
+    },
+    {
+      "label": "ics",
+      "rows": 42,
+      "column_count": 1239,
+      "identifier_columns": [
+        "ad_icscode",
+        "ad_icsname",
+        "ad_icscodeons",
+        "ad_commissioningregioncode",
+        "ad_commissioningregionname",
+        "distributed",
+        "received",
+        "resprate",
+        "localgpservicesphone_1.count",
+        "localgpservicesphone_2.count",
+        "localgpservicesphone_3.count",
+        "localgpservicesphone_4.count"
+      ],
+      "first_identifier_values": {
+        "ad_icscode": "QE1",
+        "ad_icsname": "LANCASHIRE AND SOUTH CUMBRIA INTEGRATED CARE SYSTEM",
+        "ad_icscodeons": "E54000048",
+        "ad_commissioningregioncode": "Y62",
+        "ad_commissioningregionname": "NORTH WEST COMMISSIONING REGION",
+        "distributed": "83553",
+        "received": "22201",
+        "resprate": "0.265711584",
+        "localgpservicesphone_1.count": "1250.818144",
+        "localgpservicesphone_2.count": "4526.414049",
+        "localgpservicesphone_3.count": "6656.561578",
+        "localgpservicesphone_4.count": "2519.425309"
+      },
+      "candidate_columns": [
+        {
+          "column": "localgpservicesphone_1.count",
+          "first_value": "1250.818144"
+        },
+        {
+          "column": "localgpservicesphone_2.count",
+          "first_value": "4526.414049"
+        },
+        {
+          "column": "localgpservicesphone_3.count",
+          "first_value": "6656.561578"
+        },
+        {
+          "column": "localgpservicesphone_4.count",
+          "first_value": "2519.425309"
+        },
+        {
+          "column": "localgpservicesphone_5.count",
+          "first_value": "3763.196872"
+        },
+        {
+          "column": "localgpservicesphone_6.count",
+          "first_value": "2037.012553"
+        },
+        {
+          "column": "localgpservicesphone.counteval",
+          "first_value": "11182.97563"
+        },
+        {
+          "column": "localgpservicesphone.basefulluw",
+          "first_value": "22170"
+        },
+        {
+          "column": "localgpservicesphone.baseevaluw",
+          "first_value": "21181"
+        },
+        {
+          "column": "localgpservicesphone.basefullw",
+          "first_value": "20753.4285"
+        },
+        {
+          "column": "localgpservicesphone.baseevalw",
+          "first_value": "19502.61036"
+        },
+        {
+          "column": "localgpservicesphone_1.pct",
+          "first_value": "0.060270434"
+        },
+        {
+          "column": "localgpservicesphone_2.pct",
+          "first_value": "0.232092728"
+        },
+        {
+          "column": "localgpservicesphone_3.pct",
+          "first_value": "0.341316442"
+        },
+        {
+          "column": "localgpservicesphone_4.pct",
+          "first_value": "0.129184005"
+        },
+        {
+          "column": "localgpservicesphone_5.pct",
+          "first_value": "0.192958625"
+        },
+        {
+          "column": "localgpservicesphone_6.pct",
+          "first_value": "0.1044482"
+        },
+        {
+          "column": "localgpservicesphone.pcteval",
+          "first_value": "0.57340917"
+        },
+        {
+          "column": "localgpservicesphone.lowileval",
+          "first_value": "0.564857267"
+        },
+        {
+          "column": "localgpservicesphone.hiwileval",
+          "first_value": "0.581917402"
+        },
+        {
+          "column": "localgpserviceswebsite_1.count",
+          "first_value": "11954.62451"
+        },
+        {
+          "column": "localgpserviceswebsite_2.count",
+          "first_value": "1921.184308"
+        },
+        {
+          "column": "localgpserviceswebsite_3.count",
+          "first_value": "2276.35921"
+        },
+        {
+          "column": "localgpserviceswebsite_4.count",
+          "first_value": "1409.123564"
+        },
+        {
+          "column": "localgpserviceswebsite_5.count",
+          "first_value": "1496.390357"
+        },
+        {
+          "column": "localgpserviceswebsite_6.count",
+          "first_value": "1631.803718"
+        },
+        {
+          "column": "localgpserviceswebsite.counteval",
+          "first_value": "4197.543517"
+        },
+        {
+          "column": "localgpserviceswebsite.basefulluw",
+          "first_value": "22067"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevaluw",
+          "first_value": "8169"
+        },
+        {
+          "column": "localgpserviceswebsite.basefullw",
+          "first_value": "20689.48567"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevalw",
+          "first_value": "8734.861156"
+        },
+        {
+          "column": "localgpserviceswebsite_1.pct",
+          "first_value": "0.577811585"
+        },
+        {
+          "column": "localgpserviceswebsite_2.pct",
+          "first_value": "0.219944459"
+        },
+        {
+          "column": "localgpserviceswebsite_3.pct",
+          "first_value": "0.260606227"
+        },
+        {
+          "column": "localgpserviceswebsite_4.pct",
+          "first_value": "0.161321804"
+        },
+        {
+          "column": "localgpserviceswebsite_5.pct",
+          "first_value": "0.171312438"
+        },
+        {
+          "column": "localgpserviceswebsite_6.pct",
+          "first_value": "0.186815072"
+        },
+        {
+          "column": "localgpserviceswebsite.pcteval",
+          "first_value": "0.480550686"
+        },
+        {
+          "column": "localgpserviceswebsite.lowileval",
+          "first_value": "0.471918369"
+        },
+        {
+          "column": "localgpserviceswebsite.hiwileval",
+          "first_value": "0.48919463"
+        },
+        {
+          "column": "localgpservicesapp_1.count",
+          "first_value": "11463.84243"
+        },
+        {
+          "column": "localgpservicesapp_2.count",
+          "first_value": "2363.656444"
+        },
+        {
+          "column": "localgpservicesapp_3.count",
+          "first_value": "2501.1193"
+        },
+        {
+          "column": "localgpservicesapp_4.count",
+          "first_value": "1374.909305"
+        },
+        {
+          "column": "localgpservicesapp_5.count",
+          "first_value": "1370.581356"
+        },
+        {
+          "column": "localgpservicesapp_6.count",
+          "first_value": "1616.502643"
+        },
+        {
+          "column": "localgpservicesapp.counteval",
+          "first_value": "4864.775744"
+        },
+        {
+          "column": "localgpservicesapp.basefulluw",
+          "first_value": "22075"
+        },
+        {
+          "column": "localgpservicesapp.baseevaluw",
+          "first_value": "8938"
+        },
+        {
+          "column": "localgpservicesapp.basefullw",
+          "first_value": "20690.61147"
+        },
+        {
+          "column": "localgpservicesapp.baseevalw",
+          "first_value": "9226.769048"
+        },
+        {
+          "column": "localgpservicesapp_1.pct",
+          "first_value": "0.554060108"
+        },
+        {
+          "column": "localgpservicesapp_2.pct",
+          "first_value": "0.256173795"
+        },
+        {
+          "column": "localgpservicesapp_3.pct",
+          "first_value": "0.271072061"
+        },
+        {
+          "column": "localgpservicesapp_4.pct",
+          "first_value": "0.149013083"
+        },
+        {
+          "column": "localgpservicesapp_5.pct",
+          "first_value": "0.148544019"
+        },
+        {
+          "column": "localgpservicesapp_6.pct",
+          "first_value": "0.175197042"
+        },
+        {
+          "column": "localgpservicesapp.pcteval",
+          "first_value": "0.527245856"
+        },
+        {
+          "column": "localgpservicesapp.lowileval",
+          "first_value": "0.518607581"
+        },
+        {
+          "column": "localgpservicesapp.hiwileval",
+          "first_value": "0.535867849"
+        },
+        {
+          "column": "localgpservicesreception_1.count",
+          "first_value": "9041.770336"
+        },
+        {
+          "column": "localgpservicesreception_2.count",
+          "first_value": "7955.470219"
+        },
+        {
+          "column": "localgpservicesreception_3.count",
+          "first_value": "1893.479097"
+        },
+        {
+          "column": "localgpservicesreception_4.count",
+          "first_value": "977.759403"
+        },
+        {
+          "column": "localgpservicesreception_5.count",
+          "first_value": "885.1480688"
+        },
+        {
+          "column": "localgpservicesreception.counteval",
+          "first_value": "16997.24056"
+        },
+        {
+          "column": "localgpservicesreception.basefulluw",
+          "first_value": "22168"
+        },
+        {
+          "column": "localgpservicesreception.baseevaluw",
+          "first_value": "21593"
+        },
+        {
+          "column": "localgpservicesreception.basefullw",
+          "first_value": "20753.62712"
+        },
+        {
+          "column": "localgpservicesreception.baseevalw",
+          "first_value": "19868.47906"
+        },
+        {
+          "column": "localgpservicesreception_1.pct",
+          "first_value": "0.455081152"
+        },
+        {
+          "column": "localgpservicesreception_2.pct",
+          "first_value": "0.400406604"
+        },
+        {
+          "column": "localgpservicesreception_3.pct",
+          "first_value": "0.095300656"
+        },
+        {
+          "column": "localgpservicesreception_4.pct",
+          "first_value": "0.049211588"
+        },
+        {
+          "column": "localgpservicesreception_5.pct",
+          "first_value": "0.042650283"
+        },
+        {
+          "column": "localgpservicesreception.pcteval",
+          "first_value": "0.855487756"
+        },
+        {
+          "column": "localgpservicesreception.lowileval",
+          "first_value": "0.849316629"
+        },
+        {
+          "column": "localgpservicesreception.hiwileval",
+          "first_value": "0.861447378"
+        },
+        {
+          "column": "localgpservicesprefhp_1.count",
+          "first_value": "6986.543798"
+        },
+        {
+          "column": "localgpservicesprefhp_2.count",
+          "first_value": "13621.47279"
+        },
+        {
+          "column": "localgpservicesprefhp.counteval",
+          "first_value": "6986.543798"
+        },
+        {
+          "column": "localgpservicesprefhp.basefulluw",
+          "first_value": "21980"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevaluw",
+          "first_value": "21980"
+        },
+        {
+          "column": "localgpservicesprefhp.basefullw",
+          "first_value": "20608.01659"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevalw",
+          "first_value": "20608.01659"
+        },
+        {
+          "column": "localgpservicesprefhp_1.pct",
+          "first_value": "0.33902068"
+        },
+        {
+          "column": "localgpservicesprefhp_2.pct",
+          "first_value": "0.66097932"
+        },
+        {
+          "column": "localgpservicesprefhp.pcteval",
+          "first_value": "0.33902068"
+        },
+        {
+          "column": "localgpservicesprefhp.lowileval",
+          "first_value": "0.330868813"
+        },
+        {
+          "column": "localgpservicesprefhp.hiwileval",
+          "first_value": "0.347269156"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.count",
+          "first_value": "1180.014272"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.count",
+          "first_value": "1405.949732"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.count",
+          "first_value": "2680.449047"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.count",
+          "first_value": "1247.045556"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.count",
+          "first_value": "438.9490656"
+        },
+        {
+          "column": "localgpservicesprefhpsee.counteval",
+          "first_value": "2585.964005"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefulluw",
+          "first_value": "7807"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevaluw",
+          "first_value": "7359"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefullw",
+          "first_value": "6952.407673"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevalw",
+          "first_value": "6513.458608"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.pct",
+          "first_value": "0.181165544"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.pct",
+          "first_value": "0.215853023"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.pct",
+          "first_value": "0.411524692"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.pct",
+          "first_value": "0.191456741"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.pct",
+          "first_value": "0.063136267"
+        },
+        {
+          "column": "localgpservicesprefhpsee.pcteval",
+          "first_value": "0.397018567"
+        },
+        {
+          "column": "localgpservicesprefhpsee.lowileval",
+          "first_value": "0.382891307"
+        },
+        {
+          "column": "localgpservicesprefhpsee.hiwileval",
+          "first_value": "0.411319648"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.count",
+          "first_value": "11600.92147"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.count",
+          "first_value": "1855.467355"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.count",
+          "first_value": "3239.000239"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.count",
+          "first_value": "795.6397919"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.count",
+          "first_value": "301.5704407"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.count",
+          "first_value": "228.5114417"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.count",
+          "first_value": "1357.888406"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.count",
+          "first_value": "467.8928287"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefulluw",
+          "first_value": "17875"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevaluw",
+          "first_value": "17875"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefullw",
+          "first_value": "15998.48096"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevalw",
+          "first_value": "15998.48096"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.pct",
+          "first_value": "0.725126435"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.pct",
+          "first_value": "0.115977721"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.pct",
+          "first_value": "0.202456736"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.pct",
+          "first_value": "0.049732209"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.pct",
+          "first_value": "0.018849942"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.pct",
+          "first_value": "0.014283321"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.pct",
+          "first_value": "0.084876084"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.pct",
+          "first_value": "0.029246078"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.count",
+          "first_value": "1915.09675"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.count",
+          "first_value": "511.2905105"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.count",
+          "first_value": "267.055258"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.count",
+          "first_value": "388.0526443"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.count",
+          "first_value": "314.181672"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.count",
+          "first_value": "82.80019101"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.count",
+          "first_value": "409.823638"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.count",
+          "first_value": "198.3732543"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.count",
+          "first_value": "195.9349993"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.count",
+          "first_value": "103.1809614"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.count",
+          "first_value": "435.6301899"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.count",
+          "first_value": "651.7878774"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefulluw",
+          "first_value": "3362"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevaluw",
+          "first_value": "3362"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefullw",
+          "first_value": "3722.927467"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevalw",
+          "first_value": "3722.927467"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.pct",
+          "first_value": "0.514406141"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.pct",
+          "first_value": "0.137335609"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.pct",
+          "first_value": "0.071732598"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.pct",
+          "first_value": "0.1042332"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.pct",
+          "first_value": "0.084391027"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.pct",
+          "first_value": "0.022240614"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.pct",
+          "first_value": "0.110081016"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.pct",
+          "first_value": "0.053284211"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.pct",
+          "first_value": "0.052629282"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.pct",
+          "first_value": "0.027715007"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.pct",
+          "first_value": "0.117012806"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.pct",
+          "first_value": "0.17507402"
+        },
+        {
+          "column": "gpcontactoverall_1.count",
+          "first_value": "8573.52205"
+        },
+        {
+          "column": "gpcontactoverall_2.count",
+          "first_value": "6036.342398"
+        },
+        {
+          "column": "gpcontactoverall_3.count",
+          "first_value": "2642.023118"
+        },
+        {
+          "column": "gpcontactoverall_4.count",
+          "first_value": "1533.988144"
+        },
+        {
+          "column": "gpcontactoverall_5.count",
+          "first_value": "1342.711808"
+        },
+        {
+          "column": "gpcontactoverall.counteval",
+          "first_value": "14609.86445"
+        },
+        {
+          "column": "gpcontactoverall.basefulluw",
+          "first_value": "21719"
+        },
+        {
+          "column": "gpcontactoverall.baseevaluw",
+          "first_value": "21719"
+        },
+        {
+          "column": "gpcontactoverall.basefullw",
+          "first_value": "20128.58752"
+        },
+        {
+          "column": "gpcontactoverall.baseevalw",
+          "first_value": "20128.58752"
+        },
+        {
+          "column": "gpcontactoverall_1.pct",
+          "first_value": "0.42593759"
+        },
+        {
+          "column": "gpcontactoverall_2.pct",
+          "first_value": "0.299889021"
+        },
+        {
+          "column": "gpcontactoverall_3.pct",
+          "first_value": "0.131257254"
+        },
+        {
+          "column": "gpcontactoverall_4.pct",
+          "first_value": "0.076209428"
+        },
+        {
+          "column": "gpcontactoverall_5.pct",
+          "first_value": "0.066706708"
+        },
+        {
+          "column": "gpcontactoverall.pcteval",
+          "first_value": "0.72582661"
+        },
+        {
+          "column": "gpcontactoverall.lowileval",
+          "first_value": "0.717984769"
+        },
+        {
+          "column": "gpcontactoverall.hiwileval",
+          "first_value": "0.733531325"
+        },
+        {
+          "column": "lastgpapptlisten_1.count",
+          "first_value": "12720.28877"
+        },
+        {
+          "column": "lastgpapptlisten_2.count",
+          "first_value": "4729.045682"
+        },
+        {
+          "column": "lastgpapptlisten_3.count",
+          "first_value": "1231.314646"
+        },
+        {
+          "column": "lastgpapptlisten_4.count",
+          "first_value": "549.5794259"
+        },
+        {
+          "column": "lastgpapptlisten_5.count",
+          "first_value": "542.8291147"
+        },
+        {
+          "column": "lastgpapptlisten_6.count",
+          "first_value": "344.2168953"
+        },
+        {
+          "column": "lastgpapptlisten.counteval",
+          "first_value": "17449.33445"
+        },
+        {
+          "column": "lastgpapptlisten.basefulluw",
+          "first_value": "21691"
+        },
+        {
+          "column": "lastgpapptlisten.baseevaluw",
+          "first_value": "21379"
+        },
+        {
+          "column": "lastgpapptlisten.basefullw",
+          "first_value": "20117.27453"
+        },
+        {
+          "column": "lastgpapptlisten.baseevalw",
+          "first_value": "19773.05764"
+        },
+        {
+          "column": "lastgpapptlisten_1.pct",
+          "first_value": "0.643314201"
+        },
+        {
+          "column": "lastgpapptlisten_2.pct",
+          "first_value": "0.23916613"
+        },
+        {
+          "column": "lastgpapptlisten_3.pct",
+          "first_value": "0.062272344"
+        },
+        {
+          "column": "lastgpapptlisten_4.pct",
+          "first_value": "0.027794357"
+        },
+        {
+          "column": "lastgpapptlisten_5.pct",
+          "first_value": "0.027452968"
+        },
+        {
+          "column": "lastgpapptlisten_6.pct",
+          "first_value": "0.017110513"
+        },
+        {
+          "column": "lastgpapptlisten.pcteval",
+          "first_value": "0.882480331"
+        },
+        {
+          "column": "lastgpapptlisten.lowileval",
+          "first_value": "0.876747867"
+        },
+        {
+          "column": "lastgpapptlisten.hiwileval",
+          "first_value": "0.887980243"
+        },
+        {
+          "column": "lastgpapptcare_1.count",
+          "first_value": "12599.28835"
+        },
+        {
+          "column": "lastgpapptcare_2.count",
+          "first_value": "4525.460284"
+        },
+        {
+          "column": "lastgpapptcare_3.count",
+          "first_value": "1551.069258"
+        },
+        {
+          "column": "lastgpapptcare_4.count",
+          "first_value": "541.2861415"
+        },
+        {
+          "column": "lastgpapptcare_5.count",
+          "first_value": "582.4255491"
+        },
+        {
+          "column": "lastgpapptcare_6.count",
+          "first_value": "307.29756"
+        },
+        {
+          "column": "lastgpapptcare.counteval",
+          "first_value": "17124.74863"
+        },
+        {
+          "column": "lastgpapptcare.basefulluw",
+          "first_value": "21691"
+        },
+        {
+          "column": "lastgpapptcare.baseevaluw",
+          "first_value": "21400"
+        },
+        {
+          "column": "lastgpapptcare.basefullw",
+          "first_value": "20106.82714"
+        },
+        {
+          "column": "lastgpapptcare.baseevalw",
+          "first_value": "19799.52958"
+        },
+        {
+          "column": "lastgpapptcare_1.pct",
+          "first_value": "0.636342813"
+        },
+        {
+          "column": "lastgpapptcare_2.pct",
+          "first_value": "0.228564031"
+        },
+        {
+          "column": "lastgpapptcare_3.pct",
+          "first_value": "0.078338692"
+        },
+        {
+          "column": "lastgpapptcare_4.pct",
+          "first_value": "0.027338333"
+        },
+        {
+          "column": "lastgpapptcare_5.pct",
+          "first_value": "0.029416131"
+        },
+        {
+          "column": "lastgpapptcare_6.pct",
+          "first_value": "0.015283245"
+        },
+        {
+          "column": "lastgpapptcare.pcteval",
+          "first_value": "0.864906843"
+        },
+        {
+          "column": "lastgpapptcare.lowileval",
+          "first_value": "0.858834935"
+        },
+        {
+          "column": "lastgpapptcare.hiwileval",
+          "first_value": "0.870756885"
+        }
+      ]
+    },
+    {
+      "label": "practice",
+      "rows": 6215,
+      "column_count": 1105,
+      "identifier_columns": [
+        "ad_practicecode",
+        "ad_practicename",
+        "ad_icscode",
+        "ad_icsname",
+        "ad_icscodeons",
+        "ad_commissioningregioncode",
+        "ad_commissioningregionname",
+        "ad_pcncode",
+        "ad_pcnname",
+        "distributed",
+        "received",
+        "resprate"
+      ],
+      "first_identifier_values": {
+        "ad_practicecode": "A84002",
+        "ad_practicename": "THE ROTHBURY PRACTICE",
+        "ad_icscode": "QHM",
+        "ad_icsname": "NORTH EAST AND NORTH CUMBRIA INTEGRATED CARE SYSTEM",
+        "ad_icscodeons": "E54000050",
+        "ad_commissioningregioncode": "Y63",
+        "ad_commissioningregionname": "NORTH EAST AND YORKSHIRE COMMISSIONING REGION",
+        "ad_pcncode": "U09980",
+        "ad_pcnname": "NORTHUMBRIA PCN",
+        "distributed": "257",
+        "received": "121",
+        "resprate": "0.470817121"
+      },
+      "candidate_columns": [
+        {
+          "column": "localgpservicesphone_1.count",
+          "first_value": "0.444451028"
+        },
+        {
+          "column": "localgpservicesphone_2.count",
+          "first_value": "36.89645139"
+        },
+        {
+          "column": "localgpservicesphone_3.count",
+          "first_value": "32.85171013"
+        },
+        {
+          "column": "localgpservicesphone_4.count",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpservicesphone_5.count",
+          "first_value": "2.463873105"
+        },
+        {
+          "column": "localgpservicesphone_6.count",
+          "first_value": "0.590356049"
+        },
+        {
+          "column": "localgpservicesphone.counteval",
+          "first_value": "69.74816152"
+        },
+        {
+          "column": "localgpservicesphone.basefulluw",
+          "first_value": "120"
+        },
+        {
+          "column": "localgpservicesphone.baseevaluw",
+          "first_value": "119"
+        },
+        {
+          "column": "localgpservicesphone.basefullw",
+          "first_value": "73.2468417"
+        },
+        {
+          "column": "localgpservicesphone.baseevalw",
+          "first_value": "72.80239067"
+        },
+        {
+          "column": "localgpservicesphone_1.pct",
+          "first_value": "0.006067852"
+        },
+        {
+          "column": "localgpservicesphone_2.pct",
+          "first_value": "0.506802744"
+        },
+        {
+          "column": "localgpservicesphone_3.pct",
+          "first_value": "0.451244936"
+        },
+        {
+          "column": "localgpservicesphone_4.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpservicesphone_5.pct",
+          "first_value": "0.033843299"
+        },
+        {
+          "column": "localgpservicesphone_6.pct",
+          "first_value": "0.00810902"
+        },
+        {
+          "column": "localgpservicesphone.pcteval",
+          "first_value": "0.95804768"
+        },
+        {
+          "column": "localgpservicesphone.lowileval",
+          "first_value": "0.919066755"
+        },
+        {
+          "column": "localgpservicesphone.hiwileval",
+          "first_value": "0.978689063"
+        },
+        {
+          "column": "localgpserviceswebsite_1.count",
+          "first_value": "45.61840677"
+        },
+        {
+          "column": "localgpserviceswebsite_2.count",
+          "first_value": "8.312841001"
+        },
+        {
+          "column": "localgpserviceswebsite_3.count",
+          "first_value": "11.48623447"
+        },
+        {
+          "column": "localgpserviceswebsite_4.count",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpserviceswebsite_5.count",
+          "first_value": "6.173713364"
+        },
+        {
+          "column": "localgpserviceswebsite_6.count",
+          "first_value": "1.670439194"
+        },
+        {
+          "column": "localgpserviceswebsite.counteval",
+          "first_value": "19.79907547"
+        },
+        {
+          "column": "localgpserviceswebsite.basefulluw",
+          "first_value": "120"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevaluw",
+          "first_value": "42"
+        },
+        {
+          "column": "localgpserviceswebsite.basefullw",
+          "first_value": "73.2616348"
+        },
+        {
+          "column": "localgpserviceswebsite.baseevalw",
+          "first_value": "27.64322803"
+        },
+        {
+          "column": "localgpserviceswebsite_1.pct",
+          "first_value": "0.62267798"
+        },
+        {
+          "column": "localgpserviceswebsite_2.pct",
+          "first_value": "0.300718895"
+        },
+        {
+          "column": "localgpserviceswebsite_3.pct",
+          "first_value": "0.415517119"
+        },
+        {
+          "column": "localgpserviceswebsite_4.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpserviceswebsite_5.pct",
+          "first_value": "0.223335471"
+        },
+        {
+          "column": "localgpserviceswebsite_6.pct",
+          "first_value": "0.060428514"
+        },
+        {
+          "column": "localgpserviceswebsite.pcteval",
+          "first_value": "0.716236014"
+        },
+        {
+          "column": "localgpserviceswebsite.lowileval",
+          "first_value": "0.646556327"
+        },
+        {
+          "column": "localgpserviceswebsite.hiwileval",
+          "first_value": "0.77691838"
+        },
+        {
+          "column": "localgpservicesapp_1.count",
+          "first_value": "49.67447164"
+        },
+        {
+          "column": "localgpservicesapp_2.count",
+          "first_value": "4.543876707"
+        },
+        {
+          "column": "localgpservicesapp_3.count",
+          "first_value": "5.634551869"
+        },
+        {
+          "column": "localgpservicesapp_4.count",
+          "first_value": "0.903523818"
+        },
+        {
+          "column": "localgpservicesapp_5.count",
+          "first_value": "5.213075801"
+        },
+        {
+          "column": "localgpservicesapp_6.count",
+          "first_value": "7.292134971"
+        },
+        {
+          "column": "localgpservicesapp.counteval",
+          "first_value": "10.17842858"
+        },
+        {
+          "column": "localgpservicesapp.basefulluw",
+          "first_value": "120"
+        },
+        {
+          "column": "localgpservicesapp.baseevaluw",
+          "first_value": "35"
+        },
+        {
+          "column": "localgpservicesapp.basefullw",
+          "first_value": "73.2616348"
+        },
+        {
+          "column": "localgpservicesapp.baseevalw",
+          "first_value": "23.58716317"
+        },
+        {
+          "column": "localgpservicesapp_1.pct",
+          "first_value": "0.678042085"
+        },
+        {
+          "column": "localgpservicesapp_2.pct",
+          "first_value": "0.192641933"
+        },
+        {
+          "column": "localgpservicesapp_3.pct",
+          "first_value": "0.238882134"
+        },
+        {
+          "column": "localgpservicesapp_4.pct",
+          "first_value": "0.038305743"
+        },
+        {
+          "column": "localgpservicesapp_5.pct",
+          "first_value": "0.221013259"
+        },
+        {
+          "column": "localgpservicesapp_6.pct",
+          "first_value": "0.309156931"
+        },
+        {
+          "column": "localgpservicesapp.pcteval",
+          "first_value": "0.431524067"
+        },
+        {
+          "column": "localgpservicesapp.lowileval",
+          "first_value": "0.361072728"
+        },
+        {
+          "column": "localgpservicesapp.hiwileval",
+          "first_value": "0.504859808"
+        },
+        {
+          "column": "localgpservicesreception_1.count",
+          "first_value": "50.73007967"
+        },
+        {
+          "column": "localgpservicesreception_2.count",
+          "first_value": "16.26995192"
+        },
+        {
+          "column": "localgpservicesreception_3.count",
+          "first_value": "5.432057136"
+        },
+        {
+          "column": "localgpservicesreception_4.count",
+          "first_value": "0.477676441"
+        },
+        {
+          "column": "localgpservicesreception_5.count",
+          "first_value": "0.879852487"
+        },
+        {
+          "column": "localgpservicesreception.counteval",
+          "first_value": "67.00003159"
+        },
+        {
+          "column": "localgpservicesreception.basefulluw",
+          "first_value": "121"
+        },
+        {
+          "column": "localgpservicesreception.baseevaluw",
+          "first_value": "119"
+        },
+        {
+          "column": "localgpservicesreception.basefullw",
+          "first_value": "73.78961766"
+        },
+        {
+          "column": "localgpservicesreception.baseevalw",
+          "first_value": "72.90976517"
+        },
+        {
+          "column": "localgpservicesreception_1.pct",
+          "first_value": "0.695792663"
+        },
+        {
+          "column": "localgpservicesreception_2.pct",
+          "first_value": "0.22315189"
+        },
+        {
+          "column": "localgpservicesreception_3.pct",
+          "first_value": "0.074503835"
+        },
+        {
+          "column": "localgpservicesreception_4.pct",
+          "first_value": "0.006551611"
+        },
+        {
+          "column": "localgpservicesreception_5.pct",
+          "first_value": "0.011923798"
+        },
+        {
+          "column": "localgpservicesreception.pcteval",
+          "first_value": "0.918944553"
+        },
+        {
+          "column": "localgpservicesreception.lowileval",
+          "first_value": "0.871282891"
+        },
+        {
+          "column": "localgpservicesreception.hiwileval",
+          "first_value": "0.949971304"
+        },
+        {
+          "column": "localgpservicesprefhp_1.count",
+          "first_value": "13.0314074"
+        },
+        {
+          "column": "localgpservicesprefhp_2.count",
+          "first_value": "59.28861076"
+        },
+        {
+          "column": "localgpservicesprefhp.counteval",
+          "first_value": "13.0314074"
+        },
+        {
+          "column": "localgpservicesprefhp.basefulluw",
+          "first_value": "118"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevaluw",
+          "first_value": "118"
+        },
+        {
+          "column": "localgpservicesprefhp.basefullw",
+          "first_value": "72.32001815"
+        },
+        {
+          "column": "localgpservicesprefhp.baseevalw",
+          "first_value": "72.32001815"
+        },
+        {
+          "column": "localgpservicesprefhp_1.pct",
+          "first_value": "0.180190876"
+        },
+        {
+          "column": "localgpservicesprefhp_2.pct",
+          "first_value": "0.819809124"
+        },
+        {
+          "column": "localgpservicesprefhp.pcteval",
+          "first_value": "0.180190876"
+        },
+        {
+          "column": "localgpservicesprefhp.lowileval",
+          "first_value": "0.131472221"
+        },
+        {
+          "column": "localgpservicesprefhp.hiwileval",
+          "first_value": "0.241933967"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.count",
+          "first_value": "3.884265853"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.count",
+          "first_value": "3.965742557"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.count",
+          "first_value": "4.210222504"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.count",
+          "first_value": "0.971176484"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.count",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpservicesprefhpsee.counteval",
+          "first_value": "7.85000841"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefulluw",
+          "first_value": "25"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevaluw",
+          "first_value": "25"
+        },
+        {
+          "column": "localgpservicesprefhpsee.basefullw",
+          "first_value": "13.0314074"
+        },
+        {
+          "column": "localgpservicesprefhpsee.baseevalw",
+          "first_value": "13.0314074"
+        },
+        {
+          "column": "localgpservicesprefhpsee_1.pct",
+          "first_value": "0.298069559"
+        },
+        {
+          "column": "localgpservicesprefhpsee_2.pct",
+          "first_value": "0.304321892"
+        },
+        {
+          "column": "localgpservicesprefhpsee_3.pct",
+          "first_value": "0.323082717"
+        },
+        {
+          "column": "localgpservicesprefhpsee_4.pct",
+          "first_value": "0.074525832"
+        },
+        {
+          "column": "localgpservicesprefhpsee_5.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "localgpservicesprefhpsee.pcteval",
+          "first_value": "0.602391451"
+        },
+        {
+          "column": "localgpservicesprefhpsee.lowileval",
+          "first_value": "0.440588898"
+        },
+        {
+          "column": "localgpservicesprefhpsee.hiwileval",
+          "first_value": "0.744530617"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.count",
+          "first_value": "36.90227164"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.count",
+          "first_value": "7.562239172"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.count",
+          "first_value": "16.59671427"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.count",
+          "first_value": "1.806733871"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.count",
+          "first_value": "0.533480358"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.count",
+          "first_value": "5.763953106"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.count",
+          "first_value": "1.455406447"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefulluw",
+          "first_value": "106"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevaluw",
+          "first_value": "106"
+        },
+        {
+          "column": "gpcontacthandlerequest.basefullw",
+          "first_value": "65.45147993"
+        },
+        {
+          "column": "gpcontacthandlerequest.baseevalw",
+          "first_value": "65.45147993"
+        },
+        {
+          "column": "gpcontacthandlerequest_1.pct",
+          "first_value": "0.563811111"
+        },
+        {
+          "column": "gpcontacthandlerequest_2.pct",
+          "first_value": "0.115539621"
+        },
+        {
+          "column": "gpcontacthandlerequest_3.pct",
+          "first_value": "0.253572788"
+        },
+        {
+          "column": "gpcontacthandlerequest_4.pct",
+          "first_value": "0.027604171"
+        },
+        {
+          "column": "gpcontacthandlerequest_5.pct",
+          "first_value": "0.008150776"
+        },
+        {
+          "column": "gpcontacthandlerequest_6.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontacthandlerequest_7.pct",
+          "first_value": "0.088064519"
+        },
+        {
+          "column": "gpcontacthandlerequest_8.pct",
+          "first_value": "0.022236418"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.count",
+          "first_value": "4.441338499"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.count",
+          "first_value": "0.43276205"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.count",
+          "first_value": "0.43276205"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.count",
+          "first_value": "0.99784521"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.count",
+          "first_value": "0.435517867"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.count",
+          "first_value": "1.470548607"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.count",
+          "first_value": "0.43276205"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.count",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefulluw",
+          "first_value": "10"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevaluw",
+          "first_value": "10"
+        },
+        {
+          "column": "gpcontactunsuccessful.basefullw",
+          "first_value": "5.936588464"
+        },
+        {
+          "column": "gpcontactunsuccessful.baseevalw",
+          "first_value": "5.936588464"
+        },
+        {
+          "column": "gpcontactunsuccessful_1.pct",
+          "first_value": "0.748129759"
+        },
+        {
+          "column": "gpcontactunsuccessful_2.pct",
+          "first_value": "0.072897431"
+        },
+        {
+          "column": "gpcontactunsuccessful_3.pct",
+          "first_value": "0.072897431"
+        },
+        {
+          "column": "gpcontactunsuccessful_4.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_5.pct",
+          "first_value": "0.168083945"
+        },
+        {
+          "column": "gpcontactunsuccessful_6.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_7.pct",
+          "first_value": "0.07336164"
+        },
+        {
+          "column": "gpcontactunsuccessful_8.pct",
+          "first_value": "0.247709373"
+        },
+        {
+          "column": "gpcontactunsuccessful_9.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_10.pct",
+          "first_value": "0.072897431"
+        },
+        {
+          "column": "gpcontactunsuccessful_11.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactunsuccessful_12.pct",
+          "first_value": "0"
+        },
+        {
+          "column": "gpcontactoverall_1.count",
+          "first_value": "50.54877213"
+        },
+        {
+          "column": "gpcontactoverall_2.count",
+          "first_value": "12.32020093"
+        },
+        {
+          "column": "gpcontactoverall_3.count",
+          "first_value": "1.45993515"
+        },
+        {
+          "column": "gpcontactoverall_4.count",
+          "first_value": "3.677024573"
+        },
+        {
+          "column": "gpcontactoverall_5.count",
+          "first_value": "4.879047868"
+        },
+        {
+          "column": "gpcontactoverall.counteval",
+          "first_value": "62.86897306"
+        },
+        {
+          "column": "gpcontactoverall.basefulluw",
+          "first_value": "119"
+        },
+        {
+          "column": "gpcontactoverall.baseevaluw",
+          "first_value": "119"
+        },
+        {
+          "column": "gpcontactoverall.basefullw",
+          "first_value": "72.88498065"
+        },
+        {
+          "column": "gpcontactoverall.baseevalw",
+          "first_value": "72.88498065"
+        },
+        {
+          "column": "gpcontactoverall_1.pct",
+          "first_value": "0.693541683"
+        },
+        {
+          "column": "gpcontactoverall_2.pct",
+          "first_value": "0.16903621"
+        },
+        {
+          "column": "gpcontactoverall_3.pct",
+          "first_value": "0.020030672"
+        },
+        {
+          "column": "gpcontactoverall_4.pct",
+          "first_value": "0.050449689"
+        },
+        {
+          "column": "gpcontactoverall_5.pct",
+          "first_value": "0.066941746"
+        },
+        {
+          "column": "gpcontactoverall.pcteval",
+          "first_value": "0.862577893"
+        },
+        {
+          "column": "gpcontactoverall.lowileval",
+          "first_value": "0.805804131"
+        },
+        {
+          "column": "gpcontactoverall.hiwileval",
+          "first_value": "0.904716327"
+        },
+        {
+          "column": "lastgpapptlisten_1.count",
+          "first_value": "56.81333888"
+        },
+        {
+          "column": "lastgpapptlisten_2.count",
+          "first_value": "9.085472032"
+        },
+        {
+          "column": "lastgpapptlisten_3.count",
+          "first_value": "3.336232186"
+        },
+        {
+          "column": "lastgpapptlisten_4.count",
+          "first_value": "0.381979352"
+        },
+        {
+          "column": "lastgpapptlisten_5.count",
+          "first_value": "3.271151402"
+        },
+        {
+          "column": "lastgpapptlisten_6.count",
+          "first_value": "0.456992775"
+        },
+        {
+          "column": "lastgpapptlisten.counteval",
+          "first_value": "65.89881091"
+        },
+        {
+          "column": "lastgpapptlisten.basefulluw",
+          "first_value": "120"
+        },
+        {
+          "column": "lastgpapptlisten.baseevaluw",
+          "first_value": "119"
+        },
+        {
+          "column": "lastgpapptlisten.basefullw",
+          "first_value": "73.34516663"
+        },
+        {
+          "column": "lastgpapptlisten.baseevalw",
+          "first_value": "72.88817385"
+        },
+        {
+          "column": "lastgpapptlisten_1.pct",
+          "first_value": "0.779458942"
+        },
+        {
+          "column": "lastgpapptlisten_2.pct",
+          "first_value": "0.124649467"
+        },
+        {
+          "column": "lastgpapptlisten_3.pct",
+          "first_value": "0.045771927"
+        },
+        {
+          "column": "lastgpapptlisten_4.pct",
+          "first_value": "0.005240622"
+        },
+        {
+          "column": "lastgpapptlisten_5.pct",
+          "first_value": "0.044879042"
+        },
+        {
+          "column": "lastgpapptlisten_6.pct",
+          "first_value": "0.006230714"
+        },
+        {
+          "column": "lastgpapptlisten.pcteval",
+          "first_value": "0.904108409"
+        },
+        {
+          "column": "lastgpapptlisten.lowileval",
+          "first_value": "0.853583826"
+        },
+        {
+          "column": "lastgpapptlisten.hiwileval",
+          "first_value": "0.938455289"
+        },
+        {
+          "column": "lastgpapptcare_1.count",
+          "first_value": "56.03865836"
+        },
+        {
+          "column": "lastgpapptcare_2.count",
+          "first_value": "9.860152556"
+        },
+        {
+          "column": "lastgpapptcare_3.count",
+          "first_value": "1.632789859"
+        },
+        {
+          "column": "lastgpapptcare_4.count",
+          "first_value": "2.085421679"
+        },
+        {
+          "column": "lastgpapptcare_5.count",
+          "first_value": "3.271151402"
+        },
+        {
+          "column": "lastgpapptcare_6.count",
+          "first_value": "0.456992775"
+        },
+        {
+          "column": "lastgpapptcare.counteval",
+          "first_value": "65.89881091"
+        },
+        {
+          "column": "lastgpapptcare.basefulluw",
+          "first_value": "120"
+        },
+        {
+          "column": "lastgpapptcare.baseevaluw",
+          "first_value": "119"
+        },
+        {
+          "column": "lastgpapptcare.basefullw",
+          "first_value": "73.34516663"
+        },
+        {
+          "column": "lastgpapptcare.baseevalw",
+          "first_value": "72.88817385"
+        },
+        {
+          "column": "lastgpapptcare_1.pct",
+          "first_value": "0.768830599"
+        },
+        {
+          "column": "lastgpapptcare_2.pct",
+          "first_value": "0.13527781"
+        },
+        {
+          "column": "lastgpapptcare_3.pct",
+          "first_value": "0.0224013"
+        },
+        {
+          "column": "lastgpapptcare_4.pct",
+          "first_value": "0.028611249"
+        },
+        {
+          "column": "lastgpapptcare_5.pct",
+          "first_value": "0.044879042"
+        },
+        {
+          "column": "lastgpapptcare_6.pct",
+          "first_value": "0.006230714"
+        },
+        {
+          "column": "lastgpapptcare.pcteval",
+          "first_value": "0.904108409"
+        },
+        {
+          "column": "lastgpapptcare.lowileval",
+          "first_value": "0.853583826"
+        },
+        {
+          "column": "lastgpapptcare.hiwileval",
+          "first_value": "0.938455289"
+        }
+      ]
+    }
+  ],
+  "reporting_variables": {
+    "bytes": 75739,
+    "sheets": [
+      {
+        "name": "Explanation",
+        "max_row": 13,
+        "max_column": 2,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "GP Patient Survey 2025: List of reporting variables CSV label file",
+              null
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "About this file",
+              null
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "This document provides labels to help users interpret the CSV files. If you have any questions about the CSV label file, please email the team at: ",
+              null
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "GPPatientSurvey@ipsos.com ",
+              null
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "CSV files",
+              null
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "The GPPS survey results are available from the surveys and reports section of the website:",
+              null
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "https://www.gp-patient.co.uk/surveysandreports",
+              null
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "CSV label file",
+              null
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "This file links the variable names in the CSV files to labels which explain the content. For every question in the questionnaire there are weighted base, count and percentage variables, as well as the unweighted base.\n\nThe file for 2025 uses substantive variable names. The first part of each variable name identifies the section of the questionnaire from which the question is drawn. For example, 'localgpservices' refers to the section of the questionnaire called 'Your GP practice services'. The second part of the variable name identifies the individual question. The suffix identifies the nature of the variable e.g. .pct variables are percentages and .count variables are counts.",
+              null
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "Further details on the production of evaluative statistics are available in the Presentation of Results:",
+              null
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "https://www.gp-patient.co.uk/downloads/2025/GPPS_2025_Presentation_of_results_PUBLIC.xlsx",
+              null
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "Suppression",
+              null
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "Two types of suppression are used in GPPS:\n•  In cases where a result is based on fewer than 10 people (unweighted), it has been suppressed. For example, where fewer than 10 people answered a question from a particular organisation, the results are not shown.\n•  In addition, for organisations with an eligible population of 1,000 or less, individual response option counts below 5 (but excluding 0) and corresponding percentages have been suppressed for the relevant questions in the 'Some questions about you' section and questions relating to long-term conditions, disabilities, or illnesses. In instances where only one response option is suppressed for these questions, the next lowest response option has also been suppressed to prevent back calculation of the primary suppressed result. The Technical Annex contains the full list of questions where this applies.\n\nIn the CSV files, the following negative values are used where data has been suppressed:\n•  -99 is used for confidence intervals, where they are not available (i.e. where the percentages are suppressed)\n•  -98 is used for percentages between 0 and 0.5%\n•  -97 is used for suppressed data. \n\n'Population’ for the GP Patient Survey is defined as the number of patients on the GP registered list for that organisation.  \n\nThese suppression methods are used to prevent individuals and their responses being identifiable in the data, and to ensure results based on very small numbers of respondents are not released.",
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GPPS_2025_list_of_reporting_var",
+        "max_row": 1226,
+        "max_column": 3,
+        "preview": [
+          {
+            "row": 1,
+            "values": [
+              "Paper questionnaire number 2025",
+              "Variable name",
+              "Variable label"
+            ]
+          },
+          {
+            "row": 2,
+            "values": [
+              "N/A",
+              "ad_practicecode",
+              "(Admin) Practice Code"
+            ]
+          },
+          {
+            "row": 3,
+            "values": [
+              "N/A",
+              "ad_practicename",
+              "(Admin) Practice Name"
+            ]
+          },
+          {
+            "row": 4,
+            "values": [
+              "N/A",
+              "ad_pcncode",
+              "(Admin) PCN Code"
+            ]
+          },
+          {
+            "row": 5,
+            "values": [
+              "N/A",
+              "ad_pcnname",
+              "(Admin) PCN Name"
+            ]
+          },
+          {
+            "row": 6,
+            "values": [
+              "N/A",
+              "ad_icscode",
+              "(Admin) ICS Code from NHS datasets"
+            ]
+          },
+          {
+            "row": 7,
+            "values": [
+              "N/A",
+              "ad_icscodeons",
+              "(Admin) ICS Code from ONS datasets"
+            ]
+          },
+          {
+            "row": 8,
+            "values": [
+              "N/A",
+              "ad_icsname",
+              "(Admin) ICS Name"
+            ]
+          },
+          {
+            "row": 9,
+            "values": [
+              "N/A",
+              "ad_commissioningregioncode",
+              "(Admin) NHS Commissioning Region - Code"
+            ]
+          },
+          {
+            "row": 10,
+            "values": [
+              "N/A",
+              "ad_commissioningregionname",
+              "(Admin) NHS Commissioning Region - Name"
+            ]
+          },
+          {
+            "row": 11,
+            "values": [
+              "N/A",
+              "distributed",
+              "Total survey forms distributed"
+            ]
+          },
+          {
+            "row": 12,
+            "values": [
+              "N/A",
+              "received",
+              "Total completed forms received"
+            ]
+          },
+          {
+            "row": 13,
+            "values": [
+              "N/A",
+              "resprate",
+              "Response rate"
+            ]
+          },
+          {
+            "row": 14,
+            "values": [
+              "N/A",
+              "popsize",
+              "Size of practice population"
+            ]
+          },
+          {
+            "row": 15,
+            "values": [
+              1,
+              "localgpservicesphone_1.count",
+              "Ease of contacting GP practice on the phone - I haven’t tried"
+            ]
+          },
+          {
+            "row": 16,
+            "values": [
+              1,
+              "localgpservicesphone_2.count",
+              "Ease of contacting GP practice on the phone - Very easy"
+            ]
+          },
+          {
+            "row": 17,
+            "values": [
+              1,
+              "localgpservicesphone_3.count",
+              "Ease of contacting GP practice on the phone - Fairly easy"
+            ]
+          },
+          {
+            "row": 18,
+            "values": [
+              1,
+              "localgpservicesphone_4.count",
+              "Ease of contacting GP practice on the phone - Neither easy nor difficult"
+            ]
+          },
+          {
+            "row": 19,
+            "values": [
+              1,
+              "localgpservicesphone_5.count",
+              "Ease of contacting GP practice on the phone - Fairly difficult"
+            ]
+          },
+          {
+            "row": 20,
+            "values": [
+              1,
+              "localgpservicesphone_6.count",
+              "Ease of contacting GP practice on the phone - Very difficult"
+            ]
+          },
+          {
+            "row": 21,
+            "values": [
+              1,
+              "localgpservicesphone.counteval",
+              "Ease of contacting GP practice on the phone - Summary result - Easy"
+            ]
+          },
+          {
+            "row": 22,
+            "values": [
+              1,
+              "localgpservicesphone.basefulluw",
+              "Ease of contacting GP practice on the phone - Total unweighted responses"
+            ]
+          },
+          {
+            "row": 23,
+            "values": [
+              1,
+              "localgpservicesphone.basefullw",
+              "Ease of contacting GP practice on the phone - Total weighted responses"
+            ]
+          },
+          {
+            "row": 24,
+            "values": [
+              1,
+              "localgpservicesphone.baseevaluw",
+              "Ease of contacting GP practice on the phone - Total unweighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 25,
+            "values": [
+              1,
+              "localgpservicesphone.baseevalw",
+              "Ease of contacting GP practice on the phone - Total weighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 26,
+            "values": [
+              1,
+              "localgpservicesphone_1.pct",
+              "Ease of contacting GP practice on the phone - I haven’t tried % "
+            ]
+          },
+          {
+            "row": 27,
+            "values": [
+              1,
+              "localgpservicesphone_2.pct",
+              "Ease of contacting GP practice on the phone - Very easy % "
+            ]
+          },
+          {
+            "row": 28,
+            "values": [
+              1,
+              "localgpservicesphone_3.pct",
+              "Ease of contacting GP practice on the phone - Fairly easy % "
+            ]
+          },
+          {
+            "row": 29,
+            "values": [
+              1,
+              "localgpservicesphone_4.pct",
+              "Ease of contacting GP practice on the phone - Neither easy nor difficult % "
+            ]
+          },
+          {
+            "row": 30,
+            "values": [
+              1,
+              "localgpservicesphone_5.pct",
+              "Ease of contacting GP practice on the phone - Fairly difficult % "
+            ]
+          },
+          {
+            "row": 31,
+            "values": [
+              1,
+              "localgpservicesphone_6.pct",
+              "Ease of contacting GP practice on the phone - Very difficult % "
+            ]
+          },
+          {
+            "row": 32,
+            "values": [
+              1,
+              "localgpservicesphone.pcteval",
+              "Ease of contacting GP practice on the phone - % Summary result - Easy"
+            ]
+          },
+          {
+            "row": 33,
+            "values": [
+              1,
+              "localgpservicesphone.lowileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice on the phone (lower)"
+            ]
+          },
+          {
+            "row": 34,
+            "values": [
+              1,
+              "localgpservicesphone.hiwileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice on the phone (upper)"
+            ]
+          },
+          {
+            "row": 35,
+            "values": [
+              2,
+              "localgpserviceswebsite_1.count",
+              "Ease of contacting GP practice using their website - I haven’t tried"
+            ]
+          },
+          {
+            "row": 36,
+            "values": [
+              2,
+              "localgpserviceswebsite_2.count",
+              "Ease of contacting GP practice using their website - Very easy"
+            ]
+          },
+          {
+            "row": 37,
+            "values": [
+              2,
+              "localgpserviceswebsite_3.count",
+              "Ease of contacting GP practice using their website - Fairly easy"
+            ]
+          },
+          {
+            "row": 38,
+            "values": [
+              2,
+              "localgpserviceswebsite_4.count",
+              "Ease of contacting GP practice using their website - Neither easy nor difficult"
+            ]
+          },
+          {
+            "row": 39,
+            "values": [
+              2,
+              "localgpserviceswebsite_5.count",
+              "Ease of contacting GP practice using their website - Fairly difficult"
+            ]
+          },
+          {
+            "row": 40,
+            "values": [
+              2,
+              "localgpserviceswebsite_6.count",
+              "Ease of contacting GP practice using their website - Very difficult"
+            ]
+          },
+          {
+            "row": 41,
+            "values": [
+              2,
+              "localgpserviceswebsite.counteval",
+              "Ease of contacting GP practice using their website - Summary result - Easy"
+            ]
+          },
+          {
+            "row": 42,
+            "values": [
+              2,
+              "localgpserviceswebsite.basefulluw",
+              "Ease of contacting GP practice using their website - Total unweighted responses"
+            ]
+          },
+          {
+            "row": 43,
+            "values": [
+              2,
+              "localgpserviceswebsite.basefullw",
+              "Ease of contacting GP practice using their website - Total weighted responses"
+            ]
+          },
+          {
+            "row": 44,
+            "values": [
+              2,
+              "localgpserviceswebsite.baseevaluw",
+              "Ease of contacting GP practice using their website - Total unweighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 45,
+            "values": [
+              2,
+              "localgpserviceswebsite.baseevalw",
+              "Ease of contacting GP practice using their website - Total weighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 46,
+            "values": [
+              2,
+              "localgpserviceswebsite_1.pct",
+              "Ease of contacting GP practice using their website - I haven’t tried % "
+            ]
+          },
+          {
+            "row": 47,
+            "values": [
+              2,
+              "localgpserviceswebsite_2.pct",
+              "Ease of contacting GP practice using their website - Very easy % "
+            ]
+          },
+          {
+            "row": 48,
+            "values": [
+              2,
+              "localgpserviceswebsite_3.pct",
+              "Ease of contacting GP practice using their website - Fairly easy % "
+            ]
+          },
+          {
+            "row": 49,
+            "values": [
+              2,
+              "localgpserviceswebsite_4.pct",
+              "Ease of contacting GP practice using their website - Neither easy nor difficult % "
+            ]
+          },
+          {
+            "row": 50,
+            "values": [
+              2,
+              "localgpserviceswebsite_5.pct",
+              "Ease of contacting GP practice using their website - Fairly difficult % "
+            ]
+          },
+          {
+            "row": 51,
+            "values": [
+              2,
+              "localgpserviceswebsite_6.pct",
+              "Ease of contacting GP practice using their website - Very difficult % "
+            ]
+          },
+          {
+            "row": 52,
+            "values": [
+              2,
+              "localgpserviceswebsite.pcteval",
+              "Ease of contacting GP practice using their website - % Summary result - Easy"
+            ]
+          },
+          {
+            "row": 53,
+            "values": [
+              2,
+              "localgpserviceswebsite.lowileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice using their website (lower)"
+            ]
+          },
+          {
+            "row": 54,
+            "values": [
+              2,
+              "localgpserviceswebsite.hiwileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice using their website (upper)"
+            ]
+          },
+          {
+            "row": 55,
+            "values": [
+              3,
+              "localgpservicesapp_1.count",
+              "Ease of contacting GP practice using the NHS app - I haven’t tried"
+            ]
+          },
+          {
+            "row": 56,
+            "values": [
+              3,
+              "localgpservicesapp_2.count",
+              "Ease of contacting GP practice using the NHS app - Very easy"
+            ]
+          },
+          {
+            "row": 57,
+            "values": [
+              3,
+              "localgpservicesapp_3.count",
+              "Ease of contacting GP practice using the NHS app - Fairly easy"
+            ]
+          },
+          {
+            "row": 58,
+            "values": [
+              3,
+              "localgpservicesapp_4.count",
+              "Ease of contacting GP practice using the NHS app - Neither easy nor difficult"
+            ]
+          },
+          {
+            "row": 59,
+            "values": [
+              3,
+              "localgpservicesapp_5.count",
+              "Ease of contacting GP practice using the NHS app - Fairly difficult"
+            ]
+          },
+          {
+            "row": 60,
+            "values": [
+              3,
+              "localgpservicesapp_6.count",
+              "Ease of contacting GP practice using the NHS app - Very difficult"
+            ]
+          },
+          {
+            "row": 61,
+            "values": [
+              3,
+              "localgpservicesapp.counteval",
+              "Ease of contacting GP practice using the NHS app - Summary result - Easy"
+            ]
+          },
+          {
+            "row": 62,
+            "values": [
+              3,
+              "localgpservicesapp.basefulluw",
+              "Ease of contacting GP practice using the NHS app - Total unweighted responses"
+            ]
+          },
+          {
+            "row": 63,
+            "values": [
+              3,
+              "localgpservicesapp.basefullw",
+              "Ease of contacting GP practice using the NHS app - Total weighted responses"
+            ]
+          },
+          {
+            "row": 64,
+            "values": [
+              3,
+              "localgpservicesapp.baseevaluw",
+              "Ease of contacting GP practice using the NHS app - Total unweighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 65,
+            "values": [
+              3,
+              "localgpservicesapp.baseevalw",
+              "Ease of contacting GP practice using the NHS app - Total weighted responses - Excluding I haven't tried"
+            ]
+          },
+          {
+            "row": 66,
+            "values": [
+              3,
+              "localgpservicesapp_1.pct",
+              "Ease of contacting GP practice using the NHS app - I haven’t tried % "
+            ]
+          },
+          {
+            "row": 67,
+            "values": [
+              3,
+              "localgpservicesapp_2.pct",
+              "Ease of contacting GP practice using the NHS app - Very easy % "
+            ]
+          },
+          {
+            "row": 68,
+            "values": [
+              3,
+              "localgpservicesapp_3.pct",
+              "Ease of contacting GP practice using the NHS app - Fairly easy % "
+            ]
+          },
+          {
+            "row": 69,
+            "values": [
+              3,
+              "localgpservicesapp_4.pct",
+              "Ease of contacting GP practice using the NHS app - Neither easy nor difficult % "
+            ]
+          },
+          {
+            "row": 70,
+            "values": [
+              3,
+              "localgpservicesapp_5.pct",
+              "Ease of contacting GP practice using the NHS app - Fairly difficult % "
+            ]
+          },
+          {
+            "row": 71,
+            "values": [
+              3,
+              "localgpservicesapp_6.pct",
+              "Ease of contacting GP practice using the NHS app - Very difficult % "
+            ]
+          },
+          {
+            "row": 72,
+            "values": [
+              3,
+              "localgpservicesapp.pcteval",
+              "Ease of contacting GP practice using the NHS app - % Summary result - Easy"
+            ]
+          },
+          {
+            "row": 73,
+            "values": [
+              3,
+              "localgpservicesapp.lowileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice using the NHS app (lower)"
+            ]
+          },
+          {
+            "row": 74,
+            "values": [
+              3,
+              "localgpservicesapp.hiwileval",
+              "95% confidence interval around % who say it was easy to contact their GP practice using the NHS app (upper)"
+            ]
+          },
+          {
+            "row": 75,
+            "values": [
+              4,
+              "localgpservicesreception_1.count",
+              "Helpfulness of reception and administrative team - Very helpful"
+            ]
+          },
+          {
+            "row": 76,
+            "values": [
+              4,
+              "localgpservicesreception_2.count",
+              "Helpfulness of reception and administrative team - Fairly helpful"
+            ]
+          },
+          {
+            "row": 77,
+            "values": [
+              4,
+              "localgpservicesreception_3.count",
+              "Helpfulness of reception and administrative team - Not very helpful"
+            ]
+          },
+          {
+            "row": 78,
+            "values": [
+              4,
+              "localgpservicesreception_4.count",
+              "Helpfulness of reception and administrative team - Not at all helpful"
+            ]
+          },
+          {
+            "row": 79,
+            "values": [
+              4,
+              "localgpservicesreception_5.count",
+              "Helpfulness of reception and administrative team - I don’t know"
+            ]
+          },
+          {
+            "row": 80,
+            "values": [
+              4,
+              "localgpservicesreception.counteval",
+              "Helpfulness of reception and administrative team - Summary result - Helpful"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
