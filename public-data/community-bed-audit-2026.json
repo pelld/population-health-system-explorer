@@ -1,0 +1,3504 @@
+{
+  "publication": "Community Bed Audit — 4 March 2026",
+  "snapshot": "4 March 2026",
+  "source": "NHS England Community Bed Audit",
+  "source_url": "https://www.england.nhs.uk/statistics/statistical-work-areas/community-bed-audit/",
+  "source_file_url": "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2026/06/Community-Bed-Audit-4th-March-2026-v2.xlsx",
+  "icb_count": 42,
+  "england": {
+    "code": "ENGLAND",
+    "name": "England",
+    "region": "England",
+    "type": "National",
+    "snapshot": "4 March 2026",
+    "metrics": {
+      "community-bed-capacity": {
+        "label": "Community beds available at the audit snapshot",
+        "display": "count",
+        "count": 13439,
+        "percent": null
+      },
+      "community-bed-rehab": {
+        "label": "Beds providing rehabilitation, reablement and recovery",
+        "display": "percent",
+        "count": 12366,
+        "percent": 92.02,
+        "denominator": 13439
+      },
+      "community-bed-step-up": {
+        "label": "Acute admission-avoidance or step-up beds",
+        "display": "count",
+        "count": 254,
+        "percent": 1.89,
+        "denominator": 13439
+      },
+      "community-bed-assessment": {
+        "label": "Assessment or transition beds",
+        "display": "count",
+        "count": 1184,
+        "percent": 8.81,
+        "denominator": 13439
+      },
+      "community-bed-los": {
+        "label": "Average length of stay in community beds",
+        "display": "days",
+        "days": 30.86,
+        "count": null,
+        "percent": null
+      }
+    },
+    "purposes": {
+      "step_up": 254,
+      "assessment": 1184,
+      "homelessness_recovery": 27,
+      "post_hospital_rehab": 9643,
+      "amputee_rehab": 9,
+      "bariatric_rehab": 13,
+      "complex_specialist_rehab": 1284,
+      "confusion_delirium_dementia": 477,
+      "stroke_neuro_rehab": 494,
+      "other": 54
+    },
+    "commissioning": {
+      "block_contract": 11593,
+      "block_contract_percent": 86.26,
+      "spot_purchase": 1418,
+      "spot_purchase_percent": 10.55,
+      "unclassified": 428
+    },
+    "hosting": {
+      "nhs_trust": 8118,
+      "nhs_trust_percent": 60.41,
+      "non_nhs": 5321,
+      "non_nhs_percent": 39.59
+    },
+    "average_length_of_stay": {
+      "overall": 30.86,
+      "step_up": 16.39,
+      "assessment": 40.36,
+      "homelessness_recovery": 14.12,
+      "post_hospital_rehab": 29.33,
+      "amputee_rehab": 27.0,
+      "bariatric_rehab": 38.38,
+      "complex_specialist_rehab": 32.79,
+      "confusion_delirium_dementia": 36.62,
+      "stroke_neuro_rehab": 35.38,
+      "other": 32.22
+    }
+  },
+  "icbs": [
+    {
+      "code": "QOX",
+      "name": "Bath and North East Somerset, Swindon and Wiltshire",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 315,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 315,
+          "percent": 100.0,
+          "denominator": 315
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 315
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 60,
+          "percent": 19.05,
+          "denominator": 315
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 32.27,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 60,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 225,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 30,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 250,
+        "block_contract_percent": 79.37,
+        "spot_purchase": 41,
+        "spot_purchase_percent": 13.02,
+        "unclassified": 24
+      },
+      "hosting": {
+        "nhs_trust": 0,
+        "nhs_trust_percent": 0.0,
+        "non_nhs": 315,
+        "non_nhs_percent": 100.0
+      },
+      "average_length_of_stay": {
+        "overall": 32.27,
+        "step_up": null,
+        "assessment": 45.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 30.57,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 19.5,
+        "other": null
+      }
+    },
+    {
+      "code": "QHG",
+      "name": "Bedfordshire, Luton and Milton Keynes",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 221,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 220,
+          "percent": 99.55,
+          "denominator": 221
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 221
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 221
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 39.46,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 49,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 104,
+        "confusion_delirium_dementia": 68,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 120,
+        "block_contract_percent": 54.3,
+        "spot_purchase": 97,
+        "spot_purchase_percent": 43.89,
+        "unclassified": 4
+      },
+      "hosting": {
+        "nhs_trust": 39,
+        "nhs_trust_percent": 17.65,
+        "non_nhs": 182,
+        "non_nhs_percent": 82.35
+      },
+      "average_length_of_stay": {
+        "overall": 39.46,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 36.34,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 46.65,
+        "confusion_delirium_dementia": 30.7,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QHL",
+      "name": "Birmingham and Solihull",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 387,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 387,
+          "percent": 100.0,
+          "denominator": 387
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 387
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 57,
+          "percent": 14.73,
+          "denominator": 387
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 39.74,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 57,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 268,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 62,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 383,
+        "block_contract_percent": 98.97,
+        "spot_purchase": 4,
+        "spot_purchase_percent": 1.03,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 259,
+        "nhs_trust_percent": 66.93,
+        "non_nhs": 128,
+        "non_nhs_percent": 33.07
+      },
+      "average_length_of_stay": {
+        "overall": 39.74,
+        "step_up": null,
+        "assessment": 46.66,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 34.55,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": 55.8,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QUA",
+      "name": "Black Country",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 459,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 391,
+          "percent": 85.19,
+          "denominator": 459
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 459
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 7,
+          "percent": 1.53,
+          "denominator": 459
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 33.99,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 7,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 376,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 12,
+        "confusion_delirium_dementia": 5,
+        "stroke_neuro_rehab": 59,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 387,
+        "block_contract_percent": 84.31,
+        "spot_purchase": 72,
+        "spot_purchase_percent": 15.69,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 301,
+        "nhs_trust_percent": 65.58,
+        "non_nhs": 158,
+        "non_nhs_percent": 34.42
+      },
+      "average_length_of_stay": {
+        "overall": 33.99,
+        "step_up": null,
+        "assessment": 24.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 35.89,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 35.0,
+        "confusion_delirium_dementia": 24.0,
+        "stroke_neuro_rehab": 23.66,
+        "other": null
+      }
+    },
+    {
+      "code": "QUY",
+      "name": "Bristol, North Somerset and South Gloucestershire",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 283,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 283,
+          "percent": 100.0,
+          "denominator": 283
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 283
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 283
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 38.25,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 253,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 30,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 260,
+        "block_contract_percent": 91.87,
+        "spot_purchase": 23,
+        "spot_purchase_percent": 8.13,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 0,
+        "nhs_trust_percent": 0.0,
+        "non_nhs": 283,
+        "non_nhs_percent": 100.0
+      },
+      "average_length_of_stay": {
+        "overall": 38.25,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 38.73,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 34.2,
+        "other": null
+      }
+    },
+    {
+      "code": "QU9",
+      "name": "Buckinghamshire, Oxfordshire and Berkshire West",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 306,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 276,
+          "percent": 90.2,
+          "denominator": 306
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 6,
+          "percent": 1.96,
+          "denominator": 306
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 39,
+          "percent": 12.75,
+          "denominator": 306
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 31.67,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 6,
+        "assessment": 39,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 238,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 3,
+        "complex_specialist_rehab": 20,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 306,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 306,
+        "nhs_trust_percent": 100.0,
+        "non_nhs": 0,
+        "non_nhs_percent": 0.0
+      },
+      "average_length_of_stay": {
+        "overall": 31.67,
+        "step_up": 9.0,
+        "assessment": 51.97,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 28.43,
+        "amputee_rehab": null,
+        "bariatric_rehab": 48.0,
+        "complex_specialist_rehab": 35.0,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QUE",
+      "name": "Cambridgeshire and Peterborough",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 132,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 132,
+          "percent": 100.0,
+          "denominator": 132
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 132
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 132
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 29.18,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 65,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 31,
+        "stroke_neuro_rehab": 36,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 125,
+        "block_contract_percent": 94.7,
+        "spot_purchase": 7,
+        "spot_purchase_percent": 5.3,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 101,
+        "nhs_trust_percent": 76.52,
+        "non_nhs": 31,
+        "non_nhs_percent": 23.48
+      },
+      "average_length_of_stay": {
+        "overall": 29.18,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 26.62,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": 41.0,
+        "stroke_neuro_rehab": 23.6,
+        "other": null
+      }
+    },
+    {
+      "code": "QYG",
+      "name": "Cheshire and Merseyside",
+      "region": "North West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 647,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 618,
+          "percent": 95.52,
+          "denominator": 647
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 4,
+          "percent": 0.62,
+          "denominator": 647
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 207,
+          "percent": 31.99,
+          "denominator": 647
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 32.57,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 4,
+        "assessment": 207,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 352,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 30,
+        "stroke_neuro_rehab": 0,
+        "other": 54
+      },
+      "commissioning": {
+        "block_contract": 622,
+        "block_contract_percent": 96.14,
+        "spot_purchase": 4,
+        "spot_purchase_percent": 0.62,
+        "unclassified": 21
+      },
+      "hosting": {
+        "nhs_trust": 213,
+        "nhs_trust_percent": 32.92,
+        "non_nhs": 434,
+        "non_nhs_percent": 67.08
+      },
+      "average_length_of_stay": {
+        "overall": 32.57,
+        "step_up": 27.5,
+        "assessment": 30.07,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 33.68,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": 38.0,
+        "stroke_neuro_rehab": null,
+        "other": 32.22
+      }
+    },
+    {
+      "code": "QT6",
+      "name": "Cornwall and the Isles of Scilly",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 241,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 200,
+          "percent": 82.99,
+          "denominator": 241
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 40,
+          "percent": 16.6,
+          "denominator": 241
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 241
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 22.47,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 40,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 166,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 35,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 238,
+        "block_contract_percent": 98.76,
+        "spot_purchase": 2,
+        "spot_purchase_percent": 0.83,
+        "unclassified": 1
+      },
+      "hosting": {
+        "nhs_trust": 241,
+        "nhs_trust_percent": 100.0,
+        "non_nhs": 0,
+        "non_nhs_percent": 0.0
+      },
+      "average_length_of_stay": {
+        "overall": 22.47,
+        "step_up": 7.01,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 26.24,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 22.22,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QWU",
+      "name": "Coventry and Warwickshire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 243,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 173,
+          "percent": 71.19,
+          "denominator": 243
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 1,
+          "percent": 0.41,
+          "denominator": 243
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 151,
+          "percent": 62.14,
+          "denominator": 243
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 34.86,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 1,
+        "assessment": 151,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 52,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 39,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 175,
+        "block_contract_percent": 72.02,
+        "spot_purchase": 68,
+        "spot_purchase_percent": 27.98,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 89,
+        "nhs_trust_percent": 36.63,
+        "non_nhs": 154,
+        "non_nhs_percent": 63.37
+      },
+      "average_length_of_stay": {
+        "overall": 34.86,
+        "step_up": 55.0,
+        "assessment": 39.09,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.48,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 30.49,
+        "other": null
+      }
+    },
+    {
+      "code": "QJ2",
+      "name": "Derby and Derbyshire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 195,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 193,
+          "percent": 98.97,
+          "denominator": 195
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 195
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 195
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 21.07,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 195,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 193,
+        "block_contract_percent": 98.97,
+        "spot_purchase": 2,
+        "spot_purchase_percent": 1.03,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 106,
+        "nhs_trust_percent": 54.36,
+        "non_nhs": 89,
+        "non_nhs_percent": 45.64
+      },
+      "average_length_of_stay": {
+        "overall": 21.07,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 21.07,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QJK",
+      "name": "Devon",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 738,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 738,
+          "percent": 100.0,
+          "denominator": 738
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 3,
+          "percent": 0.41,
+          "denominator": 738
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 54,
+          "percent": 7.32,
+          "denominator": 738
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 37.33,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 3,
+        "assessment": 54,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 444,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 237,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 320,
+        "block_contract_percent": 43.36,
+        "spot_purchase": 418,
+        "spot_purchase_percent": 56.64,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 256,
+        "nhs_trust_percent": 34.69,
+        "non_nhs": 482,
+        "non_nhs_percent": 65.31
+      },
+      "average_length_of_stay": {
+        "overall": 37.33,
+        "step_up": 27.0,
+        "assessment": 12.74,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 50.06,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 19.22,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QVV",
+      "name": "Dorset",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 258,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 258,
+          "percent": 100.0,
+          "denominator": 258
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 258
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 20,
+          "percent": 7.75,
+          "denominator": 258
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 36.07,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 20,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 46,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 192,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 258,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 192,
+        "nhs_trust_percent": 74.42,
+        "non_nhs": 66,
+        "non_nhs_percent": 25.58
+      },
+      "average_length_of_stay": {
+        "overall": 36.07,
+        "step_up": null,
+        "assessment": 36.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 35.43,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 36.23,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QNQ",
+      "name": "Frimley",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 155,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 155,
+          "percent": 100.0,
+          "denominator": 155
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 155
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 155
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 23.63,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 155,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 155,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 144,
+        "nhs_trust_percent": 92.9,
+        "non_nhs": 11,
+        "non_nhs_percent": 7.1
+      },
+      "average_length_of_stay": {
+        "overall": 23.63,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 23.63,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QR1",
+      "name": "Gloucestershire",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 246,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 246,
+          "percent": 100.0,
+          "denominator": 246
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 17,
+          "percent": 6.91,
+          "denominator": 246
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 246
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 35.12,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 17,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 191,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 7,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 15,
+        "stroke_neuro_rehab": 16,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 221,
+        "block_contract_percent": 89.84,
+        "spot_purchase": 24,
+        "spot_purchase_percent": 9.76,
+        "unclassified": 1
+      },
+      "hosting": {
+        "nhs_trust": 167,
+        "nhs_trust_percent": 67.89,
+        "non_nhs": 79,
+        "non_nhs_percent": 32.11
+      },
+      "average_length_of_stay": {
+        "overall": 35.12,
+        "step_up": 16.18,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 33.97,
+        "amputee_rehab": null,
+        "bariatric_rehab": 36.0,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": 56.7,
+        "stroke_neuro_rehab": 48.4,
+        "other": null
+      }
+    },
+    {
+      "code": "QOP",
+      "name": "Greater Manchester",
+      "region": "North West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 476,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 464,
+          "percent": 97.48,
+          "denominator": 476
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 476
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 12,
+          "percent": 2.52,
+          "denominator": 476
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 25.01,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 12,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 464,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 383,
+        "block_contract_percent": 80.46,
+        "spot_purchase": 6,
+        "spot_purchase_percent": 1.26,
+        "unclassified": 87
+      },
+      "hosting": {
+        "nhs_trust": 307,
+        "nhs_trust_percent": 64.5,
+        "non_nhs": 169,
+        "non_nhs_percent": 35.5
+      },
+      "average_length_of_stay": {
+        "overall": 25.01,
+        "step_up": null,
+        "assessment": 23.75,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.04,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QRL",
+      "name": "Hampshire and Isle of Wight",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 471,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 471,
+          "percent": 100.0,
+          "denominator": 471
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 40,
+          "percent": 8.49,
+          "denominator": 471
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 471
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 28.22,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 40,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 411,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 20,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 456,
+        "block_contract_percent": 96.82,
+        "spot_purchase": 15,
+        "spot_purchase_percent": 3.18,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 309,
+        "nhs_trust_percent": 65.61,
+        "non_nhs": 162,
+        "non_nhs_percent": 34.39
+      },
+      "average_length_of_stay": {
+        "overall": 28.22,
+        "step_up": 13.65,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 27.53,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 71.49,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QGH",
+      "name": "Herefordshire and Worcestershire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 291,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 281,
+          "percent": 96.56,
+          "denominator": 291
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 291
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 291
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 24.71,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 260,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 31,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 281,
+        "block_contract_percent": 96.56,
+        "spot_purchase": 10,
+        "spot_purchase_percent": 3.44,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 291,
+        "nhs_trust_percent": 100.0,
+        "non_nhs": 0,
+        "non_nhs_percent": 0.0
+      },
+      "average_length_of_stay": {
+        "overall": 24.71,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 22.8,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 40.73,
+        "other": null
+      }
+    },
+    {
+      "code": "QM7",
+      "name": "Hertfordshire and West Essex",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 242,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 220,
+          "percent": 90.91,
+          "denominator": 242
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 22,
+          "percent": 9.09,
+          "denominator": 242
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 4,
+          "percent": 1.65,
+          "denominator": 242
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 21.67,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 22,
+        "assessment": 4,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 182,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 34,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 242,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 225,
+        "nhs_trust_percent": 92.98,
+        "non_nhs": 17,
+        "non_nhs_percent": 7.02
+      },
+      "average_length_of_stay": {
+        "overall": 21.67,
+        "step_up": 8.0,
+        "assessment": 28.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 22.5,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 25.35,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QOQ",
+      "name": "Humber and North Yorkshire",
+      "region": "North East And Yorkshire",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 959,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 888,
+          "percent": 92.6,
+          "denominator": 959
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 959
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 74,
+          "percent": 7.72,
+          "denominator": 959
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 24.91,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 74,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 803,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 61,
+        "confusion_delirium_dementia": 21,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 486,
+        "block_contract_percent": 50.68,
+        "spot_purchase": 45,
+        "spot_purchase_percent": 4.69,
+        "unclassified": 428
+      },
+      "hosting": {
+        "nhs_trust": 447,
+        "nhs_trust_percent": 46.61,
+        "non_nhs": 512,
+        "non_nhs_percent": 53.39
+      },
+      "average_length_of_stay": {
+        "overall": 24.91,
+        "step_up": null,
+        "assessment": 28.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 24.43,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 25.86,
+        "confusion_delirium_dementia": 29.4,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QKS",
+      "name": "Kent and Medway",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 269,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 269,
+          "percent": 100.0,
+          "denominator": 269
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 269
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 269
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 32.12,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 123,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 146,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 258,
+        "block_contract_percent": 95.91,
+        "spot_purchase": 11,
+        "spot_purchase_percent": 4.09,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 164,
+        "nhs_trust_percent": 60.97,
+        "non_nhs": 105,
+        "non_nhs_percent": 39.03
+      },
+      "average_length_of_stay": {
+        "overall": 32.12,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 28.82,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 34.9,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QE1",
+      "name": "Lancashire and South Cumbria",
+      "region": "North West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 438,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 438,
+          "percent": 100.0,
+          "denominator": 438
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 438
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 438
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 25.78,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 397,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 41,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 438,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 258,
+        "nhs_trust_percent": 58.9,
+        "non_nhs": 180,
+        "non_nhs_percent": 41.1
+      },
+      "average_length_of_stay": {
+        "overall": 25.78,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.25,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 30.95,
+        "other": null
+      }
+    },
+    {
+      "code": "QK1",
+      "name": "Leicester, Leicestershire and Rutland",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 308,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 298,
+          "percent": 96.75,
+          "denominator": 308
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 308
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 308
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 24.71,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 254,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 25,
+        "stroke_neuro_rehab": 29,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 298,
+        "block_contract_percent": 96.75,
+        "spot_purchase": 10,
+        "spot_purchase_percent": 3.25,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 283,
+        "nhs_trust_percent": 91.88,
+        "non_nhs": 25,
+        "non_nhs_percent": 8.12
+      },
+      "average_length_of_stay": {
+        "overall": 24.71,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 24.21,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": 30.1,
+        "stroke_neuro_rehab": 24.45,
+        "other": null
+      }
+    },
+    {
+      "code": "QJM",
+      "name": "Lincolnshire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 146,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 146,
+          "percent": 100.0,
+          "denominator": 146
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 146
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 146
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 25.0,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 128,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 15,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 3,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 142,
+        "block_contract_percent": 97.26,
+        "spot_purchase": 4,
+        "spot_purchase_percent": 2.74,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 122,
+        "nhs_trust_percent": 83.56,
+        "non_nhs": 24,
+        "non_nhs_percent": 16.44
+      },
+      "average_length_of_stay": {
+        "overall": 25.0,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.26,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 22.1,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 28.0,
+        "other": null
+      }
+    },
+    {
+      "code": "QH8",
+      "name": "Mid and South Essex",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 208,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 138,
+          "percent": 66.35,
+          "denominator": 208
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 208
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 74,
+          "percent": 35.58,
+          "denominator": 208
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 56.03,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 74,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 98,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 36,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 202,
+        "block_contract_percent": 97.12,
+        "spot_purchase": 6,
+        "spot_purchase_percent": 2.88,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 163,
+        "nhs_trust_percent": 78.37,
+        "non_nhs": 45,
+        "non_nhs_percent": 21.63
+      },
+      "average_length_of_stay": {
+        "overall": 56.03,
+        "step_up": null,
+        "assessment": 119.57,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 17.12,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 31.33,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QMM",
+      "name": "Norfolk and Waveney",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 338,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 294,
+          "percent": 86.98,
+          "denominator": 338
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 338
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 338
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 31.3,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 213,
+        "amputee_rehab": 9,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 20,
+        "confusion_delirium_dementia": 72,
+        "stroke_neuro_rehab": 24,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 337,
+        "block_contract_percent": 99.7,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 1
+      },
+      "hosting": {
+        "nhs_trust": 213,
+        "nhs_trust_percent": 63.02,
+        "non_nhs": 125,
+        "non_nhs_percent": 36.98
+      },
+      "average_length_of_stay": {
+        "overall": 31.3,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.72,
+        "amputee_rehab": 27.0,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 107.0,
+        "confusion_delirium_dementia": 19.75,
+        "stroke_neuro_rehab": 54.0,
+        "other": null
+      }
+    },
+    {
+      "code": "QMJ",
+      "name": "North Central London",
+      "region": "London",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 253,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 227,
+          "percent": 89.72,
+          "denominator": 253
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 253
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 26,
+          "percent": 10.28,
+          "denominator": 253
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 25.89,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 26,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 227,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 121,
+        "block_contract_percent": 47.83,
+        "spot_purchase": 2,
+        "spot_purchase_percent": 0.79,
+        "unclassified": 130
+      },
+      "hosting": {
+        "nhs_trust": 227,
+        "nhs_trust_percent": 89.72,
+        "non_nhs": 26,
+        "non_nhs_percent": 10.28
+      },
+      "average_length_of_stay": {
+        "overall": 25.89,
+        "step_up": null,
+        "assessment": 42.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 24.05,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QMF",
+      "name": "North East London",
+      "region": "London",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 149,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 123,
+          "percent": 82.55,
+          "denominator": 149
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 149
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 149
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 39.56,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 77,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 72,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 230,
+        "block_contract_percent": 154.36,
+        "spot_purchase": 23,
+        "spot_purchase_percent": 15.44,
+        "unclassified": -104
+      },
+      "hosting": {
+        "nhs_trust": 121,
+        "nhs_trust_percent": 81.21,
+        "non_nhs": 28,
+        "non_nhs_percent": 18.79
+      },
+      "average_length_of_stay": {
+        "overall": 39.56,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 31.19,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 48.5,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QHM",
+      "name": "North East and North Cumbria",
+      "region": "North East And Yorkshire",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 574,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 494,
+          "percent": 86.06,
+          "denominator": 574
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 36,
+          "percent": 6.27,
+          "denominator": 574
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 70,
+          "percent": 12.2,
+          "denominator": 574
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 22.7,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 36,
+        "assessment": 70,
+        "homelessness_recovery": 23,
+        "post_hospital_rehab": 428,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 17,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 773,
+        "block_contract_percent": 134.67,
+        "spot_purchase": 165,
+        "spot_purchase_percent": 28.75,
+        "unclassified": -364
+      },
+      "hosting": {
+        "nhs_trust": 367,
+        "nhs_trust_percent": 63.94,
+        "non_nhs": 207,
+        "non_nhs_percent": 36.06
+      },
+      "average_length_of_stay": {
+        "overall": 22.7,
+        "step_up": 17.42,
+        "assessment": 14.64,
+        "homelessness_recovery": 9.14,
+        "post_hospital_rehab": 25.5,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 15.0,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QRV",
+      "name": "North West London",
+      "region": "London",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 245,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 245,
+          "percent": 100.0,
+          "denominator": 245
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 16,
+          "percent": 6.53,
+          "denominator": 245
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 33,
+          "percent": 13.47,
+          "denominator": 245
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 31.13,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 16,
+        "assessment": 33,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 185,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 11,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 217,
+        "block_contract_percent": 88.57,
+        "spot_purchase": 2,
+        "spot_purchase_percent": 0.82,
+        "unclassified": 26
+      },
+      "hosting": {
+        "nhs_trust": 164,
+        "nhs_trust_percent": 66.94,
+        "non_nhs": 81,
+        "non_nhs_percent": 33.06
+      },
+      "average_length_of_stay": {
+        "overall": 31.13,
+        "step_up": 41.0,
+        "assessment": 53.09,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 26.6,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 27.0,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QPM",
+      "name": "Northamptonshire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 199,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 193,
+          "percent": 96.98,
+          "denominator": 199
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 199
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 10,
+          "percent": 5.03,
+          "denominator": 199
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 39.13,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 10,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 127,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 10,
+        "confusion_delirium_dementia": 38,
+        "stroke_neuro_rehab": 14,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 199,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 199,
+        "nhs_trust_percent": 100.0,
+        "non_nhs": 0,
+        "non_nhs_percent": 0.0
+      },
+      "average_length_of_stay": {
+        "overall": 39.13,
+        "step_up": null,
+        "assessment": 33.0,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 32.19,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 43.0,
+        "confusion_delirium_dementia": 54.5,
+        "stroke_neuro_rehab": 62.0,
+        "other": null
+      }
+    },
+    {
+      "code": "QT1",
+      "name": "Nottingham and Nottinghamshire",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 163,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 163,
+          "percent": 100.0,
+          "denominator": 163
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 163
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 163
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 29.91,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 163,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 146,
+        "block_contract_percent": 89.57,
+        "spot_purchase": 17,
+        "spot_purchase_percent": 10.43,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 163,
+        "nhs_trust_percent": 100.0,
+        "non_nhs": 0,
+        "non_nhs_percent": 0.0
+      },
+      "average_length_of_stay": {
+        "overall": 29.91,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 29.91,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QOC",
+      "name": "Shropshire, Telford and Wrekin",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 237,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 130,
+          "percent": 54.85,
+          "denominator": 237
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 15,
+          "percent": 6.33,
+          "denominator": 237
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 237
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 34.63,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 15,
+        "assessment": 0,
+        "homelessness_recovery": 1,
+        "post_hospital_rehab": 81,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 1,
+        "complex_specialist_rehab": 86,
+        "confusion_delirium_dementia": 53,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 152,
+        "block_contract_percent": 64.14,
+        "spot_purchase": 81,
+        "spot_purchase_percent": 34.18,
+        "unclassified": 4
+      },
+      "hosting": {
+        "nhs_trust": 98,
+        "nhs_trust_percent": 41.35,
+        "non_nhs": 139,
+        "non_nhs_percent": 58.65
+      },
+      "average_length_of_stay": {
+        "overall": 34.63,
+        "step_up": 27.92,
+        "assessment": null,
+        "homelessness_recovery": 93.0,
+        "post_hospital_rehab": 38.47,
+        "amputee_rehab": null,
+        "bariatric_rehab": 13.0,
+        "complex_specialist_rehab": 27.63,
+        "confusion_delirium_dementia": 41.32,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QSL",
+      "name": "Somerset",
+      "region": "South West",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 208,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 208,
+          "percent": 100.0,
+          "denominator": 208
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 208
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 208
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 37.98,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 162,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 4,
+        "confusion_delirium_dementia": 6,
+        "stroke_neuro_rehab": 36,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 208,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 158,
+        "nhs_trust_percent": 75.96,
+        "non_nhs": 50,
+        "non_nhs_percent": 24.04
+      },
+      "average_length_of_stay": {
+        "overall": 37.98,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 37.44,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 16.7,
+        "confusion_delirium_dementia": 37.0,
+        "stroke_neuro_rehab": 42.92,
+        "other": null
+      }
+    },
+    {
+      "code": "QKK",
+      "name": "South East London",
+      "region": "London",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 240,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 119,
+          "percent": 49.58,
+          "denominator": 240
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 6,
+          "percent": 2.5,
+          "denominator": 240
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 112,
+          "percent": 46.67,
+          "denominator": 240
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 38.14,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 6,
+        "assessment": 112,
+        "homelessness_recovery": 3,
+        "post_hospital_rehab": 0,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 105,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 14,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 182,
+        "block_contract_percent": 75.83,
+        "spot_purchase": 57,
+        "spot_purchase_percent": 23.75,
+        "unclassified": 1
+      },
+      "hosting": {
+        "nhs_trust": 90,
+        "nhs_trust_percent": 37.5,
+        "non_nhs": 150,
+        "non_nhs_percent": 62.5
+      },
+      "average_length_of_stay": {
+        "overall": 38.14,
+        "step_up": 3.6,
+        "assessment": 46.61,
+        "homelessness_recovery": 26.0,
+        "post_hospital_rehab": null,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 30.52,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": 45.0,
+        "other": null
+      }
+    },
+    {
+      "code": "QWE",
+      "name": "South West London",
+      "region": "London",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 103,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 103,
+          "percent": 100.0,
+          "denominator": 103
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 103
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 103
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 23.74,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 103,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 103,
+        "block_contract_percent": 100.0,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 70,
+        "nhs_trust_percent": 67.96,
+        "non_nhs": 33,
+        "non_nhs_percent": 32.04
+      },
+      "average_length_of_stay": {
+        "overall": 23.74,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 23.74,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QF7",
+      "name": "South Yorkshire",
+      "region": "North East And Yorkshire",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 425,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 312,
+          "percent": 73.41,
+          "denominator": 425
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 23,
+          "percent": 5.41,
+          "denominator": 425
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 101,
+          "percent": 23.76,
+          "denominator": 425
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 30.61,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 23,
+        "assessment": 101,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 210,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 14,
+        "confusion_delirium_dementia": 14,
+        "stroke_neuro_rehab": 63,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 351,
+        "block_contract_percent": 82.59,
+        "spot_purchase": 68,
+        "spot_purchase_percent": 16.0,
+        "unclassified": 6
+      },
+      "hosting": {
+        "nhs_trust": 247,
+        "nhs_trust_percent": 58.12,
+        "non_nhs": 178,
+        "non_nhs_percent": 41.88
+      },
+      "average_length_of_stay": {
+        "overall": 30.61,
+        "step_up": 17.62,
+        "assessment": 36.65,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 25.34,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 32.14,
+        "confusion_delirium_dementia": 32.71,
+        "stroke_neuro_rehab": 42.43,
+        "other": null
+      }
+    },
+    {
+      "code": "QNC",
+      "name": "Staffordshire and Stoke-On-Trent",
+      "region": "Midlands",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 372,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 370,
+          "percent": 99.46,
+          "denominator": 372
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 372
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 372
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 31.77,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 372,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 302,
+        "block_contract_percent": 81.18,
+        "spot_purchase": 68,
+        "spot_purchase_percent": 18.28,
+        "unclassified": 2
+      },
+      "hosting": {
+        "nhs_trust": 249,
+        "nhs_trust_percent": 66.94,
+        "non_nhs": 123,
+        "non_nhs_percent": 33.06
+      },
+      "average_length_of_stay": {
+        "overall": 31.77,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 31.77,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QJG",
+      "name": "Suffolk and North East Essex",
+      "region": "East Of England",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 126,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 126,
+          "percent": 100.0,
+          "denominator": 126
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 126
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 126
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 20.56,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 126,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 55,
+        "block_contract_percent": 43.65,
+        "spot_purchase": 7,
+        "spot_purchase_percent": 5.56,
+        "unclassified": 64
+      },
+      "hosting": {
+        "nhs_trust": 107,
+        "nhs_trust_percent": 84.92,
+        "non_nhs": 19,
+        "non_nhs_percent": 15.08
+      },
+      "average_length_of_stay": {
+        "overall": 20.56,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 20.56,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QXU",
+      "name": "Surrey Heartlands",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 154,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 135,
+          "percent": 87.66,
+          "denominator": 154
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 22,
+          "percent": 14.29,
+          "denominator": 154
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 154
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 22.03,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 22,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 88,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 10,
+        "confusion_delirium_dementia": 34,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 104,
+        "block_contract_percent": 67.53,
+        "spot_purchase": 6,
+        "spot_purchase_percent": 3.9,
+        "unclassified": 44
+      },
+      "hosting": {
+        "nhs_trust": 82,
+        "nhs_trust_percent": 53.25,
+        "non_nhs": 72,
+        "non_nhs_percent": 46.75
+      },
+      "average_length_of_stay": {
+        "overall": 22.03,
+        "step_up": 17.47,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 23.3,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": 21.0,
+        "confusion_delirium_dementia": 22.0,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    },
+    {
+      "code": "QNX",
+      "name": "Sussex",
+      "region": "South East",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 526,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 506,
+          "percent": 96.2,
+          "denominator": 526
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 526
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 0,
+          "percent": 0.0,
+          "denominator": 526
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 31.14,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 0,
+        "assessment": 0,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 469,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 2,
+        "complex_specialist_rehab": 23,
+        "confusion_delirium_dementia": 3,
+        "stroke_neuro_rehab": 29,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 474,
+        "block_contract_percent": 90.11,
+        "spot_purchase": 0,
+        "spot_purchase_percent": 0.0,
+        "unclassified": 52
+      },
+      "hosting": {
+        "nhs_trust": 445,
+        "nhs_trust_percent": 84.6,
+        "non_nhs": 81,
+        "non_nhs_percent": 15.4
+      },
+      "average_length_of_stay": {
+        "overall": 31.14,
+        "step_up": null,
+        "assessment": null,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 30.73,
+        "amputee_rehab": null,
+        "bariatric_rehab": 45.0,
+        "complex_specialist_rehab": 21.5,
+        "confusion_delirium_dementia": 20.0,
+        "stroke_neuro_rehab": 45.54,
+        "other": null
+      }
+    },
+    {
+      "code": "QWO",
+      "name": "West Yorkshire",
+      "region": "North East And Yorkshire",
+      "type": "ICB",
+      "snapshot": "4 March 2026",
+      "metrics": {
+        "community-bed-capacity": {
+          "label": "Community beds available at the audit snapshot",
+          "display": "count",
+          "count": 493,
+          "percent": null
+        },
+        "community-bed-rehab": {
+          "label": "Beds providing rehabilitation, reablement and recovery",
+          "display": "percent",
+          "count": 420,
+          "percent": 85.19,
+          "denominator": 493
+        },
+        "community-bed-step-up": {
+          "label": "Acute admission-avoidance or step-up beds",
+          "display": "count",
+          "count": 3,
+          "percent": 0.61,
+          "denominator": 493
+        },
+        "community-bed-assessment": {
+          "label": "Assessment or transition beds",
+          "display": "count",
+          "count": 73,
+          "percent": 14.81,
+          "denominator": 493
+        },
+        "community-bed-los": {
+          "label": "Average length of stay in community beds",
+          "display": "days",
+          "days": 33.79,
+          "count": null,
+          "percent": null
+        }
+      },
+      "purposes": {
+        "step_up": 3,
+        "assessment": 73,
+        "homelessness_recovery": 0,
+        "post_hospital_rehab": 417,
+        "amputee_rehab": 0,
+        "bariatric_rehab": 0,
+        "complex_specialist_rehab": 0,
+        "confusion_delirium_dementia": 0,
+        "stroke_neuro_rehab": 0,
+        "other": 0
+      },
+      "commissioning": {
+        "block_contract": 440,
+        "block_contract_percent": 89.25,
+        "spot_purchase": 53,
+        "spot_purchase_percent": 10.75,
+        "unclassified": 0
+      },
+      "hosting": {
+        "nhs_trust": 135,
+        "nhs_trust_percent": 27.38,
+        "non_nhs": 358,
+        "non_nhs_percent": 72.62
+      },
+      "average_length_of_stay": {
+        "overall": 33.79,
+        "step_up": 24.0,
+        "assessment": 31.03,
+        "homelessness_recovery": null,
+        "post_hospital_rehab": 34.34,
+        "amputee_rehab": null,
+        "bariatric_rehab": null,
+        "complex_specialist_rehab": null,
+        "confusion_delirium_dementia": null,
+        "stroke_neuro_rehab": null,
+        "other": null
+      }
+    }
+  ],
+  "method": {
+    "basis": "Direct published England and ICB rows from Tables 1 to 4.",
+    "snapshot": "Point-in-time bed provision and usage close to midnight on 4 March 2026; not an annual total.",
+    "length_of_stay": "Published average length of stay, not calculated from the bed count."
+  },
+  "notes": [
+    "The audit covers NHS, jointly commissioned and Better Care Fund beds used for intermediate care purposes.",
+    "Bed capacity can change; the figures describe the published snapshot date only.",
+    "Block-contract and spot-purchase counts do not necessarily sum to all beds because some beds were not assigned to either category.",
+    "This ICB-based publication does not provide a community-provider selector."
+  ]
+}
