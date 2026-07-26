@@ -1,0 +1,117 @@
+/* ============================================================
+   00. QOF TOOLBAR AND MAP BADGES
+   ============================================================ */
+.qof-metric-control {
+  display:grid;
+  gap:4px;
+  min-width:420px;
+  max-width:720px;
+  font-size:.72rem;
+  font-weight:700;
+  color:#4d466a;
+}
+
+.qof-metric-control[hidden],
+.qof-metric-scope[hidden],
+.qof-metric-control [hidden] {
+  display:none !important;
+}
+
+.qof-control-row {
+  display:grid;
+  grid-template-columns:minmax(90px,.7fr) minmax(150px,1.1fr) minmax(180px,1.35fr);
+  gap:5px;
+}
+
+.qof-metric-control select,
+.qof-metric-control input {
+  width:100%;
+  min-height:36px;
+  border:1px solid #c9c2db;
+  border-radius:9px;
+  background:#fff;
+  padding:6px 9px;
+  color:#342d54;
+}
+
+.qof-metric-control small {
+  color:#68747d;
+  font-size:.64rem;
+  font-weight:500;
+  line-height:1.3;
+}
+
+.qof-metric-scope {
+  align-self:end;
+  max-width:340px;
+  padding:7px 10px;
+  border-radius:9px;
+  background:#eeeaf7;
+  color:#554578;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+.qof-metric-badge {
+  border-color:#7663a0;
+  background:#faf8ff;
+  color:#4c3f70;
+}
+
+/* ============================================================
+   01. QOF DETAIL CARD
+   ============================================================ */
+.qof-summary-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+}
+
+.qof-summary-grid > div {
+  display:grid;
+  gap:2px;
+  padding:9px;
+  border:1px solid #ded8ec;
+  border-radius:10px;
+  background:#fcfbff;
+}
+
+.qof-summary-grid span {
+  color:#65727b;
+  font-size:.69rem;
+  line-height:1.25;
+}
+
+.qof-summary-grid strong {
+  color:#514273;
+  font-size:.94rem;
+}
+
+.qof-summary-grid small {
+  color:#718089;
+  font-size:.64rem;
+  line-height:1.35;
+}
+
+.qof-operational-card a + a {
+  display:block;
+  margin-top:5px;
+}
+
+@media (max-width:900px) {
+  .qof-metric-control {
+    min-width:100%;
+    max-width:none;
+  }
+
+  .qof-control-row {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:620px) {
+  .qof-control-row,
+  .qof-summary-grid {
+    grid-template-columns:1fr;
+  }
+}
