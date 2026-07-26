@@ -36,6 +36,9 @@ on:
       - "gpps-sources.js"
       - "gpps-map-data.js"
       - "gpps-metrics.js"
+      - "qof-sources.js"
+      - "qof-map-data.js"
+      - "qof-metrics.js"
 
 jobs:
   check-javascript:
@@ -77,3 +80,6 @@ jobs:
           node --check gpps-sources.js
           node --check gpps-map-data.js
           node --check gpps-metrics.js
+          node --check qof-sources.js
+          node --check qof-map-data.js
+          node --check qof-metrics.js
