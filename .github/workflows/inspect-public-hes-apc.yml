@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/inspect-public-hes-apc.yml"
       - "scripts/inspect_hes_apc_2024_25.py"
+      - "scripts/inspect_hes_apc_measure_candidates.py"
   workflow_dispatch:
 
 permissions:
@@ -35,13 +36,15 @@ jobs:
         run: python -m pip install --upgrade pandas requests openpyxl
 
       - name: 04. Inspect final annual public files
-        run: python scripts/inspect_hes_apc_2024_25.py
+        run: |
+          python scripts/inspect_hes_apc_2024_25.py
+          python scripts/inspect_hes_apc_measure_candidates.py
 
       - name: 05. Commit inspection output
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "4189822+github-actions[bot]@users.noreply.github.com"
-          git add public-data/hes-apc-2024-25-inspection.json
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-data/hes-apc-2024-25-inspection.json public-data/hes-apc-2024-25-measure-inspection.json
 
           if git diff --cached --quiet; then
             echo "No HES APC inspection changes to commit."
