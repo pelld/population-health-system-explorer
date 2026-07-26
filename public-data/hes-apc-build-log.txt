@@ -1,6 +1,6 @@
 Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 304, in <module>
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 308, in <module>
     main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 259, in main
-    raise RuntimeError(f"Expected 42 named ICB rows; found {len(icbs)}")
-RuntimeError: Expected 42 named ICB rows; found 0
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 263, in main
+    raise RuntimeError(f"Expected 42 current Q-code ICB rows; found {len(icbs)}")
+RuntimeError: Expected 42 current Q-code ICB rows; found 0
