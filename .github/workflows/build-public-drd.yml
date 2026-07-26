@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/build-public-drd.yml"
       - "scripts/build_drd_2024_25.py"
+      - "scripts/validate_drd_2024_25.py"
   workflow_dispatch:
 
 permissions:
@@ -34,10 +35,13 @@ jobs:
       - name: 03. Install dependencies
         run: python -m pip install --upgrade pandas requests
 
-      - name: 04. Build and validate revised annual DRD data
+      - name: 04. Build revised annual DRD data
         run: python scripts/build_drd_2024_25.py
 
-      - name: 05. Commit generated public data
+      - name: 05. Hard validate England, ICB and provider totals
+        run: python scripts/validate_drd_2024_25.py
+
+      - name: 06. Commit generated public data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
