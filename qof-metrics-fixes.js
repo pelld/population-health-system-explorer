@@ -48,3 +48,25 @@
     }
   };
 })();
+
+// ============================================================
+// 03. LOAD THE QUESTION-LED ICB DIAGNOSTIC VIEW
+// ============================================================
+// Kept as a separate module so the new interface can be developed without
+// disturbing the existing dataset-specific map modules underneath it.
+
+(() => {
+  if (!document.querySelector('link[href="icb-diagnostic-mode.css"]')) {
+    const stylesheet = document.createElement("link");
+    stylesheet.rel = "stylesheet";
+    stylesheet.href = "icb-diagnostic-mode.css";
+    document.head.append(stylesheet);
+  }
+
+  if (!document.querySelector('script[src="icb-diagnostic-mode.js"]')) {
+    const script = document.createElement("script");
+    script.src = "icb-diagnostic-mode.js";
+    script.defer = true;
+    document.body.append(script);
+  }
+})();
