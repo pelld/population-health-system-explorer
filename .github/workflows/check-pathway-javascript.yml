@@ -27,6 +27,9 @@ on:
       - "bed-occupancy-sources.js"
       - "bed-occupancy-map-data.js"
       - "bed-occupancy-metrics.js"
+      - "acute-discharge-sources.js"
+      - "acute-discharge-map-data.js"
+      - "acute-discharge-metrics.js"
 
 jobs:
   check-javascript:
@@ -59,3 +62,6 @@ jobs:
           node --check bed-occupancy-sources.js
           node --check bed-occupancy-map-data.js
           node --check bed-occupancy-metrics.js
+          node --check acute-discharge-sources.js
+          node --check acute-discharge-map-data.js
+          node --check acute-discharge-metrics.js
