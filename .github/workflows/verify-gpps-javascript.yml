@@ -1,0 +1,39 @@
+name: Verify GP Patient Survey JavaScript
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/verify-gpps-javascript.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify-gpps:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 01. Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 02. Execute JavaScript syntax checks
+        run: |
+          node --check gpps-sources.js
+          node --check gpps-map-data.js
+          node --check gpps-metrics.js
+          node --check operational-pathway-selection.js
+
+      - name: 03. Record successful check
+        run: |
+          printf 'GP Patient Survey JavaScript syntax validated.\n' > public-data/gpps-js-check.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-data/gpps-js-check.txt
+          git commit -m "Validate GP Patient Survey JavaScript"
+          git pull --rebase origin main
+          git push origin HEAD:main
