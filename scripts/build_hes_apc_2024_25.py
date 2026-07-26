@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import io
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -57,6 +58,7 @@ def clean_name(value: Any,geography_type: str) -> str:
     text = "" if value is None else str(value).strip()
     if geography_type == "ICB":
         text = text.removeprefix("NHS ").removesuffix(" INTEGRATED CARE BOARD")
+        text = re.sub(r" ICB - [A-Z0-9]+$","",text)
     words = text.title().split()
     replacements = {
         "Nhs":"NHS",
@@ -206,12 +208,14 @@ def main() -> None:
         name_override="England",
     )
 
+    # Current ICBs use official three-character Q codes. The workbook's displayed
+    # description varies between "Integrated Care Board" and "ICB - <code>", so
+    # code is the stable filter; legacy sub-ICB/CCG rows use different code formats.
     icbs = []
     for row_number in range(18,icb_sheet.max_row + 1):
         row = row_values(icb_sheet,row_number)
         code = "" if row[0] in (None,"") else str(row[0]).strip()
-        name = "" if row[1] in (None,"") else str(row[1]).strip()
-        if len(code) == 3 and code.startswith("Q") and "INTEGRATED CARE BOARD" in name.upper():
+        if len(code) == 3 and code.startswith("Q"):
             icbs.append(build_geography(row,"ICB",bed_days=None))
     icbs.sort(key=lambda item:item["name"])
 
@@ -256,7 +260,7 @@ def main() -> None:
     if icb_total_check["activity"]["emergency_admissions"] != expected["emergency_admissions"]:
         raise RuntimeError("The ICB workbook total did not match the published emergency-admission total.")
     if len(icbs) != 42:
-        raise RuntimeError(f"Expected 42 named ICB rows; found {len(icbs)}")
+        raise RuntimeError(f"Expected 42 current Q-code ICB rows; found {len(icbs)}")
     if len(providers) < 100:
         raise RuntimeError(f"Expected more than 100 providers with emergency admissions; found {len(providers)}")
 
@@ -283,7 +287,7 @@ def main() -> None:
         },
         "method":{
             "england":"Direct published Total rows; validated against the final annual summary and provider-level-analysis files.",
-            "icb":"Direct ICB-of-responsibility rows. This is a commissioning responsibility geography, not necessarily residence or treatment location.",
+            "icb":"Direct current Q-code ICB-of-responsibility rows. This is a commissioning responsibility geography, not necessarily residence or treatment location.",
             "provider":"Direct hospital-provider rows. The selector retains providers with recorded emergency admissions.",
             "bed_days":"FCE_BED_DAYS is published for England and providers. It covers all admitted patient care, not emergency activity alone, and is not available at ICB level in this public provider-analysis file.",
         },
