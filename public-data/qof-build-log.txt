@@ -1,6 +1,8 @@
 Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 331, in <module>
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_build_qof_2024_25.py", line 71, in <module>
     main()
+  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/run_build_qof_2024_25.py", line 57, in main
+    build.main()
   File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_qof_2024_25.py", line 287, in main
     validation = validate(england, icbs, practices, tables)
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
