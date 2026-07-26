@@ -1,0 +1,348 @@
+{
+  "source_url": "https://files.digital.nhs.uk/1D/C82CE8/hosp-epis-stat-admi-oth-2024-25.csv",
+  "bytes": 1075860,
+  "rows": 27969,
+  "columns": [
+    "UID",
+    "Code",
+    "Category",
+    "Measure",
+    "Measure_Value"
+  ],
+  "distinct_values": {
+    "Category": [
+      "CAUSE_3",
+      "ETHNICITY",
+      "IMD_Decile",
+      "MAINSPEF",
+      "TRETSPEF"
+    ],
+    "Measure": [
+      "Age_0_Sum",
+      "Age_10_14_Sum",
+      "Age_15_Sum",
+      "Age_16_Sum",
+      "Age_17_Sum",
+      "Age_18_Sum",
+      "Age_19_Sum",
+      "Age_1_4_Sum",
+      "Age_20_24_Sum",
+      "Age_25_29_Sum",
+      "Age_30_34_Sum",
+      "Age_35_39_Sum",
+      "Age_40_44_Sum",
+      "Age_45_49_Sum",
+      "Age_50_54_Sum",
+      "Age_55_59_Sum",
+      "Age_5_9_Sum",
+      "Age_60_64_Sum",
+      "Age_65_69_Sum",
+      "Age_70_74_Sum",
+      "Age_75_79_Sum",
+      "Age_80_84_Sum",
+      "Age_85_89_Sum",
+      "Age_90_120_Sum",
+      "ELECDUR_CALC_MEAN",
+      "ELECDUR_CALC_Median",
+      "FAE_EMERGENCY_Sum",
+      "FAE_OTHER_Sum",
+      "FAE_PLANNED_Sum",
+      "FAE_SUM",
+      "FAE_WAITLIST_Sum",
+      "FCE_BED_DAYS",
+      "FCE_DAY_CASES",
+      "FCE_Female_Sum",
+      "FCE_Male_Sum",
+      "FCE_SUM",
+      "FCE_UNKNOWN_GENDER_Sum",
+      "SES_ELECTIVE_NDC_ZEPIDUR",
+      "SES_EMERGENCY_NDC_ZEPIDUR",
+      "SES_OTHER_NDC_ZEPIDUR",
+      "SPELDUR_CALC_MEAN",
+      "SPELDUR_CALC_Median",
+      "STARTAGE_CALC_MEAN"
+    ]
+  },
+  "sample_rows": [
+    {
+      "UID": "1",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_SUM",
+      "Measure_Value": "338"
+    },
+    {
+      "UID": "2",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FAE_SUM",
+      "Measure_Value": "335"
+    },
+    {
+      "UID": "3",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_Male_Sum",
+      "Measure_Value": "178"
+    },
+    {
+      "UID": "4",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_Female_Sum",
+      "Measure_Value": "157"
+    },
+    {
+      "UID": "5",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_UNKNOWN_GENDER_Sum",
+      "Measure_Value": "3"
+    },
+    {
+      "UID": "6",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FAE_EMERGENCY_Sum",
+      "Measure_Value": "278"
+    },
+    {
+      "UID": "7",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FAE_WAITLIST_Sum",
+      "Measure_Value": "42"
+    },
+    {
+      "UID": "8",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FAE_PLANNED_Sum",
+      "Measure_Value": "10"
+    },
+    {
+      "UID": "9",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FAE_OTHER_Sum",
+      "Measure_Value": "5"
+    },
+    {
+      "UID": "10",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "ELECDUR_CALC_MEAN",
+      "Measure_Value": "5.88"
+    },
+    {
+      "UID": "11",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "ELECDUR_CALC_Median",
+      "Measure_Value": "2"
+    },
+    {
+      "UID": "12",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "SPELDUR_CALC_MEAN",
+      "Measure_Value": "3.344827"
+    },
+    {
+      "UID": "13",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "SPELDUR_CALC_Median",
+      "Measure_Value": "1"
+    },
+    {
+      "UID": "14",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "STARTAGE_CALC_MEAN",
+      "Measure_Value": "49.062686"
+    },
+    {
+      "UID": "15",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_0_Sum",
+      "Measure_Value": "0"
+    },
+    {
+      "UID": "16",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_1_4_Sum",
+      "Measure_Value": "19"
+    },
+    {
+      "UID": "17",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_5_9_Sum",
+      "Measure_Value": "26"
+    },
+    {
+      "UID": "18",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_10_14_Sum",
+      "Measure_Value": "17"
+    },
+    {
+      "UID": "19",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_15_Sum",
+      "Measure_Value": "1"
+    },
+    {
+      "UID": "20",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_16_Sum",
+      "Measure_Value": "1"
+    },
+    {
+      "UID": "21",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_17_Sum",
+      "Measure_Value": "1"
+    },
+    {
+      "UID": "22",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_18_Sum",
+      "Measure_Value": "0"
+    },
+    {
+      "UID": "23",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_19_Sum",
+      "Measure_Value": "1"
+    },
+    {
+      "UID": "24",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_20_24_Sum",
+      "Measure_Value": "12"
+    },
+    {
+      "UID": "25",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_25_29_Sum",
+      "Measure_Value": "16"
+    },
+    {
+      "UID": "26",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_30_34_Sum",
+      "Measure_Value": "13"
+    },
+    {
+      "UID": "27",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_35_39_Sum",
+      "Measure_Value": "14"
+    },
+    {
+      "UID": "28",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_40_44_Sum",
+      "Measure_Value": "11"
+    },
+    {
+      "UID": "29",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_45_49_Sum",
+      "Measure_Value": "18"
+    },
+    {
+      "UID": "30",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_50_54_Sum",
+      "Measure_Value": "16"
+    },
+    {
+      "UID": "31",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_55_59_Sum",
+      "Measure_Value": "19"
+    },
+    {
+      "UID": "32",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_60_64_Sum",
+      "Measure_Value": "22"
+    },
+    {
+      "UID": "33",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_65_69_Sum",
+      "Measure_Value": "24"
+    },
+    {
+      "UID": "34",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_70_74_Sum",
+      "Measure_Value": "32"
+    },
+    {
+      "UID": "35",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_75_79_Sum",
+      "Measure_Value": "32"
+    },
+    {
+      "UID": "36",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_80_84_Sum",
+      "Measure_Value": "28"
+    },
+    {
+      "UID": "37",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_85_89_Sum",
+      "Measure_Value": "8"
+    },
+    {
+      "UID": "38",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "Age_90_120_Sum",
+      "Measure_Value": "4"
+    },
+    {
+      "UID": "39",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_DAY_CASES",
+      "Measure_Value": "36"
+    },
+    {
+      "UID": "40",
+      "Code": "V01",
+      "Category": "CAUSE_3",
+      "Measure": "FCE_BED_DAYS",
+      "Measure_Value": "914"
+    }
+  ]
+}
