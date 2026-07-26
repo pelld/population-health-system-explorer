@@ -1,0 +1,119 @@
+/* ============================================================
+   00. ACUTE DISCHARGE TOOLBAR AND MAP BADGES
+   ============================================================ */
+.acute-discharge-metric-control {
+  display:grid;
+  gap:3px;
+  min-width:270px;
+  font-size:.72rem;
+  font-weight:700;
+  color:#38515d;
+}
+
+.acute-discharge-metric-control[hidden],
+.acute-discharge-metric-scope[hidden] {
+  display:none !important;
+}
+
+.acute-discharge-metric-control select {
+  width:100%;
+  min-height:36px;
+  border:1px solid #c4d2d8;
+  border-radius:9px;
+  background:#fff;
+  padding:6px 9px;
+  color:#193746;
+}
+
+.acute-discharge-metric-scope {
+  align-self:end;
+  max-width:290px;
+  padding:7px 10px;
+  border-radius:9px;
+  background:#f7e8ea;
+  color:#7c3d45;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+.acute-discharge-metric-badge {
+  border-color:#a9565e;
+  background:#fff7f7;
+  color:#733b42;
+}
+
+/* ============================================================
+   01. DETAIL CARD GRIDS
+   ============================================================ */
+.acute-discharge-operational-card h4 {
+  margin:15px 0 7px;
+  color:#334f5c;
+  font-size:.82rem;
+}
+
+.acute-discharge-summary-grid,
+.acute-discharge-month-grid,
+.acute-discharge-pathway-grid,
+.acute-discharge-delay-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+}
+
+.acute-discharge-summary-grid > div,
+.acute-discharge-month-grid > div,
+.acute-discharge-pathway-grid > div,
+.acute-discharge-delay-grid > div,
+.acute-discharge-rank-card {
+  display:grid;
+  gap:2px;
+  padding:9px;
+  border:1px solid #ead3d6;
+  border-radius:10px;
+  background:#fffafa;
+}
+
+.acute-discharge-summary-grid span,
+.acute-discharge-month-grid span,
+.acute-discharge-pathway-grid span,
+.acute-discharge-delay-grid span,
+.acute-discharge-rank-card span {
+  color:#5b707a;
+  font-size:.7rem;
+}
+
+.acute-discharge-summary-grid strong,
+.acute-discharge-month-grid strong,
+.acute-discharge-pathway-grid strong,
+.acute-discharge-delay-grid strong,
+.acute-discharge-rank-card strong {
+  color:#743b43;
+  font-size:.94rem;
+}
+
+.acute-discharge-summary-grid small,
+.acute-discharge-month-grid small,
+.acute-discharge-pathway-grid small,
+.acute-discharge-delay-grid small,
+.acute-discharge-rank-card small {
+  color:#687c85;
+  font-size:.65rem;
+  line-height:1.35;
+}
+
+.acute-discharge-rank-card {
+  margin-top:9px;
+}
+
+@media (max-width:760px) {
+  .acute-discharge-metric-control {
+    min-width:100%;
+  }
+
+  .acute-discharge-summary-grid,
+  .acute-discharge-month-grid,
+  .acute-discharge-pathway-grid,
+  .acute-discharge-delay-grid {
+    grid-template-columns:1fr;
+  }
+}
