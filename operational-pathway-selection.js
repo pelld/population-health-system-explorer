@@ -81,6 +81,20 @@
     "social-care-capacity"
   ];
 
+  const drdPathway = [
+    "non-elective-bed-days",
+    "discharge-ready",
+    "drd-discharges",
+    "drd-same-day",
+    "drd-delayed",
+    "drd-bed-days",
+    "drd-average-delay",
+    "actual-discharge",
+    "occupied-overnight-beds",
+    "hospital-flow-pressure",
+    "post-discharge-support"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -137,7 +151,12 @@
     "discharge-ready":acuteDischargePathway,
     "delayed-discharge":acuteDischargePathway,
     "acute-additional-bed-days":acuteDischargePathway,
-    "actual-discharge":acuteDischargePathway
+    "actual-discharge":acuteDischargePathway,
+    "drd-discharges":drdPathway,
+    "drd-same-day":drdPathway,
+    "drd-delayed":drdPathway,
+    "drd-bed-days":drdPathway,
+    "drd-average-delay":drdPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
