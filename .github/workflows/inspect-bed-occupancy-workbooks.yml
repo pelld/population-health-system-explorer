@@ -1,0 +1,52 @@
+name: Inspect 2024-25 bed occupancy workbooks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/inspect-bed-occupancy-workbooks.yml"
+      - "scripts/inspect_bed_occupancy_workbooks_2024_25.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inspect-bed-occupancy-workbooks
+  cancel-in-progress: true
+
+jobs:
+  inspect-bed-workbooks:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 01. Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 02. Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 03. Install dependencies
+        run: python -m pip install --upgrade requests openpyxl
+
+      - name: 04. Inspect the quarterly workbooks
+        run: python scripts/inspect_bed_occupancy_workbooks_2024_25.py
+
+      - name: 05. Commit inspection output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-data/bed-occupancy-workbooks-2024-25-inspection.json
+
+          if git diff --cached --quiet; then
+            echo "No workbook inspection changes to commit."
+          else
+            git commit -m "Generate 2024-25 bed workbook inspection data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
