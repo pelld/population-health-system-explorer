@@ -1,0 +1,253 @@
+/* ============================================================
+   00. COMMUNITY WAITING-LIST GEOGRAPHY SELECTOR
+   ============================================================ */
+.community-waits-metric-control {
+  display:flex;
+  align-items:center;
+  gap:5px;
+  color:#49636c;
+  font-size:9px;
+  font-weight:750;
+}
+
+.community-waits-metric-control[hidden],
+.community-waits-metric-scope[hidden] {
+  display:none;
+}
+
+.community-waits-metric-control select {
+  min-height:34px;
+  width:min(350px,32vw);
+  padding:0 8px;
+  color:var(--ink);
+  border:1px solid #9ab5c7;
+  border-radius:6px;
+  background:#fbfdff;
+  font-size:10px;
+}
+
+.community-waits-metric-scope {
+  align-self:center;
+  max-width:280px;
+  padding:6px 8px;
+  overflow:hidden;
+  color:#31576c;
+  border:1px solid #bfd0dc;
+  border-radius:999px;
+  background:#f6fbff;
+  font-size:9px;
+  font-weight:750;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/* ============================================================
+   01. MAP BADGES
+   ============================================================ */
+.community-waits-metric-layer {
+  z-index:23;
+}
+
+.community-waits-metric-badge {
+  color:#294f65;
+  border-color:#91b2c6;
+  background:#f8fcfff5;
+  box-shadow:0 5px 14px #294f6524;
+}
+
+.community-waits-metric-badge span {
+  color:#527186;
+}
+
+/* ============================================================
+   02. DETAILS AND COMPARISON CARDS
+   ============================================================ */
+.community-waits-operational-card {
+  border-color:#aac3d2;
+  background:linear-gradient(145deg,#f5fbff,#ffffff);
+}
+
+.community-waits-rank-card {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:2px 10px;
+  margin:9px 0;
+  padding:9px;
+  border:1px solid #cadbe5;
+  border-radius:8px;
+  background:#fff;
+}
+
+.community-waits-rank-card span {
+  color:#4c6878;
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+
+.community-waits-rank-card strong {
+  grid-row:1 / span 2;
+  grid-column:2;
+  align-self:center;
+  color:var(--navy);
+  font-size:17px;
+}
+
+.community-waits-rank-card small {
+  color:#647985;
+  font-size:9px;
+  line-height:1.35;
+}
+
+.community-waits-summary-grid,
+.community-waits-long-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:6px;
+  margin:10px 0;
+}
+
+.community-waits-summary-grid div,
+.community-waits-long-grid div {
+  min-width:0;
+  padding:8px;
+  border:1px solid #d8e4eb;
+  border-radius:7px;
+  background:#fff;
+}
+
+.community-waits-summary-grid span,
+.community-waits-long-grid span {
+  display:block;
+  color:#617681;
+  font-size:8px;
+  font-weight:800;
+  line-height:1.25;
+  text-transform:uppercase;
+  letter-spacing:.035em;
+}
+
+.community-waits-summary-grid strong,
+.community-waits-long-grid strong {
+  display:block;
+  margin-top:3px;
+  color:var(--navy);
+  font-size:14px;
+}
+
+/* ============================================================
+   03. SERVICE-LINE PROFILE
+   ============================================================ */
+.community-waits-services {
+  margin:12px 0;
+}
+
+.community-waits-services h4,
+.community-waits-trend h4 {
+  margin:0 0 6px;
+  color:#405f70;
+  font-size:10px;
+}
+
+.community-waits-services > div {
+  display:grid;
+  gap:4px;
+}
+
+.community-waits-services article {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:2px 9px;
+  padding:7px 8px;
+  border:1px solid #d9e5ec;
+  border-radius:7px;
+  background:#fff;
+}
+
+.community-waits-services article span {
+  color:#435e6d;
+  font-size:9px;
+  font-weight:750;
+  line-height:1.25;
+}
+
+.community-waits-services article strong {
+  color:var(--navy);
+  font-size:11px;
+}
+
+.community-waits-services article small {
+  grid-column:1 / span 2;
+  color:#71838c;
+  font-size:8px;
+}
+
+/* ============================================================
+   04. CORRECTED ENGLAND TREND
+   ============================================================ */
+.community-waits-trend {
+  margin:12px 0;
+}
+
+.community-waits-month-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:4px;
+}
+
+.community-waits-month-grid div {
+  min-width:0;
+  padding:6px 5px;
+  border:1px solid #d8e5ec;
+  border-radius:6px;
+  background:#fff;
+  text-align:center;
+}
+
+.community-waits-month-grid span,
+.community-waits-month-grid small {
+  display:block;
+  color:#687d88;
+  font-size:8px;
+}
+
+.community-waits-month-grid strong {
+  display:block;
+  margin:2px 0;
+  color:#294f65;
+  font-size:11px;
+}
+
+.community-waits-trend p {
+  margin:6px 0 0;
+  color:#6a7d87;
+  font-size:9px;
+  line-height:1.4;
+}
+
+@media(max-width:900px) {
+  .community-waits-metric-control {
+    width:100%;
+  }
+
+  .community-waits-metric-control select {
+    flex:1;
+    width:auto;
+  }
+
+  .community-waits-metric-scope {
+    display:none;
+  }
+}
+
+@media(max-width:560px) {
+  .community-waits-summary-grid,
+  .community-waits-long-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .community-waits-month-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
