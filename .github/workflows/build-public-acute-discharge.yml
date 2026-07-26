@@ -39,7 +39,17 @@ jobs:
         continue-on-error: true
         run: |
           set -o pipefail
-          python scripts/build_acute_discharge_2024_25.py 2>&1 | tee public-data/acute-discharge-build-log.txt
+          python - <<'PY' 2>&1 | tee public-data/acute-discharge-build-log.txt
+          import pandas as pd
+          import runpy
+
+          # pandas 3 removed DataFrame.applymap; retain compatibility with the
+          # explicitly element-wise conversion used by the published-data build.
+          if not hasattr(pd.DataFrame,"applymap"):
+              pd.DataFrame.applymap = lambda self,function: self.map(function)
+
+          runpy.run_path("scripts/build_acute_discharge_2024_25.py",run_name="__main__")
+          PY
 
       - name: 05. Commit generated data or diagnostic log
         run: |
