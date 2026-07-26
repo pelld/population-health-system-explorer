@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/build-public-qof.yml"
       - "scripts/build_qof_2024_25.py"
+      - "scripts/run_build_qof_2024_25.py"
   workflow_dispatch:
 
 permissions:
@@ -39,7 +40,7 @@ jobs:
         continue-on-error: true
         run: |
           set -o pipefail
-          python scripts/build_qof_2024_25.py 2>&1 | tee public-data/qof-build-log.txt
+          python scripts/run_build_qof_2024_25.py 2>&1 | tee public-data/qof-build-log.txt
 
       - name: 05. Commit generated data or diagnostic log
         run: |
