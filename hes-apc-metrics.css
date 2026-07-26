@@ -1,0 +1,96 @@
+/* ============================================================
+   00. HES APC GEOGRAPHY CONTROL AND METRIC CARDS
+   ============================================================ */
+.hes-apc-metric-control {
+  display:flex;
+  align-items:flex-end;
+  gap:.45rem;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+.hes-apc-metric-control[hidden],
+.hes-apc-metric-scope[hidden] {
+  display:none !important;
+}
+
+.hes-apc-metric-control span {
+  white-space:nowrap;
+}
+
+.hes-apc-metric-control select {
+  min-width:250px;
+  max-width:360px;
+  padding:.5rem .65rem;
+  border:1px solid #b9c7cc;
+  border-radius:7px;
+  background:#fff;
+  color:#18333e;
+}
+
+.hes-apc-metric-scope {
+  max-width:330px;
+  font-size:.72rem;
+  color:#4e626a;
+}
+
+.hes-apc-metric-badge {
+  border-color:#a9565e;
+}
+
+.hes-apc-operational-card {
+  border-top:4px solid #a9565e;
+}
+
+.hes-apc-activity-grid,
+.hes-apc-duration-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.55rem;
+  margin:.8rem 0;
+}
+
+.hes-apc-activity-grid div,
+.hes-apc-duration-grid div,
+.hes-apc-rank-card {
+  padding:.65rem;
+  border:1px solid #d9e1e4;
+  border-radius:8px;
+  background:#f8fafb;
+}
+
+.hes-apc-activity-grid span,
+.hes-apc-duration-grid span,
+.hes-apc-rank-card span {
+  display:block;
+  font-size:.7rem;
+  color:#60727a;
+}
+
+.hes-apc-activity-grid strong,
+.hes-apc-duration-grid strong,
+.hes-apc-rank-card strong {
+  display:block;
+  margin-top:.2rem;
+  color:#173743;
+}
+
+.hes-apc-rank-card small {
+  display:block;
+  margin-top:.3rem;
+  color:#60727a;
+}
+
+@media (max-width:760px) {
+  .hes-apc-metric-control {
+    width:100%;
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .hes-apc-metric-control select {
+    width:100%;
+    max-width:none;
+    min-width:0;
+  }
+}
