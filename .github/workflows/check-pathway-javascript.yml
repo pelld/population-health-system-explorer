@@ -30,6 +30,9 @@ on:
       - "acute-discharge-sources.js"
       - "acute-discharge-map-data.js"
       - "acute-discharge-metrics.js"
+      - "drd-sources.js"
+      - "drd-map-data.js"
+      - "drd-metrics.js"
 
 jobs:
   check-javascript:
@@ -65,3 +68,6 @@ jobs:
           node --check acute-discharge-sources.js
           node --check acute-discharge-map-data.js
           node --check acute-discharge-metrics.js
+          node --check drd-sources.js
+          node --check drd-map-data.js
+          node --check drd-metrics.js
