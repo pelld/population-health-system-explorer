@@ -18,6 +18,9 @@ on:
       - "csds-sources.js"
       - "csds-map-data.js"
       - "csds-metrics.js"
+      - "community-bed-sources.js"
+      - "community-bed-map-data.js"
+      - "community-bed-metrics.js"
 
 jobs:
   check-javascript:
@@ -41,3 +44,6 @@ jobs:
           node --check csds-sources.js
           node --check csds-map-data.js
           node --check csds-metrics.js
+          node --check community-bed-sources.js
+          node --check community-bed-map-data.js
+          node --check community-bed-metrics.js
