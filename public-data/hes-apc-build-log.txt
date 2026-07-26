@@ -1,6 +1,1 @@
-Traceback (most recent call last):
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 308, in <module>
-    main()
-  File "/home/runner/work/population-health-system-explorer/population-health-system-explorer/scripts/build_hes_apc_2024_25.py", line 263, in main
-    raise RuntimeError(f"Expected 42 current Q-code ICB rows; found {len(icbs)}")
-RuntimeError: Expected 42 current Q-code ICB rows; found 0
+Wrote public-data/hes-apc-2024-25.json: 42 ICBs and 171 emergency providers
