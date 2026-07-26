@@ -14,10 +14,10 @@
       caution:"QOF prevalence covers selected diagnosed conditions and is not a complete estimate of true disease prevalence or multimorbidity.", evidence:"official", sources:["S28"]
     }),
     AE_NODE("qof-overall-achievement","QOF points achievement","primary",3,216,930,{
-      summary:"The percentage of revised available QOF points achieved across the selected geography.",
+      summary:"The percentage of the 635 published available QOF points achieved across the selected geography.",
       why:"Points achievement summarises the incentive framework but combines different indicators, thresholds and payment-protection arrangements.",
       action:"Use the exact achieved and available points, then inspect the relevant indicator rather than treating the headline as a single quality score.",
-      timescale:"diagnostic", owner:"GP practices and ICBs", measures:"Achieved points, revised maximum points and percentage achieved.",
+      timescale:"diagnostic", owner:"GP practices and ICBs", measures:"Achieved points, 635 available points per included practice and percentage achieved.",
       caution:"QOF is an incentive scheme, not a performance-management league table. Payment-protected indicators may not reflect activity delivered in 2024-25.", evidence:"official", sources:["S28"]
     }),
     AE_NODE("qof-indicator-achievement","QOF indicator achievement","primary",3,228,820,{
