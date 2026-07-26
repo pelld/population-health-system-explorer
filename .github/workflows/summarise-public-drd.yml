@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: summarise-public-drd
+  cancel-in-progress: true
+
 jobs:
   summarise-drd:
     if: github.actor != 'github-actions[bot]'
