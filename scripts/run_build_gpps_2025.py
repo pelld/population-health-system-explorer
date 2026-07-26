@@ -7,7 +7,7 @@
 
 from __future__ import annotations
 
-from scripts import build_gpps_2025 as build
+import build_gpps_2025 as build
 
 
 def main() -> None:
