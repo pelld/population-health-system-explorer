@@ -113,6 +113,19 @@
     "ae-attendance"
   ];
 
+  const qofPathway = [
+    "population-size-mix",
+    "frailty-multimorbidity",
+    "qof-prevalence",
+    "urgent-primary-demand",
+    "qof-overall-achievement",
+    "qof-indicator-achievement",
+    "qof-pca",
+    "gp-clinical-assessment",
+    "gp-ae-route",
+    "ae-attendance"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -182,7 +195,11 @@
     "gpps-contact-experience":gppsPathway,
     "gpps-continuity":gppsPathway,
     "gpps-listened":gppsPathway,
-    "gpps-care-concern":gppsPathway
+    "gpps-care-concern":gppsPathway,
+    "qof-prevalence":qofPathway,
+    "qof-overall-achievement":qofPathway,
+    "qof-indicator-achievement":qofPathway,
+    "qof-pca":qofPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
