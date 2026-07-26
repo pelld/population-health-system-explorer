@@ -51,6 +51,18 @@
     "social-care-capacity"
   ];
 
+  const hesPathway = [
+    "ae-attendance",
+    "admission-decision",
+    "emergency-admission",
+    "non-elective-bed-days",
+    "hes-bed-days",
+    "hes-mean-los",
+    "hospital-flow-pressure",
+    "delayed-discharge",
+    "actual-discharge"
+  ];
+
   const PATHWAYS = {
     "ambulance-ae-route":[
       "ambulance-calls",
@@ -97,7 +109,10 @@
     "community-bed-rehab":communityBedPathway,
     "community-bed-step-up":communityBedPathway,
     "community-bed-assessment":communityBedPathway,
-    "community-bed-los":communityBedPathway
+    "community-bed-los":communityBedPathway,
+    "emergency-admission":hesPathway,
+    "hes-bed-days":hesPathway,
+    "hes-mean-los":hesPathway
   };
 
   selectNode = function(node,{ centre=false }={}) {
