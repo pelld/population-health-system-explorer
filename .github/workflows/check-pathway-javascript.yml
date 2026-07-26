@@ -11,6 +11,9 @@ on:
       - "gpad-metrics.js"
       - "ucr-map-data.js"
       - "ucr-metrics.js"
+      - "community-waits-sources.js"
+      - "community-waits-map-data.js"
+      - "community-waits-metrics.js"
 
 jobs:
   check-javascript:
@@ -27,3 +30,6 @@ jobs:
           node --check gpad-metrics.js
           node --check ucr-map-data.js
           node --check ucr-metrics.js
+          node --check community-waits-sources.js
+          node --check community-waits-map-data.js
+          node --check community-waits-metrics.js
