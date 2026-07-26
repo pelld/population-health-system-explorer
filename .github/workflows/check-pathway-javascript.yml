@@ -14,6 +14,7 @@ on:
       - "community-waits-sources.js"
       - "community-waits-map-data.js"
       - "community-waits-metrics.js"
+      - "community-waits-metrics-fixes.js"
 
 jobs:
   check-javascript:
@@ -33,3 +34,4 @@ jobs:
           node --check community-waits-sources.js
           node --check community-waits-map-data.js
           node --check community-waits-metrics.js
+          node --check community-waits-metrics-fixes.js
