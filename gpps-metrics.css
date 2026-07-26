@@ -1,0 +1,123 @@
+/* ============================================================
+   00. GP PATIENT SURVEY TOOLBAR AND MAP BADGES
+   ============================================================ */
+.gpps-metric-control {
+  display:grid;
+  gap:4px;
+  min-width:310px;
+  max-width:440px;
+  font-size:.72rem;
+  font-weight:700;
+  color:#4d466a;
+}
+
+.gpps-metric-control[hidden],
+.gpps-metric-scope[hidden],
+.gpps-metric-control [hidden] {
+  display:none !important;
+}
+
+.gpps-control-row {
+  display:grid;
+  grid-template-columns:minmax(92px,.7fr) minmax(180px,1.5fr);
+  gap:5px;
+}
+
+.gpps-metric-control select,
+.gpps-metric-control input {
+  width:100%;
+  min-height:36px;
+  border:1px solid #c9c2db;
+  border-radius:9px;
+  background:#fff;
+  padding:6px 9px;
+  color:#342d54;
+}
+
+.gpps-metric-control small {
+  color:#68747d;
+  font-size:.64rem;
+  font-weight:500;
+  line-height:1.3;
+}
+
+.gpps-metric-scope {
+  align-self:end;
+  max-width:310px;
+  padding:7px 10px;
+  border-radius:9px;
+  background:#eeeaf7;
+  color:#554578;
+  font-size:.72rem;
+  font-weight:700;
+}
+
+.gpps-metric-badge {
+  border-color:#7663a0;
+  background:#faf8ff;
+  color:#4c3f70;
+}
+
+/* ============================================================
+   01. DETAIL CARD GRIDS
+   ============================================================ */
+.gpps-operational-card h4 {
+  margin:15px 0 7px;
+  color:#4f4668;
+  font-size:.82rem;
+}
+
+.gpps-summary-grid,
+.gpps-measure-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+}
+
+.gpps-summary-grid > div,
+.gpps-measure-grid > div {
+  display:grid;
+  gap:2px;
+  padding:9px;
+  border:1px solid #ded8ec;
+  border-radius:10px;
+  background:#fcfbff;
+}
+
+.gpps-summary-grid span,
+.gpps-measure-grid span {
+  color:#65727b;
+  font-size:.69rem;
+  line-height:1.25;
+}
+
+.gpps-summary-grid strong,
+.gpps-measure-grid strong {
+  color:#514273;
+  font-size:.94rem;
+}
+
+.gpps-summary-grid small,
+.gpps-measure-grid small {
+  color:#718089;
+  font-size:.64rem;
+  line-height:1.35;
+}
+
+.gpps-operational-card a + a {
+  display:block;
+  margin-top:5px;
+}
+
+@media (max-width:760px) {
+  .gpps-metric-control {
+    min-width:100%;
+    max-width:none;
+  }
+
+  .gpps-control-row,
+  .gpps-summary-grid,
+  .gpps-measure-grid {
+    grid-template-columns:1fr;
+  }
+}
