@@ -1,2 +1,0 @@
-Wrote public-data/community-waits-2024-25.json: 42 ICBs and 142 providers
-exit_status=0
