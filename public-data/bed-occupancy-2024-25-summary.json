@@ -1,0 +1,180 @@
+{
+  "publication": "Bed Availability and Occupancy — Overnight Beds, 2024-25",
+  "provider_count": 187,
+  "england_metrics": {
+    "available-overnight-beds": {
+      "label": "Average daily general and acute beds available overnight",
+      "display": "beds",
+      "beds": 105446.26
+    },
+    "occupied-overnight-beds": {
+      "label": "Average daily general and acute beds occupied overnight",
+      "display": "beds",
+      "beds": 96057.96
+    },
+    "overnight-bed-occupancy": {
+      "label": "General and acute overnight-bed occupancy",
+      "display": "percent",
+      "percent": 91.1,
+      "occupied": 96057.96,
+      "available": 105446.26
+    }
+  },
+  "england_sectors": {
+    "total": {
+      "available": 131671.33,
+      "occupied": 116987.4,
+      "occupancy_percent": 88.85
+    },
+    "general_acute": {
+      "available": 105446.26,
+      "occupied": 96057.96,
+      "occupancy_percent": 91.1
+    },
+    "learning_disabilities": {
+      "available": 749.76,
+      "occupied": 465.26,
+      "occupancy_percent": 62.05
+    },
+    "maternity": {
+      "available": 7576.22,
+      "occupied": 4418.1,
+      "occupancy_percent": 58.32
+    },
+    "mental_illness": {
+      "available": 17899.09,
+      "occupied": 16046.08,
+      "occupancy_percent": 89.65
+    }
+  },
+  "england_quarters": {
+    "Q1": {
+      "quarter": "Q1",
+      "period": "April to June 2024",
+      "days": 91,
+      "sectors": {
+        "total": {
+          "available": 131874.68131868137,
+          "occupied": 117314.96703296708,
+          "occupancy_percent": 88.96
+        },
+        "general_acute": {
+          "available": 105644.79120879123,
+          "occupied": 96361.15384615384,
+          "occupancy_percent": 91.21
+        },
+        "learning_disabilities": {
+          "available": 763.3406593406594,
+          "occupied": 477.50549450549454,
+          "occupancy_percent": 62.55
+        },
+        "maternity": {
+          "available": 7554.54945054945,
+          "occupied": 4369.780219780219,
+          "occupancy_percent": 57.84
+        },
+        "mental_illness": {
+          "available": 17911.999999999996,
+          "occupied": 16106.527472527472,
+          "occupancy_percent": 89.92
+        }
+      }
+    },
+    "Q2": {
+      "quarter": "Q2",
+      "period": "July to September 2024",
+      "days": 92,
+      "sectors": {
+        "total": {
+          "available": 129759.75,
+          "occupied": 114639.68478260872,
+          "occupancy_percent": 88.35
+        },
+        "general_acute": {
+          "available": 103656.22826086955,
+          "occupied": 93664.40217391304,
+          "occupancy_percent": 90.36
+        },
+        "learning_disabilities": {
+          "available": 752.7282608695652,
+          "occupied": 468.01086956521743,
+          "occupancy_percent": 62.18
+        },
+        "maternity": {
+          "available": 7469.054347826086,
+          "occupied": 4492.673913043477,
+          "occupancy_percent": 60.15
+        },
+        "mental_illness": {
+          "available": 17881.739130434788,
+          "occupied": 16014.597826086958,
+          "occupancy_percent": 89.56
+        }
+      }
+    },
+    "Q3": {
+      "quarter": "Q3",
+      "period": "October to December 2024",
+      "days": 92,
+      "sectors": {
+        "total": {
+          "available": 132886.17391304346,
+          "occupied": 116856.71739130432,
+          "occupancy_percent": 87.94
+        },
+        "general_acute": {
+          "available": 106431.55434782614,
+          "occupied": 96109.02173913045,
+          "occupancy_percent": 90.3
+        },
+        "learning_disabilities": {
+          "available": 735.0108695652175,
+          "occupied": 449.2717391304348,
+          "occupancy_percent": 61.12
+        },
+        "maternity": {
+          "available": 7914.000000000002,
+          "occupied": 4339.956521739131,
+          "occupancy_percent": 54.84
+        },
+        "mental_illness": {
+          "available": 17805.608695652176,
+          "occupied": 15958.467391304348,
+          "occupancy_percent": 89.63
+        }
+      }
+    },
+    "Q4": {
+      "quarter": "Q4",
+      "period": "January to March 2025",
+      "days": 90,
+      "sectors": {
+        "total": {
+          "available": 132177.929059829,
+          "occupied": 119189.6536019536,
+          "occupancy_percent": 90.17
+        },
+        "general_acute": {
+          "available": 106068.13663003662,
+          "occupied": 98145.94175824178,
+          "occupancy_percent": 92.53
+        },
+        "learning_disabilities": {
+          "available": 748.0777777777778,
+          "occupied": 466.41111111111104,
+          "occupancy_percent": 62.35
+        },
+        "maternity": {
+          "available": 7362.39242979243,
+          "occupied": 4470.589621489624,
+          "occupancy_percent": 60.72
+        },
+        "mental_illness": {
+          "available": 17999.322222222225,
+          "occupied": 16106.711111111112,
+          "occupancy_percent": 89.49
+        }
+      }
+    }
+  }
+}
