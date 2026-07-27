@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A question-led ICB diagnostic view of urgent-care pressure using public population health and NHS datasets.">
+  <base href="/population-health-system-explorer/">
+  <title>Population Health System Explorer — ICB Diagnostic View</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icb-diagnostic-mode.css">
+</head>
+<body>
+  <!-- ============================================================
+       00. DIAGNOSTIC PAGE HEADER
+       ============================================================ -->
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Population health system explorer</p>
+      <h1>ICB diagnostic view</h1>
+      <p class="strapline">A separate question-led prototype using ICB-level data. The original systems map remains available on the main page.</p>
+    </div>
+    <div class="header-actions">
+      <a href="./" class="ghost-button" style="display:inline-flex;align-items:center;text-decoration:none;">← Full systems map</a>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       01. QUESTION-LED ICB VIEW
+       ============================================================ -->
+  <main>
+    <section id="systemView" class="view active" aria-label="ICB diagnostic explorer"></section>
+  </main>
+
+  <script src="icb-diagnostic-mode.js"></script>
+</body>
+</html>
