@@ -50,23 +50,22 @@
 })();
 
 // ============================================================
-// 03. LOAD THE QUESTION-LED ICB DIAGNOSTIC VIEW
+// 03. LINK TO THE SEPARATE ICB DIAGNOSTIC PAGE
 // ============================================================
-// Kept as a separate module so the new interface can be developed without
-// disturbing the existing dataset-specific map modules underneath it.
+// The systems map remains the main page. The question-led diagnostic prototype
+// now lives at /diagnostic/ and shares the same public data files.
 
 (() => {
-  if (!document.querySelector('link[href="icb-diagnostic-mode.css"]')) {
-    const stylesheet = document.createElement("link");
-    stylesheet.rel = "stylesheet";
-    stylesheet.href = "icb-diagnostic-mode.css";
-    document.head.append(stylesheet);
-  }
+  const actions = document.querySelector(".header-actions");
+  if (!actions || document.getElementById("diagnosticViewLink")) return;
 
-  if (!document.querySelector('script[src="icb-diagnostic-mode.js"]')) {
-    const script = document.createElement("script");
-    script.src = "icb-diagnostic-mode.js";
-    script.defer = true;
-    document.body.append(script);
-  }
+  const link = document.createElement("a");
+  link.id = "diagnosticViewLink";
+  link.className = "ghost-button";
+  link.href = "diagnostic/";
+  link.textContent = "ICB diagnostic view";
+  link.style.display = "inline-flex";
+  link.style.alignItems = "center";
+  link.style.textDecoration = "none";
+  actions.prepend(link);
 })();
